@@ -44,21 +44,27 @@ begin
          NumTokens : Natural;
       begin
          MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
-         if NumTokens > 0 then
+         if NumTokens > 0 and NumTokens <= 3 then
             declare
                TokStr : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
             begin
                if TokStr = "push" then
                --TODO: ADD ERROR CHECKING FOR PUSH COMMAND
-                  declare
-                     TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
-                     value : Integer;
-                  begin
+                  if NumTokens = 2 then
+                     declare
+                        TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
+                        value : Integer;
+                     begin
                   -- Converting the value passed in PUSH command to Integer
-                     value := Integer'Value (TokStr2);
-                     Stack.Push(calStack,value);
-                  end;
-               elsif TokStr = "pop" then
+                        value := Integer'Value (TokStr2);
+                        Stack.Push(calStack,value);
+                     end;
+                  else
+                     Put_Line ("Invalid ! Correct Usage : 'push 5'");
+                     Finished := True;
+                     exit when Finished;
+                  end if;
+               elsif TokStr = "pop" and NumTokens = 1 then
                   declare
                      I : Integer;
                   begin
@@ -71,7 +77,7 @@ begin
                      exit when Finished;
                   end if;
                   end;
-               elsif TokStr = "+" then
+               elsif TokStr = "+" and NumTokens = 1 then
                   begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Addition(calStack);
@@ -81,7 +87,7 @@ begin
                         exit when Finished;
                      end if;
                   end;
-               elsif TokStr = "-" then
+               elsif TokStr = "-" and NumTokens = 1 then
                   begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Subtraction(calStack);
@@ -91,7 +97,7 @@ begin
                         exit when Finished;
                      end if;
                   end;
-               elsif TokStr = "*" then
+               elsif TokStr = "*" and NumTokens = 1 then
                   begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Multiplication(calStack);
@@ -101,7 +107,7 @@ begin
                         exit when Finished;
                      end if;
                   end;
-               elsif TokStr = "/" then
+               elsif TokStr = "/" and NumTokens = 1 then
                   begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Division(calStack);
@@ -117,9 +123,10 @@ begin
                   exit when Finished;
                end if;
             end;
-         end if;
-         if NumTokens > 3 then
-            Put_Line("You entered too many tokens --- I said at most 3");
+         else
+            Put_Line ("Invalid Command ! Try 'push 5' " );
+            Finished := True;
+            exit when Finished;
          end if;
       end;
    end loop;
