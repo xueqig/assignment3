@@ -1,35 +1,47 @@
 package body OPERATION with SPARK_Mode is
    
---    procedure Addition(S: in out SimpleStack) is
---         I : Integer;
---         J : Integer;
---         Result : Integer;
---    begin
---         S.pop(S,I);
---         S.pop(S,J);
---         Result := I + J;
---         S.push(S,Result);  
---     end Addition;
-
-    function Subtraction(I: in Integer; J: in Integer) return Integer is
+   procedure Addition(S: in out Stack.Stack_Type) is
+        I : Integer;
+        J : Integer;
         Result : Integer;
    begin
+        Stack.pop(S,I);
+        Stack.pop(S,J);
+        Result := I + J;
+        Stack.push(S,Result);  
+    end Addition;
+
+    procedure Subtraction(S: in out Stack.Stack_Type) is
+        I : Integer;
+        J : Integer;
+        Result : Integer;
+   begin
+        Stack.pop(S,I);
+        Stack.pop(S,J);
         Result := J - I;
-        return Result;  
+        Stack.push(S,Result);  
     end Subtraction;
 
-    function Multiplication(I: in Integer; J: in Integer) return Integer is
+    procedure Multiplication(S: in out Stack.Stack_Type) is
+        I : Integer;
+        J : Integer;
         Result : Integer;
    begin
+        Stack.pop(S,I);
+        Stack.pop(S,J);
         Result := I * J;
-        return Result;  
+        Stack.push(S,Result);  
     end Multiplication;
 
-    function Division(I: in Integer; J: in Integer) return Integer is
+    procedure Division(S: in out Stack.Stack_Type) is
+        I : Integer;
+        J : Integer;
         Result : Integer;
    begin
+        Stack.pop(S,I);
+        Stack.pop(S,J);
         Result := J / I;
-        return Result;  
+        Stack.push(S,Result);  
     end Division;
 
 end OPERATION;
