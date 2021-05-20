@@ -75,7 +75,7 @@ begin
                   Stack.Pop(St, V);
                   Put_Line(Integer'Image(V));
                elsif TokStr1 = "list" then
-                  Stack.List;
+                  Stack.List(DB);
                else
                   Put_Line("Invalid command!");
                end if;
@@ -88,7 +88,7 @@ begin
                if TokStr1 = "push" then
                   Stack.Push(St, StringToInteger.From_String(TokStr2));
                elsif TokStr1 = "load" then
-                  Stack.Load(St, TokStr2);
+                  Stack.Load(St, TokStr2, DB);
                elsif TokStr1 = "store" then
                   Stack.Store(St, TokStr2);
                elsif TokStr1 = "remove" then

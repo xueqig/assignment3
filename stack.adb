@@ -24,14 +24,14 @@ package body Stack is
       Stack.Size := Stack.Size - 1;
    end Pop;
 
-   procedure Load(Stack : in out Stack_Type; Variable : in String) is
+   procedure Load(Stack : in out Stack_Type; Variable : in String; Database : VariableStore.Database) is
       Var : VariableStore.Variable := VariableStore.From_String(Variable);
-      Val : Integer := VariableStore.Get(DB, Var);
+      Val : Integer := VariableStore.Get(Database, Var);
    begin
       Push(Stack, Val);
    end Load;
 
-   procedure Store(Stack: in out Stack_Type; Variable: in String) is
+   procedure Store(Stack : in out Stack_Type; Variable : in String) is
       Var : VariableStore.Variable := VariableStore.From_String(Variable);
       Val : Integer;
    begin
@@ -39,9 +39,9 @@ package body Stack is
       VariableStore.Put(DB, Var, Val);
    end Store;
 
-   procedure List is
+   procedure List(Database : VariableStore.Database) is
    begin
-      VariableStore.Print(DB);
+      VariableStore.Print(Database);
    end List;
 
    procedure Remove(Variable: in String) is
