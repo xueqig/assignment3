@@ -18,6 +18,7 @@ with Ada.Strings;
 
 with OPERATION;
 with ReadCommand;
+with Stack;
 
 procedure Main is
    DB : VariableStore.Database;
@@ -26,9 +27,7 @@ procedure Main is
    PIN2  : PIN.PIN := PIN.From_String("1234");
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
-   
-   package SS is new SimpleStack(100, Integer,0);
-   calStack : SS.SimpleStack;
+   calStack : Stack.Stack_Type;
    I : Integer ;
    J : Integer ;
    Result : Integer;
@@ -59,26 +58,22 @@ begin
                      value : Integer;
                   begin
                      value := Integer'Value (TokStr2);
-                     -- Ada.Integer_Text_IO.Put(value);
-                     -- Ada.Text_IO.New_Line;
-                     SS.Push(calStack,value);
+                     Stack.Push(calStack,value);
                   end;
                elsif TokStr = "pop" then
-                  if SS.Size(calStack) >0 then
-                     SS.Pop(calStack,I);
+                  if Stack.Get_Size(calStack) >0 then
+                     Stack.Pop(calStack,I);
                      Put(I); Put_Line ("");
                   else
                      Put_Line ("Nothing to Pop");
                   end if;
                elsif TokStr = "+" then
                   begin
-                     if SS.Size(calStack) >=2 then
-                        SS.Pop(calStack,I);
-                        SS.Pop(calStack,J);
+                     if Stack.Get_Size(calStack) >=2 then
+                        Stack.Pop(calStack,I);
+                        Stack.Pop(calStack,J);
                         Result := OPERATION.Multiplication(I,J);
-                        SS.Push(calStack,Result);
-                        -- Ada.Integer_Text_IO.Put(Result);
-                        -- Ada.Text_IO.New_Line;
+                        Stack.Push(calStack,Result);
                         Put(Result); Put_Line ("");
                      else
                         Put_Line("+ requires 2 numbers");
@@ -86,13 +81,11 @@ begin
                   end;
                elsif TokStr = "-" then
                   begin
-                     if SS.Size(calStack) >=2 then
-                        SS.Pop(calStack,I);
-                        SS.Pop(calStack,J);
+                     if Stack.Get_Size(calStack) >=2 then
+                        Stack.Pop(calStack,I);
+                        Stack.Pop(calStack,J);
                         Result := OPERATION.Subtraction(I,J);
-                        SS.Push(calStack,Result);
-                        -- Ada.Integer_Text_IO.Put(Result);
-                        -- Ada.Text_IO.New_Line;
+                        Stack.Push(calStack,Result);
                         Put(Result); Put_Line ("");
                      else
                         Put_Line("- requires 2 numbers");
@@ -100,13 +93,11 @@ begin
                   end; 
                elsif TokStr = "*" then
                   begin
-                     if SS.Size(calStack) >=2 then
-                        SS.Pop(calStack,I);
-                        SS.Pop(calStack,J);
+                     if Stack.Get_Size(calStack) >=2 then
+                        Stack.Pop(calStack,I);
+                        Stack.Pop(calStack,J);
                         Result := OPERATION.Multiplication(I,J);
-                        SS.Push(calStack,Result);
-                        -- Ada.Integer_Text_IO.Put(Result);
-                        -- Ada.Text_IO.New_Line;
+                        Stack.Push(calStack,Result);
                         Put(Result); Put_Line ("");
                      else
                         Put_Line("* requires 2 numbers");
@@ -114,13 +105,11 @@ begin
                   end;  
                elsif TokStr = "/" then
                   begin
-                     if SS.Size(calStack) >=2 then
-                        SS.Pop(calStack,I);
-                        SS.Pop(calStack,J);
+                     if Stack.Get_Size(calStack) >=2 then
+                        Stack.Pop(calStack,I);
+                        Stack.Pop(calStack,J);
                         Result := OPERATION.Division(I,J);
-                        SS.Push(calStack,Result);
-                        -- Ada.Integer_Text_IO.Put(Result);
-                        -- Ada.Text_IO.New_Line;
+                        Stack.Push(calStack,Result);
                         Put(Result); Put_Line ("");
                      else
                         Put_Line("/ requires 2 numbers");
