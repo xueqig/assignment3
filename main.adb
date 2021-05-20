@@ -43,17 +43,18 @@ begin
          T : MyStringTokeniser.TokenArray(1..5) := (others => (Start => 1, Length => 0));
          NumTokens : Natural;
       begin
-         -- ReadCommand.Read(Lines.To_String(S), NumTokens, T);
          MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
          if NumTokens > 0 then
             declare
                TokStr : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
             begin
                if TokStr = "push" then
+               --TODO: ADD ERROR CHECKING FOR PUSH COMMAND
                   declare
                      TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
                      value : Integer;
                   begin
+                  -- Converting the value passed in PUSH command to Integer
                      value := Integer'Value (TokStr2);
                      Stack.Push(calStack,value);
                   end;
@@ -65,7 +66,9 @@ begin
                      Stack.Pop(calStack,I);
                      Put(I); Put_Line ("");
                   else
-                     Put_Line ("Nothing to Pop");
+                     Put_Line ("Stack is Empty ! Nothing to Pop");
+                     Finished := True;
+                     exit when Finished;
                   end if;
                   end;
                elsif TokStr = "+" then
@@ -73,7 +76,9 @@ begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Addition(calStack);
                      else
-                        Put_Line("+ requires 2 numbers");
+                        Put_Line("Not Enough Operands on Stack ! '+' requires 2 numbers");
+                        Finished := True;
+                        exit when Finished;
                      end if;
                   end;
                elsif TokStr = "-" then
@@ -81,7 +86,9 @@ begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Subtraction(calStack);
                      else
-                        Put_Line("- requires 2 numbers");
+                        Put_Line("Not Enough Operands on Stack ! '-' requires 2 numbers");
+                        Finished := True;
+                        exit when Finished;
                      end if;
                   end;
                elsif TokStr = "*" then
@@ -89,7 +96,9 @@ begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Multiplication(calStack);
                      else
-                        Put_Line("* requires 2 numbers");
+                        Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
+                        Finished := True;
+                        exit when Finished;
                      end if;
                   end;
                elsif TokStr = "/" then
@@ -97,14 +106,15 @@ begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Division(calStack);
                      else
-                        Put_Line("/ requires 2 numbers");
+                        Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
+                        Finished := True;
+                        exit when Finished;
                      end if;
                   end;
-               elsif TokStr = "exit" then
+               else
+                  Put_Line ("Command Not Recognized !");
                   Finished := True;
                   exit when Finished;
-               else
-                  Put_Line ("Invalid Command ! Try 'exit'");
                end if;
             end;
          end if;

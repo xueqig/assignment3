@@ -1,7 +1,6 @@
 with Stack;
 
 package OPERATION with SPARK_Mode is
-    -- package SS is new SimpleStack(100, Integer,0);
 
     procedure Addition(S: in out Stack.Stack_Type) with
         Pre => (Stack.Get_Size(S) >= 2),
