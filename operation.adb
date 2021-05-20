@@ -1,10 +1,10 @@
 package body OPERATION with SPARK_Mode is
-   
-   procedure Addition(S: in out Stack.Stack_Type) is
-        I : Integer;
-        J : Integer;
-        Result : Integer;
-   begin
+    I : Integer;
+    J : Integer;
+    Result : Integer;
+    
+    procedure Addition(S: in out Stack.Stack_Type) is
+    begin
         Stack.pop(S,I);
         Stack.pop(S,J);
         Result := I + J;
@@ -12,10 +12,7 @@ package body OPERATION with SPARK_Mode is
     end Addition;
 
     procedure Subtraction(S: in out Stack.Stack_Type) is
-        I : Integer;
-        J : Integer;
-        Result : Integer;
-   begin
+    begin
         Stack.pop(S,I);
         Stack.pop(S,J);
         Result := J - I;
@@ -23,10 +20,7 @@ package body OPERATION with SPARK_Mode is
     end Subtraction;
 
     procedure Multiplication(S: in out Stack.Stack_Type) is
-        I : Integer;
-        J : Integer;
-        Result : Integer;
-   begin
+    begin
         Stack.pop(S,I);
         Stack.pop(S,J);
         Result := I * J;
@@ -34,10 +28,7 @@ package body OPERATION with SPARK_Mode is
     end Multiplication;
 
     procedure Division(S: in out Stack.Stack_Type) is
-        I : Integer;
-        J : Integer;
-        Result : Integer;
-   begin
+    begin
         Stack.pop(S,I);
         Stack.pop(S,J);
         Result := J / I;
