@@ -16,7 +16,6 @@ with Ada.Long_Long_Integer_Text_IO;
 
 procedure Main is
    DB : VariableStore.Database;
---     V1 : VariableStore.Variable := VariableStore.From_String("Var1");
    PIN1  : PIN.PIN := PIN.From_String("1234");
    PIN2  : PIN.PIN := PIN.From_String("1234");
    package Lines is new MyString(Max_MyString_Length => 2048);
@@ -26,40 +25,9 @@ procedure Main is
    V : Integer;
 -------------------------------------------New-----------------------------------------
 begin
-
---     Put(MyCommandLine.Command_Name); Put_Line(" is running!");
---     Put("I was invoked with "); Put(MyCommandLine.Argument_Count,0); Put_Line(" arguments.");
---     for Arg in 1..MyCommandLine.Argument_Count loop
---        Put("Argument "); Put(Arg,0); Put(": """);
---        Put(MyCommandLine.Argument(Arg)); Put_Line("""");
---     end loop;
---
    VariableStore.Init(DB);
---     Put_Line("Adding an entry to the database");
---     VariableStore.Put(DB,V1,10);
---
---     Put_Line("Reading the entry:");
---     Put(VariableStore.Get(DB,V1));
---     New_Line;
---
---     Put_Line("Printing out the database: ");
---     VariableStore.Print(DB);
---
---     Put_Line("Removing the entry");
---     VariableStore.Remove(DB,V1);
---     If VariableStore.Has_Variable(DB,V1) then
---        Put_Line("Entry still present! It is: ");
---        Put(VariableStore.Get(DB,V1));
---        New_Line;
---     else
---        Put_Line("Entry successfully removed");
---     end if;
---
---     Put_Line("Reading a line of input. Enter some text (at most 3 tokens): ");
-
-   -------------------------------------------New-----------------------------------------
-
    Stack.Init_Stack(St);
+
    while True loop
       Lines.Get_Line(S);
       declare
@@ -90,9 +58,9 @@ begin
                elsif TokStr1 = "load" then
                   Stack.Load(St, TokStr2, DB);
                elsif TokStr1 = "store" then
-                  Stack.Store(St, TokStr2);
+                  Stack.Store(St, TokStr2, DB);
                elsif TokStr1 = "remove" then
-                  Stack.Remove(TokStr2);
+                  Stack.Remove(TokStr2, DB);
                else
                   Put_Line("Invalid command!");
                end if;

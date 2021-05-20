@@ -9,13 +9,13 @@ package Stack with SPARK_Mode is
 
    procedure Pop(Stack : in out Stack_Type; Value : out Integer);
 
-   procedure Load(Stack : in out Stack_Type; Variable : in String; Database : VariableStore.Database);
+   procedure Load(Stack : in out Stack_Type; Variable : in String; Database : in VariableStore.Database);
 
-   procedure Store(Stack : in out Stack_Type; Variable : in String);
+   procedure Store(Stack : in out Stack_Type; Variable : in String; Database : in out VariableStore.Database);
 
    procedure List(Database : VariableStore.Database);
 
-   procedure Remove(Variable: in String);
+   procedure Remove(Variable: in String; Database : in out VariableStore.Database);
 
    function Get_Size(Stack : in Stack_Type) return Integer;
 

@@ -3,8 +3,6 @@ with VariableStore;
 with StringToInteger;
 
 package body Stack is
-   DB : VariableStore.Database;
-
    procedure Init_Stack(Stack: out Stack_Type) is
    begin
       Stack.Size := 0;
@@ -24,19 +22,19 @@ package body Stack is
       Stack.Size := Stack.Size - 1;
    end Pop;
 
-   procedure Load(Stack : in out Stack_Type; Variable : in String; Database : VariableStore.Database) is
+   procedure Load(Stack : in out Stack_Type; Variable : in String; Database : in VariableStore.Database) is
       Var : VariableStore.Variable := VariableStore.From_String(Variable);
       Val : Integer := VariableStore.Get(Database, Var);
    begin
       Push(Stack, Val);
    end Load;
 
-   procedure Store(Stack : in out Stack_Type; Variable : in String) is
+   procedure Store(Stack : in out Stack_Type; Variable : in String; Database : in out VariableStore.Database) is
       Var : VariableStore.Variable := VariableStore.From_String(Variable);
       Val : Integer;
    begin
       Pop(Stack, Val);
-      VariableStore.Put(DB, Var, Val);
+      VariableStore.Put(Database, Var, Val);
    end Store;
 
    procedure List(Database : VariableStore.Database) is
@@ -44,10 +42,10 @@ package body Stack is
       VariableStore.Print(Database);
    end List;
 
-   procedure Remove(Variable: in String) is
+   procedure Remove(Variable: in String; Database : in out VariableStore.Database) is
       Var : VariableStore.Variable := VariableStore.From_String(Variable);
    begin
-      VariableStore.Remove(DB, Var);
+      VariableStore.Remove(Database, Var);
    end Remove;
 
    function Get_Size(Stack : Stack_Type) return Integer is
