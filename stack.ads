@@ -1,16 +1,15 @@
 package Stack with SPARK_Mode is
    type Stack_Type is private;
 
+   procedure Init_Stack(Stack: out Stack_Type);
+
    procedure Push(Stack: in out Stack_Type; Value : in Integer);
 
-   procedure Pop(Stack : in out Stack_Type; Value : out Integer) with
-     Pre => Get_Size(Stack) > 0;
+   procedure Pop(Stack : in out Stack_Type; Value : out Integer);
 
    procedure Load(Stack : in out Stack_Type; Variable : in String);
 
-   procedure Store(Stack: in out Stack_Type; Variable: in String) with
-     Pre => Get_Size(Stack) > 0;
-
+   procedure Store(Stack : in out Stack_Type; Variable : in String);
    procedure List;
 
    procedure Remove(Variable: in String);

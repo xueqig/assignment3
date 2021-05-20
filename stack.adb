@@ -5,6 +5,13 @@ with StringToInteger;
 package body Stack is
    DB : VariableStore.Database;
 
+   procedure Init_Stack(Stack: out Stack_Type) is
+   begin
+      Stack.Size := 0;
+      Stack.Data := (others => 0);
+   end Init_Stack;
+
+
    procedure Push(Stack: in out Stack_Type; Value : in Integer) is
    begin
       Stack.Size := Stack.Size + 1;

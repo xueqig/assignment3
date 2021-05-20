@@ -16,7 +16,7 @@ with Ada.Long_Long_Integer_Text_IO;
 
 procedure Main is
    DB : VariableStore.Database;
-   V1 : VariableStore.Variable := VariableStore.From_String("Var1");
+--     V1 : VariableStore.Variable := VariableStore.From_String("Var1");
    PIN1  : PIN.PIN := PIN.From_String("1234");
    PIN2  : PIN.PIN := PIN.From_String("1234");
    package Lines is new MyString(Max_MyString_Length => 2048);
@@ -34,7 +34,7 @@ begin
 --        Put(MyCommandLine.Argument(Arg)); Put_Line("""");
 --     end loop;
 --
---     VariableStore.Init(DB);
+   VariableStore.Init(DB);
 --     Put_Line("Adding an entry to the database");
 --     VariableStore.Put(DB,V1,10);
 --
@@ -57,7 +57,9 @@ begin
 --
 --     Put_Line("Reading a line of input. Enter some text (at most 3 tokens): ");
 
--------------------------------------------New-----------------------------------------
+   -------------------------------------------New-----------------------------------------
+
+   Stack.Init_Stack(St);
    while True loop
       Lines.Get_Line(S);
       declare
@@ -65,26 +67,39 @@ begin
          NumTokens : Natural;
       begin
          MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
-         declare
-            TokStr1 : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
-         begin
-            if TokStr1 = "push" then
-               Stack.Push(St, StringToInteger.From_String(Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1))));
-            elsif TokStr1 = "pop" then
-               Stack.Pop(St, V);
-               Put_Line(Integer'Image(V));
-            elsif TokStr1 = "load" then
-               Stack.Load(St, Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1)));
-            elsif TokStr1 = "store" then
-               Stack.Store(St, Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1)));
-            elsif TokStr1 = "list" then
-               Stack.List;
-            elsif TokStr1 = "remove" then
-               Stack.Remove(Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1)));
-            else
-               Put_Line("Invalid commend!");
-            end if;
-         end;
+         if NumTokens = 1 then
+            declare
+               TokStr1 : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
+            begin
+               if TokStr1 = "pop" then
+                  Stack.Pop(St, V);
+                  Put_Line(Integer'Image(V));
+               elsif TokStr1 = "list" then
+                  Stack.List;
+               else
+                  Put_Line("Invalid command!");
+               end if;
+            end;
+         elsif NumTokens = 2 then
+            declare
+               TokStr1 : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
+               TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
+            begin
+               if TokStr1 = "push" then
+                  Stack.Push(St, StringToInteger.From_String(TokStr2));
+               elsif TokStr1 = "load" then
+                  Stack.Load(St, TokStr2);
+               elsif TokStr1 = "store" then
+                  Stack.Store(St, TokStr2);
+               elsif TokStr1 = "remove" then
+                  Stack.Remove(TokStr2);
+               else
+                  Put_Line("Invalid command!");
+               end if;
+            end;
+         else
+            Put_Line("Invalid command!");
+         end if;
       end;
    end loop;
 -------------------------------------------New-----------------------------------------
