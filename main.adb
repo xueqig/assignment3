@@ -8,15 +8,15 @@ with MyStringTokeniser;
 with PIN;
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
-with SimpleStack;
 
 with Ada.Long_Long_Integer_Text_IO;
+
+-----------------------------------------------------------
 with Ada.Integer_Text_IO ;
 with Ada.Text_IO;
 with Ada.Strings;
 
 with OPERATION;
-with ReadCommand;
 with Stack;
 
 procedure Main is
@@ -27,57 +27,48 @@ procedure Main is
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
 
+   -- Loop Variable to Exit if Wrong Input is Provided
+   Finished : Boolean := False;
 
    -- Integer Stack
    calStack : Stack.Stack_Type;
-   -- Loop Variable to Exit if Wrong Input is Provided
-   Finished : Boolean := False;
    
 begin
+   VariableStore.Init(DB);
+   Stack.Init_Stack(calStack);
+   
+   
    loop
       Put("locked> ");
       Lines.Get_Line(S);
-      -- Put_Line("Splitting the text into at most 5 tokens");
-      -- Ada.Text_IO.New_Line;
       declare
          T : MyStringTokeniser.TokenArray(1..5) := (others => (Start => 1, Length => 0));
          NumTokens : Natural;
       begin
          MyStringTokeniser.Tokenise(Lines.To_String(S),T,NumTokens);
-         if NumTokens > 0 and NumTokens <= 3 then
+         if NumTokens > 0 and  NumTokens <= 3 then
             declare
                TokStr : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
             begin
-               if TokStr = "push" then
-               --TODO: ADD ERROR CHECKING FOR PUSH COMMAND
-                  if NumTokens = 2 then
-                     declare
-                        TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
-                        value : Integer;
-                     begin
-                  -- Converting the value passed in PUSH command to Integer
-                        value := Integer'Value (TokStr2);
-                        Stack.Push(calStack,value);
-                     end;
-                  else
-                     Put_Line ("Invalid ! Correct Usage : 'push 5'");
-                     Finished := True;
-                     exit when Finished;
-                  end if;
-               elsif TokStr = "pop" and NumTokens = 1 then
+               if NumTokens = 1 then
+                  if TokStr = "pop"  then
                   declare
                      I : Integer;
                   begin
-                  if Stack.Get_Size(calStack) >0 then
-                     Stack.Pop(calStack,I);
-                     Put(I); Put_Line ("");
-                  else
-                     Put_Line ("Stack is Empty ! Nothing to Pop");
-                     Finished := True;
-                     exit when Finished;
-                  end if;
+                     if Stack.Get_Size(calStack) >0 then
+                        Stack.Pop(calStack,I);
+                        Put(I); Put_Line ("");
+                     else
+                        Put_Line ("Stack is Empty ! Nothing to Pop");
+                        Finished := True;
+                        exit when Finished;
+                     end if;
                   end;
-               elsif TokStr = "+" and NumTokens = 1 then
+                  elsif TokStr = "list" then
+                  begin
+                     Stack.List (DB);
+                  end;  
+                  elsif TokStr = "+" then
                   begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Addition(calStack);
@@ -87,7 +78,7 @@ begin
                         exit when Finished;
                      end if;
                   end;
-               elsif TokStr = "-" and NumTokens = 1 then
+                  elsif TokStr = "-" then
                   begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Subtraction(calStack);
@@ -97,49 +88,66 @@ begin
                         exit when Finished;
                      end if;
                   end;
-               elsif TokStr = "*" and NumTokens = 1 then
-                  begin
-                     if Stack.Get_Size(calStack) >=2 then
-                        OPERATION.Multiplication(calStack);
-                     else
-                        Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
+                  elsif TokStr = "*" then
+                     begin
+                        if Stack.Get_Size(calStack) >=2 then
+                           OPERATION.Multiplication(calStack);
+                        else
+                           Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
+                           Finished := True;
+                           exit when Finished;
+                        end if;
+                     end;
+                  elsif TokStr = "/" then
+                     begin
+                        if Stack.Get_Size(calStack) >=2 then
+                           OPERATION.Division(calStack);
+                        else
+                           Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
+                           Finished := True;
+                           exit when Finished;
+                        end if;
+                     end;
+                  else
+                     Put_Line("Invalid Command !");
+                     Finished := True;
+                     exit when Finished;
+                  end if;
+               elsif NumTokens = 2 then
+               declare
+                  TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
+                  value : Integer;
+               begin
+                  if TokStr = "push" then
+                  -- Converting the value passed in PUSH command to Integer
+                     value := Integer'Value (TokStr2);
+                     Stack.Push(calStack,value);
+                  elsif TokStr = "load" then
+                        Stack.Load(calStack, TokStr2, DB);
+                  elsif TokStr = "store" then
+                        Stack.Store(calStack, TokStr2, DB);
+                  elsif TokStr = "remove" then
+                        Stack.Remove(TokStr2, DB);
+                  else
+                        Put_Line("Invalid command!");
                         Finished := True;
                         exit when Finished;
-                     end if;
-                  end;
-               elsif TokStr = "/" and NumTokens = 1 then
-                  begin
-                     if Stack.Get_Size(calStack) >=2 then
-                        OPERATION.Division(calStack);
-                     else
-                        Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
-                        Finished := True;
-                        exit when Finished;
-                     end if;
-                  end;
+                  end if;
+               end;
                else
-                  Put_Line ("Command Not Recognized !");
+                  Put_Line ("Invalid Command");
                   Finished := True;
                   exit when Finished;
                end if;
             end;
-         else
+         else 
             Put_Line ("Invalid Command ! Try 'push 5' " );
             Finished := True;
             exit when Finished;
          end if;
       end;
    end loop;
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
    
    
    -- Put(MyCommandLine.Command_Name); Put_Line(" is running!");
