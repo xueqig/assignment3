@@ -16,14 +16,19 @@ with Ada.Integer_Text_IO ;
 with Ada.Text_IO;
 with Ada.Strings;
 
+with passwordmanager;
 with OPERATION;
 with Stack;
 
 procedure Main is
    DB : VariableStore.Database;
    V1 : VariableStore.Variable := VariableStore.From_String("Var1");
+   
+   -- Master PIN
    PIN1  : PIN.PIN := PIN.From_String("1234");
-   PIN2  : PIN.PIN := PIN.From_String("1234");
+   -- User Provide PIN via command argument
+   PIN2  : PIN.PIN;
+   
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
 
@@ -32,14 +37,39 @@ procedure Main is
 
    -- Integer Stack
    calStack : Stack.Stack_Type;
+   --Lock Booleans
+   isLocked : Boolean := True;
    
 begin
    VariableStore.Init(DB);
    Stack.Init_Stack(calStack);
    
-   
+   -- Checking if a master password is provided
+   if MyCommandLine.Argument_Count = 1 and MyCommandLine.Argument (1)'Length = 4 then
+   declare
+      P: String(1..4) := MyCommandLine.Argument(1);
+   begin
+      -- check if the argument string is PIN
+      if passwordmanager.IsPin(P) then
+         PIN2 := PIN.From_String(P);
+         -- check if the PINs are equal
+         if PIN."=" (PIN1, PIN2) then
+            -- VariableStore.Init(DB);
+            isLocked := False;
+         end if;
+      end if;
+   end;
+   else
+   Put_Line ("No Master Password Provided !");
+   end if;
+
+   --Calculator Starts
    loop
-      Put("locked> ");
+      if isLocked = True then
+         Put("locked> ");
+      else
+         Put("unlocked> ");
+      end if;
       Lines.Get_Line(S);
       declare
          T : MyStringTokeniser.TokenArray(1..5) := (others => (Start => 1, Length => 0));
@@ -128,6 +158,16 @@ begin
                         Stack.Store(calStack, TokStr2, DB);
                   elsif TokStr = "remove" then
                         Stack.Remove(TokStr2, DB);
+                  elsif TokStr = "lock" then
+                     if isLocked = False and passwordmanager.IsPin(TokStr2) then
+                        PIN1 := PIN.From_String(TokStr2);
+                        PasswordManager.lock(isLocked);
+                     end if;
+                  elsif TokStr = "unlock" then
+                     if isLocked = True and passwordmanager.IsPin(TokStr2) then
+                        PIN2 := PIN.From_String(TokStr2);
+                        PasswordManager.Unlock(PIN1,PIN2,isLocked);
+                     end if;
                   else
                         Put_Line("Invalid command!");
                         Finished := True;
