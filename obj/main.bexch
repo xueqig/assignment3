@@ -1,0 +1,27 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\default.gpr
+20210519144830 1f422539f22a68f61a10f3ba5849a40c
+[BOUND OBJECT FILES]
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\mycommandline.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\mystring.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\mystringtokeniser.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\pin.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\simplestack.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\operation.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\stringtointeger.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\variablestore.o
+C:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\
+-LC:\Users\Manu\Desktop\HighIntegritySystems\Assignment 3\assignment3\obj\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
