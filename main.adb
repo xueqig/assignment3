@@ -58,6 +58,7 @@ begin
       end;
    else
       Put_Line ("No Master Password Provided !");
+      return;
    end if;
 
    --Calculator Starts
@@ -142,7 +143,12 @@ begin
                            Stack.Store(calStack, TokStr2, DB);
                         end if;
                      elsif TokStr = "remove" then
-                        Stack.Remove(TokStr2, DB);
+                        if TokStr2'Length < VariableStore.Max_Variable_Length and then VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
+                           Stack.Remove(TokStr2, DB);
+                        else
+                           Put_Line("Variable does not exit!");
+                           exit;
+                        end if;
                      elsif TokStr = "lock" then
                         if isLocked = False and passwordmanager.IsPin(TokStr2) then
                            PIN1 := PIN.From_String(TokStr2);
