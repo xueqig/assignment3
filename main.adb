@@ -139,12 +139,12 @@ begin
                         end if;
                      elsif TokStr = "load" then
                         if Stack.Get_Size(calStack) < Stack.Max_Size then
-                     Stack.Load(calStack, TokStr2, DB);
-                  end if;
+                           Stack.Load(calStack, TokStr2, DB);
+                        end if;
                      elsif TokStr = "store" then
                         if Stack.Get_Size(calStack) > 0 then
-                     Stack.Store(calStack, TokStr2, DB);
-                  end if;
+                           Stack.Store(calStack, TokStr2, DB);
+                        end if;
                      elsif TokStr = "remove" then
                         Stack.Remove(TokStr2, DB);
                      elsif TokStr = "lock" then
