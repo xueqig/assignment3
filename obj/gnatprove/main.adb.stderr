@@ -1,3 +1,0 @@
-main.adb:32:17: medium: precondition might fail, cannot prove Length(D) < Max_Entries or Has_Variable(D,V) (e.g. when V1 = (Length => 0, Str => (1 => '1', 2 => '2', 3 => '3', others => '4'))) [possible explanation: call at line 30 should mention D (for argument DB) in a postcondition][#0]
-main.adb:35:21: medium: precondition might fail, cannot prove Has_Variable(D,V) (e.g. when V1 = (Length => 0, Str => (others => '4'))) [possible explanation: call at line 32 should mention D (for argument DB) in a postcondition][#1]
-main.adb:42:17: medium: precondition might fail, cannot prove Has_Variable(D,V) (e.g. when V1 = (Length => 0, Str => (others => '1'))) [possible explanation: call at line 32 should mention D (for argument DB) in a postcondition][#2]
