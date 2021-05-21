@@ -1,0 +1,757 @@
+{
+  "spark": [
+    {
+      "name": "StringToInteger",
+      "sloc": [
+        {
+          "file": "stringtointeger.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "StringToInteger.From_String",
+      "sloc": [
+        {
+          "file": "stringtointeger.ads",
+          "line": 6
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "stringtointeger.adb",
+      "line": 5,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 7,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "stringtointeger.adb",
+      "line": 18,
+      "col": 25,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 4.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 18,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.99999991059303E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 13,
+      "col": 12,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 13,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 32,
+      "col": 27,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 32,
+      "check_col": 27,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 34,
+      "col": 34,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 34,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 39,
+      "col": 36,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 39,
+      "check_col": 36,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 36,
+      "col": 33,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 36,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 45,
+      "col": 36,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 45,
+      "check_col": 36,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 42,
+      "col": 32,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 42,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 33,
+      "col": 15,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 33,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 33,
+      "col": 33,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 33,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 52,
+      "col": 24,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 25,
+              "time": 7.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 52,
+      "check_col": 24,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 7.00000002980232E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 23,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 4.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 23,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 3.99999991059303E-02
+        }
+      }
+    },
+    {
+      "file": "stringtointeger.adb",
+      "line": 23,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "StringToInteger.From_String",
+        "sloc": [
+          {
+            "file": "stringtointeger.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 7.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 4.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 7.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stringtointeger.adb",
+      "check_line": 23,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 7.00000002980232E-02
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "StringToInteger.From_String",
+          "sloc": [
+            {
+              "file": "stringtointeger.ads",
+              "line": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringToInteger.From_String",
+          "sloc": [
+            {
+              "file": "stringtointeger.ads",
+              "line": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "StringToInteger",
+          "sloc": [
+            {
+              "file": "stringtointeger.ads",
+              "line": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 5.10999991092831E-04,
+    "globals (basic)": 9.50000016018748E-04,
+    "globals/properties (advanced)": 1.12699996680021E-03,
+    "flow analysis": 1.03559996932745E-02,
+    "codepeer results": 1.59999999596039E-05,
+    "init_why_sections": 1.22099998407066E-03,
+    "translation of standard": 8.46100039780140E-03,
+    "translation of compilation unit": 5.87299978360534E-03,
+    "proof": 5.70356893539429E+00
+  }
+}

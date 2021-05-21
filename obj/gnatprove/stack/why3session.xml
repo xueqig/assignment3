@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<file>
+<path name=".."/>
+<path name="stack.mlw"/>
+<theory name="Stack__package_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__stack_type__default_checks">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__get_size__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__get_element__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__init_stack__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__push__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__pop__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__load__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__store__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="postcondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__list__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Stack__remove__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

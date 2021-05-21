@@ -15,7 +15,7 @@ package OPERATION with SPARK_Mode is
         Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));
     
     procedure Division(S: in out Stack.Stack_Type) with
-        Pre => (Stack.Get_Size(S) >= 2),
+        Pre => (Stack.Get_Size(S) >= 2) and Stack.Get_Element(S, Stack.Get_Size(S) - 1) /= 0,
         Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));
 
 end OPERATION;

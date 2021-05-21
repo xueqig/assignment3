@@ -35,7 +35,7 @@ package Stack with SPARK_Mode is
 
    procedure Remove(Variable: in String; Database : in out VariableStore.Database);
 
-   function Get_Size(Stack : in Stack_Type) return Integer;
+   function Get_Size(Stack : in Stack_Type) return Natural;
 
    function Get_Element(Stack : in Stack_Type; Index : in Integer) return Integer;
 

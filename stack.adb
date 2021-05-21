@@ -48,7 +48,7 @@ package body Stack is
       VariableStore.Remove(Database, Var);
    end Remove;
 
-   function Get_Size(Stack : Stack_Type) return Integer is
+   function Get_Size(Stack : Stack_Type) return Natural is
    begin
       return Stack.Size;
    end Get_Size;

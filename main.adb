@@ -103,15 +103,20 @@ begin
                         exit;
                      end if;
                   elsif TokStr = "*" then
-                     if Stack.Get_Size(calStack) >=2 then
+                     if Stack.Get_Size(calStack) >= 2 then
                         OPERATION.Multiplication(calStack);
                      else
                         Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
                         exit;
                      end if;
                   elsif TokStr = "/" then
-                     if Stack.Get_Size(calStack) >=2 then
-                        OPERATION.Division(calStack);
+                     if Stack.Get_Size(calStack) >= 2 then
+                        if Stack.Get_Element(calStack, Stack.Get_Size(calStack) - 1) /= 0 then
+                           OPERATION.Division(calStack);
+                        else
+                           Put_Line("Invalid operation: division by zero !");
+                           exit;
+                        end if;
                      else
                         Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
                         exit;
