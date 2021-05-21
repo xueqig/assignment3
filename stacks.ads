@@ -5,23 +5,31 @@ package Stacks with SPARK_Mode is
    Max_Size : constant Natural := 1000;
 
    procedure Init_Stack(Stack: out Stack_Type) with
-     Post => Get_Size(Stack) = 0;
+     Post => Get_Size(Stack) = 0 and
+     (for all I in 1..Max_Size => Get_Element(Stack, I) = 0);
 
    procedure Push(Stack: in out Stack_Type; Value : in Integer) with
      Pre => Get_Size(Stack) < Max_Size,
-     Post => Get_Size(Stack) = Get_Size(Stack'Old) + 1;
+     Post => Get_Size(Stack) = Get_Size(Stack'Old) + 1 and
+     Value = Get_Element(Stack, Get_Size(Stack)) and
+     (for all I in 1..Get_Size(Stack'Old) => Get_Element(Stack, I) = Get_Element(Stack'Old, I));
 
    procedure Pop(Stack : in out Stack_Type; Value : out Integer) with
      Pre => Get_Size(Stack) > 0,
-     Post => Get_Size(Stack) = Get_Size(Stack'Old) - 1;
+     Post => Get_Size(Stack) = Get_Size(Stack'Old) - 1 and
+     Value = Get_Element(Stack, Get_Size(Stack'Old)) and
+     (for all I in 1..Max_Size => Get_Element(Stack, I) = Get_Element(Stack'Old, I));
 
    procedure Load(Stack : in out Stack_Type; Variable : in String; Database : in VariableStore.Database) with
      Pre => Get_Size(Stack) < Max_Size,
-     Post => Get_Size(Stack) = Get_Size(Stack'Old) + 1;
+     Post => Get_Size(Stack) = Get_Size(Stack'Old) + 1 and
+     VariableStore.Get(Database, VariableStore.From_String(Variable)) = Get_Element(Stack, Get_Size(Stack)) and
+     (for all I in 1..Get_Size(Stack'Old) => Get_Element(Stack, I) = Get_Element(Stack'Old, I));
 
    procedure Store(Stack : in out Stack_Type; Variable : in String; Database : in out VariableStore.Database) with
      Pre => Get_Size(Stack) > 0,
-     Post => Get_Size(Stack) = Get_Size(Stack'Old) - 1;
+     Post => Get_Size(Stack) = Get_Size(Stack'Old) - 1 and
+     (for all I in 1..Max_Size => Get_Element(Stack, I) = Get_Element(Stack'Old, I));
 
    procedure List(Database : VariableStore.Database);
 

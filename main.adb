@@ -29,8 +29,6 @@ begin
    Stacks.Init_Stack(St);
 
    while True loop
-      pragma Loop_Invariant (Stacks.Get_Size(St) < Stacks.Max_Size);
-
       Lines.Get_Line(S);
       declare
          T : MyStringTokeniser.TokenArray(1..5) := (others => (Start => 1, Length => 0));
@@ -42,8 +40,10 @@ begin
                TokStr1 : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
             begin
                if TokStr1 = "pop" then
-                  Stacks.Pop(St, V);
-                  Put_Line(Integer'Image(V));
+                  if Stacks.Get_Size(St) > 0 then
+                     Stacks.Pop(St, V);
+                     Put_Line(Integer'Image(V));
+                  end if;
                elsif TokStr1 = "list" then
                   Stacks.List(DB);
                else
@@ -56,11 +56,17 @@ begin
                TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
             begin
                if TokStr1 = "push" then
-                  Stacks.Push(St, StringToInteger.From_String(TokStr2));
+                  if Stacks.Get_Size(St) < Stacks.Max_Size then
+                     Stacks.Push(St, StringToInteger.From_String(TokStr2));
+                  end if;
                elsif TokStr1 = "load" then
-                  Stacks.Load(St, TokStr2, DB);
+                  if Stacks.Get_Size(St) < Stacks.Max_Size then
+                     Stacks.Load(St, TokStr2, DB);
+                  end if;
                elsif TokStr1 = "store" then
-                  Stacks.Store(St, TokStr2, DB);
+                  if Stacks.Get_Size(St) > 0 then
+                     Stacks.Store(St, TokStr2, DB);
+                  end if;
                elsif TokStr1 = "remove" then
                   Stacks.Remove(TokStr2, DB);
                else
