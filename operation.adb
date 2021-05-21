@@ -1,7 +1,7 @@
 package body OPERATION with SPARK_Mode is
-    I : Integer;
-    J : Integer;
-    Result : Integer;
+    I : Integer := 0;
+    J : Integer := 0;
+    Result : Integer := 0;
     
     procedure Addition(S: in out Stack.Stack_Type) is
     begin

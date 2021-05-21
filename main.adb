@@ -29,10 +29,7 @@ procedure Main is
    
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
-
-   -- Loop Variable to Exit if Wrong Input is Provided
-   Finished : Boolean := False;
-
+   
    -- Integer Stack
    calStack : Stack.Stack_Type;
    --Lock Booleans
@@ -87,8 +84,7 @@ begin
                         Put(I); Put_Line ("");
                      else
                         Put_Line ("Stack is Empty ! Nothing to Pop");
-                        Finished := True;
-                        exit when Finished;
+                        exit;
                      end if;
                   elsif TokStr = "list" then
                      Stack.List (DB);
@@ -97,37 +93,32 @@ begin
                         OPERATION.Addition(calStack);
                      else
                         Put_Line("Not Enough Operands on Stack ! '+' requires 2 numbers");
-                        Finished := True;
-                        exit when Finished;
+                        exit;
                      end if;
                   elsif TokStr = "-" then
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Subtraction(calStack);
                      else
                         Put_Line("Not Enough Operands on Stack ! '-' requires 2 numbers");
-                        Finished := True;
-                        exit when Finished;
+                        exit;
                      end if;
                   elsif TokStr = "*" then
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Multiplication(calStack);
                      else
                         Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
-                        Finished := True;
-                        exit when Finished;
+                        exit;
                      end if;
                   elsif TokStr = "/" then
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Division(calStack);
                      else
                         Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
-                        Finished := True;
-                        exit when Finished;
+                        exit;
                      end if;
                   else
                      Put_Line("Invalid Command !");
-                     Finished := True;
-                     exit when Finished;
+                     exit;
                   end if;
                elsif NumTokens = 2 then
                   declare
@@ -159,20 +150,17 @@ begin
                         end if;
                      else
                         Put_Line("Invalid command!");
-                        Finished := True;
-                        exit when Finished;
+                        exit;
                      end if;
                   end;
                else
                   Put_Line ("Invalid Command");
-                  Finished := True;
-                  exit when Finished;
+                  exit;
                end if;
             end;
          else 
             Put_Line ("Invalid Command ! Try 'push 5' " );
-            Finished := True;
-            exit when Finished;
+            exit;
          end if;
       end;
    end loop;
