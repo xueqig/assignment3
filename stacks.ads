@@ -5,7 +5,7 @@ package Stacks with SPARK_Mode is
    Max_Size : constant Natural := 1000;
 
    procedure Init_Stack(Stack: out Stack_Type) with
-     Post => Stack.Size = 0;
+     Post => Get_Size(Stack) = 0;
 
    procedure Push(Stack: in out Stack_Type; Value : in Integer) with
      Pre => Get_Size(Stack) < Max_Size,
