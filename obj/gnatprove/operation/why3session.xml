@@ -24,7 +24,7 @@
   </goal>
   <goal name="VC def.5" expl="precondition">
   <proof prover="0"><result status="unknown" steps="231"/></proof>
-  <proof prover="1"><result status="unknown" steps="240"/></proof>
+  <proof prover="1"><result status="unknown" steps="233"/></proof>
   </goal>
   <goal name="VC def.6" expl="precondition">
   <proof prover="0"><result status="unknown" steps="194"/></proof>
@@ -63,7 +63,7 @@
   </goal>
   <goal name="VC def.5" expl="precondition">
   <proof prover="0"><result status="unknown" steps="241"/></proof>
-  <proof prover="1"><result status="unknown" steps="252"/></proof>
+  <proof prover="1"><result status="unknown" steps="243"/></proof>
   </goal>
   <goal name="VC def.6" expl="precondition">
   <proof prover="0"><result status="unknown" steps="194"/></proof>
@@ -145,11 +145,11 @@
   </goal>
   <goal name="VC def.7" expl="precondition">
   <proof prover="0"><result status="unknown" steps="615"/></proof>
-  <proof prover="1"><result status="unknown" steps="619"/></proof>
+  <proof prover="1"><result status="unknown" steps="582"/></proof>
   </goal>
   <goal name="VC def.8" expl="precondition">
   <proof prover="0"><result status="unknown" steps="758"/></proof>
-  <proof prover="1"><result status="unknown" steps="748"/></proof>
+  <proof prover="1"><result status="unknown" steps="792"/></proof>
   </goal>
   <goal name="VC def.9" expl="precondition">
   <proof prover="0"><result status="unknown" steps="800"/></proof>

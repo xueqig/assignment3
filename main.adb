@@ -51,7 +51,6 @@ begin
             PIN2 := PIN.From_String(P);
             -- check if the PINs are equal
             if PIN."=" (PIN1, PIN2) then
-               -- VariableStore.Init(DB);
                isLocked := False;
             end if;
          end if;

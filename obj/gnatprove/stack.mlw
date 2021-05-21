@@ -209,15 +209,15 @@ module Standard__long_integer
  use        "int".Int
 
  type long_integer =
-  < range -9223372036854775808 9223372036854775807 >
+  < range -2147483648 2147483647 >
  
  val constant first 
    : int
-  ensures { result =  (( -9223372036854775808) : int) }
+  ensures { result =  (( -2147483648) : int) }
  
  val constant last 
    : int
-  ensures { result =  (9223372036854775807 : int) }
+  ensures { result =  (2147483647 : int) }
  
  predicate in_range 
    (x : int) =
@@ -2935,9 +2935,9 @@ module Variablestore__variables__mystring__rep
  use        Array__Int__Standard__character as Array__Int__Standard__character
 
  type __split_fields =
-  { rec__variablestore__variables__mystring__length [@model_trace:.67665] [@name:Length] : Variablestore__variables__mystring__T13s.t13s; rec__variablestore__variables__mystring__str [@name:Str] [@model_trace:.67680] : Array__Int__Standard__character.map }
+  { rec__variablestore__variables__mystring__length [@name:Length] [@model_trace:.67889] : Variablestore__variables__mystring__T13s.t13s; rec__variablestore__variables__mystring__str [@model_trace:.67904] [@name:Str] : Array__Int__Standard__character.map }
  
- function __split_fields_rec__variablestore__variables__mystring__length__projection [@model_trace:.67665] [@name:Length] 
+ function __split_fields_rec__variablestore__variables__mystring__length__projection [@name:Length] [@model_trace:.67889] 
    (a : __split_fields) : Variablestore__variables__mystring__T13s.t13s =
   a.rec__variablestore__variables__mystring__length
  
@@ -2945,7 +2945,7 @@ module Variablestore__variables__mystring__rep
  
  meta "inline:no" function __split_fields_rec__variablestore__variables__mystring__length__projection
  
- function __split_fields_rec__variablestore__variables__mystring__str__projection [@name:Str] [@model_trace:.67680] 
+ function __split_fields_rec__variablestore__variables__mystring__str__projection [@model_trace:.67904] [@name:Str] 
    (a : __split_fields) : Array__Int__Standard__character.map =
   a.rec__variablestore__variables__mystring__str
  
@@ -4902,7 +4902,7 @@ module Stack__push___axiom
 
  val push 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int) : unit
-  requires {  ( [@GP_Pretty_Ada:92946] ((epsilon temp___result_188 : int.
+  requires {  ( [@GP_Pretty_Ada:93170] ((epsilon temp___result_188 : int.
    ( (temp___result_188 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_188 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:2865] ((epsilon temp___result_189 : int.
    ( (temp___result_189 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_189 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_190 : int.
@@ -4931,7 +4931,7 @@ module Stack__pop___axiom
 
  val pop 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:93018] ((epsilon temp___result_198 : int.
+  requires {  ( [@GP_Pretty_Ada:93242] ((epsilon temp___result_198 : int.
    ( (temp___result_198 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_198 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:2951] ((epsilon temp___result_199 : int.
    ( (temp___result_199 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_199 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_200 : int.
@@ -4958,7 +4958,7 @@ module Variablestore__from_string___axiom
 
  val from_string 
    (s : Standard__string.string) : Variablestore__variable.variable
-  requires {  ( [@GP_Pretty_Ada:68436] ((Standard__string.length s) <= (1024 : int)) ) }
+  requires {  ( [@GP_Pretty_Ada:68660] ((Standard__string.length s) <= (1024 : int)) ) }
   ensures {  ( ( (result = (Variablestore__from_string.from_string s)) /\ (Variablestore__from_string.from_string__function_guard result s) )/\(Variablestore__variable___axiom.dynamic_invariant result True False True True) ) }
 
 end
@@ -4991,7 +4991,7 @@ module Variablestore__get__2___axiom
 
  val get__2 
    (d : Variablestore__database.database) (v : Variablestore__variable.variable) : int
-  requires {  ( [@GP_Pretty_Ada:68373] ((epsilon temp___result_251 : bool.
+  requires {  ( [@GP_Pretty_Ada:68597] ((epsilon temp___result_251 : bool.
    ( (temp___result_251 = (Variablestore__has_variable.has_variable d v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_251 d v) )) = True) ) }
   ensures {  ( ( (result = (Variablestore__get__2.get__2 d v)) /\ (Variablestore__get__2.get__2__function_guard result d v) )/\(Standard__integer___axiom.dynamic_invariant result True False True True) ) }
  
@@ -5021,7 +5021,7 @@ module Stack__load___axiom
 
  val load 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (variable : Standard__string.string) (database : Variablestore__database.database) : unit
-  requires {  ( [@GP_Pretty_Ada:93088] ((epsilon temp___result_253 : int.
+  requires {  ( [@GP_Pretty_Ada:93312] ((epsilon temp___result_253 : int.
    ( (temp___result_253 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_253 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:3046] ((epsilon temp___result_254 : int.
    ( (temp___result_254 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_254 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_255 : int.
@@ -5055,7 +5055,7 @@ module Stack__store___axiom
 
  val store 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (variable : Standard__string.string) (database : Variablestore__database.database__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:93169] ((epsilon temp___result_266 : int.
+  requires {  ( [@GP_Pretty_Ada:93393] ((epsilon temp___result_266 : int.
    ( (temp___result_266 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_266 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) }
   ensures {  ( ( ( [@GP_Pretty_Ada:3152] ((epsilon temp___result_267 : int.
    ( (temp___result_267 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_267 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_268 : int.
@@ -5377,7 +5377,7 @@ module Stack__push__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:11 *)
   ;
-  [#"stack.ads" 11 0 0] assume { [#"stack.ads" 11 0 0] ( [@GP_Pretty_Ada:92946] ((epsilon temp___result_293 : int.
+  [#"stack.ads" 11 0 0] assume { [#"stack.ads" 11 0 0] ( [@GP_Pretty_Ada:93170] ((epsilon temp___result_293 : int.
    ( (temp___result_293 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_293 { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
   [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
@@ -5438,7 +5438,7 @@ module Stack__pop__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:17 *)
   ;
-  [#"stack.ads" 17 0 0] assume { [#"stack.ads" 17 0 0] ( [@GP_Pretty_Ada:93018] ((epsilon temp___result_300 : int.
+  [#"stack.ads" 17 0 0] assume { [#"stack.ads" 17 0 0] ( [@GP_Pretty_Ada:93242] ((epsilon temp___result_300 : int.
    ( (temp___result_300 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_300 { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) };
   [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
@@ -5508,7 +5508,7 @@ module Stack__load__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:23 *)
   ;
-  [#"stack.ads" 23 0 0] assume { [#"stack.ads" 23 0 0] ( [@GP_Pretty_Ada:93088] ((epsilon temp___result_309 : int.
+  [#"stack.ads" 23 0 0] assume { [#"stack.ads" 23 0 0] ( [@GP_Pretty_Ada:93312] ((epsilon temp___result_309 : int.
    ( (temp___result_309 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_309 { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
   [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
@@ -5579,7 +5579,7 @@ module Stack__store__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:29 *)
   ;
-  [#"stack.ads" 29 0 0] assume { [#"stack.ads" 29 0 0] ( [@GP_Pretty_Ada:93169] ((epsilon temp___result_316 : int.
+  [#"stack.ads" 29 0 0] assume { [#"stack.ads" 29 0 0] ( [@GP_Pretty_Ada:93393] ((epsilon temp___result_316 : int.
    ( (temp___result_316 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_316 { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) };
   [#"stack.ads" 29 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))

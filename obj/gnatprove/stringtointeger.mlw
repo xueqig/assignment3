@@ -209,15 +209,15 @@ module Standard__long_integer
  use        "int".Int
 
  type long_integer =
-  < range -9223372036854775808 9223372036854775807 >
+  < range -2147483648 2147483647 >
  
  val constant first 
    : int
-  ensures { result =  (( -9223372036854775808) : int) }
+  ensures { result =  (( -2147483648) : int) }
  
  val constant last 
    : int
-  ensures { result =  (9223372036854775807 : int) }
+  ensures { result =  (2147483647 : int) }
  
  predicate in_range 
    (x : int) =
