@@ -9,7 +9,7 @@ with PIN;
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 -------------------------------------------New-----------------------------------------
-with Stack;
+with Stacks;
 -------------------------------------------New-----------------------------------------
 
 with Ada.Long_Long_Integer_Text_IO;
@@ -21,14 +21,16 @@ procedure Main is
    package Lines is new MyString(Max_MyString_Length => 2048);
    S  : Lines.MyString;
 -------------------------------------------New-----------------------------------------
-   St : Stack.Stack_Type;
+   St : Stacks.Stack_Type;
    V : Integer;
--------------------------------------------New-----------------------------------------
+
 begin
    VariableStore.Init(DB);
-   Stack.Init_Stack(St);
+   Stacks.Init_Stack(St);
 
    while True loop
+      pragma Loop_Invariant (Stacks.Get_Size(St) < Stacks.Max_Size);
+
       Lines.Get_Line(S);
       declare
          T : MyStringTokeniser.TokenArray(1..5) := (others => (Start => 1, Length => 0));
@@ -40,10 +42,10 @@ begin
                TokStr1 : String := Lines.To_String(Lines.Substring(S,T(1).Start,T(1).Start+T(1).Length-1));
             begin
                if TokStr1 = "pop" then
-                  Stack.Pop(St, V);
+                  Stacks.Pop(St, V);
                   Put_Line(Integer'Image(V));
                elsif TokStr1 = "list" then
-                  Stack.List(DB);
+                  Stacks.List(DB);
                else
                   Put_Line("Invalid command!");
                end if;
@@ -54,13 +56,13 @@ begin
                TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
             begin
                if TokStr1 = "push" then
-                  Stack.Push(St, StringToInteger.From_String(TokStr2));
+                  Stacks.Push(St, StringToInteger.From_String(TokStr2));
                elsif TokStr1 = "load" then
-                  Stack.Load(St, TokStr2, DB);
+                  Stacks.Load(St, TokStr2, DB);
                elsif TokStr1 = "store" then
-                  Stack.Store(St, TokStr2, DB);
+                  Stacks.Store(St, TokStr2, DB);
                elsif TokStr1 = "remove" then
-                  Stack.Remove(TokStr2, DB);
+                  Stacks.Remove(TokStr2, DB);
                else
                   Put_Line("Invalid command!");
                end if;

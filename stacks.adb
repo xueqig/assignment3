@@ -2,7 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with VariableStore;
 with StringToInteger;
 
-package body Stack is
+package body Stacks is
    procedure Init_Stack(Stack: out Stack_Type) is
    begin
       Stack.Size := 0;
@@ -53,4 +53,10 @@ package body Stack is
       return Stack.Size;
    end Get_Size;
 
-end Stack;
+   function Get_Element(Stack : in Stack_Type; Index : in Integer) return Integer is
+   begin
+      return Stack.Data(Index);
+   end Get_Element;
+
+
+end Stacks;
