@@ -11,7 +11,6 @@ with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
 with Ada.Long_Long_Integer_Text_IO;
 
------------------------------------------------------------
 with Ada.Integer_Text_IO ;
 with Ada.Text_IO;
 with Ada.Strings;
@@ -22,7 +21,6 @@ with Stack;
 
 procedure Main is
    DB : VariableStore.Database;
-   V1 : VariableStore.Variable := VariableStore.From_String("Var1");
    
    -- Master PIN
    PIN1  : PIN.PIN := PIN.From_String("1234");
@@ -40,27 +38,29 @@ procedure Main is
    --Lock Booleans
    isLocked : Boolean := True;
    
+   I : Integer;
+   
 begin
    VariableStore.Init(DB);
    Stack.Init_Stack(calStack);
    
    -- Checking if a master password is provided
    if MyCommandLine.Argument_Count = 1 and MyCommandLine.Argument (1)'Length = 4 then
-   declare
-      P: String(1..4) := MyCommandLine.Argument(1);
-   begin
-      -- check if the argument string is PIN
-      if passwordmanager.IsPin(P) then
-         PIN2 := PIN.From_String(P);
-         -- check if the PINs are equal
-         if PIN."=" (PIN1, PIN2) then
-            -- VariableStore.Init(DB);
-            isLocked := False;
+      declare
+         P: String(1..4) := MyCommandLine.Argument(1);
+      begin
+         -- check if the argument string is PIN
+         if passwordmanager.IsPin(P) then
+            PIN2 := PIN.From_String(P);
+            -- check if the PINs are equal
+            if PIN."=" (PIN1, PIN2) then
+               -- VariableStore.Init(DB);
+               isLocked := False;
+            end if;
          end if;
-      end if;
-   end;
+      end;
    else
-   Put_Line ("No Master Password Provided !");
+      Put_Line ("No Master Password Provided !");
    end if;
 
    --Calculator Starts
@@ -82,10 +82,7 @@ begin
             begin
                if NumTokens = 1 then
                   if TokStr = "pop"  then
-                  declare
-                     I : Integer;
-                  begin
-                     if Stack.Get_Size(calStack) >0 then
+                     if Stack.Get_Size(calStack) > 0 then
                         Stack.Pop(calStack,I);
                         Put(I); Put_Line ("");
                      else
@@ -93,13 +90,9 @@ begin
                         Finished := True;
                         exit when Finished;
                      end if;
-                  end;
                   elsif TokStr = "list" then
-                  begin
                      Stack.List (DB);
-                  end;  
                   elsif TokStr = "+" then
-                  begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Addition(calStack);
                      else
@@ -107,9 +100,7 @@ begin
                         Finished := True;
                         exit when Finished;
                      end if;
-                  end;
                   elsif TokStr = "-" then
-                  begin
                      if Stack.Get_Size(calStack) >=2 then
                         OPERATION.Subtraction(calStack);
                      else
@@ -117,63 +108,61 @@ begin
                         Finished := True;
                         exit when Finished;
                      end if;
-                  end;
                   elsif TokStr = "*" then
-                     begin
-                        if Stack.Get_Size(calStack) >=2 then
-                           OPERATION.Multiplication(calStack);
-                        else
-                           Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
-                           Finished := True;
-                           exit when Finished;
-                        end if;
-                     end;
+                     if Stack.Get_Size(calStack) >=2 then
+                        OPERATION.Multiplication(calStack);
+                     else
+                        Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
+                        Finished := True;
+                        exit when Finished;
+                     end if;
                   elsif TokStr = "/" then
-                     begin
-                        if Stack.Get_Size(calStack) >=2 then
-                           OPERATION.Division(calStack);
-                        else
-                           Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
-                           Finished := True;
-                           exit when Finished;
-                        end if;
-                     end;
+                     if Stack.Get_Size(calStack) >=2 then
+                        OPERATION.Division(calStack);
+                     else
+                        Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
+                        Finished := True;
+                        exit when Finished;
+                     end if;
                   else
                      Put_Line("Invalid Command !");
                      Finished := True;
                      exit when Finished;
                   end if;
                elsif NumTokens = 2 then
-               declare
-                  TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
-                  value : Integer;
-               begin
-                  if TokStr = "push" then
-                  -- Converting the value passed in PUSH command to Integer
-                     value := Integer'Value (TokStr2);
-                     Stack.Push(calStack,value);
-                  elsif TokStr = "load" then
-                        Stack.Load(calStack, TokStr2, DB);
-                  elsif TokStr = "store" then
-                        Stack.Store(calStack, TokStr2, DB);
-                  elsif TokStr = "remove" then
+                  declare
+                     TokStr2 : String := Lines.To_String(Lines.Substring(S,T(2).Start,T(2).Start+T(2).Length-1));
+                  begin
+                     if TokStr = "push" then
+                        if Stack.Get_Size(calStack) < Stack.Max_Size then
+                           Stack.Push(calStack, StringToInteger.From_String(TokStr2));
+                        end if;
+                     elsif TokStr = "load" then
+                        if Stack.Get_Size(calStack) < Stack.Max_Size then
+                     Stack.Load(calStack, TokStr2, DB);
+                  end if;
+                     elsif TokStr = "store" then
+                        if Stack.Get_Size(calStack) > 0 then
+                     Stack.Store(calStack, TokStr2, DB);
+                  end if;
+                     elsif TokStr = "remove" then
                         Stack.Remove(TokStr2, DB);
-                  elsif TokStr = "lock" then
-                     if isLocked = False and passwordmanager.IsPin(TokStr2) then
-                        PIN1 := PIN.From_String(TokStr2);
-                        PasswordManager.lock(isLocked);
-                     end if;
-                  elsif TokStr = "unlock" then
-                     if isLocked = True and passwordmanager.IsPin(TokStr2) then
-                        PIN2 := PIN.From_String(TokStr2);
-                        PasswordManager.Unlock(PIN1,PIN2,isLocked);
-                     end if;
-                  else
+                     elsif TokStr = "lock" then
+                        if isLocked = False and passwordmanager.IsPin(TokStr2) then
+                           PIN1 := PIN.From_String(TokStr2);
+                           PasswordManager.lock(isLocked);
+                        end if;
+                     elsif TokStr = "unlock" then
+                        if isLocked = True and passwordmanager.IsPin(TokStr2) then
+                           PIN2 := PIN.From_String(TokStr2);
+                           PasswordManager.Unlock(PIN1,PIN2,isLocked);
+                        end if;
+                     else
                         Put_Line("Invalid command!");
                         Finished := True;
                         exit when Finished;
-                  end if;
-               end;
+                     end if;
+                  end;
                else
                   Put_Line ("Invalid Command");
                   Finished := True;

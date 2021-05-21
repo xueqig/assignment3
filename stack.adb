@@ -53,4 +53,10 @@ package body Stack is
       return Stack.Size;
    end Get_Size;
 
+   function Get_Element(Stack : in Stack_Type; Index : in Integer) return Integer is
+   begin
+      return Stack.Data(Index);
+   end Get_Element;
+
+
 end Stack;
