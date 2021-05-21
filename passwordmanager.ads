@@ -24,12 +24,13 @@ package passwordmanager with SPARK_Mode is
      Post => isLocked = True;
    
    function IsPin (input : in String) return Boolean with
-     pre => (input'Length = 4 and input'First <= input'Last),
+     pre => (input'First <= input'Last),
      post =>  (if IsPin'Result = True then
-                (for all I in Input'First..Input'Last =>
-                     (Input'First <= Input'Last
-                      and input(I) >='0'
-                      and Input(I) <= '9')));
+                 (for all I in Input'First..Input'Last =>
+                      (Input'First <= Input'Last
+                       and input(I) >='0'
+                       and Input(I) <= '9'))) and 
+       (if IsPin'Result = True then input'Length = 4);
 
    
 end passwordmanager;

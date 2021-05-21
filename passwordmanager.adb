@@ -33,6 +33,10 @@ package body passwordmanager with SPARK_Mode is
    function IsPin (input : in String)  return Boolean is
       ch : Character;
    begin
+      if input'Length /= 4 then 
+         return False;
+      end if;
+      
       for k in Input'Range loop
          ch := input(k);
          if ch not in '0'..'9' then
