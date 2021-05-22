@@ -2,6 +2,8 @@
 <!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
 "http://why3.lri.fr/why3session.dtd">
 <why3session shape_version="6">
+<prover id="0" name="CVC4" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="1" name="CVC4_CE" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
 <file>
 <path name=".."/>
 <path name="stack.mlw"/>
@@ -60,6 +62,8 @@
   </goal>
   <goal name="VC def.4" expl="postcondition">
   </goal>
+  <goal name="VC def.0" expl="precondition">
+  </goal>
  </transf>
  </goal>
 </theory>
@@ -75,6 +79,8 @@
   <goal name="VC def.3" expl="postcondition">
   </goal>
   <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.0" expl="precondition">
   </goal>
  </transf>
  </goal>
@@ -120,6 +126,17 @@
 <theory name="Stack__remove__subprogram_def">
  <goal name="VC def" expl="VC for def">
  <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="67"/></proof>
+  <proof prover="1"><result status="unknown" steps="94"/></proof>
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="precondition">
+  <proof prover="0"><result status="valid" steps="24"/></proof>
+  </goal>
   <goal name="VC def.0" expl="postcondition">
   </goal>
  </transf>

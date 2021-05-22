@@ -25,7 +25,7 @@
       "sloc": [
         {
           "file": "stack.ads",
-          "line": 38
+          "line": 40
         }
       ],
       "spark": "spec"
@@ -35,7 +35,7 @@
       "sloc": [
         {
           "file": "stack.ads",
-          "line": 40
+          "line": 42
         }
       ],
       "spark": "spec"
@@ -114,6 +114,83 @@
   "flow": [
   ],
   "proof": [
+    {
+      "file": "stack.ads",
+      "line": 37,
+      "col": 63,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Stack.Remove",
+        "sloc": [
+          {
+            "file": "stack.ads",
+            "line": 36
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown ()",
+              "steps": 67,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 94,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "stack.ads",
+      "check_line": 37,
+      "check_col": 63,
+      "cntexmp": {
+        "stack.ads": {
+          "36": [
+            {
+              "name": "Variable",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Variable'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Variable'Last",
+              "value": "1025",
+              "kind": "variable"
+            }
+          ],
+          "37": [
+            {
+              "name": "Variable",
+              "value": "(others => 'NUL')",
+              "kind": "variable"
+            },
+            {
+              "name": "Variable'First",
+              "value": "1",
+              "kind": "variable"
+            },
+            {
+              "name": "Variable'Last",
+              "value": "1025",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 0,
+      "how_proved": "prover"
+    }
   ],
   "assumptions": [
     {
@@ -126,7 +203,7 @@
           "sloc": [
             {
               "file": "stack.ads",
-              "line": 38
+              "line": 40
             }
           ]
         }
@@ -190,7 +267,7 @@
           "sloc": [
             {
               "file": "stack.ads",
-              "line": 40
+              "line": 42
             }
           ]
         }
@@ -255,22 +332,6 @@
             {
               "file": "stack.ads",
               "line": 7
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Stack.Remove",
-          "sloc": [
-            {
-              "file": "stack.ads",
-              "line": 36
             }
           ]
         }
@@ -310,14 +371,14 @@
     }
   ],
   "timings": {
-    "marking": 3.05800000205636E-03,
-    "globals (basic)": 1.05450004339218E-02,
-    "globals/properties (advanced)": 2.10720002651215E-02,
-    "flow analysis": 2.24100006744266E-03,
+    "marking": 3.01899993792176E-03,
+    "globals (basic)": 8.47900006920099E-03,
+    "globals/properties (advanced)": 2.20219995826483E-02,
+    "flow analysis": 1.88400002662092E-03,
     "codepeer results": 7.99999997980194E-06,
-    "init_why_sections": 1.08199997339398E-03,
-    "translation of standard": 5.25799999013543E-03,
-    "translation of compilation unit": 4.92510013282299E-02,
-    "proof": 9.16050016880035E-01
+    "init_why_sections": 7.83999974373728E-04,
+    "translation of standard": 4.69599990174174E-03,
+    "translation of compilation unit": 6.42559975385666E-02,
+    "proof": 1.44089996814728E+00
   }
 }

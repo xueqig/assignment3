@@ -1,0 +1,1 @@
+stack.ads:37:63: medium: precondition might fail, cannot prove S'Length <= Max_Variable_Length (e.g. when Variable = (others => 'NUL') and Variable'First = 1 and Variable'Last = 1025)[#0]

@@ -1788,7 +1788,7 @@ module Standard__universal_integer__rep
 
 end
 
-(* Module for axiomatizing type "Tstack_dataD1" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "Tstack_dataD1" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__Tstack_dataD1
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1835,7 +1835,7 @@ module Stack__Tstack_dataD1
 
 end
 
-(* Module defining to_rep/of_rep for type "Tstack_dataD1" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module defining to_rep/of_rep for type "Tstack_dataD1" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__Tstack_dataD1__rep
  use        Stack__Tstack_dataD1 as Stack__Tstack_dataD1
  use        "_gnatprove_standard".Main
@@ -1856,7 +1856,7 @@ module Stack__Tstack_dataD1__rep
 
 end
 
-(* Module for axiomatizing the array theory associated to type "Tstack_dataB" defined at stack.ads:43, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+(* Module for axiomatizing the array theory associated to type "Tstack_dataB" defined at stack.ads:45, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
 module Array__Int__Standard__integer
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1903,7 +1903,7 @@ module Array__Int__Standard__integer
 
 end
 
-(* Module for axiomatizing concatenation for the array theory associated to type "Tstack_dataB" defined at stack.ads:43, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+(* Module for axiomatizing concatenation for the array theory associated to type "Tstack_dataB" defined at stack.ads:45, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
 module Array__Int__Standard__integer__Concat
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1928,7 +1928,7 @@ module Array__Int__Standard__integer__Concat
 
 end
 
-(* Module for axiomatizing comparison for the array theory associated to type "Tstack_dataB" defined at stack.ads:43, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+(* Module for axiomatizing comparison for the array theory associated to type "Tstack_dataB" defined at stack.ads:45, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
 module Array__Int__Standard__integer_Comp
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1956,7 +1956,7 @@ module Array__Int__Standard__integer_Comp
 
 end
 
-(* Module for axiomatizing type "Tstack_dataB" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "Tstack_dataB" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__Tstack_dataB
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2017,7 +2017,7 @@ module Stack__Tstack_dataB
 
 end
 
-(* Module for axiomatizing type "stack_data" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "stack_data" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__stack_data
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2045,7 +2045,7 @@ module Stack__stack_data
 
 end
 
-(* Module for axiomatizing the record theory associated to type "stack_type" defined at stack.ads:45, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+(* Module for axiomatizing the record theory associated to type "stack_type" defined at stack.ads:47, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
 module Stack__stack_type__rep
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2058,9 +2058,9 @@ module Stack__stack_type__rep
  use        Array__Int__Standard__integer as Array__Int__Standard__integer
 
  type __split_fields =
-  { rec__stack__stack_type__size [@name:Size] [@model_trace:.3303] : Standard__natural.natural; rec__stack__stack_type__data [@name:Data] [@model_trace:.3314] : Array__Int__Standard__integer.map }
+  { rec__stack__stack_type__size [@name:Size] [@model_trace:.3331] : Standard__natural.natural; rec__stack__stack_type__data [@name:Data] [@model_trace:.3342] : Array__Int__Standard__integer.map }
  
- function __split_fields_rec__stack__stack_type__size__projection [@name:Size] [@model_trace:.3303] 
+ function __split_fields_rec__stack__stack_type__size__projection [@name:Size] [@model_trace:.3331] 
    (a : __split_fields) : Standard__natural.natural =
   a.rec__stack__stack_type__size
  
@@ -2068,7 +2068,7 @@ module Stack__stack_type__rep
  
  meta "inline:no" function __split_fields_rec__stack__stack_type__size__projection
  
- function __split_fields_rec__stack__stack_type__data__projection [@name:Data] [@model_trace:.3314] 
+ function __split_fields_rec__stack__stack_type__data__projection [@name:Data] [@model_trace:.3342] 
    (a : __split_fields) : Array__Int__Standard__integer.map =
   a.rec__stack__stack_type__data
  
@@ -2151,7 +2151,7 @@ module Stack__stack_type__rep
 
 end
 
-(* Module for axiomatizing type "stack_type" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "stack_type" defined at stack.ads:47, created in Gnat2Why.Types.Translate_Type *)
 module Stack__stack_type
  use export Stack__stack_type__rep
  use        "_gnatprove_standard".Main
@@ -2263,13 +2263,13 @@ module Stack__max_size
 
 end
 
-(* Module for defining the constant "stack" defined at stack.ads:38, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "stack" defined at stack.ads:40, created in Gnat2Why.Decls.Translate_Constant *)
 module Stack__get_size__stack
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val constant stack [#"stack.ads" 38 0 0][@model_projected] [@name:Stack] [@model_trace:3239] 
+ val constant stack [#"stack.ads" 40 0 0][@model_trace:3267] [@model_projected] [@name:Stack] 
    : Stack__stack_type.stack_type
 
  
@@ -2279,7 +2279,7 @@ module Stack__get_size__stack
 
 end
 
-(* Module giving an empty axiom for the entity "stack" defined at stack.ads:38, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:40, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Stack__get_size__stack___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2287,7 +2287,7 @@ module Stack__get_size__stack___axiom
 
 end
 
-(* Module for possibly declaring a logic function for "get_size" defined at stack.ads:38, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "get_size" defined at stack.ads:40, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Stack__get_size
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2301,13 +2301,13 @@ module Stack__get_size
 
 end
 
-(* Module for axiomatizing type "T11s" defined at stack.ads:9, created in Gnat2Why.Types.Translate_Type *)
-module Stack__init_stack__L10s__T11s
+(* Module for axiomatizing type "T13s" defined at stack.ads:9, created in Gnat2Why.Types.Translate_Type *)
+module Stack__init_stack__L12s__T13s
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
 
- type t11s =
+ type t13s =
   < range 1 1000 >
  
  val constant first 
@@ -2326,41 +2326,41 @@ module Stack__init_stack__L10s__T11s
   ensures { result <-> in_range (x : int) }
  
  clone export "ada__model".Static_Discrete with axiom .,
- type t = t11s, 
+ type t = t13s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
  
- type t11s__ref =
-  { mutable t11s__content : t11s }
+ type t13s__ref =
+  { mutable t13s__content : t13s }
  
- function t11s__ref_t11s__content__projection 
-   (a : t11s__ref) : t11s =
-  a.t11s__content
+ function t13s__ref_t13s__content__projection 
+   (a : t13s__ref) : t13s =
+  a.t13s__content
  
- meta "model_projection" function t11s__ref_t11s__content__projection
+ meta "model_projection" function t13s__ref_t13s__content__projection
  
- meta "inline:no" function t11s__ref_t11s__content__projection
+ meta "inline:no" function t13s__ref_t13s__content__projection
  
- val t11s__havoc 
-   (x : t11s__ref) : unit
+ val t13s__havoc 
+   (x : t13s__ref) : unit
   writes {x}
 
 end
 
-(* Module defining to_rep/of_rep for type "T11s" defined at stack.ads:9, created in Gnat2Why.Types.Translate_Type *)
-module Stack__init_stack__L10s__T11s__rep
- use        Stack__init_stack__L10s__T11s as Stack__init_stack__L10s__T11s
+(* Module defining to_rep/of_rep for type "T13s" defined at stack.ads:9, created in Gnat2Why.Types.Translate_Type *)
+module Stack__init_stack__L12s__T13s__rep
+ use        Stack__init_stack__L12s__T13s as Stack__init_stack__L12s__T13s
  use        "_gnatprove_standard".Main
  use        "int".Int
 
  function to_rep 
-   (x : Stack__init_stack__L10s__T11s.t11s) : int =
-  (Stack__init_stack__L10s__T11s.t11s'int x)
+   (x : Stack__init_stack__L12s__T13s.t13s) : int =
+  (Stack__init_stack__L12s__T13s.t13s'int x)
  
  clone export "ada__model".Rep_Proj_Int with axiom .,
- type t = Stack__init_stack__L10s__T11s.t11s, 
- predicate in_range = Stack__init_stack__L10s__T11s.in_range, 
+ type t = Stack__init_stack__L12s__T13s.t13s, 
+ predicate in_range = Stack__init_stack__L12s__T13s.in_range, 
  function to_rep = to_rep
  
  meta "model_projection" function to_rep
@@ -2369,13 +2369,13 @@ module Stack__init_stack__L10s__T11s__rep
 
 end
 
-(* Module for defining the constant "stack" defined at stack.ads:40, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "stack" defined at stack.ads:42, created in Gnat2Why.Decls.Translate_Constant *)
 module Stack__get_element__stack
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val constant stack [#"stack.ads" 40 0 0][@model_trace:3258] [@model_projected] [@name:Stack] 
+ val constant stack [#"stack.ads" 42 0 0][@model_projected] [@model_trace:3286] [@name:Stack] 
    : Stack__stack_type.stack_type
 
  
@@ -2385,7 +2385,7 @@ module Stack__get_element__stack
 
 end
 
-(* Module giving an empty axiom for the entity "stack" defined at stack.ads:40, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:42, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Stack__get_element__stack___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2393,12 +2393,12 @@ module Stack__get_element__stack___axiom
 
 end
 
-(* Module for defining the constant "index" defined at stack.ads:40, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "index" defined at stack.ads:42, created in Gnat2Why.Decls.Translate_Constant *)
 module Stack__get_element__index
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant index [#"stack.ads" 40 0 0][@model_trace:3267] [@name:Index] 
+ val constant index [#"stack.ads" 42 0 0][@model_trace:3295] [@name:Index] 
    : int
 
  
@@ -2408,7 +2408,7 @@ module Stack__get_element__index
 
 end
 
-(* Module giving an empty axiom for the entity "index" defined at stack.ads:40, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "index" defined at stack.ads:42, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Stack__get_element__index___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2416,7 +2416,7 @@ module Stack__get_element__index___axiom
 
 end
 
-(* Module for possibly declaring a logic function for "get_element" defined at stack.ads:40, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "get_element" defined at stack.ads:42, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Stack__get_element
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2453,15 +2453,15 @@ module Stack__push__value___axiom
 
 end
 
-(* Module for axiomatizing type "T13s" defined at stack.ads:15, created in Gnat2Why.Types.Translate_Type *)
-module Stack__push__L12s__T13s
+(* Module for axiomatizing type "T15s" defined at stack.ads:15, created in Gnat2Why.Types.Translate_Type *)
+module Stack__push__L14s__T15s
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
  use        Standard__integer as Standard__integer
  use        Standard__integer__rep as Standard__integer__rep
 
- type t13s =
+ type t15s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2472,58 +2472,11 @@ module Stack__push__L12s__T13s
   ensures { result <-> dynamic_property (first_int : int) (last_int : int) (x : int) }
  
  clone export "ada__model".Dynamic_Discrete with axiom .,
- type t = t13s, 
+ type t = t15s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
- 
- type t13s__ref =
-  { mutable t13s__content : t13s }
- 
- function t13s__ref_t13s__content__projection 
-   (a : t13s__ref) : t13s =
-  a.t13s__content
- 
- meta "model_projection" function t13s__ref_t13s__content__projection
- 
- meta "inline:no" function t13s__ref_t13s__content__projection
- 
- val t13s__havoc 
-   (x : t13s__ref) : unit
-  writes {x}
-
-end
-
-(* Module for axiomatizing type "T15s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
-module Stack__pop__L14s__T15s
- use        "_gnatprove_standard".Main
- use        "int".Int
- use        "int".Int
-
- type t15s =
-  < range 1 1000 >
- 
- val constant first 
-   : int
-  ensures { result =  (1 : int) }
- 
- val constant last 
-   : int
-  ensures { result =  (1000 : int) }
- 
- predicate in_range 
-   (x : int) =
-  ( (first <= x) /\ (x <= last) )
- val in_range 
-   (x : int) : bool
-  ensures { result <-> in_range (x : int) }
- 
- clone export "ada__model".Static_Discrete with axiom .,
- type t = t15s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
  
  type t15s__ref =
   { mutable t15s__content : t15s }
@@ -2542,19 +2495,66 @@ module Stack__pop__L14s__T15s
 
 end
 
-(* Module defining to_rep/of_rep for type "T15s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
-module Stack__pop__L14s__T15s__rep
- use        Stack__pop__L14s__T15s as Stack__pop__L14s__T15s
+(* Module for axiomatizing type "T17s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Stack__pop__L16s__T17s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type t17s =
+  < range 1 1000 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (1000 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = t17s, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type t17s__ref =
+  { mutable t17s__content : t17s }
+ 
+ function t17s__ref_t17s__content__projection 
+   (a : t17s__ref) : t17s =
+  a.t17s__content
+ 
+ meta "model_projection" function t17s__ref_t17s__content__projection
+ 
+ meta "inline:no" function t17s__ref_t17s__content__projection
+ 
+ val t17s__havoc 
+   (x : t17s__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "T17s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Stack__pop__L16s__T17s__rep
+ use        Stack__pop__L16s__T17s as Stack__pop__L16s__T17s
  use        "_gnatprove_standard".Main
  use        "int".Int
 
  function to_rep 
-   (x : Stack__pop__L14s__T15s.t15s) : int =
-  (Stack__pop__L14s__T15s.t15s'int x)
+   (x : Stack__pop__L16s__T17s.t17s) : int =
+  (Stack__pop__L16s__T17s.t17s'int x)
  
  clone export "ada__model".Rep_Proj_Int with axiom .,
- type t = Stack__pop__L14s__T15s.t15s, 
- predicate in_range = Stack__pop__L14s__T15s.in_range, 
+ type t = Stack__pop__L16s__T17s.t17s, 
+ predicate in_range = Stack__pop__L16s__T17s.in_range, 
  function to_rep = to_rep
  
  meta "model_projection" function to_rep
@@ -2935,9 +2935,9 @@ module Variablestore__variables__mystring__rep
  use        Array__Int__Standard__character as Array__Int__Standard__character
 
  type __split_fields =
-  { rec__variablestore__variables__mystring__length [@model_trace:.67665] [@name:Length] : Variablestore__variables__mystring__T13s.t13s; rec__variablestore__variables__mystring__str [@name:Str] [@model_trace:.67680] : Array__Int__Standard__character.map }
+  { rec__variablestore__variables__mystring__length [@model_trace:.67693] [@name:Length] : Variablestore__variables__mystring__T13s.t13s; rec__variablestore__variables__mystring__str [@model_trace:.67708] [@name:Str] : Array__Int__Standard__character.map }
  
- function __split_fields_rec__variablestore__variables__mystring__length__projection [@model_trace:.67665] [@name:Length] 
+ function __split_fields_rec__variablestore__variables__mystring__length__projection [@model_trace:.67693] [@name:Length] 
    (a : __split_fields) : Variablestore__variables__mystring__T13s.t13s =
   a.rec__variablestore__variables__mystring__length
  
@@ -2945,7 +2945,7 @@ module Variablestore__variables__mystring__rep
  
  meta "inline:no" function __split_fields_rec__variablestore__variables__mystring__length__projection
  
- function __split_fields_rec__variablestore__variables__mystring__str__projection [@name:Str] [@model_trace:.67680] 
+ function __split_fields_rec__variablestore__variables__mystring__str__projection [@model_trace:.67708] [@name:Str] 
    (a : __split_fields) : Array__Int__Standard__character.map =
   a.rec__variablestore__variables__mystring__str
  
@@ -3228,7 +3228,7 @@ module Variablestore__from_string__s
  use        "int".Int
  use        Standard__string as Standard__string
 
- val constant s [#"variablestore.ads" 30 0 0][@model_projected] [@model_trace:3593] [@name:S] 
+ val constant s [#"variablestore.ads" 30 0 0][@model_projected] [@name:S] [@model_trace:3621] 
    : Standard__string.string
 
  
@@ -3251,7 +3251,7 @@ module Variablestore__max_variable_length
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant max_variable_length [#"variablestore.ads" 8 0 0][@name:Max_Variable_Length] [@model_trace:3362] 
+ val constant max_variable_length [#"variablestore.ads" 8 0 0][@name:Max_Variable_Length] [@model_trace:3390] 
    : int
 
  
@@ -3306,7 +3306,7 @@ module Variablestore__get__2__v
  use        "int".Int
  use        Variablestore__variable as Variablestore__variable
 
- val constant v [#"variablestore.ads" 21 0 0][@model_trace:3481] [@model_projected] [@name:V] 
+ val constant v [#"variablestore.ads" 21 0 0][@model_trace:3509] [@model_projected] [@name:V] 
    : Variablestore__variable.variable
 
  
@@ -3354,7 +3354,7 @@ module Variablestore__has_variable__v
  use        "int".Int
  use        Variablestore__variable as Variablestore__variable
 
- val constant v [#"variablestore.ads" 19 0 0][@model_trace:3453] [@model_projected] [@name:V] 
+ val constant v [#"variablestore.ads" 19 0 0][@model_trace:3481] [@model_projected] [@name:V] 
    : Variablestore__variable.variable
 
  
@@ -3402,15 +3402,15 @@ module Variablestore__get__2
 
 end
 
-(* Module for axiomatizing type "T17s" defined at stack.ads:27, created in Gnat2Why.Types.Translate_Type *)
-module Stack__load__L16s__T17s
+(* Module for axiomatizing type "T19s" defined at stack.ads:27, created in Gnat2Why.Types.Translate_Type *)
+module Stack__load__L18s__T19s
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
  use        Standard__integer as Standard__integer
  use        Standard__integer__rep as Standard__integer__rep
 
- type t17s =
+ type t19s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -3421,25 +3421,25 @@ module Stack__load__L16s__T17s
   ensures { result <-> dynamic_property (first_int : int) (last_int : int) (x : int) }
  
  clone export "ada__model".Dynamic_Discrete with axiom .,
- type t = t17s, 
+ type t = t19s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t17s__ref =
-  { mutable t17s__content : t17s }
+ type t19s__ref =
+  { mutable t19s__content : t19s }
  
- function t17s__ref_t17s__content__projection 
-   (a : t17s__ref) : t17s =
-  a.t17s__content
+ function t19s__ref_t19s__content__projection 
+   (a : t19s__ref) : t19s =
+  a.t19s__content
  
- meta "model_projection" function t17s__ref_t17s__content__projection
+ meta "model_projection" function t19s__ref_t19s__content__projection
  
- meta "inline:no" function t17s__ref_t17s__content__projection
+ meta "inline:no" function t19s__ref_t19s__content__projection
  
- val t17s__havoc 
-   (x : t17s__ref) : unit
+ val t19s__havoc 
+   (x : t19s__ref) : unit
   writes {x}
 
 end
@@ -3468,13 +3468,13 @@ module Stack__store__variable___axiom
 
 end
 
-(* Module for axiomatizing type "T19s" defined at stack.ads:32, created in Gnat2Why.Types.Translate_Type *)
-module Stack__store__L18s__T19s
+(* Module for axiomatizing type "T21s" defined at stack.ads:32, created in Gnat2Why.Types.Translate_Type *)
+module Stack__store__L20s__T21s
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
 
- type t19s =
+ type t21s =
   < range 1 1000 >
  
  val constant first 
@@ -3493,41 +3493,41 @@ module Stack__store__L18s__T19s
   ensures { result <-> in_range (x : int) }
  
  clone export "ada__model".Static_Discrete with axiom .,
- type t = t19s, 
+ type t = t21s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
  
- type t19s__ref =
-  { mutable t19s__content : t19s }
+ type t21s__ref =
+  { mutable t21s__content : t21s }
  
- function t19s__ref_t19s__content__projection 
-   (a : t19s__ref) : t19s =
-  a.t19s__content
+ function t21s__ref_t21s__content__projection 
+   (a : t21s__ref) : t21s =
+  a.t21s__content
  
- meta "model_projection" function t19s__ref_t19s__content__projection
+ meta "model_projection" function t21s__ref_t21s__content__projection
  
- meta "inline:no" function t19s__ref_t19s__content__projection
+ meta "inline:no" function t21s__ref_t21s__content__projection
  
- val t19s__havoc 
-   (x : t19s__ref) : unit
+ val t21s__havoc 
+   (x : t21s__ref) : unit
   writes {x}
 
 end
 
-(* Module defining to_rep/of_rep for type "T19s" defined at stack.ads:32, created in Gnat2Why.Types.Translate_Type *)
-module Stack__store__L18s__T19s__rep
- use        Stack__store__L18s__T19s as Stack__store__L18s__T19s
+(* Module defining to_rep/of_rep for type "T21s" defined at stack.ads:32, created in Gnat2Why.Types.Translate_Type *)
+module Stack__store__L20s__T21s__rep
+ use        Stack__store__L20s__T21s as Stack__store__L20s__T21s
  use        "_gnatprove_standard".Main
  use        "int".Int
 
  function to_rep 
-   (x : Stack__store__L18s__T19s.t19s) : int =
-  (Stack__store__L18s__T19s.t19s'int x)
+   (x : Stack__store__L20s__T21s.t21s) : int =
+  (Stack__store__L20s__T21s.t21s'int x)
  
  clone export "ada__model".Rep_Proj_Int with axiom .,
- type t = Stack__store__L18s__T19s.t19s, 
- predicate in_range = Stack__store__L18s__T19s.in_range, 
+ type t = Stack__store__L20s__T21s.t21s, 
+ predicate in_range = Stack__store__L20s__T21s.in_range, 
  function to_rep = to_rep
  
  meta "model_projection" function to_rep
@@ -4551,7 +4551,7 @@ module Ada__text_io__page_length__2
 
 end
 
-(* Module giving axioms for type "Tstack_dataD1" defined at stack.ads:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "Tstack_dataD1" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__Tstack_dataD1___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -4559,7 +4559,7 @@ module Stack__Tstack_dataD1___axiom
 
 end
 
-(* Module giving axioms for type "Tstack_dataB" defined at stack.ads:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "Tstack_dataB" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__Tstack_dataB___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -4567,7 +4567,7 @@ module Stack__Tstack_dataB___axiom
 
 end
 
-(* Module giving axioms for type "stack_data" defined at stack.ads:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "stack_data" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__stack_data___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -4590,7 +4590,7 @@ module Stack__stack_data___axiom
 
 end
 
-(* Module giving axioms for type "stack_type" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "stack_type" defined at stack.ads:47, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__stack_type___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -4616,24 +4616,24 @@ module Stack__stack_type___axiom
 
 end
 
-(* Module giving axioms for type "T11s" defined at stack.ads:9, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__init_stack__L10s__T11s___axiom
+(* Module giving axioms for type "T13s" defined at stack.ads:9, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__init_stack__L12s__T13s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
 
 end
 
-(* Module giving axioms for type "T13s" defined at stack.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__push__L12s__T13s___axiom
+(* Module giving axioms for type "T15s" defined at stack.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__push__L14s__T15s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
 
 end
 
-(* Module giving axioms for type "T15s" defined at stack.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__pop__L14s__T15s___axiom
+(* Module giving axioms for type "T17s" defined at stack.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__pop__L16s__T17s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
@@ -4753,16 +4753,16 @@ module Variablestore__variable___axiom
 
 end
 
-(* Module giving axioms for type "T17s" defined at stack.ads:27, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__load__L16s__T17s___axiom
+(* Module giving axioms for type "T19s" defined at stack.ads:27, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__load__L18s__T19s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
 
 end
 
-(* Module giving axioms for type "T19s" defined at stack.ads:32, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__store__L18s__T19s___axiom
+(* Module giving axioms for type "T21s" defined at stack.ads:32, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__store__L20s__T21s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
@@ -4785,19 +4785,19 @@ module Ada__text_io__count___axiom
  use        Ada__text_io__count as Ada__text_io__count
 
  predicate dynamic_invariant [@inline] 
-   (temp___expr_279 : int) (temp___is_init_275 : bool) (temp___skip_constant_276 : bool) (temp___do_toplevel_277 : bool) (temp___do_typ_inv_278 : bool) =
-  (if (( temp___is_init_275 \/ (Ada__text_io__count.first <= Ada__text_io__count.last) )) then (
-   (Ada__text_io__count.dynamic_property Ada__text_io__count.first Ada__text_io__count.last temp___expr_279)) else true)
+   (temp___expr_283 : int) (temp___is_init_279 : bool) (temp___skip_constant_280 : bool) (temp___do_toplevel_281 : bool) (temp___do_typ_inv_282 : bool) =
+  (if (( temp___is_init_279 \/ (Ada__text_io__count.first <= Ada__text_io__count.last) )) then (
+   (Ada__text_io__count.dynamic_property Ada__text_io__count.first Ada__text_io__count.last temp___expr_283)) else true)
  val dynamic_invariant [@inline] 
-   (temp___expr_279 : int) (temp___is_init_275 : bool) (temp___skip_constant_276 : bool) (temp___do_toplevel_277 : bool) (temp___do_typ_inv_278 : bool) : bool
-  ensures { result <-> dynamic_invariant (temp___expr_279 : int) (temp___is_init_275 : bool) (temp___skip_constant_276 : bool) (temp___do_toplevel_277 : bool) (temp___do_typ_inv_278 : bool) }
+   (temp___expr_283 : int) (temp___is_init_279 : bool) (temp___skip_constant_280 : bool) (temp___do_toplevel_281 : bool) (temp___do_typ_inv_282 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_283 : int) (temp___is_init_279 : bool) (temp___skip_constant_280 : bool) (temp___do_toplevel_281 : bool) (temp___do_typ_inv_282 : bool) }
  
  predicate default_initial_assumption [@inline] 
-   (temp___expr_280 : int) (temp___skip_top_level_281 : bool) =
+   (temp___expr_284 : int) (temp___skip_top_level_285 : bool) =
   true
  val default_initial_assumption [@inline] 
-   (temp___expr_280 : int) (temp___skip_top_level_281 : bool) : bool
-  ensures { result <-> default_initial_assumption (temp___expr_280 : int) (temp___skip_top_level_281 : bool) }
+   (temp___expr_284 : int) (temp___skip_top_level_285 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_284 : int) (temp___skip_top_level_285 : bool) }
 
 end
 (* Module for defining the value of constant "max_size" defined at stack.ads:5, created in Gnat2Why.Decls.Translate_Constant_Value *)
@@ -4824,7 +4824,7 @@ module Variablestore__max_variable_length___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "get_size" defined at stack.ads:38, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "get_size" defined at stack.ads:40, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Stack__get_size___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -4846,7 +4846,7 @@ module Stack__get_size___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "get_element" defined at stack.ads:40, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "get_element" defined at stack.ads:42, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Stack__get_element___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -4902,7 +4902,7 @@ module Stack__push___axiom
 
  val push 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int) : unit
-  requires {  ( [@GP_Pretty_Ada:92946] ((epsilon temp___result_188 : int.
+  requires {  ( [@GP_Pretty_Ada:92974] ((epsilon temp___result_188 : int.
    ( (temp___result_188 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_188 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:2865] ((epsilon temp___result_189 : int.
    ( (temp___result_189 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_189 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_190 : int.
@@ -4931,7 +4931,7 @@ module Stack__pop___axiom
 
  val pop 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:93018] ((epsilon temp___result_198 : int.
+  requires {  ( [@GP_Pretty_Ada:93046] ((epsilon temp___result_198 : int.
    ( (temp___result_198 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_198 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:2951] ((epsilon temp___result_199 : int.
    ( (temp___result_199 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_199 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_200 : int.
@@ -4958,7 +4958,7 @@ module Variablestore__from_string___axiom
 
  val from_string 
    (s : Standard__string.string) : Variablestore__variable.variable
-  requires {  ( [@GP_Pretty_Ada:68436] ((Standard__string.length s) <= (1024 : int)) ) }
+  requires {  ( [@GP_Pretty_Ada:68464] ((Standard__string.length s) <= (1024 : int)) ) }
   ensures {  ( ( (result = (Variablestore__from_string.from_string s)) /\ (Variablestore__from_string.from_string__function_guard result s) )/\(Variablestore__variable___axiom.dynamic_invariant result True False True True) ) }
 
 end
@@ -4991,7 +4991,7 @@ module Variablestore__get__2___axiom
 
  val get__2 
    (d : Variablestore__database.database) (v : Variablestore__variable.variable) : int
-  requires {  ( [@GP_Pretty_Ada:68373] ((epsilon temp___result_251 : bool.
+  requires {  ( [@GP_Pretty_Ada:68401] ((epsilon temp___result_251 : bool.
    ( (temp___result_251 = (Variablestore__has_variable.has_variable d v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_251 d v) )) = True) ) }
   ensures {  ( ( (result = (Variablestore__get__2.get__2 d v)) /\ (Variablestore__get__2.get__2__function_guard result d v) )/\(Standard__integer___axiom.dynamic_invariant result True False True True) ) }
  
@@ -5021,7 +5021,7 @@ module Stack__load___axiom
 
  val load 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (variable : Standard__string.string) (database : Variablestore__database.database) : unit
-  requires {  ( [@GP_Pretty_Ada:93088] ((epsilon temp___result_253 : int.
+  requires {  ( [@GP_Pretty_Ada:93116] ((epsilon temp___result_253 : int.
    ( (temp___result_253 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_253 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:3046] ((epsilon temp___result_254 : int.
    ( (temp___result_254 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_254 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_255 : int.
@@ -5055,7 +5055,7 @@ module Stack__store___axiom
 
  val store 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (variable : Standard__string.string) (database : Variablestore__database.database__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:93169] ((epsilon temp___result_266 : int.
+  requires {  ( [@GP_Pretty_Ada:93197] ((epsilon temp___result_266 : int.
    ( (temp___result_266 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_266 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) }
   ensures {  ( ( ( [@GP_Pretty_Ada:3152] ((epsilon temp___result_267 : int.
    ( (temp___result_267 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_267 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_268 : int.
@@ -5086,12 +5086,21 @@ module Stack__remove___axiom
  use        "int".Int
  use        Standard__string as Standard__string
  use        Variablestore__database as Variablestore__database
+ use        Variablestore__variable as Variablestore__variable
+ use        Variablestore__from_string as Variablestore__from_string
+ use        Variablestore__has_variable as Variablestore__has_variable
  use        Variablestore__database___axiom as Variablestore__database___axiom
 
  val remove 
    (variable : Standard__string.string) (database : Variablestore__database.database__ref) : unit
-  requires {  true }
-  ensures {  (Variablestore__database___axiom.dynamic_invariant database.Variablestore__database.database__content True True True True) }
+  requires {  ( [@GP_Pretty_Ada:93262] ((epsilon temp___result_275 : bool.
+   ( (temp___result_275 = (Variablestore__has_variable.has_variable database.Variablestore__database.database__content (epsilon temp___result_274 : Variablestore__variable.variable.
+    ( (temp___result_274 = (Variablestore__from_string.from_string variable)) /\ (Variablestore__from_string.from_string__function_guard temp___result_274 variable) )))) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_275 database.Variablestore__database.database__content (epsilon temp___result_274 : Variablestore__variable.variable.
+    ( (temp___result_274 = (Variablestore__from_string.from_string variable)) /\ (Variablestore__from_string.from_string__function_guard temp___result_274 variable) ))) )) = True) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:93281] ( ((epsilon temp___result_277 : bool.
+   ( (temp___result_277 = (Variablestore__has_variable.has_variable database.Variablestore__database.database__content (epsilon temp___result_276 : Variablestore__variable.variable.
+    ( (temp___result_276 = (Variablestore__from_string.from_string variable)) /\ (Variablestore__from_string.from_string__function_guard temp___result_276 variable) )))) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_277 database.Variablestore__database.database__content (epsilon temp___result_276 : Variablestore__variable.variable.
+    ( (temp___result_276 = (Variablestore__from_string.from_string variable)) /\ (Variablestore__from_string.from_string__function_guard temp___result_276 variable) ))) )) = True) <-> false ) ) /\ (Variablestore__database___axiom.dynamic_invariant database.Variablestore__database.database__content True True True True) ) }
   writes {database}
 
 end
@@ -5206,20 +5215,22 @@ module Stack__package_def
   ([#"stack.ads" 34 0 0] ());
   ([#"stack.ads" 36 0 0] ());
   ([#"stack.ads" 38 0 0] ());
+  ([#"stack.ads" 37 0 0] ());
   ([#"stack.ads" 40 0 0] ());
+  ([#"stack.ads" 42 0 0] ());
   ();
-  ([#"stack.ads" 43 0 0] ());
   ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ());
-  ([#"stack.ads" 45 0 0] ()) )
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ());
+  ([#"stack.ads" 47 0 0] ()) )
 end
 
 (* Module for checking DIC of default value and absence of runtime errors in the private part of "stack_type" defined at stack.ads:4, created in Gnat2Why.Types.Generate_VCs_For_Type *)
@@ -5238,18 +5249,18 @@ module Stack__stack_type__default_checks
   requires {  true }
   ensures {  true }
    = [@vc:divergent]
-  (let temp___282 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  (let temp___286 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
   ensures { true} 
   in _f) in (
    ( ();
-   (if ((Stack__stack_type.stack__stack_type__size__pred(temp___282))) then (
+   (if ((Stack__stack_type.stack__stack_type__size__pred(temp___286))) then (
      begin ensures {true} let _ = (let _ = (0 : int) in (
      ()))
      in () end )) )))
 
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "get_size" defined at stack.ads:38, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+(* Module for checking contracts and absence of run-time errors in subprogram "get_size" defined at stack.ads:40, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
 module Stack__get_size__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -5261,25 +5272,25 @@ module Stack__get_size__subprogram_def
  use        Stack__stack_data___axiom as Stack__stack_data___axiom
  use        Stack__stack_type___axiom as Stack__stack_type___axiom
 
- val stack__get_size__result [@model_projected] [@name:Get_Size] [@model_trace:3232@result]  : int__ref 
+ val stack__get_size__result [@model_projected] [@model_trace:3260@result] [@name:Get_Size]  : int__ref 
  
- let def [#"stack.ads" 38 0 0][@GP_Subp:stack.ads:38] 
+ let def [#"stack.ads" 40 0 0][@GP_Subp:stack.ads:40] 
    (__void_param : unit)
-  requires { [#"stack.ads" 38 0 0] true }
+  requires { [#"stack.ads" 40 0 0] true }
    = [@vc:divergent]
-  ( () (* Assume dynamic invariants of inputs of the subprogram stack.ads:38 *)
+  ( () (* Assume dynamic invariants of inputs of the subprogram stack.ads:40 *)
   ;
-  [#"stack.ads" 38 0 0] assume { [#"stack.ads" 38 0 0] (Stack__stack_type___axiom.dynamic_invariant Stack__get_size__stack.stack True False True True) };
-  () (* Check for RTE in the Pre of the subprogram stack.ads:38 *)
+  [#"stack.ads" 40 0 0] assume { [#"stack.ads" 40 0 0] (Stack__stack_type___axiom.dynamic_invariant Stack__get_size__stack.stack True False True True) };
+  () (* Check for RTE in the Pre of the subprogram stack.ads:40 *)
   ;
-  [#"stack.ads" 38 0 0] begin ensures {true} let _ = (let _ = True in (
+  [#"stack.ads" 40 0 0] begin ensures {true} let _ = (let _ = True in (
    ()))
    in () end ;
-  () (* Assume Pre of the subprogram stack.ads:38 *)
+  () (* Assume Pre of the subprogram stack.ads:40 *)
    )
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "get_element" defined at stack.ads:40, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+(* Module for checking contracts and absence of run-time errors in subprogram "get_element" defined at stack.ads:42, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
 module Stack__get_element__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -5294,22 +5305,22 @@ module Stack__get_element__subprogram_def
  use        Stack__stack_data___axiom as Stack__stack_data___axiom
  use        Stack__stack_type___axiom as Stack__stack_type___axiom
 
- val stack__get_element__result [@model_projected] [@name:Get_Element] [@model_trace:3251@result]  : int__ref 
+ val stack__get_element__result [@model_projected] [@model_trace:3279@result] [@name:Get_Element]  : int__ref 
  
- let def [#"stack.ads" 40 0 0][@GP_Subp:stack.ads:40] 
+ let def [#"stack.ads" 42 0 0][@GP_Subp:stack.ads:42] 
    (__void_param : unit)
-  requires { [#"stack.ads" 40 0 0] true }
+  requires { [#"stack.ads" 42 0 0] true }
    = [@vc:divergent]
-  ( () (* Assume dynamic invariants of inputs of the subprogram stack.ads:40 *)
+  ( () (* Assume dynamic invariants of inputs of the subprogram stack.ads:42 *)
   ;
-  [#"stack.ads" 40 0 0] assume { [#"stack.ads" 40 0 0] (Stack__stack_type___axiom.dynamic_invariant Stack__get_element__stack.stack True False True True) };
-  [#"stack.ads" 40 0 0] assume { [#"stack.ads" 40 0 0] (Standard__integer___axiom.dynamic_invariant Stack__get_element__index.index True False True True) };
-  () (* Check for RTE in the Pre of the subprogram stack.ads:40 *)
+  [#"stack.ads" 42 0 0] assume { [#"stack.ads" 42 0 0] (Stack__stack_type___axiom.dynamic_invariant Stack__get_element__stack.stack True False True True) };
+  [#"stack.ads" 42 0 0] assume { [#"stack.ads" 42 0 0] (Standard__integer___axiom.dynamic_invariant Stack__get_element__index.index True False True True) };
+  () (* Check for RTE in the Pre of the subprogram stack.ads:42 *)
   ;
-  [#"stack.ads" 40 0 0] begin ensures {true} let _ = (let _ = True in (
+  [#"stack.ads" 42 0 0] begin ensures {true} let _ = (let _ = True in (
    ()))
    in () end ;
-  () (* Assume Pre of the subprogram stack.ads:40 *)
+  () (* Assume Pre of the subprogram stack.ads:42 *)
    )
 end
 
@@ -5377,24 +5388,24 @@ module Stack__push__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:11 *)
   ;
-  [#"stack.ads" 11 0 0] assume { [#"stack.ads" 11 0 0] ( [@GP_Pretty_Ada:92946] ((epsilon temp___result_293 : int.
-   ( (temp___result_293 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_293 { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
+  [#"stack.ads" 11 0 0] assume { [#"stack.ads" 11 0 0] ( [@GP_Pretty_Ada:92974] ((epsilon temp___result_297 : int.
+   ( (temp___result_297 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_297 { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
   [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_288 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 11 0 0] (val _f : Stack__stack_type.stack_type
+  (let temp___old_292 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 11 0 0] (val _f : Stack__stack_type.stack_type
   ensures {[#"stack.ads" 11 0 0] (result = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    ( [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
     ()))
     in () end ;
-   (let temp___old_287 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 11 0 0] (val _f : Stack__stack_type.stack_type
+   (let temp___old_291 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 11 0 0] (val _f : Stack__stack_type.stack_type
    ensures {[#"stack.ads" 11 0 0] (result = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
    in _f) in (
     ( [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
      ()))
      in () end ;
-    (let temp___old_286 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 11 0 0] (val _f : Stack__stack_type.stack_type
+    (let temp___old_290 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 11 0 0] (val _f : Stack__stack_type.stack_type
     ensures {[#"stack.ads" 11 0 0] (result = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
     in _f) in (
      ()))
@@ -5438,24 +5449,24 @@ module Stack__pop__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:17 *)
   ;
-  [#"stack.ads" 17 0 0] assume { [#"stack.ads" 17 0 0] ( [@GP_Pretty_Ada:93018] ((epsilon temp___result_300 : int.
-   ( (temp___result_300 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_300 { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) };
+  [#"stack.ads" 17 0 0] assume { [#"stack.ads" 17 0 0] ( [@GP_Pretty_Ada:93046] ((epsilon temp___result_304 : int.
+   ( (temp___result_304 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_304 { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) };
   [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_295 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 17 0 0] (val _f : Stack__stack_type.stack_type
+  (let temp___old_299 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 17 0 0] (val _f : Stack__stack_type.stack_type
   ensures {[#"stack.ads" 17 0 0] (result = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    ( [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
     ()))
     in () end ;
-   (let temp___old_294 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 17 0 0] (val _f : Stack__stack_type.stack_type
+   (let temp___old_298 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 17 0 0] (val _f : Stack__stack_type.stack_type
    ensures {[#"stack.ads" 17 0 0] (result = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
    in _f) in (
     ( [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
      ()))
      in () end ;
-    (let temp___old_296 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 17 0 0] (val _f : Stack__stack_type.stack_type
+    (let temp___old_300 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 17 0 0] (val _f : Stack__stack_type.stack_type
     ensures {[#"stack.ads" 17 0 0] (result = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
     in _f) in (
      ()))
@@ -5508,24 +5519,24 @@ module Stack__load__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:23 *)
   ;
-  [#"stack.ads" 23 0 0] assume { [#"stack.ads" 23 0 0] ( [@GP_Pretty_Ada:93088] ((epsilon temp___result_309 : int.
-   ( (temp___result_309 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_309 { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
+  [#"stack.ads" 23 0 0] assume { [#"stack.ads" 23 0 0] ( [@GP_Pretty_Ada:93116] ((epsilon temp___result_313 : int.
+   ( (temp___result_313 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_313 { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
   [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_301 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 23 0 0] (val _f : Stack__stack_type.stack_type
+  (let temp___old_305 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 23 0 0] (val _f : Stack__stack_type.stack_type
   ensures {[#"stack.ads" 23 0 0] (result = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    ( [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
     ()))
     in () end ;
-   (let temp___old_303 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 23 0 0] (val _f : Stack__stack_type.stack_type
+   (let temp___old_307 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 23 0 0] (val _f : Stack__stack_type.stack_type
    ensures {[#"stack.ads" 23 0 0] (result = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
    in _f) in (
     ( [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
      ()))
      in () end ;
-    (let temp___old_302 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 23 0 0] (val _f : Stack__stack_type.stack_type
+    (let temp___old_306 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 23 0 0] (val _f : Stack__stack_type.stack_type
     ensures {[#"stack.ads" 23 0 0] (result = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
     in _f) in (
      ()))
@@ -5579,18 +5590,18 @@ module Stack__store__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:29 *)
   ;
-  [#"stack.ads" 29 0 0] assume { [#"stack.ads" 29 0 0] ( [@GP_Pretty_Ada:93169] ((epsilon temp___result_316 : int.
-   ( (temp___result_316 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_316 { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) };
+  [#"stack.ads" 29 0 0] assume { [#"stack.ads" 29 0 0] ( [@GP_Pretty_Ada:93197] ((epsilon temp___result_320 : int.
+   ( (temp___result_320 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_320 { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) };
   [#"stack.ads" 29 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_311 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 29 0 0] (val _f : Stack__stack_type.stack_type
+  (let temp___old_315 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 29 0 0] (val _f : Stack__stack_type.stack_type
   ensures {[#"stack.ads" 29 0 0] (result = { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    ( [#"stack.ads" 29 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
     ()))
     in () end ;
-   (let temp___old_310 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 29 0 0] (val _f : Stack__stack_type.stack_type
+   (let temp___old_314 [@mlw:proxy_symbol] [@introduced] = [#"stack.ads" 29 0 0] (val _f : Stack__stack_type.stack_type
    ensures {[#"stack.ads" 29 0 0] (result = { Stack__stack_type.__split_fields = Stack__store__stack.stack__split_fields.Stack__stack_type.__split_fields__content })} 
    in _f) in (
     ()))
@@ -5629,6 +5640,11 @@ module Stack__remove__subprogram_def
  use        "int".Int
  use        Standard__string___axiom as Standard__string___axiom
  use        Variablestore__database as Variablestore__database
+ use        Variablestore__variable as Variablestore__variable
+ use        Variablestore__from_string as Variablestore__from_string
+ use        Variablestore__from_string___axiom as Variablestore__from_string___axiom
+ use        Variablestore__has_variable as Variablestore__has_variable
+ use        Variablestore__has_variable___axiom as Variablestore__has_variable___axiom
  use        Stack__remove__variable as Stack__remove__variable
  use        Stack__remove__database as Stack__remove__database
  use        Variablestore__database___axiom as Variablestore__database___axiom
@@ -5639,6 +5655,9 @@ module Stack__remove__subprogram_def
  use        Stack__remove__variable___axiom as Stack__remove__variable___axiom
  use        Stack__remove__database___axiom as Stack__remove__database___axiom
  use        Variablestore__database___axiom as Variablestore__database___axiom
+ use        Variablestore__has_variable___axiom as Variablestore__has_variable___axiom
+ use        Variablestore__from_string___axiom as Variablestore__from_string___axiom
+ use        Variablestore__variable___axiom as Variablestore__variable___axiom
 
  let def [#"stack.ads" 36 0 0][@GP_Subp:stack.ads:36] 
    (__void_param : unit)
@@ -5650,9 +5669,13 @@ module Stack__remove__subprogram_def
   [#"stack.ads" 36 0 0] assume { [#"stack.ads" 36 0 0] (Variablestore__database___axiom.dynamic_invariant Stack__remove__database.database.Variablestore__database.database__content True False True True) };
   () (* Check for RTE in the Pre of the subprogram stack.ads:36 *)
   ;
-  [#"stack.ads" 36 0 0] begin ensures {true} let _ = (let _ = True in (
+  [#"stack.ads" 36 0 0] begin ensures {true} let _ = (let _ = (Variablestore__has_variable___axiom.has_variable(Stack__remove__database.database.Variablestore__database.database__content) (([#"stack.ads" 37 0 0] ( [@GP_Reason:VC_PRECONDITION] [@comment:     Pre => VariableStore.Has_Variable(Database, VariableStore.From_String(Variable)),                                                               ^ stack.ads:37:63:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:stack.ads:37:63] [@GP_Shape:pragargs__call_has_variable__call_from_string] [@GP_Id:5] (Variablestore__from_string___axiom.from_string(Stack__remove__variable.variable)) )))) in (
    ()))
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:36 *)
-   )
+  ;
+   assume {  ( [@GP_Pretty_Ada:93262] ((epsilon temp___result_323 : bool.
+   ( (temp___result_323 = (Variablestore__has_variable.has_variable Stack__remove__database.database.Variablestore__database.database__content (epsilon temp___result_322 : Variablestore__variable.variable.
+    ( (temp___result_322 = (Variablestore__from_string.from_string Stack__remove__variable.variable)) /\ (Variablestore__from_string.from_string__function_guard temp___result_322 Stack__remove__variable.variable) )))) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_323 Stack__remove__database.database.Variablestore__database.database__content (epsilon temp___result_322 : Variablestore__variable.variable.
+    ( (temp___result_322 = (Variablestore__from_string.from_string Stack__remove__variable.variable)) /\ (Variablestore__from_string.from_string__function_guard temp___result_322 Stack__remove__variable.variable) ))) )) = True) ) } )
 end

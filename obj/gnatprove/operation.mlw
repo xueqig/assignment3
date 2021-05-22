@@ -1788,7 +1788,7 @@ module Standard__universal_integer__rep
 
 end
 
-(* Module for axiomatizing type "Tstack_dataD1" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "Tstack_dataD1" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__Tstack_dataD1
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1835,7 +1835,7 @@ module Stack__Tstack_dataD1
 
 end
 
-(* Module defining to_rep/of_rep for type "Tstack_dataD1" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module defining to_rep/of_rep for type "Tstack_dataD1" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__Tstack_dataD1__rep
  use        Stack__Tstack_dataD1 as Stack__Tstack_dataD1
  use        "_gnatprove_standard".Main
@@ -1856,7 +1856,7 @@ module Stack__Tstack_dataD1__rep
 
 end
 
-(* Module for axiomatizing the array theory associated to type "Tstack_dataB" defined at stack.ads:43, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+(* Module for axiomatizing the array theory associated to type "Tstack_dataB" defined at stack.ads:45, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
 module Array__Int__Standard__integer
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1903,7 +1903,7 @@ module Array__Int__Standard__integer
 
 end
 
-(* Module for axiomatizing concatenation for the array theory associated to type "Tstack_dataB" defined at stack.ads:43, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+(* Module for axiomatizing concatenation for the array theory associated to type "Tstack_dataB" defined at stack.ads:45, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
 module Array__Int__Standard__integer__Concat
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1928,7 +1928,7 @@ module Array__Int__Standard__integer__Concat
 
 end
 
-(* Module for axiomatizing comparison for the array theory associated to type "Tstack_dataB" defined at stack.ads:43, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+(* Module for axiomatizing comparison for the array theory associated to type "Tstack_dataB" defined at stack.ads:45, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
 module Array__Int__Standard__integer_Comp
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -1956,7 +1956,7 @@ module Array__Int__Standard__integer_Comp
 
 end
 
-(* Module for axiomatizing type "Tstack_dataB" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "Tstack_dataB" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__Tstack_dataB
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2017,7 +2017,7 @@ module Stack__Tstack_dataB
 
 end
 
-(* Module for axiomatizing type "stack_data" defined at stack.ads:43, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "stack_data" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
 module Stack__stack_data
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2045,7 +2045,7 @@ module Stack__stack_data
 
 end
 
-(* Module for axiomatizing the record theory associated to type "stack_type" defined at stack.ads:45, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+(* Module for axiomatizing the record theory associated to type "stack_type" defined at stack.ads:47, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
 module Stack__stack_type__rep
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2058,9 +2058,9 @@ module Stack__stack_type__rep
  use        Array__Int__Standard__integer as Array__Int__Standard__integer
 
  type __split_fields =
-  { rec__stack__stack_type__size [@name:Size] [@model_trace:.3313] : Standard__natural.natural; rec__stack__stack_type__data [@name:Data] [@model_trace:.3324] : Array__Int__Standard__integer.map }
+  { rec__stack__stack_type__size [@name:Size] [@model_trace:.3453] : Standard__natural.natural; rec__stack__stack_type__data [@name:Data] [@model_trace:.3464] : Array__Int__Standard__integer.map }
  
- function __split_fields_rec__stack__stack_type__size__projection [@name:Size] [@model_trace:.3313] 
+ function __split_fields_rec__stack__stack_type__size__projection [@name:Size] [@model_trace:.3453] 
    (a : __split_fields) : Standard__natural.natural =
   a.rec__stack__stack_type__size
  
@@ -2068,7 +2068,7 @@ module Stack__stack_type__rep
  
  meta "inline:no" function __split_fields_rec__stack__stack_type__size__projection
  
- function __split_fields_rec__stack__stack_type__data__projection [@name:Data] [@model_trace:.3324] 
+ function __split_fields_rec__stack__stack_type__data__projection [@name:Data] [@model_trace:.3464] 
    (a : __split_fields) : Array__Int__Standard__integer.map =
   a.rec__stack__stack_type__data
  
@@ -2151,7 +2151,7 @@ module Stack__stack_type__rep
 
 end
 
-(* Module for axiomatizing type "stack_type" defined at stack.ads:45, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "stack_type" defined at stack.ads:47, created in Gnat2Why.Types.Translate_Type *)
 module Stack__stack_type
  use export Stack__stack_type__rep
  use        "_gnatprove_standard".Main
@@ -2248,13 +2248,13 @@ module Stack__stack_type
 
 end
 
-(* Module for defining the constant "stack" defined at stack.ads:38, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "stack" defined at stack.ads:40, created in Gnat2Why.Decls.Translate_Constant *)
 module Stack__get_size__stack
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val constant stack [#"stack.ads" 38 0 0][@model_projected] [@name:Stack] [@model_trace:3249] 
+ val constant stack [#"stack.ads" 40 0 0][@model_projected] [@name:Stack] [@model_trace:3389] 
    : Stack__stack_type.stack_type
 
  
@@ -2264,7 +2264,7 @@ module Stack__get_size__stack
 
 end
 
-(* Module giving an empty axiom for the entity "stack" defined at stack.ads:38, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:40, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Stack__get_size__stack___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2272,7 +2272,7 @@ module Stack__get_size__stack___axiom
 
 end
 
-(* Module for possibly declaring a logic function for "get_size" defined at stack.ads:38, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "get_size" defined at stack.ads:40, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Stack__get_size
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2286,13 +2286,13 @@ module Stack__get_size
 
 end
 
-(* Module for defining the constant "stack" defined at stack.ads:40, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "stack" defined at stack.ads:42, created in Gnat2Why.Decls.Translate_Constant *)
 module Stack__get_element__stack
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val constant stack [#"stack.ads" 40 0 0][@model_trace:3268] [@model_projected] [@name:Stack] 
+ val constant stack [#"stack.ads" 42 0 0][@model_projected] [@name:Stack] [@model_trace:3408] 
    : Stack__stack_type.stack_type
 
  
@@ -2302,7 +2302,7 @@ module Stack__get_element__stack
 
 end
 
-(* Module giving an empty axiom for the entity "stack" defined at stack.ads:40, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:42, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Stack__get_element__stack___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2310,12 +2310,12 @@ module Stack__get_element__stack___axiom
 
 end
 
-(* Module for defining the constant "index" defined at stack.ads:40, created in Gnat2Why.Decls.Translate_Constant *)
+(* Module for defining the constant "index" defined at stack.ads:42, created in Gnat2Why.Decls.Translate_Constant *)
 module Stack__get_element__index
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant index [#"stack.ads" 40 0 0][@name:Index] [@model_trace:3277] 
+ val constant index [#"stack.ads" 42 0 0][@model_trace:3417] [@name:Index] 
    : int
 
  
@@ -2325,7 +2325,7 @@ module Stack__get_element__index
 
 end
 
-(* Module giving an empty axiom for the entity "index" defined at stack.ads:40, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "index" defined at stack.ads:42, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Stack__get_element__index___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2333,7 +2333,7 @@ module Stack__get_element__index___axiom
 
 end
 
-(* Module for possibly declaring a logic function for "get_element" defined at stack.ads:40, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+(* Module for possibly declaring a logic function for "get_element" defined at stack.ads:42, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Stack__get_element
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2347,13 +2347,13 @@ module Stack__get_element
 
 end
 
-(* Module for axiomatizing type "T15s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
-module Stack__pop__L14s__T15s
+(* Module for axiomatizing type "T17s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Stack__pop__L16s__T17s
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
 
- type t15s =
+ type t17s =
   < range 1 1000 >
  
  val constant first 
@@ -2372,41 +2372,41 @@ module Stack__pop__L14s__T15s
   ensures { result <-> in_range (x : int) }
  
  clone export "ada__model".Static_Discrete with axiom .,
- type t = t15s, 
+ type t = t17s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
  
- type t15s__ref =
-  { mutable t15s__content : t15s }
+ type t17s__ref =
+  { mutable t17s__content : t17s }
  
- function t15s__ref_t15s__content__projection 
-   (a : t15s__ref) : t15s =
-  a.t15s__content
+ function t17s__ref_t17s__content__projection 
+   (a : t17s__ref) : t17s =
+  a.t17s__content
  
- meta "model_projection" function t15s__ref_t15s__content__projection
+ meta "model_projection" function t17s__ref_t17s__content__projection
  
- meta "inline:no" function t15s__ref_t15s__content__projection
+ meta "inline:no" function t17s__ref_t17s__content__projection
  
- val t15s__havoc 
-   (x : t15s__ref) : unit
+ val t17s__havoc 
+   (x : t17s__ref) : unit
   writes {x}
 
 end
 
-(* Module defining to_rep/of_rep for type "T15s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
-module Stack__pop__L14s__T15s__rep
- use        Stack__pop__L14s__T15s as Stack__pop__L14s__T15s
+(* Module defining to_rep/of_rep for type "T17s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Stack__pop__L16s__T17s__rep
+ use        Stack__pop__L16s__T17s as Stack__pop__L16s__T17s
  use        "_gnatprove_standard".Main
  use        "int".Int
 
  function to_rep 
-   (x : Stack__pop__L14s__T15s.t15s) : int =
-  (Stack__pop__L14s__T15s.t15s'int x)
+   (x : Stack__pop__L16s__T17s.t17s) : int =
+  (Stack__pop__L16s__T17s.t17s'int x)
  
  clone export "ada__model".Rep_Proj_Int with axiom .,
- type t = Stack__pop__L14s__T15s.t15s, 
- predicate in_range = Stack__pop__L14s__T15s.in_range, 
+ type t = Stack__pop__L16s__T17s.t17s, 
+ predicate in_range = Stack__pop__L16s__T17s.in_range, 
  function to_rep = to_rep
  
  meta "model_projection" function to_rep
@@ -2420,7 +2420,7 @@ module Stack__max_size
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant max_size [#"stack.ads" 5 0 0][@name:Max_Size] [@model_trace:2777] 
+ val constant max_size [#"stack.ads" 5 0 0][@name:Max_Size] [@model_trace:2889] 
    : int
 
  
@@ -2435,7 +2435,7 @@ module Stack__push__value
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant value [#"stack.ads" 11 0 0][@name:Value] [@model_trace:2849] 
+ val constant value [#"stack.ads" 11 0 0][@model_trace:2961] [@name:Value] 
    : int
 
  
@@ -2453,15 +2453,15 @@ module Stack__push__value___axiom
 
 end
 
-(* Module for axiomatizing type "T13s" defined at stack.ads:15, created in Gnat2Why.Types.Translate_Type *)
-module Stack__push__L12s__T13s
+(* Module for axiomatizing type "T15s" defined at stack.ads:15, created in Gnat2Why.Types.Translate_Type *)
+module Stack__push__L14s__T15s
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
  use        Standard__integer as Standard__integer
  use        Standard__integer__rep as Standard__integer__rep
 
- type t13s =
+ type t15s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2472,25 +2472,25 @@ module Stack__push__L12s__T13s
   ensures { result <-> dynamic_property (first_int : int) (last_int : int) (x : int) }
  
  clone export "ada__model".Dynamic_Discrete with axiom .,
- type t = t13s, 
+ type t = t15s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t13s__ref =
-  { mutable t13s__content : t13s }
+ type t15s__ref =
+  { mutable t15s__content : t15s }
  
- function t13s__ref_t13s__content__projection 
-   (a : t13s__ref) : t13s =
-  a.t13s__content
+ function t15s__ref_t15s__content__projection 
+   (a : t15s__ref) : t15s =
+  a.t15s__content
  
- meta "model_projection" function t13s__ref_t13s__content__projection
+ meta "model_projection" function t15s__ref_t15s__content__projection
  
- meta "inline:no" function t13s__ref_t13s__content__projection
+ meta "inline:no" function t15s__ref_t15s__content__projection
  
- val t13s__havoc 
-   (x : t13s__ref) : unit
+ val t15s__havoc 
+   (x : t15s__ref) : unit
   writes {x}
 
 end
@@ -2500,7 +2500,7 @@ module Operation__addition__s
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val s__split_fields [#"operation.ads" 5 0 0][@model_projected] [@model_trace:2547] [@name:S]  : Stack__stack_type.__split_fields__ref 
+ val s__split_fields [#"operation.ads" 5 0 0][@model_trace:2675] [@model_projected] [@name:S]  : Stack__stack_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2522,7 +2522,7 @@ module Operation__subtraction__s
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val s__split_fields [#"operation.ads" 9 0 0][@model_trace:2595] [@model_projected] [@name:S]  : Stack__stack_type.__split_fields__ref 
+ val s__split_fields [#"operation.ads" 9 0 0][@model_projected] [@name:S] [@model_trace:2723]  : Stack__stack_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2544,7 +2544,7 @@ module Operation__multiplication__s
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val s__split_fields [#"operation.ads" 13 0 0][@model_projected] [@name:S] [@model_trace:2643]  : Stack__stack_type.__split_fields__ref 
+ val s__split_fields [#"operation.ads" 13 0 0][@model_projected] [@model_trace:2771] [@name:S]  : Stack__stack_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2566,7 +2566,7 @@ module Operation__division__s
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val s__split_fields [#"operation.ads" 17 0 0][@model_projected] [@model_trace:2691] [@name:S]  : Stack__stack_type.__split_fields__ref 
+ val s__split_fields [#"operation.ads" 17 0 0][@model_projected] [@name:S] [@model_trace:2819]  : Stack__stack_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2582,12 +2582,12 @@ module Operation__division__s___axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "i" defined at operation.adb:2, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "i" defined at operation.adb:4, created in Gnat2Why.Decls.Translate_Variable *)
 module Operation__i
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val i [#"operation.adb" 2 0 0][@model_projected] [@name:I] [@model_trace:2307]  : int__ref 
+ val i [#"operation.adb" 4 0 0][@model_projected] [@name:I] [@model_trace:2309]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2595,7 +2595,7 @@ module Operation__i
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at operation.adb:2, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at operation.adb:4, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Operation__i___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2603,12 +2603,12 @@ module Operation__i___axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "j" defined at operation.adb:3, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "j" defined at operation.adb:5, created in Gnat2Why.Decls.Translate_Variable *)
 module Operation__j
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val j [#"operation.adb" 3 0 0][@model_projected] [@model_trace:2317] [@name:J]  : int__ref 
+ val j [#"operation.adb" 5 0 0][@model_projected] [@model_trace:2319] [@name:J]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2616,7 +2616,7 @@ module Operation__j
 
 end
 
-(* Module giving an empty axiom for the entity "j" defined at operation.adb:3, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "j" defined at operation.adb:5, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Operation__j___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2624,12 +2624,12 @@ module Operation__j___axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "result" defined at operation.adb:4, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "result" defined at operation.adb:6, created in Gnat2Why.Decls.Translate_Variable *)
 module Operation__result
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val result__ [#"operation.adb" 4 0 0][@model_trace:2327] [@model_projected] [@name:Result]  : int__ref 
+ val result__ [#"operation.adb" 6 0 0][@model_trace:2329] [@model_projected] [@name:Result]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2637,7 +2637,7 @@ module Operation__result
 
 end
 
-(* Module giving an empty axiom for the entity "result" defined at operation.adb:4, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "result" defined at operation.adb:6, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Operation__result___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -2651,7 +2651,7 @@ module Stack__pop__stack
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val stack__split_fields [#"stack.ads" 17 0 0][@model_projected] [@name:Stack] [@model_trace:2926]  : Stack__stack_type.__split_fields__ref 
+ val stack__split_fields [#"stack.ads" 17 0 0][@model_projected] [@name:Stack] [@model_trace:3038]  : Stack__stack_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2672,7 +2672,7 @@ module Stack__pop__value
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val value [#"stack.ads" 17 0 0][@model_projected] [@model_trace:2935] [@name:Value]  : int__ref 
+ val value [#"stack.ads" 17 0 0][@model_projected] [@model_trace:3047] [@name:Value]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2694,7 +2694,7 @@ module Stack__push__stack
  use        "int".Int
  use        Stack__stack_type as Stack__stack_type
 
- val stack__split_fields [#"stack.ads" 11 0 0][@model_projected] [@name:Stack] [@model_trace:2840]  : Stack__stack_type.__split_fields__ref 
+ val stack__split_fields [#"stack.ads" 11 0 0][@model_trace:2952] [@model_projected] [@name:Stack]  : Stack__stack_type.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -3268,7 +3268,7 @@ module Stack__push
 
 end
 
-(* Module giving axioms for type "Tstack_dataD1" defined at stack.ads:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "Tstack_dataD1" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__Tstack_dataD1___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3276,7 +3276,7 @@ module Stack__Tstack_dataD1___axiom
 
 end
 
-(* Module giving axioms for type "Tstack_dataB" defined at stack.ads:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "Tstack_dataB" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__Tstack_dataB___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3284,7 +3284,7 @@ module Stack__Tstack_dataB___axiom
 
 end
 
-(* Module giving axioms for type "stack_data" defined at stack.ads:43, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "stack_data" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__stack_data___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3307,7 +3307,7 @@ module Stack__stack_data___axiom
 
 end
 
-(* Module giving axioms for type "stack_type" defined at stack.ads:45, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "stack_type" defined at stack.ads:47, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Stack__stack_type___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3333,16 +3333,16 @@ module Stack__stack_type___axiom
 
 end
 
-(* Module giving axioms for type "T15s" defined at stack.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__pop__L14s__T15s___axiom
+(* Module giving axioms for type "T17s" defined at stack.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__pop__L16s__T17s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
 
 end
 
-(* Module giving axioms for type "T13s" defined at stack.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Stack__push__L12s__T13s___axiom
+(* Module giving axioms for type "T15s" defined at stack.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__push__L14s__T15s___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
 
@@ -3360,7 +3360,7 @@ module Stack__max_size___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "get_size" defined at stack.ads:38, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "get_size" defined at stack.ads:40, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Stack__get_size___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3397,11 +3397,12 @@ module Operation__addition___axiom
 
  val addition 
    (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:79317] ((epsilon temp___result_179 : int.
+  requires {  ( [@GP_Pretty_Ada:79508] ((epsilon temp___result_179 : int.
    ( (temp___result_179 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_179 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) }
-  ensures {  ( ( [@GP_Pretty_Ada:79338] ((epsilon temp___result_180 : int.
+  ensures {  ( ( [@GP_Pretty_Ada:79529] ((epsilon temp___result_180 : int.
    ( (temp___result_180 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_180 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_181 : int.
    ( (temp___result_181 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_181 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
   writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
 
 end
@@ -3421,11 +3422,12 @@ module Operation__subtraction___axiom
 
  val subtraction 
    (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:79367] ((epsilon temp___result_184 : int.
+  requires {  ( [@GP_Pretty_Ada:79558] ((epsilon temp___result_184 : int.
    ( (temp___result_184 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_184 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) }
-  ensures {  ( ( [@GP_Pretty_Ada:79388] ((epsilon temp___result_185 : int.
+  ensures {  ( ( [@GP_Pretty_Ada:79579] ((epsilon temp___result_185 : int.
    ( (temp___result_185 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_185 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_186 : int.
    ( (temp___result_186 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_186 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
   writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
 
 end
@@ -3445,16 +3447,42 @@ module Operation__multiplication___axiom
 
  val multiplication 
    (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:79417] ((epsilon temp___result_189 : int.
+  requires {  ( [@GP_Pretty_Ada:79608] ((epsilon temp___result_189 : int.
    ( (temp___result_189 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_189 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) }
-  ensures {  ( ( [@GP_Pretty_Ada:79438] ((epsilon temp___result_190 : int.
+  ensures {  ( ( [@GP_Pretty_Ada:79629] ((epsilon temp___result_190 : int.
    ( (temp___result_190 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_190 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_191 : int.
    ( (temp___result_191 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_191 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
   writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "get_element" defined at stack.ads:40, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+(* Module for declaring a program function (and possibly an axiom) for "division" defined at operation.ads:17, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Operation__division___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+
+ val division 
+   (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
+  requires {  ( [@GP_Pretty_Ada:79658] ((epsilon temp___result_194 : int.
+   ( (temp___result_194 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_194 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:79679] ((epsilon temp___result_195 : int.
+   ( (temp___result_195 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_195 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_196 : int.
+   ( (temp___result_196 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_196 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
+  writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "get_element" defined at stack.ads:42, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Stack__get_element___axiom
  use        "_gnatprove_standard".Main
  use        "int".Int
@@ -3477,34 +3505,6 @@ module Stack__get_element___axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "division" defined at operation.ads:17, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
-module Operation__division___axiom
- use        "_gnatprove_standard".Main
- use        "int".Int
- use        "int".Int
- use        Standard__integer___axiom as Standard__integer___axiom
- use        Stack__stack_type as Stack__stack_type
- use        Stack__stack_type___axiom as Stack__stack_type___axiom
- use        Stack__get_size as Stack__get_size
- use        Stack__get_element as Stack__get_element
- use        Operation__i as Operation__i
- use        Operation__j as Operation__j
- use        Operation__result as Operation__result
-
- val division 
-   (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
-  requires {  ( ( [@GP_Pretty_Ada:2714] ((epsilon temp___result_195 : int.
-   ( (temp___result_195 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_195 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2729] ((epsilon temp___result_197 : int.
-   ( (temp___result_197 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ((epsilon temp___result_196 : int.
-    ( (temp___result_196 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_196 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) - (1 : int)))) /\ (Stack__get_element.get_element__function_guard temp___result_197 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ((epsilon temp___result_196 : int.
-    ( (temp___result_196 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_196 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) - (1 : int))) )) <> (0 : int)) ) ) }
-  ensures {  ( ( [@GP_Pretty_Ada:79503] ((epsilon temp___result_198 : int.
-   ( (temp___result_198 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_198 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_199 : int.
-   ( (temp___result_199 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_199 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
-  writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
-
-end
-
 (* Module for declaring a program function (and possibly an axiom) for "pop" defined at stack.ads:17, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Stack__pop___axiom
  use        "_gnatprove_standard".Main
@@ -3518,17 +3518,17 @@ module Stack__pop___axiom
 
  val pop 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int__ref) : unit
-  requires {  ( [@GP_Pretty_Ada:78896] ((epsilon temp___result_202 : int.
-   ( (temp___result_202 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_202 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) }
-  ensures {  ( ( ( ( [@GP_Pretty_Ada:2961] ((epsilon temp___result_203 : int.
-   ( (temp___result_203 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_203 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_204 : int.
-   ( (temp___result_204 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_204 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( [@GP_Pretty_Ada:2971] (value.int__content = (epsilon temp___result_206 : int.
-   ( (temp___result_206 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_205 : int.
-    ( (temp___result_205 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_205 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )))) /\ (Stack__get_element.get_element__function_guard temp___result_206 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_205 : int.
-    ( (temp___result_205 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_205 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ))) ) ) /\ (forall i   [@model_trace:2981] [@name:I]  : int.
-   ( ( ((1 : int) <= i) /\ (i <= (1000 : int)) ) -> ( [@GP_Pretty_Ada:2997] ((epsilon temp___result_207 : int.
-    ( (temp___result_207 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_207 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_208 : int.
-    ( (temp___result_208 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_208 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant value.int__content True True True True) ) ) }
+  requires {  ( [@GP_Pretty_Ada:79036] ((epsilon temp___result_200 : int.
+   ( (temp___result_200 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_200 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) }
+  ensures {  ( ( ( ( [@GP_Pretty_Ada:3073] ((epsilon temp___result_201 : int.
+   ( (temp___result_201 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_201 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_202 : int.
+   ( (temp___result_202 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_202 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( [@GP_Pretty_Ada:3083] (value.int__content = (epsilon temp___result_204 : int.
+   ( (temp___result_204 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_203 : int.
+    ( (temp___result_203 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_203 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )))) /\ (Stack__get_element.get_element__function_guard temp___result_204 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_203 : int.
+    ( (temp___result_203 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_203 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ))) ) ) /\ (forall i   [@model_trace:3093] [@name:I]  : int.
+   ( ( ((1 : int) <= i) /\ (i <= (1000 : int)) ) -> ( [@GP_Pretty_Ada:3109] ((epsilon temp___result_205 : int.
+    ( (temp___result_205 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_205 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_206 : int.
+    ( (temp___result_206 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_206 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant value.int__content True True True True) ) ) }
   writes {stack__split_fields, value}
 
 end
@@ -3545,18 +3545,18 @@ module Stack__push___axiom
 
  val push 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int) : unit
-  requires {  ( [@GP_Pretty_Ada:78824] ((epsilon temp___result_211 : int.
-   ( (temp___result_211 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_211 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
-  ensures {  ( ( ( ( [@GP_Pretty_Ada:2875] ((epsilon temp___result_212 : int.
-   ( (temp___result_212 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_212 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_213 : int.
-   ( (temp___result_213 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_213 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) + (1 : int))) ) /\ ( [@GP_Pretty_Ada:2885] (value = (epsilon temp___result_215 : int.
-   ( (temp___result_215 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_214 : int.
-    ( (temp___result_214 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_214 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )))) /\ (Stack__get_element.get_element__function_guard temp___result_215 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_214 : int.
-    ( (temp___result_214 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_214 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) ))) ))) ) ) /\ (forall i   [@model_trace:2893] [@name:I]  : int.
-   ( ( ((1 : int) <= i) /\ (i <= (epsilon temp___result_216 : int.
-    ( (temp___result_216 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_216 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ) -> ( [@GP_Pretty_Ada:2913] ((epsilon temp___result_217 : int.
-    ( (temp___result_217 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_217 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_218 : int.
-    ( (temp___result_218 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_218 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) ) }
+  requires {  ( [@GP_Pretty_Ada:78964] ((epsilon temp___result_209 : int.
+   ( (temp___result_209 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_209 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
+  ensures {  ( ( ( ( [@GP_Pretty_Ada:2987] ((epsilon temp___result_210 : int.
+   ( (temp___result_210 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_210 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_211 : int.
+   ( (temp___result_211 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_211 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) + (1 : int))) ) /\ ( [@GP_Pretty_Ada:2997] (value = (epsilon temp___result_213 : int.
+   ( (temp___result_213 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_212 : int.
+    ( (temp___result_212 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_212 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )))) /\ (Stack__get_element.get_element__function_guard temp___result_213 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_212 : int.
+    ( (temp___result_212 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_212 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) ))) ))) ) ) /\ (forall i   [@name:I] [@model_trace:3005]  : int.
+   ( ( ((1 : int) <= i) /\ (i <= (epsilon temp___result_214 : int.
+    ( (temp___result_214 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_214 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ) -> ( [@GP_Pretty_Ada:3025] ((epsilon temp___result_215 : int.
+    ( (temp___result_215 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_215 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_216 : int.
+    ( (temp___result_216 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_216 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) ) }
   writes {stack__split_fields}
 
 end
@@ -3594,19 +3594,19 @@ module Operation__package_def
   ([#"operation.ads" 19 0 0] ());
   ([#"operation.ads" 18 0 0] ());
   ();
-  ([#"operation.adb" 1 0 0] ());
-  ([#"operation.adb" 2 0 0] ( [#"operation.adb" 2 0 0] (Operation__i.i.int__content <- ( (0 : int) ));
-  [#"operation.adb" 2 0 0] assume { [#"operation.adb" 2 0 0] (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True False True True) } ));
-  ([#"operation.adb" 3 0 0] ( [#"operation.adb" 3 0 0] (Operation__j.j.int__content <- ( (0 : int) ));
-  [#"operation.adb" 3 0 0] assume { [#"operation.adb" 3 0 0] (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True False True True) } ));
-  ([#"operation.adb" 4 0 0] ( [#"operation.adb" 4 0 0] (Operation__result.result__.int__content <- ( (0 : int) ));
-  [#"operation.adb" 4 0 0] assume { [#"operation.adb" 4 0 0] (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) } ));
-  ([#"operation.adb" 6 0 0] ());
-  ([#"operation.adb" 14 0 0] ());
-  ([#"operation.adb" 22 0 0] ());
-  ([#"operation.adb" 30 0 0] ());
+  ([#"operation.adb" 3 0 0] ());
+  ([#"operation.adb" 4 0 0] ( [#"operation.adb" 4 0 0] (Operation__i.i.int__content <- ( (0 : int) ));
+  [#"operation.adb" 4 0 0] assume { [#"operation.adb" 4 0 0] (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True False True True) } ));
+  ([#"operation.adb" 5 0 0] ( [#"operation.adb" 5 0 0] (Operation__j.j.int__content <- ( (0 : int) ));
+  [#"operation.adb" 5 0 0] assume { [#"operation.adb" 5 0 0] (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True False True True) } ));
+  ([#"operation.adb" 6 0 0] ( [#"operation.adb" 6 0 0] (Operation__result.result__.int__content <- ( (0 : int) ));
+  [#"operation.adb" 6 0 0] assume { [#"operation.adb" 6 0 0] (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) } ));
+  ([#"operation.adb" 8 0 0] ());
+  ([#"operation.adb" 21 0 0] ());
+  ([#"operation.adb" 33 0 0] ());
+  ([#"operation.adb" 49 0 0] ());
   ();
-  ( [@GP_Sloc:operation.adb:38:1] ([#"operation.adb" 38 0 0] ()) ) )
+  ( [@GP_Sloc:operation.adb:62:1] ([#"operation.adb" 62 0 0] ()) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "addition" defined at operation.ads:5, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -3614,6 +3614,8 @@ module Operation__addition__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Boolean as Boolean
  use        Standard__integer as Standard__integer
  use        Standard__integer___axiom as Standard__integer___axiom
  use        Operation__addition__s as Operation__addition__s
@@ -3643,15 +3645,15 @@ module Operation__addition__subprogram_def
  let def [#"operation.ads" 5 0 0][@GP_Subp:operation.ads:5] 
    (__void_param : unit)
   requires { [#"operation.ads" 5 0 0] true }
-  ensures { [#"operation.ads" 5 0 0] ([#"operation.ads" 7 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@comment:        Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));                 ^ operation.ads:7:17:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@GP_Sloc:operation.ads:7:17] [@model_vc_post] [@GP_Id:4] ( [@GP_Pretty_Ada:79338] [@GP_Sloc:operation.ads:7:17] ((epsilon temp___result_225 : int.
-   ( (temp___result_225 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_225 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_226 : int.
-   ( (temp___result_226 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_226 (old { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+  ensures { [#"operation.ads" 5 0 0] ([#"operation.ads" 7 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@GP_Sloc:operation.ads:7:14] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:7:14:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:6] ( [@GP_Sloc:operation.ads:7:14] [@GP_Pretty_Ada:79529] ((epsilon temp___result_223 : int.
+   ( (temp___result_223 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_223 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_224 : int.
+   ( (temp___result_224 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_224 (old { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:5 *)
   ;
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
-   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
    assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
   () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:5 *)
   ;
@@ -3662,34 +3664,40 @@ module Operation__addition__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram operation.ads:5 *)
   ;
-   assume {  ( [@GP_Pretty_Ada:79317] ((epsilon temp___result_224 : int.
-   ( (temp___result_224 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_224 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
+   assume {  ( [@GP_Pretty_Ada:79508] ((epsilon temp___result_222 : int.
+   ( (temp___result_222 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_222 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
    begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_222 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  (let temp___old_220 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
   ensures { (result = { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    (  try
     ( ();
-    ( [@GP_Sloc:operation.adb:8:19] ([#"operation.adb" 8 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:8:12] ([#"operation.adb" 8 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:8:12] ([#"operation.adb" 8 0 0] ( ([#"operation.adb" 8 0 0] ( [@GP_Reason:VC_PRECONDITION] [@comment:      Stack.pop(S,I);            ^ operation.adb:8:12:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:8:12] [@GP_Id:0] (Stack__pop___axiom.pop(Operation__addition__s.s__split_fields) (Operation__i.i)) )) )) );
-    ( [@GP_Sloc:operation.adb:9:19] ([#"operation.adb" 9 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:9:12] ([#"operation.adb" 9 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:9:12] ([#"operation.adb" 9 0 0] ( ([#"operation.adb" 9 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:9:12] [@comment:      Stack.pop(S,J);            ^ operation.adb:9:12:VC_PRECONDITION] [@GP_Id:1] (Stack__pop___axiom.pop(Operation__addition__s.s__split_fields) (Operation__j.j)) )) )) );
-    ( [@GP_Sloc:operation.adb:10:7] ([#"operation.adb" 10 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:10:17] ([#"operation.adb" 10 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:10:21] ([#"operation.adb" 10 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:10:14] ([#"operation.adb" 10 0 0] [#"operation.adb" 10 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 10 0 0] ( [@comment:      Result := I + J;                   ^ operation.adb:10:19:VC_OVERFLOW_CHECK] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:10:19] [@GP_Id:2] [@GP_Shape:result_assign__add] (Standard__integer.range_check_((Operation__i.i.int__content + Operation__j.j.int__content))) )) ))) );
-    ( [@GP_Sloc:operation.adb:11:20] ([#"operation.adb" 11 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:10:19] ([#"operation.adb" 10 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:10:12] ([#"operation.adb" 10 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:10:12] ([#"operation.adb" 10 0 0] ( ([#"operation.adb" 10 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:10:12] [@comment:      Stack.Pop(S,I);            ^ operation.adb:10:12:VC_PRECONDITION] [@GP_Id:0] (Stack__pop___axiom.pop(Operation__addition__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:11:19] ([#"operation.adb" 11 0 0] ()) );
     ( [@GP_Sloc:operation.adb:11:12] ([#"operation.adb" 11 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:11:12] ([#"operation.adb" 11 0 0] ( ([#"operation.adb" 11 0 0] ( [@comment:      Stack.push(S,Result);              ^ operation.adb:11:12:VC_PRECONDITION] [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:call_push] [@GP_Id:3] [@GP_Sloc:operation.adb:11:12] (Stack__push___axiom.push(Operation__addition__s.s__split_fields) (Operation__result.result__.int__content)) )) )) );
+    ( [@GP_Sloc:operation.adb:11:12] ([#"operation.adb" 11 0 0] ( ([#"operation.adb" 11 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,J);            ^ operation.adb:11:12:VC_PRECONDITION] [@GP_Id:1] [@GP_Sloc:operation.adb:11:12] (Stack__pop___axiom.pop(Operation__addition__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:14:11] ([#"operation.adb" 14 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:14:54] ([#"operation.adb" 14 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:14:7] ([#"operation.adb" 14 0 0] (if (( ([#"operation.adb" 14 0 0] [#"operation.adb" 14 0 0] (([@branch_id=2372] Main.spark__branch).bool__content <- ( (Boolean.orb(( (Operation__j.j.int__content < (1 : int)) && (Operation__i.i.int__content >= ([#"operation.adb" 14 0 0] ( [@vc:annotation] [@GP_Sloc:operation.adb:14:45] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__cmp__sub] [@GP_Id:4] [@comment:      if (J < 1 and then I >= Integer'First - J) or (J > -1 and then I <= Integer'Last - J) then                                             ^ operation.adb:14:45:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(((( -2147483648) : int) - Operation__j.j.int__content))) ))) )) (( (Operation__j.j.int__content > (( -1) : int)) && (Operation__i.i.int__content <= ([#"operation.adb" 14 0 0] ( [@GP_Sloc:operation.adb:14:88] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@comment:      if (J < 1 and then I >= Integer'First - J) or (J > -1 and then I <= Integer'Last - J) then                                                                                        ^ operation.adb:14:88:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__cmp__sub] [@GP_Id:5] (Standard__integer.range_check_(((2147483647 : int) - Operation__j.j.int__content))) ))) ))) )));
+    ( [@branch_id=2372] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:15:10] ([#"operation.adb" 15 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:15:20] ([#"operation.adb" 15 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:15:24] ([#"operation.adb" 15 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:15:17] ([#"operation.adb" 15 0 0] [#"operation.adb" 15 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 15 0 0] ( [@GP_Sloc:operation.adb:15:22] [@vc:annotation] [@comment:         Result := I + J;                      ^ operation.adb:15:22:VC_OVERFLOW_CHECK] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Id:2] [@GP_Shape:if__result_assign__add] (Standard__integer.range_check_((Operation__i.i.int__content + Operation__j.j.int__content))) )) ))) );
+     ( [@GP_Sloc:operation.adb:16:24] ([#"operation.adb" 16 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:16:15] ([#"operation.adb" 16 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:16:15] ([#"operation.adb" 16 0 0] ( ([#"operation.adb" 16 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@comment:         Stack.Push(S, Result);               ^ operation.adb:16:15:VC_PRECONDITION] [@GP_Shape:if__call_push] [@GP_Id:3] [@GP_Sloc:operation.adb:16:15] (Stack__push___axiom.push(Operation__addition__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+     ()))) );
      raise Return__exc )
    with
     Return__exc -> ()
    end;
-    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_222)) - (1 : int))) in (
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_220)) - (1 : int))) in (
     ()))
     in () end  )))
    )
@@ -3700,6 +3708,8 @@ module Operation__subtraction__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Boolean as Boolean
  use        Standard__integer as Standard__integer
  use        Standard__integer___axiom as Standard__integer___axiom
  use        Stack__stack_type as Stack__stack_type
@@ -3729,15 +3739,15 @@ module Operation__subtraction__subprogram_def
  let def [#"operation.ads" 9 0 0][@GP_Subp:operation.ads:9] 
    (__void_param : unit)
   requires { [#"operation.ads" 9 0 0] true }
-  ensures { [#"operation.ads" 9 0 0] ([#"operation.ads" 11 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@model_vc_post] [@GP_Sloc:operation.ads:11:17] [@comment:        Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));                 ^ operation.ads:11:17:VC_POSTCONDITION] [@GP_Id:9] ( [@GP_Sloc:operation.ads:11:17] [@GP_Pretty_Ada:79388] ((epsilon temp___result_231 : int.
-   ( (temp___result_231 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_231 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_232 : int.
-   ( (temp___result_232 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_232 (old { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+  ensures { [#"operation.ads" 9 0 0] ([#"operation.ads" 11 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Id:13] [@GP_Shape:pragargs__cmp] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:11:14:VC_POSTCONDITION] [@GP_Sloc:operation.ads:11:14] [@model_vc_post] ( [@GP_Pretty_Ada:79579] [@GP_Sloc:operation.ads:11:14] ((epsilon temp___result_229 : int.
+   ( (temp___result_229 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_229 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_230 : int.
+   ( (temp___result_230 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_230 (old { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:9 *)
   ;
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
-   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
    assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
   () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:9 *)
   ;
@@ -3748,34 +3758,40 @@ module Operation__subtraction__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram operation.ads:9 *)
   ;
-   assume {  ( [@GP_Pretty_Ada:79367] ((epsilon temp___result_230 : int.
-   ( (temp___result_230 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_230 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
+   assume {  ( [@GP_Pretty_Ada:79558] ((epsilon temp___result_228 : int.
+   ( (temp___result_228 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_228 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
    begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_228 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  (let temp___old_226 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
   ensures { (result = { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    (  try
     ( ();
-    ( [@GP_Sloc:operation.adb:16:19] ([#"operation.adb" 16 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:16:12] ([#"operation.adb" 16 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:16:12] ([#"operation.adb" 16 0 0] ( ([#"operation.adb" 16 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@comment:      Stack.pop(S,I);            ^ operation.adb:16:12:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:operation.adb:16:12] [@GP_Id:5] (Stack__pop___axiom.pop(Operation__subtraction__s.s__split_fields) (Operation__i.i)) )) )) );
-    ( [@GP_Sloc:operation.adb:17:19] ([#"operation.adb" 17 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:17:12] ([#"operation.adb" 17 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:17:12] ([#"operation.adb" 17 0 0] ( ([#"operation.adb" 17 0 0] ( [@GP_Reason:VC_PRECONDITION] [@comment:      Stack.pop(S,J);            ^ operation.adb:17:12:VC_PRECONDITION] [@GP_Shape:call_pop] [@GP_Sloc:operation.adb:17:12] [@vc:annotation] [@GP_Id:6] (Stack__pop___axiom.pop(Operation__subtraction__s.s__split_fields) (Operation__j.j)) )) )) );
-    ( [@GP_Sloc:operation.adb:18:7] ([#"operation.adb" 18 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:18:17] ([#"operation.adb" 18 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:18:21] ([#"operation.adb" 18 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:18:14] ([#"operation.adb" 18 0 0] [#"operation.adb" 18 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 18 0 0] ( [@GP_Shape:result_assign__sub] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:18:19] [@comment:      Result := J - I;                   ^ operation.adb:18:19:VC_OVERFLOW_CHECK] [@GP_Id:7] (Standard__integer.range_check_((Operation__j.j.int__content - Operation__i.i.int__content))) )) ))) );
-    ( [@GP_Sloc:operation.adb:19:20] ([#"operation.adb" 19 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:19:12] ([#"operation.adb" 19 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:19:12] ([#"operation.adb" 19 0 0] ( ([#"operation.adb" 19 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:call_push] [@comment:      Stack.push(S,Result);              ^ operation.adb:19:12:VC_PRECONDITION] [@GP_Sloc:operation.adb:19:12] [@GP_Id:8] (Stack__push___axiom.push(Operation__subtraction__s.s__split_fields) (Operation__result.result__.int__content)) )) )) );
+    ( [@GP_Sloc:operation.adb:23:19] ([#"operation.adb" 23 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:23:12] ([#"operation.adb" 23 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:23:12] ([#"operation.adb" 23 0 0] ( ([#"operation.adb" 23 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,I);            ^ operation.adb:23:12:VC_PRECONDITION] [@GP_Sloc:operation.adb:23:12] [@GP_Id:7] (Stack__pop___axiom.pop(Operation__subtraction__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:24:19] ([#"operation.adb" 24 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:24:12] ([#"operation.adb" 24 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:24:12] ([#"operation.adb" 24 0 0] ( ([#"operation.adb" 24 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:operation.adb:24:12] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,J);            ^ operation.adb:24:12:VC_PRECONDITION] [@GP_Id:8] (Stack__pop___axiom.pop(Operation__subtraction__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:27:11] ([#"operation.adb" 27 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:27:55] ([#"operation.adb" 27 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:27:7] ([#"operation.adb" 27 0 0] (if (( ([#"operation.adb" 27 0 0] [#"operation.adb" 27 0 0] (([@branch_id=2442] Main.spark__branch).bool__content <- ( (Boolean.orb(( (Operation__j.j.int__content > (( -1) : int)) && (Operation__i.i.int__content >= ([#"operation.adb" 27 0 0] ( [@GP_Id:11] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:27:46] [@GP_Shape:if__or__andthen__cmp__add] [@comment:      if (J > -1 and then I >= Integer'First + J) or (J < 1 and then I <= Integer'Last + J) then                                              ^ operation.adb:27:46:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(((( -2147483648) : int) + Operation__j.j.int__content))) ))) )) (( (Operation__j.j.int__content < (1 : int)) && (Operation__i.i.int__content <= ([#"operation.adb" 27 0 0] ( [@GP_Id:12] [@vc:annotation] [@GP_Sloc:operation.adb:27:88] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__cmp__add] [@comment:      if (J > -1 and then I >= Integer'First + J) or (J < 1 and then I <= Integer'Last + J) then                                                                                        ^ operation.adb:27:88:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(((2147483647 : int) + Operation__j.j.int__content))) ))) ))) )));
+    ( [@branch_id=2442] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:28:10] ([#"operation.adb" 28 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:28:20] ([#"operation.adb" 28 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:28:24] ([#"operation.adb" 28 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:28:17] ([#"operation.adb" 28 0 0] [#"operation.adb" 28 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 28 0 0] ( [@comment:         Result := I - J;                      ^ operation.adb:28:22:VC_OVERFLOW_CHECK] [@GP_Shape:if__result_assign__sub] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:28:22] [@GP_Id:9] (Standard__integer.range_check_((Operation__i.i.int__content - Operation__j.j.int__content))) )) ))) );
+     ( [@GP_Sloc:operation.adb:29:24] ([#"operation.adb" 29 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:29:15] ([#"operation.adb" 29 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:29:15] ([#"operation.adb" 29 0 0] ( ([#"operation.adb" 29 0 0] ( [@GP_Id:10] [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:operation.adb:29:15] [@vc:annotation] [@comment:         Stack.Push(S, Result);                 ^ operation.adb:29:15:VC_PRECONDITION] [@GP_Shape:if__call_push] (Stack__push___axiom.push(Operation__subtraction__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+     ()))) );
      raise Return__exc )
    with
     Return__exc -> ()
    end;
-    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_228)) - (1 : int))) in (
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_226)) - (1 : int))) in (
     ()))
     in () end  )))
    )
@@ -3786,6 +3802,9 @@ module Operation__multiplication__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Int_Division as Int_Division
+ use        "_gnatprove_standard".Boolean as Boolean
  use        Standard__integer as Standard__integer
  use        Standard__integer___axiom as Standard__integer___axiom
  use        Stack__stack_type as Stack__stack_type
@@ -3815,15 +3834,15 @@ module Operation__multiplication__subprogram_def
  let def [#"operation.ads" 13 0 0][@GP_Subp:operation.ads:13] 
    (__void_param : unit)
   requires { [#"operation.ads" 13 0 0] true }
-  ensures { [#"operation.ads" 13 0 0] ([#"operation.ads" 15 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Id:14] [@GP_Shape:pragargs__cmp] [@GP_Sloc:operation.ads:15:17] [@comment:        Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));                 ^ operation.ads:15:17:VC_POSTCONDITION] [@model_vc_post] ( [@GP_Sloc:operation.ads:15:17] [@GP_Pretty_Ada:79438] ((epsilon temp___result_237 : int.
-   ( (temp___result_237 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_237 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_238 : int.
-   ( (temp___result_238 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_238 (old { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+  ensures { [#"operation.ads" 13 0 0] ([#"operation.ads" 15 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@GP_Sloc:operation.ads:15:14] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:15:14:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:24] ( [@GP_Sloc:operation.ads:15:14] [@GP_Pretty_Ada:79629] ((epsilon temp___result_235 : int.
+   ( (temp___result_235 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_235 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_236 : int.
+   ( (temp___result_236 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_236 (old { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:13 *)
   ;
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
-   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
    assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
   () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:13 *)
   ;
@@ -3834,34 +3853,43 @@ module Operation__multiplication__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram operation.ads:13 *)
   ;
-   assume {  ( [@GP_Pretty_Ada:79417] ((epsilon temp___result_236 : int.
-   ( (temp___result_236 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_236 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
+   assume {  ( [@GP_Pretty_Ada:79608] ((epsilon temp___result_234 : int.
+   ( (temp___result_234 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_234 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
    begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_234 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  (let temp___old_232 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
   ensures { (result = { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    (  try
     ( ();
-    ( [@GP_Sloc:operation.adb:24:19] ([#"operation.adb" 24 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:24:12] ([#"operation.adb" 24 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:24:12] ([#"operation.adb" 24 0 0] ( ([#"operation.adb" 24 0 0] ( [@GP_Id:10] [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:operation.adb:24:12] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.pop(S,I);            ^ operation.adb:24:12:VC_PRECONDITION] (Stack__pop___axiom.pop(Operation__multiplication__s.s__split_fields) (Operation__i.i)) )) )) );
-    ( [@GP_Sloc:operation.adb:25:19] ([#"operation.adb" 25 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:25:12] ([#"operation.adb" 25 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:25:12] ([#"operation.adb" 25 0 0] ( ([#"operation.adb" 25 0 0] ( [@GP_Id:11] [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@comment:      Stack.pop(S,J);            ^ operation.adb:25:12:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:operation.adb:25:12] (Stack__pop___axiom.pop(Operation__multiplication__s.s__split_fields) (Operation__j.j)) )) )) );
-    ( [@GP_Sloc:operation.adb:26:7] ([#"operation.adb" 26 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:26:17] ([#"operation.adb" 26 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:26:21] ([#"operation.adb" 26 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:26:14] ([#"operation.adb" 26 0 0] [#"operation.adb" 26 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 26 0 0] ( [@GP_Id:12] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@comment:      Result := I * J;                   ^ operation.adb:26:19:VC_OVERFLOW_CHECK] [@GP_Shape:result_assign__mult] [@GP_Sloc:operation.adb:26:19] (Standard__integer.range_check_((Operation__i.i.int__content * Operation__j.j.int__content))) )) ))) );
-    ( [@GP_Sloc:operation.adb:27:20] ([#"operation.adb" 27 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:27:12] ([#"operation.adb" 27 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:27:12] ([#"operation.adb" 27 0 0] ( ([#"operation.adb" 27 0 0] ( [@GP_Id:13] [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:operation.adb:27:12] [@vc:annotation] [@GP_Shape:call_push] [@comment:      Stack.push(S,Result);              ^ operation.adb:27:12:VC_PRECONDITION] (Stack__push___axiom.push(Operation__multiplication__s.s__split_fields) (Operation__result.result__.int__content)) )) )) );
+    ( [@GP_Sloc:operation.adb:35:19] ([#"operation.adb" 35 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:35:12] ([#"operation.adb" 35 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:35:12] ([#"operation.adb" 35 0 0] ( ([#"operation.adb" 35 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Id:14] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:35:12] [@comment:      Stack.Pop(S,I);            ^ operation.adb:35:12:VC_PRECONDITION] (Stack__pop___axiom.pop(Operation__multiplication__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:36:19] ([#"operation.adb" 36 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:36:12] ([#"operation.adb" 36 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:36:12] ([#"operation.adb" 36 0 0] ( ([#"operation.adb" 36 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Id:15] [@GP_Shape:call_pop] [@comment:      Stack.Pop(S,J);            ^ operation.adb:36:12:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:operation.adb:36:12] (Stack__pop___axiom.pop(Operation__multiplication__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:39:11] ([#"operation.adb" 39 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:40:10] ([#"operation.adb" 40 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:40:21] ([#"operation.adb" 40 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:41:10] ([#"operation.adb" 41 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:42:10] ([#"operation.adb" 42 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:39:7] ([#"operation.adb" 39 0 0] (if (( ([#"operation.adb" 39 0 0] [#"operation.adb" 39 0 0] (([@branch_id=2512] Main.spark__branch).bool__content <- ( (Boolean.orb((Boolean.orb((Boolean.orb(( (Operation__j.j.int__content < (( -1) : int)) && (Boolean.andb((Operation__i.i.int__content <= ([#"operation.adb" 39 0 0] ( [@comment:      if (J < -1 and then (I <= Integer'First / J and I >= Integer'Last / J)) or                                                ^ operation.adb:39:47:VC_OVERFLOW_CHECK] [@GP_Id:19] [@vc:annotation] [@GP_Sloc:operation.adb:39:47] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__or__or__andthen__and__cmp__div] (Standard__integer.range_check_(([#"operation.adb" 39 0 0] ( [@comment:      if (J < -1 and then (I <= Integer'First / J and I >= Integer'Last / J)) or                                                ^ operation.adb:39:47:VC_DIVISION_CHECK] [@GP_Id:18] [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Sloc:operation.adb:39:47] [@GP_Shape:if__or__or__or__andthen__and__cmp__div] (Int_Division.div_((( -2147483648) : int)) (Operation__j.j.int__content)) )))) )))) ((Operation__i.i.int__content >= ([#"operation.adb" 39 0 0] ( [@comment:      if (J < -1 and then (I <= Integer'First / J and I >= Integer'Last / J)) or                                                                          ^ operation.adb:39:73:VC_DIVISION_CHECK] [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Sloc:operation.adb:39:73] [@GP_Shape:if__or__or__or__andthen__and__cmp__div] [@GP_Id:20] (Int_Division.div_((2147483647 : int)) (Operation__j.j.int__content)) ))))) )) ((Boolean.andb((Operation__j.j.int__content = (( -1) : int))) ((Operation__i.i.int__content <> (( -2147483648) : int))))))) ((Operation__j.j.int__content = (0 : int))))) (( (Operation__j.j.int__content > (0 : int)) && (Boolean.andb((Operation__i.i.int__content >= ([#"operation.adb" 42 0 0] ( [@comment:        (J > 0 and then (I >= Integer'First / J and I <= Integer'Last / J)) then                                             ^ operation.adb:42:45:VC_OVERFLOW_CHECK] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__and__cmp__div] [@GP_Sloc:operation.adb:42:45] [@GP_Id:22] (Standard__integer.range_check_(([#"operation.adb" 42 0 0] ( [@comment:        (J > 0 and then (I >= Integer'First / J and I <= Integer'Last / J)) then                                             ^ operation.adb:42:45:VC_DIVISION_CHECK] [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Shape:if__or__andthen__and__cmp__div] [@GP_Sloc:operation.adb:42:45] [@GP_Id:21] (Int_Division.div_((( -2147483648) : int)) (Operation__j.j.int__content)) )))) )))) ((Operation__i.i.int__content <= ([#"operation.adb" 42 0 0] ( [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@comment:        (J > 0 and then (I >= Integer'First / J and I <= Integer'Last / J)) then                                                                       ^ operation.adb:42:71:VC_DIVISION_CHECK] [@GP_Shape:if__or__andthen__and__cmp__div] [@GP_Sloc:operation.adb:42:71] [@GP_Id:23] (Int_Division.div_((2147483647 : int)) (Operation__j.j.int__content)) ))))) ))) )));
+    ( [@branch_id=2512] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:43:10] ([#"operation.adb" 43 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:43:20] ([#"operation.adb" 43 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:43:24] ([#"operation.adb" 43 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:43:17] ([#"operation.adb" 43 0 0] [#"operation.adb" 43 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 43 0 0] ( [@comment:         Result := I * J;                      ^ operation.adb:43:22:VC_OVERFLOW_CHECK] [@GP_Id:16] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:43:22] [@GP_Shape:if__result_assign__mult] (Standard__integer.range_check_((Operation__i.i.int__content * Operation__j.j.int__content))) )) ))) );
+     ( [@GP_Sloc:operation.adb:44:23] ([#"operation.adb" 44 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:44:15] ([#"operation.adb" 44 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:44:15] ([#"operation.adb" 44 0 0] ( ([#"operation.adb" 44 0 0] ( [@GP_Reason:VC_PRECONDITION] [@comment:         Stack.push(S,Result);               ^ operation.adb:44:15:VC_PRECONDITION] [@GP_Id:17] [@GP_Sloc:operation.adb:44:15] [@vc:annotation] [@GP_Shape:if__call_push] (Stack__push___axiom.push(Operation__multiplication__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+     ()))) );
      raise Return__exc )
    with
     Return__exc -> ()
    end;
-    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_234)) - (1 : int))) in (
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_232)) - (1 : int))) in (
     ()))
     in () end  )))
    )
@@ -3872,6 +3900,7 @@ module Operation__division__subprogram_def
  use        "_gnatprove_standard".Main
  use        "int".Int
  use        "int".Int
+ use        "_gnatprove_standard".Main as Main
  use        "_gnatprove_standard".Int_Division as Int_Division
  use        "_gnatprove_standard".Boolean as Boolean
  use        Standard__integer as Standard__integer
@@ -3881,8 +3910,6 @@ module Operation__division__subprogram_def
  use        Stack__get_size as Stack__get_size
  use        Stack__get_size___axiom as Stack__get_size___axiom
  use        Operation__division__s as Operation__division__s
- use        Stack__get_element as Stack__get_element
- use        Stack__get_element___axiom as Stack__get_element___axiom
  use        Operation__i as Operation__i
  use        Operation__j as Operation__j
  use        Operation__result as Operation__result
@@ -3905,56 +3932,65 @@ module Operation__division__subprogram_def
  let def [#"operation.ads" 17 0 0][@GP_Subp:operation.ads:17] 
    (__void_param : unit)
   requires { [#"operation.ads" 17 0 0] true }
-  ensures { [#"operation.ads" 17 0 0] ([#"operation.ads" 19 0 0] ( [@GP_Sloc:operation.ads:19:17] [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@comment:        Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));                 ^ operation.ads:19:17:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:20] ( [@GP_Sloc:operation.ads:19:17] [@GP_Pretty_Ada:79503] ((epsilon temp___result_245 : int.
-   ( (temp___result_245 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_245 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_246 : int.
-   ( (temp___result_246 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_246 (old { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+  ensures { [#"operation.ads" 17 0 0] ([#"operation.ads" 19 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:19:14:VC_POSTCONDITION] [@GP_Id:30] [@model_vc_post] [@GP_Sloc:operation.ads:19:14] ( [@GP_Pretty_Ada:79679] [@GP_Sloc:operation.ads:19:14] ((epsilon temp___result_241 : int.
+   ( (temp___result_241 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_241 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_242 : int.
+   ( (temp___result_242 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_242 (old { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:17 *)
   ;
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
    assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
-   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
    assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
   () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:17 *)
   ;
   () (* Check for RTE in the Pre of the subprogram operation.ads:17 *)
   ;
-   begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) >= (2 : int))) (((Stack__get_element___axiom.get_element({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) - (1 : int)))) <> (0 : int)))) in (
+   begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) >= (2 : int)) in (
    ()))
    in () end ;
   () (* Assume Pre of the subprogram operation.ads:17 *)
   ;
-   assume {  ( ( [@GP_Pretty_Ada:2714] ((epsilon temp___result_242 : int.
-   ( (temp___result_242 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_242 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2729] ((epsilon temp___result_244 : int.
-   ( (temp___result_244 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } ((epsilon temp___result_243 : int.
-    ( (temp___result_243 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_243 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) - (1 : int)))) /\ (Stack__get_element.get_element__function_guard temp___result_244 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } ((epsilon temp___result_243 : int.
-    ( (temp___result_243 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_243 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) - (1 : int))) )) <> (0 : int)) ) ) };
+   assume {  ( [@GP_Pretty_Ada:79658] ((epsilon temp___result_240 : int.
+   ( (temp___result_240 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_240 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) };
    begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
-  (let temp___old_240 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  (let temp___old_238 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
   ensures { (result = { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
   in _f) in (
    (  try
     ( ();
-    ( [@GP_Sloc:operation.adb:32:19] ([#"operation.adb" 32 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:32:12] ([#"operation.adb" 32 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:32:12] ([#"operation.adb" 32 0 0] ( ([#"operation.adb" 32 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Id:15] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:32:12] [@comment:      Stack.pop(S,I);            ^ operation.adb:32:12:VC_PRECONDITION] (Stack__pop___axiom.pop(Operation__division__s.s__split_fields) (Operation__i.i)) )) )) );
-    ( [@GP_Sloc:operation.adb:33:19] ([#"operation.adb" 33 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:33:12] ([#"operation.adb" 33 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:33:12] ([#"operation.adb" 33 0 0] ( ([#"operation.adb" 33 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Id:16] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.pop(S,J);            ^ operation.adb:33:12:VC_PRECONDITION] [@GP_Sloc:operation.adb:33:12] (Stack__pop___axiom.pop(Operation__division__s.s__split_fields) (Operation__j.j)) )) )) );
-    ( [@GP_Sloc:operation.adb:34:7] ([#"operation.adb" 34 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:34:17] ([#"operation.adb" 34 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:34:21] ([#"operation.adb" 34 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:34:14] ([#"operation.adb" 34 0 0] [#"operation.adb" 34 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 34 0 0] ( [@GP_Id:18] [@GP_Shape:result_assign__div] [@GP_Sloc:operation.adb:34:19] [@vc:annotation] [@comment:      Result := I / J;                   ^ operation.adb:34:19:VC_OVERFLOW_CHECK] [@GP_Reason:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(([#"operation.adb" 34 0 0] ( [@GP_Id:17] [@GP_Shape:result_assign__div] [@GP_Sloc:operation.adb:34:19] [@comment:      Result := I / J;                   ^ operation.adb:34:19:VC_DIVISION_CHECK] [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] (Int_Division.div_(Operation__i.i.int__content) (Operation__j.j.int__content)) )))) )) ))) );
-    ( [@GP_Sloc:operation.adb:35:20] ([#"operation.adb" 35 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:35:12] ([#"operation.adb" 35 0 0] ()) );
-    ( [@GP_Sloc:operation.adb:35:12] ([#"operation.adb" 35 0 0] ( ([#"operation.adb" 35 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Id:19] [@vc:annotation] [@GP_Shape:call_push] [@GP_Sloc:operation.adb:35:12] [@comment:      Stack.push(S,Result);              ^ operation.adb:35:12:VC_PRECONDITION] (Stack__push___axiom.push(Operation__division__s.s__split_fields) (Operation__result.result__.int__content)) )) )) );
+    ( [@GP_Sloc:operation.adb:51:19] ([#"operation.adb" 51 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:51:12] ([#"operation.adb" 51 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:51:12] ([#"operation.adb" 51 0 0] ( ([#"operation.adb" 51 0 0] ( [@GP_Sloc:operation.adb:51:12] [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,I);            ^ operation.adb:51:12:VC_PRECONDITION] [@GP_Id:25] (Stack__pop___axiom.pop(Operation__division__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:52:19] ([#"operation.adb" 52 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:52:12] ([#"operation.adb" 52 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:52:12] ([#"operation.adb" 52 0 0] ( ([#"operation.adb" 52 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,J);            ^ operation.adb:52:12:VC_PRECONDITION] [@GP_Sloc:operation.adb:52:12] [@GP_Id:26] (Stack__pop___axiom.pop(Operation__division__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:54:10] ([#"operation.adb" 54 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:54:7] ([#"operation.adb" 54 0 0] (if (( ([#"operation.adb" 54 0 0] [#"operation.adb" 54 0 0] (([@branch_id=2613] Main.spark__branch).bool__content <- ( (Operation__j.j.int__content <> (0 : int)) )));
+    ( [@branch_id=2613] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:55:14] ([#"operation.adb" 55 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:55:27] ([#"operation.adb" 55 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:55:38] ([#"operation.adb" 55 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:55:10] ([#"operation.adb" 55 0 0] (if (( ([#"operation.adb" 55 0 0] [#"operation.adb" 55 0 0] (([@branch_id=2617] Main.spark__branch).bool__content <- ( (Boolean.orb((Operation__j.j.int__content <> (( -1) : int))) ((Boolean.andb((Operation__j.j.int__content = (( -1) : int))) ((Operation__i.i.int__content <> (( -2147483648) : int)))))) )));
+     ( [@branch_id=2617] Main.spark__branch ).bool__content )) then (
+      ( ();
+      ( [@GP_Sloc:operation.adb:56:13] ([#"operation.adb" 56 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:56:23] ([#"operation.adb" 56 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:56:27] ([#"operation.adb" 56 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:56:20] ([#"operation.adb" 56 0 0] [#"operation.adb" 56 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 56 0 0] ( [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@comment:            Result := I / J;                         ^ operation.adb:56:25:VC_OVERFLOW_CHECK] [@GP_Shape:if__if__result_assign__div] [@GP_Sloc:operation.adb:56:25] [@GP_Id:28] (Standard__integer.range_check_(([#"operation.adb" 56 0 0] ( [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@comment:            Result := I / J;                         ^ operation.adb:56:25:VC_DIVISION_CHECK] [@GP_Shape:if__if__result_assign__div] [@GP_Sloc:operation.adb:56:25] [@GP_Id:27] (Int_Division.div_(Operation__i.i.int__content) (Operation__j.j.int__content)) )))) )) ))) );
+      ( [@GP_Sloc:operation.adb:57:26] ([#"operation.adb" 57 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:57:18] ([#"operation.adb" 57 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:57:18] ([#"operation.adb" 57 0 0] ( ([#"operation.adb" 57 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:if__if__call_push] [@comment:            Stack.push(S,Result);                    ^ operation.adb:57:18:VC_PRECONDITION] [@GP_Sloc:operation.adb:57:18] [@GP_Id:29] (Stack__push___axiom.push(Operation__division__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+      ()))) ) )) else (
+     ()))) );
      raise Return__exc )
    with
     Return__exc -> ()
    end;
-    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_240)) - (1 : int))) in (
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_238)) - (1 : int))) in (
     ()))
     in () end  )))
    )
