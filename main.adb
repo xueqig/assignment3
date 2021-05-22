@@ -59,7 +59,7 @@ begin
          end if;
       end;
    else
-      Put_Line ("Master Password Not Provided !");
+      Put_Line ("Master Password Not Provided!");
       return;
    end if;
 
@@ -87,50 +87,50 @@ begin
                            Stack.Pop(calStack,I);
                            Put(I); Put_Line ("");
                         else
-                           Put_Line ("Stack is Empty ! Nothing to Pop");
+                           Put_Line ("Stack is Empty! Nothing to Pop!");
                            exit;
                         end if;
                      elsif TokStr = "list" then
                         Stack.List (DB);
                      elsif TokStr = "+" then
-                        if Stack.Get_Size(calStack) >=2 then
+                        if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Addition(calStack);
                         else
-                           Put_Line("Not Enough Operands on Stack ! '+' requires 2 numbers");
+                           Put_Line("Not Enough Operands on Stack! '+' requires 2 numbers");
                            exit;
                         end if;
                      elsif TokStr = "-" then
-                        if Stack.Get_Size(calStack) >=2 then
+                        if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Subtraction(calStack);
                         else
-                           Put_Line("Not Enough Operands on Stack ! '-' requires 2 numbers");
+                           Put_Line("Not Enough Operands on Stack! '-' requires 2 numbers");
                            exit;
                         end if;
                      elsif TokStr = "*" then
-                        if Stack.Get_Size(calStack) >= 2 then
+                        if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Multiplication(calStack);
                         else
                            Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
                            exit;
                         end if;
                      elsif TokStr = "/" then
-                        if Stack.Get_Size(calStack) >= 2 then
+                        if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            if Stack.Get_Element(calStack, Stack.Get_Size(calStack) - 1) /= 0 then
                               OPERATION.Division(calStack);
                            else
-                              Put_Line("Invalid operation: division by zero !");
+                              Put_Line("Invalid operation! Division by zero!");
                               exit;
                            end if;
                         else
-                           Put_Line("Not Enough Operands on Stack ! '/' requires 2 numbers");
+                           Put_Line("Not Enough Operands on Stack! '/' requires 2 numbers");
                            exit;
                         end if;
                      else
-                        Put_Line("Invalid Command !");
+                        Put_Line("Invalid Command!");
                         exit;
                      end if;
                   else
-                     Put_Line ("Unlock the Calculator to perform operations.");
+                     Put_Line ("Please unlock the Calculator to perform operations.");
                      exit;
                   end if;
                elsif NumTokens = 2 then
@@ -163,7 +163,7 @@ begin
                               PasswordManager.lock(isLocked);
                            end if;
                         elsif TokStr = "unlock" then
-                           Put_Line ("Already unlocked !");
+                           Put_Line ("Already unlocked!");
                         else
                            Put_Line ("Invalid Command");
                            exit;
@@ -175,7 +175,7 @@ begin
                         elsif TokStr = "lock" then
                            Put_Line ("Already Locked!");
                         else
-                           Put_Line("Unlock the Calculator to perform operations.");
+                           Put_Line("Please unlock the Calculator to perform operations.");
                            exit;
                         end if;
                      end if;
@@ -186,7 +186,7 @@ begin
                end if;
             end;
          else 
-            Put_Line ("Invalid Command ! Try 'push 5' " );
+            Put_Line ("Invalid Command! Try 'push 5' " );
             exit;
          end if;
       end;
