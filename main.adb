@@ -43,27 +43,30 @@ begin
    
    -- Checking if a master password is provided
    if MyCommandLine.Argument_Count = 1 then
+      -- checking if the master password has length of 4
       if MyCommandLine.Argument(1)'Length = 4 then
          declare
             P: String(1..4) := MyCommandLine.Argument(1);
          begin
-            -- check if the argument string is PIN
+            -- check if the argument string is digital PIN
             if passwordmanager.IsPin(P) then
                PIN2 := PIN.From_String(P);
                -- check if the PINs are equal
                if not PIN."=" (PIN1, PIN2) then
-                  Put_Line ("Invalid Master Password!");
+                  Put_Line ("Master Password Not Match!");
                   return;
                end if;
             else
-               Put_Line ("Invalid Master Password!");
+               Put_Line ("Invalid Master Password Format! the password should be digital pin in range of 0000..9999");
                return;
             end if;
          end;
-      end if;
-      
+      else
+         Put_Line ("Invalid Master Password Format! The length of password should be 4");
+         return;
+      end if; 
    else
-      Put_Line ("Master Password Not Provided!");
+      Put_Line ("Master Password Not Provided Or The Number Of Arguements Is Greater Than 1");
       return;
    end if;
 
