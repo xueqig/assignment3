@@ -83,7 +83,7 @@ begin
                if NumTokens = 1 then
                   if not isLocked then 
                      if TokStr = "pop" then
-                        if Stack.Get_Size(calStack) > 0 then
+                        if Stack.Get_Size(calStack) > 0 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            Stack.Pop(calStack,I);
                            Put(I); Put_Line ("");
                         else
@@ -139,7 +139,7 @@ begin
                   begin
                      if isLocked = False then
                         if TokStr = "push" then
-                           if Stack.Get_Size(calStack) < Stack.Max_Size then
+                           if Stack.Get_Size(calStack) >= 0 and Stack.Get_Size(calStack) < Stack.Max_Size then
                               Stack.Push(calStack, StringToInteger.From_String(TokStr2));
                            end if;
                         elsif TokStr = "load" then
