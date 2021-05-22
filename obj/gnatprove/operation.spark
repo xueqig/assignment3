@@ -905,7 +905,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 3118,
-              "time": 0
+              "time": 3.00000000000000E-01
             }
           },
           "transformations": {
@@ -920,7 +920,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.00000011920929E-01
         }
       }
     },
@@ -1087,7 +1087,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 601,
-              "time": 0
+              "time": 1.30000000000000E-01
             }
           },
           "transformations": {
@@ -1102,7 +1102,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.29999995231628E-01
         }
       }
     },
@@ -1207,7 +1207,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 543,
-              "time": 0
+              "time": 1.30000000000000E-01
             }
           },
           "transformations": {
@@ -1222,7 +1222,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.29999995231628E-01
         }
       }
     },
@@ -1287,7 +1287,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 154,
-              "time": 0
+              "time": 1.20000000000000E-01
             }
           },
           "transformations": {
@@ -1302,7 +1302,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.19999997317791E-01
         }
       }
     },
@@ -1469,7 +1469,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 1002,
-              "time": 0
+              "time": 1.80000000000000E-01
             }
           },
           "transformations": {
@@ -1484,7 +1484,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.80000007152557E-01
         }
       }
     },
@@ -1662,7 +1662,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 160,
-              "time": 0
+              "time": 1.20000000000000E-01
             }
           },
           "transformations": {
@@ -1677,7 +1677,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 1.19999997317791E-01
         }
       }
     }
@@ -2805,14 +2805,14 @@
     }
   ],
   "timings": {
-    "marking": 3.04799992591143E-03,
-    "globals (basic)": 9.31200012564659E-03,
-    "globals/properties (advanced)": 2.04850006848574E-02,
-    "flow analysis": 2.39380002021790E-02,
+    "marking": 3.34600009955466E-03,
+    "globals (basic)": 1.06330001726747E-02,
+    "globals/properties (advanced)": 2.24120002239943E-02,
+    "flow analysis": 2.71390005946159E-02,
     "codepeer results": 9.00000031833770E-06,
-    "init_why_sections": 7.90000020060688E-04,
-    "translation of standard": 4.32500010356307E-03,
-    "translation of compilation unit": 2.55040004849434E-02,
-    "proof": 9.46748018264771E-01
+    "init_why_sections": 7.98999972175807E-04,
+    "translation of standard": 4.69199987128377E-03,
+    "translation of compilation unit": 2.60869991034269E-02,
+    "proof": 3.27111411094666E+00
   }
 }

@@ -2,7 +2,7 @@ with VariableStore;
 
 package Stack with SPARK_Mode is
    type Stack_Type is private;
-   Max_Size : constant Natural := 1000;
+   Max_Size : constant Natural := 512;
 
    procedure Init_Stack(Stack: out Stack_Type) with
      Post => Get_Size(Stack) = 0 and

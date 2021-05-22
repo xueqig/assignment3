@@ -126,18 +126,18 @@
 <theory name="Stack__remove__subprogram_def">
  <goal name="VC def" expl="VC for def">
  <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="postcondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
   <goal name="VC def.0" expl="precondition">
   <proof prover="0"><result status="unknown" steps="67"/></proof>
   <proof prover="1"><result status="unknown" steps="94"/></proof>
   </goal>
-  <goal name="VC def.1" expl="precondition">
-  </goal>
-  <goal name="VC def.2" expl="postcondition">
-  </goal>
   <goal name="VC def.3" expl="precondition">
   <proof prover="0"><result status="valid" steps="24"/></proof>
   </goal>
-  <goal name="VC def.0" expl="postcondition">
+  <goal name="VC def.2" expl="postcondition">
   </goal>
  </transf>
  </goal>

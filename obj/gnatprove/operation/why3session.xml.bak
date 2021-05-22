@@ -13,10 +13,10 @@
   <goal name="VC def.0" expl="precondition">
   </goal>
   <goal name="VC def.1" expl="precondition">
-  <proof prover="0" obsolete="true"><result status="unknown" steps="226"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="237"/></proof>
   </goal>
   <goal name="VC def.2" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" steps="226"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="237"/></proof>
   </goal>
   <goal name="VC def.3" expl="postcondition">
   </goal>
@@ -183,11 +183,11 @@
   </goal>
   <goal name="VC def.8" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="20"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="219"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="318"/></proof>
   </goal>
   <goal name="VC def.9" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="20"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="318"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="219"/></proof>
   </goal>
   <goal name="VC def.10" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="543"/></proof>
@@ -195,11 +195,11 @@
   </goal>
   <goal name="VC def.11" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="20"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="330"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1145"/></proof>
   </goal>
   <goal name="VC def.12" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="20"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="1145"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="330"/></proof>
   </goal>
   <goal name="VC def.13" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="601"/></proof>

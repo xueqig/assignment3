@@ -1795,7 +1795,7 @@ module Stack__Tstack_dataD1
  use        "int".Int
 
  type tstack_dataD1 =
-  < range 1 1000 >
+  < range 1 512 >
  
  val constant first 
    : int
@@ -1803,7 +1803,7 @@ module Stack__Tstack_dataD1
  
  val constant last 
    : int
-  ensures { result =  (1000 : int) }
+  ensures { result =  (512 : int) }
  
  predicate in_range 
    (x : int) =
@@ -2034,7 +2034,7 @@ module Stack__stack_data
  
  val constant last 
    : int
-  ensures { result =  (1000 : int) }
+  ensures { result =  (512 : int) }
  
  clone export "ada__model".Constr_Array with axiom .,
  type map = Array__Int__Standard__integer.map, 
@@ -2308,7 +2308,7 @@ module Stack__init_stack__L11s__T12s
  use        "int".Int
 
  type t12s =
-  < range 1 1000 >
+  < range 1 512 >
  
  val constant first 
    : int
@@ -2316,7 +2316,7 @@ module Stack__init_stack__L11s__T12s
  
  val constant last 
    : int
-  ensures { result =  (1000 : int) }
+  ensures { result =  (512 : int) }
  
  predicate in_range 
    (x : int) =
@@ -2502,7 +2502,7 @@ module Stack__pop__L15s__T16s
  use        "int".Int
 
  type t16s =
-  < range 1 1000 >
+  < range 1 512 >
  
  val constant first 
    : int
@@ -2510,7 +2510,7 @@ module Stack__pop__L15s__T16s
  
  val constant last 
    : int
-  ensures { result =  (1000 : int) }
+  ensures { result =  (512 : int) }
  
  predicate in_range 
    (x : int) =
@@ -3475,7 +3475,7 @@ module Stack__store__L19s__T20s
  use        "int".Int
 
  type t20s =
-  < range 1 1000 >
+  < range 1 512 >
  
  val constant first 
    : int
@@ -3483,7 +3483,7 @@ module Stack__store__L19s__T20s
  
  val constant last 
    : int
-  ensures { result =  (1000 : int) }
+  ensures { result =  (512 : int) }
  
  predicate in_range 
    (x : int) =
@@ -4808,7 +4808,7 @@ module Stack__max_size___axiom
  use        Stack__max_size as Stack__max_size
 
  axiom max_size__def_axiom :
-  ((Stack__max_size.max_size ) = (1000 : int))
+  ((Stack__max_size.max_size ) = (512 : int))
 
 end
 
@@ -4884,7 +4884,7 @@ module Stack__init_stack___axiom
   requires {  true }
   ensures {  ( ( ( [@GP_Pretty_Ada:2803] ((epsilon temp___result_185 : int.
    ( (temp___result_185 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_185 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = (0 : int)) ) /\ (forall i   [@model_trace:2806] [@name:I]  : int.
-   ( ( ((1 : int) <= i) /\ (i <= (1000 : int)) ) -> ( [@GP_Pretty_Ada:2822] ((epsilon temp___result_186 : int.
+   ( ( ((1 : int) <= i) /\ (i <= (512 : int)) ) -> ( [@GP_Pretty_Ada:2822] ((epsilon temp___result_186 : int.
     ( (temp___result_186 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_186 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (0 : int)) ) )) ) /\ (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) ) }
   writes {stack__split_fields}
 
@@ -4904,7 +4904,7 @@ module Stack__push___axiom
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int) : unit
   requires {  ( ( [@GP_Pretty_Ada:2858] ((epsilon temp___result_188 : int.
    ( (temp___result_188 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_188 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) >= (0 : int)) ) /\ ( [@GP_Pretty_Ada:2864] ((epsilon temp___result_189 : int.
-   ( (temp___result_189 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_189 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) ) }
+   ( (temp___result_189 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_189 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (512 : int)) ) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:2872] ((epsilon temp___result_190 : int.
    ( (temp___result_190 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_190 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_191 : int.
    ( (temp___result_191 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_191 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) + (1 : int))) ) /\ ( [@GP_Pretty_Ada:2882] (value = (epsilon temp___result_193 : int.
@@ -4934,14 +4934,14 @@ module Stack__pop___axiom
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int__ref) : unit
   requires {  ( ( [@GP_Pretty_Ada:2951] ((epsilon temp___result_199 : int.
    ( (temp___result_199 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_199 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) /\ ( [@GP_Pretty_Ada:2957] ((epsilon temp___result_200 : int.
-   ( (temp___result_200 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_200 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) <= (1000 : int)) ) ) }
+   ( (temp___result_200 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_200 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:2965] ((epsilon temp___result_201 : int.
    ( (temp___result_201 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_201 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_202 : int.
    ( (temp___result_202 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_202 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( [@GP_Pretty_Ada:2975] (value.int__content = (epsilon temp___result_204 : int.
    ( (temp___result_204 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_203 : int.
     ( (temp___result_203 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_203 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )))) /\ (Stack__get_element.get_element__function_guard temp___result_204 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_203 : int.
     ( (temp___result_203 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_203 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ))) ) ) /\ (forall i   [@model_trace:2985] [@name:I]  : int.
-   ( ( ((1 : int) <= i) /\ (i <= (1000 : int)) ) -> ( [@GP_Pretty_Ada:3001] ((epsilon temp___result_205 : int.
+   ( ( ((1 : int) <= i) /\ (i <= (512 : int)) ) -> ( [@GP_Pretty_Ada:3001] ((epsilon temp___result_205 : int.
     ( (temp___result_205 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_205 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_206 : int.
     ( (temp___result_206 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_206 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant value.int__content True True True True) ) ) }
   writes {stack__split_fields, value}
@@ -5024,7 +5024,7 @@ module Stack__load___axiom
  val load 
    (stack__split_fields : Stack__stack_type.__split_fields__ref) (variable : Standard__string.string) (database : Variablestore__database.database) : unit
   requires {  ( [@GP_Pretty_Ada:93130] ((epsilon temp___result_255 : int.
-   ( (temp___result_255 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_255 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) }
+   ( (temp___result_255 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_255 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (512 : int)) ) }
   ensures {  ( ( ( ( [@GP_Pretty_Ada:3060] ((epsilon temp___result_256 : int.
    ( (temp___result_256 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_256 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_257 : int.
    ( (temp___result_257 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_257 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) + (1 : int))) ) /\ ( [@GP_Pretty_Ada:3079] ((epsilon temp___result_259 : int.
@@ -5062,7 +5062,7 @@ module Stack__store___axiom
   ensures {  ( ( ( [@GP_Pretty_Ada:3166] ((epsilon temp___result_269 : int.
    ( (temp___result_269 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_269 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_270 : int.
    ( (temp___result_270 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_270 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ (forall i   [@model_trace:3175] [@name:I]  : int.
-   ( ( ((1 : int) <= i) /\ (i <= (1000 : int)) ) -> ( [@GP_Pretty_Ada:3191] ((epsilon temp___result_271 : int.
+   ( ( ((1 : int) <= i) /\ (i <= (512 : int)) ) -> ( [@GP_Pretty_Ada:3191] ((epsilon temp___result_271 : int.
     ( (temp___result_271 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_271 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_272 : int.
     ( (temp___result_272 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_272 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Variablestore__database___axiom.dynamic_invariant database.Variablestore__database.database__content True True True True) ) ) }
   writes {stack__split_fields, database}
@@ -5193,7 +5193,7 @@ module Stack__package_def
   ( ();
   ([#"stack.ads" 3 0 0] ());
   ([#"stack.ads" 4 0 0] ());
-  ([#"stack.ads" 5 0 0] ( [#"stack.ads" 5 0 0] begin ensures {true} let _ = (let _ = (1000 : int) in (
+  ([#"stack.ads" 5 0 0] ( [#"stack.ads" 5 0 0] begin ensures {true} let _ = (let _ = (512 : int) in (
    ()))
    in () end ;
   [#"stack.ads" 5 0 0] assume { [#"stack.ads" 5 0 0] (Standard__natural___axiom.dynamic_invariant Stack__max_size.max_size True False True True) } ));
@@ -5382,14 +5382,14 @@ module Stack__push__subprogram_def
   [#"stack.ads" 11 0 0] assume { [#"stack.ads" 11 0 0] (Standard__integer___axiom.dynamic_invariant Stack__push__value.value True False True True) };
   () (* Check for RTE in the Pre of the subprogram stack.ads:11 *)
   ;
-  [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) >= (0 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) < (1000 : int)))) in (
+  [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) >= (0 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) < (512 : int)))) in (
    ()))
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:11 *)
   ;
   [#"stack.ads" 11 0 0] assume { [#"stack.ads" 11 0 0] ( ( [@GP_Pretty_Ada:2858] ((epsilon temp___result_297 : int.
    ( (temp___result_297 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_297 { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) >= (0 : int)) ) /\ ( [@GP_Pretty_Ada:2864] ((epsilon temp___result_298 : int.
-   ( (temp___result_298 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_298 { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) ) };
+   ( (temp___result_298 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_298 { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (512 : int)) ) ) };
   [#"stack.ads" 11 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__push__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
@@ -5445,14 +5445,14 @@ module Stack__pop__subprogram_def
   [#"stack.ads" 17 0 0] assume { [#"stack.ads" 17 0 0] (Standard__integer___axiom.dynamic_invariant Stack__pop__value.value.int__content False False True True) };
   () (* Check for RTE in the Pre of the subprogram stack.ads:17 *)
   ;
-  [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) > (0 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) <= (1000 : int)))) in (
+  [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) > (0 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) <= (512 : int)))) in (
    ()))
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:17 *)
   ;
   [#"stack.ads" 17 0 0] assume { [#"stack.ads" 17 0 0] ( ( [@GP_Pretty_Ada:2951] ((epsilon temp___result_305 : int.
    ( (temp___result_305 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_305 { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) /\ ( [@GP_Pretty_Ada:2957] ((epsilon temp___result_306 : int.
-   ( (temp___result_306 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_306 { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) <= (1000 : int)) ) ) };
+   ( (temp___result_306 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_306 { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) };
   [#"stack.ads" 17 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__pop__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
@@ -5516,13 +5516,13 @@ module Stack__load__subprogram_def
   [#"stack.ads" 23 0 0] assume { [#"stack.ads" 23 0 0] (Variablestore__database___axiom.dynamic_invariant Stack__load__database.database True False True True) };
   () (* Check for RTE in the Pre of the subprogram stack.ads:23 *)
   ;
-  [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) < (1000 : int)) in (
+  [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) < (512 : int)) in (
    ()))
    in () end ;
   () (* Assume Pre of the subprogram stack.ads:23 *)
   ;
   [#"stack.ads" 23 0 0] assume { [#"stack.ads" 23 0 0] ( [@GP_Pretty_Ada:93130] ((epsilon temp___result_315 : int.
-   ( (temp___result_315 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_315 { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (1000 : int)) ) };
+   ( (temp___result_315 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_315 { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (512 : int)) ) };
   [#"stack.ads" 23 0 0] begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Stack__load__stack.stack__split_fields.Stack__stack_type.__split_fields__content } in (
    ()))
    in () end ;
