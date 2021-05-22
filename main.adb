@@ -42,7 +42,7 @@ begin
    Stack.Init_Stack(calStack);
    
    -- Checking if a master password is provided
-   if MyCommandLine.Argument_Count = 1 and then MyCommandLine.Argument (1)'Length = 4 then
+   if MyCommandLine.Argument_Count = 1 and then MyCommandLine.Argument(1)'Length = 4 then
       declare
          P: String(1..4) := MyCommandLine.Argument(1);
       begin
@@ -56,6 +56,9 @@ begin
             Put_Line ("Invalid Master Password!");
             return;
             end if;
+         else
+         Put_Line ("Invalid Master Password!");
+         return;
          end if;
       end;
    else
