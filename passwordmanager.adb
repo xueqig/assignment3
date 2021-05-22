@@ -4,18 +4,6 @@ with Ada.Characters.Latin_1;
 
 package body passwordmanager with SPARK_Mode is
    
-   procedure ReadCommand(C: in String; NumTokens: in out Natural; T: in out MyStringTokeniser.TokenArray)
-   is
-      Tokens : MyStringTokeniser.TokenArray := T;
-   begin
-      if Tokens'First <= Tokens'Last then 
-         MyStringTokeniser.Tokenise(C, Tokens, NumTokens);
-         if NumTokens /= 0 then
-            T:= Tokens;
-         end if;
-      end if;
-   end;
-   
    procedure Unlock (P1: in PIN.PIN; P2: in PIN.PIN; isLocked: in out Boolean) is
    begin
       if (P1 = P2) then
