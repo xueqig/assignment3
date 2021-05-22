@@ -143,7 +143,9 @@ begin
                               Stack.Push(calStack, StringToInteger.From_String(TokStr2));
                            end if;
                         elsif TokStr = "load" then
-                           if Stack.Get_Size(calStack) < Stack.Max_Size then
+                           if Stack.Get_Size(calStack) < Stack.Max_Size and then 
+                             TokStr2'Length < VariableStore.Max_Variable_Length and then 
+                             VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
                               Stack.Load(calStack, TokStr2, DB);
                            end if;
                         elsif TokStr = "store" then
@@ -151,7 +153,8 @@ begin
                               Stack.Store(calStack, TokStr2, DB);
                            end if;
                         elsif TokStr = "remove" then
-                           if TokStr2'Length < VariableStore.Max_Variable_Length and then VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
+                           if TokStr2'Length < VariableStore.Max_Variable_Length and then 
+                             VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
                               Stack.Remove(TokStr2, DB);
                            else
                               Put_Line("Variable does not exit!");
