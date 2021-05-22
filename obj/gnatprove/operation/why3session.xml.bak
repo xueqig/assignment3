@@ -84,6 +84,9 @@
   <proof prover="0"><result status="unknown" steps="1115"/></proof>
   <proof prover="1" obsolete="true"><result status="unknown" steps="909"/></proof>
   </goal>
+  <goal name="VC def.8" expl="precondition">
+  <proof prover="0"><result status="valid" steps="17"/></proof>
+  </goal>
  </transf>
  </goal>
 </theory>
@@ -152,6 +155,9 @@
   <proof prover="0"><result status="valid" steps="5"/></proof>
   <proof prover="1" obsolete="true"><result status="unknown" steps="220"/></proof>
   </goal>
+  <goal name="VC def.8" expl="precondition">
+  <proof prover="0"><result status="valid" steps="17"/></proof>
+  </goal>
  </transf>
  </goal>
 </theory>
@@ -214,6 +220,9 @@
   </goal>
   <goal name="VC def.0" expl="precondition">
   </goal>
+  <goal name="VC def.8" expl="precondition">
+  <proof prover="0"><result status="valid" steps="17"/></proof>
+  </goal>
  </transf>
  </goal>
 </theory>
@@ -271,6 +280,13 @@
   <goal name="VC def.7" expl="precondition">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   <proof prover="1" obsolete="true"><result status="unknown" steps="177"/></proof>
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  <proof prover="0"><result status="unknown" steps="138"/></proof>
+  <proof prover="1"><result status="unknown" steps="176"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="precondition">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
   </goal>
  </transf>
  </goal>
