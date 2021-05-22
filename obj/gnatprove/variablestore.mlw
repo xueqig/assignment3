@@ -209,15 +209,15 @@ module Standard__long_integer
  use        "int".Int
 
  type long_integer =
-  < range -2147483648 2147483647 >
+  < range -9223372036854775808 9223372036854775807 >
  
  val constant first 
    : int
-  ensures { result =  (( -2147483648) : int) }
+  ensures { result =  (( -9223372036854775808) : int) }
  
  val constant last 
    : int
-  ensures { result =  (2147483647 : int) }
+  ensures { result =  (9223372036854775807 : int) }
  
  predicate in_range 
    (x : int) =
@@ -2095,7 +2095,7 @@ module Variablestore__variables__max_mystring_length
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant max_mystring_length [#"mystring.ads" 2 0 0][@model_trace:68832] [@name:Max_MyString_Length] 
+ val constant max_mystring_length [#"mystring.ads" 2 0 0][@model_trace:68608] [@name:Max_MyString_Length] 
    : int
 
  
@@ -2343,9 +2343,9 @@ module Variablestore__variables__mystring__rep
  use        Array__Int__Standard__character as Array__Int__Standard__character
 
  type __split_fields =
-  { rec__variablestore__variables__mystring__length [@name:Length] [@model_trace:.68741] : Variablestore__variables__mystring__T13s.t13s; rec__variablestore__variables__mystring__str [@model_trace:.68756] [@name:Str] : Array__Int__Standard__character.map }
+  { rec__variablestore__variables__mystring__length [@name:Length] [@model_trace:.68517] : Variablestore__variables__mystring__T13s.t13s; rec__variablestore__variables__mystring__str [@model_trace:.68532] [@name:Str] : Array__Int__Standard__character.map }
  
- function __split_fields_rec__variablestore__variables__mystring__length__projection [@name:Length] [@model_trace:.68741] 
+ function __split_fields_rec__variablestore__variables__mystring__length__projection [@name:Length] [@model_trace:.68517] 
    (a : __split_fields) : Variablestore__variables__mystring__T13s.t13s =
   a.rec__variablestore__variables__mystring__length
  
@@ -2353,7 +2353,7 @@ module Variablestore__variables__mystring__rep
  
  meta "inline:no" function __split_fields_rec__variablestore__variables__mystring__length__projection
  
- function __split_fields_rec__variablestore__variables__mystring__str__projection [@model_trace:.68756] [@name:Str] 
+ function __split_fields_rec__variablestore__variables__mystring__str__projection [@model_trace:.68532] [@name:Str] 
    (a : __split_fields) : Array__Int__Standard__character.map =
   a.rec__variablestore__variables__mystring__str
  
@@ -2539,7 +2539,7 @@ module Variablestore__variables__to_string__m
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m [#"mystring.ads" 8 0 0][@model_projected] [@name:M] [@model_trace:68440] 
+ val constant m [#"mystring.ads" 8 0 0][@model_projected] [@name:M] [@model_trace:68216] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2563,7 +2563,7 @@ module Variablestore__variables__length__m
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m [#"mystring.ads" 23 0 0][@model_projected] [@name:M] [@model_trace:68591] 
+ val constant m [#"mystring.ads" 23 0 0][@model_projected] [@name:M] [@model_trace:68367] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2616,7 +2616,7 @@ module Variablestore__variables__from_string__s
  use        "int".Int
  use        Standard__string as Standard__string
 
- val constant s [#"mystring.ads" 12 0 0][@model_trace:68474] [@model_projected] [@name:S] 
+ val constant s [#"mystring.ads" 12 0 0][@model_projected] [@model_trace:68250] [@name:S] 
    : Standard__string.string
 
  
@@ -2655,7 +2655,7 @@ module Variablestore__variables__less__m1
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m1 [#"mystring.ads" 16 0 0][@model_projected] [@model_trace:68493] [@name:M1] 
+ val constant m1 [#"mystring.ads" 16 0 0][@model_projected] [@model_trace:68269] [@name:M1] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2679,7 +2679,7 @@ module Variablestore__variables__less__m2
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m2 [#"mystring.ads" 16 0 0][@model_projected] [@model_trace:68502] [@name:M2] 
+ val constant m2 [#"mystring.ads" 16 0 0][@model_trace:68278] [@model_projected] [@name:M2] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2717,7 +2717,7 @@ module Variablestore__variables__equal__m1
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m1 [#"mystring.ads" 18 0 0][@model_trace:68557] [@model_projected] [@name:M1] 
+ val constant m1 [#"mystring.ads" 18 0 0][@model_projected] [@name:M1] [@model_trace:68333] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2741,7 +2741,7 @@ module Variablestore__variables__equal__m2
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m2 [#"mystring.ads" 18 0 0][@model_projected] [@name:M2] [@model_trace:68566] 
+ val constant m2 [#"mystring.ads" 18 0 0][@model_projected] [@model_trace:68342] [@name:M2] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2807,7 +2807,7 @@ module Variablestore__variables__get__m
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m [#"mystring.ads" 30 0 0][@model_trace:68677] [@model_projected] [@name:M] 
+ val constant m [#"mystring.ads" 30 0 0][@model_projected] [@model_trace:68453] [@name:M] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2830,7 +2830,7 @@ module Variablestore__variables__get__index
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant index [#"mystring.ads" 30 0 0][@name:Index] [@model_trace:68686] 
+ val constant index [#"mystring.ads" 30 0 0][@model_trace:68462] [@name:Index] 
    : int
 
  
@@ -2882,7 +2882,7 @@ module Variablestore__variables__substring__m
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val constant m [#"mystring.ads" 26 0 0][@model_trace:68633] [@model_projected] [@name:M] 
+ val constant m [#"mystring.ads" 26 0 0][@model_trace:68409] [@model_projected] [@name:M] 
    : Variablestore__variables__mystring.mystring
 
  
@@ -2905,7 +2905,7 @@ module Variablestore__variables__substring__from
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant from [#"mystring.ads" 26 0 0][@name:From] [@model_trace:68642] 
+ val constant from [#"mystring.ads" 26 0 0][@name:From] [@model_trace:68418] 
    : int
 
  
@@ -2928,7 +2928,7 @@ module Variablestore__variables__substring__to
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val constant to__ [#"mystring.ads" 26 0 0][@model_trace:68651] [@name:To] 
+ val constant to__ [#"mystring.ads" 26 0 0][@model_trace:68427] [@name:To] 
    : int
 
  
@@ -4173,7 +4173,7 @@ module Variablestore__variables__get_line__m
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val m__split_fields [#"mystring.ads" 33 0 0][@model_projected] [@model_trace:68705] [@name:M]  : Variablestore__variables__mystring.__split_fields__ref 
+ val m__split_fields [#"mystring.ads" 33 0 0][@model_projected] [@name:M] [@model_trace:68481]  : Variablestore__variables__mystring.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4196,13 +4196,13 @@ module Variablestore__variables__to_string__result
  use        Standard__integer as Standard__integer
  use        Array__Int__Standard__character as Array__Int__Standard__character
 
- val result__ [#"mystring.adb" 6 0 0][@model_projected] [@model_trace:111047] [@name:Result]  : Array__Int__Standard__character.map__ref 
+ val result__ [#"mystring.adb" 6 0 0][@model_trace:110823] [@model_projected] [@name:Result]  : Array__Int__Standard__character.map__ref 
  
- val constant result____first [#"mystring.adb" 6 0 0][@model_projected] [@model_trace:111047'First] [@name:Result] 
+ val constant result____first [#"mystring.adb" 6 0 0][@model_projected] [@model_trace:110823'First] [@name:Result] 
    : Standard__integer.integer
 
  
- val constant result____last [#"mystring.adb" 6 0 0][@model_projected] [@name:Result] [@model_trace:111047'Last] 
+ val constant result____last [#"mystring.adb" 6 0 0][@model_trace:110823'Last] [@model_projected] [@name:Result] 
    : Standard__integer.integer
 
  
@@ -4226,7 +4226,7 @@ module Variablestore__variables__from_string__m
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val m__split_fields [#"mystring.adb" 13 0 0][@model_trace:111102] [@model_projected] [@name:M]  : Variablestore__variables__mystring.__split_fields__ref 
+ val m__split_fields [#"mystring.adb" 13 0 0][@model_projected] [@name:M] [@model_trace:110878]  : Variablestore__variables__mystring.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4247,7 +4247,7 @@ module Variablestore__variables__from_string__j
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val j [#"mystring.adb" 14 0 0][@model_projected] [@name:J] [@model_trace:111121]  : int__ref 
+ val j [#"mystring.adb" 14 0 0][@model_projected] [@model_trace:110897] [@name:J]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4268,7 +4268,7 @@ module Variablestore__variables__from_string__L_1__i
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val i [#"mystring.adb" 20 0 0][@model_projected] [@name:I] [@model_trace:111198]  : int__ref 
+ val i [#"mystring.adb" 20 0 0][@model_trace:110974] [@model_projected] [@name:I]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4289,7 +4289,7 @@ module Variablestore__variables__less__i
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val i [#"mystring.adb" 29 0 0][@model_trace:111265] [@model_projected] [@name:I]  : int__ref 
+ val i [#"mystring.adb" 29 0 0][@model_projected] [@name:I] [@model_trace:111041]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4310,7 +4310,7 @@ module Variablestore__variables__equal__i
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val i [#"mystring.adb" 53 0 0][@model_projected] [@model_trace:111442] [@name:I]  : int__ref 
+ val i [#"mystring.adb" 53 0 0][@model_projected] [@model_trace:111218] [@name:I]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4332,7 +4332,7 @@ module Variablestore__variables__substring__r
  use        "int".Int
  use        Variablestore__variables__mystring as Variablestore__variables__mystring
 
- val r__split_fields [#"mystring.adb" 72 0 0][@model_projected] [@model_trace:111642] [@name:R]  : Variablestore__variables__mystring.__split_fields__ref 
+ val r__split_fields [#"mystring.adb" 72 0 0][@model_projected] [@model_trace:111418] [@name:R]  : Variablestore__variables__mystring.__split_fields__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4353,7 +4353,7 @@ module Variablestore__variables__substring__j
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val j [#"mystring.adb" 73 0 0][@model_projected] [@name:J] [@model_trace:111665]  : int__ref 
+ val j [#"mystring.adb" 73 0 0][@model_projected] [@model_trace:111441] [@name:J]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4374,7 +4374,7 @@ module Variablestore__variables__substring__L_4__i
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val i [#"mystring.adb" 75 0 0][@model_trace:111731] [@model_projected] [@name:I]  : int__ref 
+ val i [#"mystring.adb" 75 0 0][@model_trace:111507] [@model_projected] [@name:I]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -4397,13 +4397,13 @@ module Ada__text_io__get_line__2__item
  use        Standard__integer as Standard__integer
  use        Array__Int__Standard__character as Array__Int__Standard__character
 
- val item [#"a-textio.ads" 482 0 0][@name:Item] [@model_projected] [@model_trace:18714]  : Array__Int__Standard__character.map__ref 
+ val item [#"a-textio.ads" 482 0 0][@name:Item] [@model_projected] [@model_trace:18578]  : Array__Int__Standard__character.map__ref 
  
- val constant item__first [#"a-textio.ads" 482 0 0][@name:Item] [@model_projected] [@model_trace:18714'First] 
+ val constant item__first [#"a-textio.ads" 482 0 0][@model_trace:18578'First] [@name:Item] [@model_projected] 
    : Standard__integer.integer
 
  
- val constant item__last [#"a-textio.ads" 482 0 0][@name:Item] [@model_projected] [@model_trace:18714'Last] 
+ val constant item__last [#"a-textio.ads" 482 0 0][@name:Item] [@model_trace:18578'Last] [@model_projected] 
    : Standard__integer.integer
 
  
@@ -4426,7 +4426,7 @@ module Ada__text_io__get_line__2__last
  use        "_gnatprove_standard".Main
  use        "int".Int
 
- val last [#"a-textio.ads" 483 0 0][@model_projected] [@model_trace:18723] [@name:Last]  : int__ref 
+ val last [#"a-textio.ads" 483 0 0][@model_trace:18587] [@model_projected] [@name:Last]  : int__ref 
  
  val constant attr__ATTRIBUTE_ADDRESS 
    : int
@@ -5705,13 +5705,13 @@ module Variablestore__variables__length___axiom
  val length 
    (m : Variablestore__variables__mystring.mystring) : int
   requires {  true }
-  ensures {  ( ( (result = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard result m) )/\( (Standard__natural___axiom.dynamic_invariant result True False True True) /\ ( (result = (Variablestore__variables__mystring__T13s__rep.to_rep m.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) /\ ( [@GP_Pretty_Ada:68979] (result <= (1024 : int)) ) ) ) ) }
+  ensures {  ( ( (result = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard result m) )/\( (Standard__natural___axiom.dynamic_invariant result True False True True) /\ ( (result = (Variablestore__variables__mystring__T13s__rep.to_rep m.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) /\ ( [@GP_Pretty_Ada:68755] (result <= (1024 : int)) ) ) ) ) }
  
  axiom length__post_axiom :
   (forall m   : Variablestore__variables__mystring.mystring [(Variablestore__variables__length.length m)].
    ( (Variablestore__variables__mystring___axiom.dynamic_invariant m True True True True) -> (let result = (Variablestore__variables__length.length m) in (
     (if ((Variablestore__variables__length.length__function_guard result m)) then (
-     ( ( ( [@GP_Pretty_Ada:68979] (result <= (1024 : int)) ) /\ (Standard__natural___axiom.dynamic_invariant result True False True True) )/\true )) else true)))
+     ( ( ( [@GP_Pretty_Ada:68755] (result <= (1024 : int)) ) /\ (Standard__natural___axiom.dynamic_invariant result True False True True) )/\true )) else true)))
     ))
  
  axiom length__def_axiom :
@@ -5737,16 +5737,16 @@ module Variablestore__variables__to_string___axiom
  val to_string 
    (m : Variablestore__variables__mystring.mystring) : Standard__string.string
   requires {  true }
-  ensures {  ( ( (result = (Variablestore__variables__to_string.to_string m)) /\ (Variablestore__variables__to_string.to_string__function_guard result m) )/\( (Standard__string___axiom.dynamic_invariant result True False True True) /\ ( ( ( [@GP_Pretty_Ada:68412] ((Standard__string.length result) = (epsilon temp___result_208 : int.
-   ( (temp___result_208 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_208 m) ))) ) /\ ( [@GP_Pretty_Ada:68419] ((Standard__string.first result) = (1 : int)) ) ) /\ ( [@GP_Pretty_Ada:68424] ((Standard__string.last result) = (epsilon temp___result_209 : int.
+  ensures {  ( ( (result = (Variablestore__variables__to_string.to_string m)) /\ (Variablestore__variables__to_string.to_string__function_guard result m) )/\( (Standard__string___axiom.dynamic_invariant result True False True True) /\ ( ( ( [@GP_Pretty_Ada:68188] ((Standard__string.length result) = (epsilon temp___result_208 : int.
+   ( (temp___result_208 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_208 m) ))) ) /\ ( [@GP_Pretty_Ada:68195] ((Standard__string.first result) = (1 : int)) ) ) /\ ( [@GP_Pretty_Ada:68200] ((Standard__string.last result) = (epsilon temp___result_209 : int.
    ( (temp___result_209 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_209 m) ))) ) ) ) ) }
  
  axiom to_string__post_axiom :
   (forall m   : Variablestore__variables__mystring.mystring [(Variablestore__variables__to_string.to_string m)].
    ( (Variablestore__variables__mystring___axiom.dynamic_invariant m True True True True) -> (let result = (Variablestore__variables__to_string.to_string m) in (
     (if ((Variablestore__variables__to_string.to_string__function_guard result m)) then (
-     ( ( ( ( ( [@GP_Pretty_Ada:68412] ((Standard__string.length result) = (epsilon temp___result_212 : int.
-      ( (temp___result_212 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_212 m) ))) ) /\ ( [@GP_Pretty_Ada:68419] ((Standard__string.first result) = (1 : int)) ) ) /\ ( [@GP_Pretty_Ada:68424] ((Standard__string.last result) = (epsilon temp___result_213 : int.
+     ( ( ( ( ( [@GP_Pretty_Ada:68188] ((Standard__string.length result) = (epsilon temp___result_212 : int.
+      ( (temp___result_212 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_212 m) ))) ) /\ ( [@GP_Pretty_Ada:68195] ((Standard__string.first result) = (1 : int)) ) ) /\ ( [@GP_Pretty_Ada:68200] ((Standard__string.last result) = (epsilon temp___result_213 : int.
       ( (temp___result_213 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_213 m) ))) ) ) /\ (Standard__string___axiom.dynamic_invariant result True False True True) )/\true )) else true)))
     ))
 
@@ -5766,15 +5766,15 @@ module Variablestore__variables__from_string___axiom
 
  val from_string 
    (s : Standard__string.string) : Variablestore__variables__mystring.mystring
-  requires {  ( [@GP_Pretty_Ada:68897] ((Standard__string.length s) <= (1024 : int)) ) }
-  ensures {  ( ( (result = (Variablestore__variables__from_string.from_string s)) /\ (Variablestore__variables__from_string.from_string__function_guard result s) )/\( (Variablestore__variables__mystring___axiom.dynamic_invariant result True False True True) /\ ( [@GP_Pretty_Ada:68911] ((epsilon temp___result_216 : int.
+  requires {  ( [@GP_Pretty_Ada:68673] ((Standard__string.length s) <= (1024 : int)) ) }
+  ensures {  ( ( (result = (Variablestore__variables__from_string.from_string s)) /\ (Variablestore__variables__from_string.from_string__function_guard result s) )/\( (Variablestore__variables__mystring___axiom.dynamic_invariant result True False True True) /\ ( [@GP_Pretty_Ada:68687] ((epsilon temp___result_216 : int.
    ( (temp___result_216 = (Variablestore__variables__length.length result)) /\ (Variablestore__variables__length.length__function_guard temp___result_216 result) )) = (Standard__string.length s)) ) ) ) }
  
  axiom from_string__post_axiom :
   (forall s   : Standard__string.string [(Variablestore__variables__from_string.from_string s)].
-   ( ( (Standard__string___axiom.dynamic_invariant s True True True True) /\ ( [@GP_Pretty_Ada:68897] ((Standard__string.length s) <= (1024 : int)) ) ) -> (let result = (Variablestore__variables__from_string.from_string s) in (
+   ( ( (Standard__string___axiom.dynamic_invariant s True True True True) /\ ( [@GP_Pretty_Ada:68673] ((Standard__string.length s) <= (1024 : int)) ) ) -> (let result = (Variablestore__variables__from_string.from_string s) in (
     (if ((Variablestore__variables__from_string.from_string__function_guard result s)) then (
-     ( ( ( [@GP_Pretty_Ada:68911] ((epsilon temp___result_219 : int.
+     ( ( ( [@GP_Pretty_Ada:68687] ((epsilon temp___result_219 : int.
       ( (temp___result_219 = (Variablestore__variables__length.length result)) /\ (Variablestore__variables__length.length__function_guard temp___result_219 result) )) = (Standard__string.length s)) ) /\ (Variablestore__variables__mystring___axiom.dynamic_invariant result True False True True) )/\true )) else true)))
     ))
 
@@ -5813,7 +5813,7 @@ module Variablestore__variables__get___axiom
 
  val get 
    (m : Variablestore__variables__mystring.mystring) (index : int) : int
-  requires {  ( [@GP_Pretty_Ada:69047] (index <= (epsilon temp___result_224 : int.
+  requires {  ( [@GP_Pretty_Ada:68823] (index <= (epsilon temp___result_224 : int.
    ( (temp___result_224 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_224 m) ))) ) }
   ensures {  ( ( (result = (Variablestore__variables__get.get m index)) /\ (Variablestore__variables__get.get__function_guard result m index) )/\( (Standard__character___axiom.dynamic_invariant result True False True True) /\ (result = (Standard__character__rep.to_rep (let temp___225 [@mlw:proxy_symbol] [@introduced] = m.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
    (Array__Int__Standard__character.get temp___225 index)))
@@ -5822,7 +5822,7 @@ module Variablestore__variables__get___axiom
  axiom get__post_axiom :
   (forall m   : Variablestore__variables__mystring.mystring.
   (forall index   : int [(Variablestore__variables__get.get m index)].
-   ( ( ( (Variablestore__variables__mystring___axiom.dynamic_invariant m True True True True) /\ (Standard__positive___axiom.dynamic_invariant index True True True True) ) /\ ( [@GP_Pretty_Ada:69047] (index <= (epsilon temp___result_227 : int.
+   ( ( ( (Variablestore__variables__mystring___axiom.dynamic_invariant m True True True True) /\ (Standard__positive___axiom.dynamic_invariant index True True True True) ) /\ ( [@GP_Pretty_Ada:68823] (index <= (epsilon temp___result_227 : int.
     ( (temp___result_227 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_227 m) ))) ) ) -> (let result = (Variablestore__variables__get.get m index) in (
     (if ((Variablestore__variables__get.get__function_guard result m index)) then (
      ( ( true /\ (Standard__character___axiom.dynamic_invariant result True False True True) )/\true )) else true)))
@@ -5853,14 +5853,14 @@ module Variablestore__variables__equal___axiom
    (m1 : Variablestore__variables__mystring.mystring) (m2 : Variablestore__variables__mystring.mystring) : bool
   requires {  true }
   ensures {  ( ( (result = (Variablestore__variables__equal.equal m1 m2)) /\ (Variablestore__variables__equal.equal__function_guard result m1 m2) )/\(if ((result = True)) then (
-   ( ( [@GP_Pretty_Ada:68518] ((epsilon temp___result_230 : int.
+   ( ( [@GP_Pretty_Ada:68294] ((epsilon temp___result_230 : int.
     ( (temp___result_230 = (Variablestore__variables__length.length m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_230 m1) )) = (epsilon temp___result_231 : int.
-    ( (temp___result_231 = (Variablestore__variables__length.length m2)) /\ (Variablestore__variables__length.length__function_guard temp___result_231 m2) ))) ) /\ (forall i   [@name:I] [@model_trace:68536]  : int.
+    ( (temp___result_231 = (Variablestore__variables__length.length m2)) /\ (Variablestore__variables__length.length__function_guard temp___result_231 m2) ))) ) /\ (forall i   [@model_trace:68312] [@name:I]  : int.
     ( ( ((1 : int) <= i) /\ (i <= (epsilon temp___result_232 : int.
-     ( (temp___result_232 = (Variablestore__variables__length.length m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_232 m1) ))) ) -> ( [@GP_Pretty_Ada:68526] ((epsilon temp___result_233 : int.
+     ( (temp___result_232 = (Variablestore__variables__length.length m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_232 m1) ))) ) -> ( [@GP_Pretty_Ada:68302] ((epsilon temp___result_233 : int.
      ( (temp___result_233 = (Variablestore__variables__get.get m1 i)) /\ (Variablestore__variables__get.get__function_guard temp___result_233 m1 i) )) = (epsilon temp___result_234 : int.
      ( (temp___result_234 = (Variablestore__variables__get.get m2 i)) /\ (Variablestore__variables__get.get__function_guard temp___result_234 m2 i) ))) ) )) )) else (
-   ( [@GP_Pretty_Ada:69125] true ))) ) }
+   ( [@GP_Pretty_Ada:68901] true ))) ) }
 
 end
 
@@ -5877,18 +5877,18 @@ module Variablestore__variables__substring___axiom
 
  val substring 
    (m : Variablestore__variables__mystring.mystring) (from : int) (to__ : int) : Variablestore__variables__mystring.mystring
-  requires {  ( ( [@GP_Pretty_Ada:68604] (from <= to__) ) /\ ( [@GP_Pretty_Ada:68607] (to__ <= (epsilon temp___result_237 : int.
+  requires {  ( ( [@GP_Pretty_Ada:68380] (from <= to__) ) /\ ( [@GP_Pretty_Ada:68383] (to__ <= (epsilon temp___result_237 : int.
    ( (temp___result_237 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_237 m) ))) ) ) }
-  ensures {  ( ( (result = (Variablestore__variables__substring.substring m from to__)) /\ (Variablestore__variables__substring.substring__function_guard result m from to__) )/\( (Variablestore__variables__mystring___axiom.dynamic_invariant result True False True True) /\ ( [@GP_Pretty_Ada:69020] ((epsilon temp___result_238 : int.
+  ensures {  ( ( (result = (Variablestore__variables__substring.substring m from to__)) /\ (Variablestore__variables__substring.substring__function_guard result m from to__) )/\( (Variablestore__variables__mystring___axiom.dynamic_invariant result True False True True) /\ ( [@GP_Pretty_Ada:68796] ((epsilon temp___result_238 : int.
    ( (temp___result_238 = (Variablestore__variables__length.length result)) /\ (Variablestore__variables__length.length__function_guard temp___result_238 result) )) = ((to__ - from) + (1 : int))) ) ) ) }
  
  axiom substring__post_axiom :
   (forall m   : Variablestore__variables__mystring.mystring.
   (forall from   to__   : int [(Variablestore__variables__substring.substring m from to__)].
-   ( ( ( ( (Variablestore__variables__mystring___axiom.dynamic_invariant m True True True True) /\ (Standard__positive___axiom.dynamic_invariant from True True True True) ) /\ (Standard__positive___axiom.dynamic_invariant to__ True True True True) ) /\ ( ( [@GP_Pretty_Ada:68604] (from <= to__) ) /\ ( [@GP_Pretty_Ada:68607] (to__ <= (epsilon temp___result_241 : int.
+   ( ( ( ( (Variablestore__variables__mystring___axiom.dynamic_invariant m True True True True) /\ (Standard__positive___axiom.dynamic_invariant from True True True True) ) /\ (Standard__positive___axiom.dynamic_invariant to__ True True True True) ) /\ ( ( [@GP_Pretty_Ada:68380] (from <= to__) ) /\ ( [@GP_Pretty_Ada:68383] (to__ <= (epsilon temp___result_241 : int.
     ( (temp___result_241 = (Variablestore__variables__length.length m)) /\ (Variablestore__variables__length.length__function_guard temp___result_241 m) ))) ) ) ) -> (let result = (Variablestore__variables__substring.substring m from to__) in (
     (if ((Variablestore__variables__substring.substring__function_guard result m from to__)) then (
-     ( ( ( [@GP_Pretty_Ada:69020] ((epsilon temp___result_242 : int.
+     ( ( ( [@GP_Pretty_Ada:68796] ((epsilon temp___result_242 : int.
       ( (temp___result_242 = (Variablestore__variables__length.length result)) /\ (Variablestore__variables__length.length__function_guard temp___result_242 result) )) = ((to__ - from) + (1 : int))) ) /\ (Variablestore__variables__mystring___axiom.dynamic_invariant result True False True True) )/\true )) else true)))
     )))
 
@@ -5985,9 +5985,9 @@ module Ada__text_io__get_line__2___axiom
  val get_line__2 
    (item : Array__Int__Standard__character.map__ref) (item__first : Standard__integer.integer) (item__last : Standard__integer.integer) (last : int__ref) : unit
   requires {  true }
-  ensures {  ( ( ( ( [@GP_Pretty_Ada:18742] ((old (Ada__text_io__line_length__2.line_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content) ) = (Ada__text_io__line_length__2.line_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content)) ) /\ ( [@GP_Pretty_Ada:18748] ((old (Ada__text_io__page_length__2.page_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content) ) = (Ada__text_io__page_length__2.page_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content)) ) ) /\ (if (((Integer.length (Standard__integer__rep.to_rep item__first) (Standard__integer__rep.to_rep item__last)) > (0 : int))) then (
-   ( [@GP_Pretty_Ada:18757] ( (((Standard__integer__rep.to_rep item__first) - (1 : int)) <= last.int__content) /\ (last.int__content <= (Standard__integer__rep.to_rep item__last)) ) )) else (
-   ( [@GP_Pretty_Ada:18768] (last.int__content = ((Standard__integer__rep.to_rep item__first) - (1 : int))) ))) ) /\ ( (if (True) then (
+  ensures {  ( ( ( ( [@GP_Pretty_Ada:18606] ((old (Ada__text_io__line_length__2.line_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content) ) = (Ada__text_io__line_length__2.line_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content)) ) /\ ( [@GP_Pretty_Ada:18612] ((old (Ada__text_io__page_length__2.page_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content) ) = (Ada__text_io__page_length__2.page_length__2 Ada__text_io__standard_in.standard_in.Main.__private__content Ada__text_io__file_system.file_system.Main.__private__content Ada__text_io__standard_out.standard_out.Main.__private__content Ada__text_io__standard_err.standard_err.Main.__private__content Ada__text_io__current_in.current_in.Main.__private__content Ada__text_io__current_out.current_out.Main.__private__content Ada__text_io__current_err.current_err.Main.__private__content)) ) ) /\ (if (((Integer.length (Standard__integer__rep.to_rep item__first) (Standard__integer__rep.to_rep item__last)) > (0 : int))) then (
+   ( [@GP_Pretty_Ada:18621] ( (((Standard__integer__rep.to_rep item__first) - (1 : int)) <= last.int__content) /\ (last.int__content <= (Standard__integer__rep.to_rep item__last)) ) )) else (
+   ( [@GP_Pretty_Ada:18632] (last.int__content = ((Standard__integer__rep.to_rep item__first) - (1 : int))) ))) ) /\ ( (if (True) then (
    true) else (
    (Standard__string.dynamic_property Standard__positive.first Standard__positive.last (Standard__integer__rep.to_rep item__first) (Standard__integer__rep.to_rep item__last)))) /\ (Standard__natural___axiom.dynamic_invariant last.int__content True True True True) ) ) }
   reads {Ada__text_io__standard_in.standard_in, Ada__text_io__file_system.file_system, Ada__text_io__standard_out.standard_out, Ada__text_io__standard_err.standard_err, Ada__text_io__current_in.current_in, Ada__text_io__current_out.current_out, Ada__text_io__current_err.current_err}
@@ -6038,7 +6038,7 @@ module Variablestore__get__2___axiom
 
  val get__2 
    (d : Variablestore__database.database) (v : Variablestore__variable.variable) : int
-  requires {  ( [@GP_Pretty_Ada:69449] ((epsilon temp___result_288 : bool.
+  requires {  ( [@GP_Pretty_Ada:69225] ((epsilon temp___result_288 : bool.
    ( (temp___result_288 = (Variablestore__has_variable.has_variable d v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_288 d v) )) = True) ) }
   ensures {  ( ( (result = (Variablestore__get__2.get__2 d v)) /\ (Variablestore__get__2.get__2__function_guard result d v) )/\(Standard__integer___axiom.dynamic_invariant result True False True True) ) }
  
@@ -6086,7 +6086,7 @@ module Variablestore__put___axiom
 
  val put 
    (d : Variablestore__database.database__ref) (v : Variablestore__variable.variable) (value : int) : unit
-  requires {  ( [@GP_Pretty_Ada:69474] ( ((epsilon temp___result_290 : int.
+  requires {  ( [@GP_Pretty_Ada:69250] ( ((epsilon temp___result_290 : int.
    ( (temp___result_290 = (Variablestore__length__2.length__2 d.Variablestore__database.database__content)) /\ (Variablestore__length__2.length__2__function_guard temp___result_290 d.Variablestore__database.database__content) )) < (1000 : int)) \/ ((epsilon temp___result_291 : bool.
    ( (temp___result_291 = (Variablestore__has_variable.has_variable d.Variablestore__database.database__content v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_291 d.Variablestore__database.database__content v) )) = True) ) ) }
   ensures {  (Variablestore__database___axiom.dynamic_invariant d.Variablestore__database.database__content True True True True) }
@@ -6105,7 +6105,7 @@ module Variablestore__remove___axiom
 
  val remove 
    (d : Variablestore__database.database__ref) (v : Variablestore__variable.variable) : unit
-  requires {  ( [@GP_Pretty_Ada:69493] ((epsilon temp___result_293 : bool.
+  requires {  ( [@GP_Pretty_Ada:69269] ((epsilon temp___result_293 : bool.
    ( (temp___result_293 = (Variablestore__has_variable.has_variable d.Variablestore__database.database__content v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_293 d.Variablestore__database.database__content v) )) = True) ) }
   ensures {  (Variablestore__database___axiom.dynamic_invariant d.Variablestore__database.database__content True True True True) }
   writes {d}
@@ -6124,7 +6124,7 @@ module Variablestore__from_string___axiom
 
  val from_string 
    (s : Standard__string.string) : Variablestore__variable.variable
-  requires {  ( [@GP_Pretty_Ada:69512] ((Standard__string.length s) <= (1024 : int)) ) }
+  requires {  ( [@GP_Pretty_Ada:69288] ((Standard__string.length s) <= (1024 : int)) ) }
   ensures {  ( ( (result = (Variablestore__from_string.from_string s)) /\ (Variablestore__from_string.from_string__function_guard result s) )/\(Variablestore__variable___axiom.dynamic_invariant result True False True True) ) }
 
 end
@@ -6362,12 +6362,12 @@ module Variablestore__variables__length__subprogram_def
  use        Variablestore__variables__mystring___axiom as Variablestore__variables__mystring___axiom
  use        Variablestore__variables__mystring__T13s___axiom as Variablestore__variables__mystring__T13s___axiom
 
- val variablestore__variables__length__result [@model_projected] [@name:Length] [@model_trace:68583@result]  : int__ref 
+ val variablestore__variables__length__result [@model_trace:68359@result] [@model_projected] [@name:Length]  : int__ref 
  
  let def [#"mystring.ads" 23 0 0][@GP_Subp:mystring.ads:23] 
    (__void_param : unit)
   requires { [#"mystring.ads" 23 0 0] true }
-  ensures { [#"mystring.ads" 23 0 0] ([#"mystring.ads" 24 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@comment:     Post => Length'Result <= Max_MyString_Length;              ^ mystring.ads:24:14:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:0] [@GP_Sloc:mystring.ads:24:14:instantiated:variablestore.ads:11:4] ( [@GP_Pretty_Ada:68979] [@GP_Sloc:mystring.ads:24:14:instantiated:variablestore.ads:11:4] (variablestore__variables__length__result.int__content <= (1024 : int)) ) )) }
+  ensures { [#"mystring.ads" 23 0 0] ([#"mystring.ads" 24 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@comment:     Post => Length'Result <= Max_MyString_Length;              ^ mystring.ads:24:14:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:0] [@GP_Sloc:mystring.ads:24:14:instantiated:variablestore.ads:11:4] ( [@GP_Pretty_Ada:68755] [@GP_Sloc:mystring.ads:24:14:instantiated:variablestore.ads:11:4] (variablestore__variables__length__result.int__content <= (1024 : int)) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram mystring.ads:23 instantiated at variablestore.ads:11 *)
   ;
@@ -6442,13 +6442,13 @@ module Variablestore__variables__to_string__subprogram_def
  use        Variablestore__variables__to_string__TresultS___axiom as Variablestore__variables__to_string__TresultS___axiom
  use        Variablestore__variables__to_string__T272s___axiom as Variablestore__variables__to_string__T272s___axiom
 
- val variablestore__variables__to_string__result [@name:To_String] [@model_trace:68432@result] [@model_projected]  : Standard__string.string__ref 
+ val variablestore__variables__to_string__result [@name:To_String] [@model_trace:68208@result] [@model_projected]  : Standard__string.string__ref 
  
  let def [#"mystring.ads" 8 0 0][@GP_Subp:mystring.ads:8] 
    (__void_param : unit)
   requires { [#"mystring.ads" 8 0 0] true }
-  ensures { [#"mystring.ads" 8 0 0] ([#"mystring.ads" 9 0 0] ( [@comment:     Post => To_String'Result'Length = Length(M) and              ^ mystring.ads:9:14:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@GP_Reason:VC_POSTCONDITION] [@GP_Sloc:mystring.ads:9:14:instantiated:variablestore.ads:11:4] [@model_vc_post] [@GP_Shape:pragargs__and] [@GP_Id:7] ( ( ( [@GP_Sloc:mystring.ads:9:14:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68412] ((Standard__string.length variablestore__variables__to_string__result.Standard__string.string__content) = (epsilon temp___result_315 : int.
-   ( (temp___result_315 = (Variablestore__variables__length.length Variablestore__variables__to_string__m.m)) /\ (Variablestore__variables__length.length__function_guard temp___result_315 Variablestore__variables__to_string__m.m) ))) ) /\ ( [@GP_Pretty_Ada:68419] [@GP_Sloc:mystring.ads:10:14:instantiated:variablestore.ads:11:4] ((Standard__string.first variablestore__variables__to_string__result.Standard__string.string__content) = (1 : int)) ) ) /\ ( [@GP_Sloc:mystring.ads:10:45:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68424] ((Standard__string.last variablestore__variables__to_string__result.Standard__string.string__content) = (epsilon temp___result_316 : int.
+  ensures { [#"mystring.ads" 8 0 0] ([#"mystring.ads" 9 0 0] ( [@comment:     Post => To_String'Result'Length = Length(M) and              ^ mystring.ads:9:14:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@GP_Reason:VC_POSTCONDITION] [@GP_Sloc:mystring.ads:9:14:instantiated:variablestore.ads:11:4] [@model_vc_post] [@GP_Shape:pragargs__and] [@GP_Id:7] ( ( ( [@GP_Sloc:mystring.ads:9:14:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68188] ((Standard__string.length variablestore__variables__to_string__result.Standard__string.string__content) = (epsilon temp___result_315 : int.
+   ( (temp___result_315 = (Variablestore__variables__length.length Variablestore__variables__to_string__m.m)) /\ (Variablestore__variables__length.length__function_guard temp___result_315 Variablestore__variables__to_string__m.m) ))) ) /\ ( [@GP_Sloc:mystring.ads:10:14:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68195] ((Standard__string.first variablestore__variables__to_string__result.Standard__string.string__content) = (1 : int)) ) ) /\ ( [@GP_Pretty_Ada:68200] [@GP_Sloc:mystring.ads:10:45:instantiated:variablestore.ads:11:4] ((Standard__string.last variablestore__variables__to_string__result.Standard__string.string__content) = (epsilon temp___result_316 : int.
    ( (temp___result_316 = (Variablestore__variables__length.length Variablestore__variables__to_string__m.m)) /\ (Variablestore__variables__length.length__function_guard temp___result_316 Variablestore__variables__to_string__m.m) ))) ) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram mystring.ads:8 instantiated at variablestore.ads:11 *)
@@ -6594,12 +6594,12 @@ module Variablestore__variables__from_string__subprogram_def
  use        Temp_____aggregate_def_317___axiom as Temp_____aggregate_def_317___axiom
  use        Variablestore__variables__from_string__L_1__T277s___axiom as Variablestore__variables__from_string__L_1__T277s___axiom
 
- val variablestore__variables__from_string__result [@name:From_String] [@model_projected] [@model_trace:68466@result]  : Variablestore__variables__mystring.mystring__ref 
+ val variablestore__variables__from_string__result [@name:From_String] [@model_projected] [@model_trace:68242@result]  : Variablestore__variables__mystring.mystring__ref 
  
  let def [#"mystring.ads" 12 0 0][@GP_Subp:mystring.ads:12] 
    (__void_param : unit)
   requires { [#"mystring.ads" 12 0 0] true }
-  ensures { [#"mystring.ads" 12 0 0] ([#"mystring.ads" 14 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Sloc:mystring.ads:14:15:instantiated:variablestore.ads:11:4] [@GP_Id:18] [@GP_Shape:pragargs__cmp] [@model_vc_post] [@comment:     Post => (Length(From_String'Result) = S'Length);               ^ mystring.ads:14:15:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] ( [@GP_Pretty_Ada:68911] [@GP_Sloc:mystring.ads:14:15:instantiated:variablestore.ads:11:4] ((epsilon temp___result_335 : int.
+  ensures { [#"mystring.ads" 12 0 0] ([#"mystring.ads" 14 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Sloc:mystring.ads:14:15:instantiated:variablestore.ads:11:4] [@GP_Id:18] [@GP_Shape:pragargs__cmp] [@model_vc_post] [@comment:     Post => (Length(From_String'Result) = S'Length);               ^ mystring.ads:14:15:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] ( [@GP_Sloc:mystring.ads:14:15:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68687] ((epsilon temp___result_335 : int.
    ( (temp___result_335 = (Variablestore__variables__length.length variablestore__variables__from_string__result.Variablestore__variables__mystring.mystring__content)) /\ (Variablestore__variables__length.length__function_guard temp___result_335 variablestore__variables__from_string__result.Variablestore__variables__mystring.mystring__content) )) = (Standard__string.length Variablestore__variables__from_string__s.s)) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram mystring.ads:12 instantiated at variablestore.ads:11 *)
@@ -6617,7 +6617,7 @@ module Variablestore__variables__from_string__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram mystring.ads:12 instantiated at variablestore.ads:11 *)
   ;
-   assume {  ( [@GP_Pretty_Ada:68897] ((Standard__string.length Variablestore__variables__from_string__s.s) <= (1024 : int)) ) };
+   assume {  ( [@GP_Pretty_Ada:68673] ((Standard__string.length Variablestore__variables__from_string__s.s) <= (1024 : int)) ) };
    try
    ( ();
    ([#"mystring.adb" 12 0 0] ());
@@ -6630,11 +6630,11 @@ module Variablestore__variables__from_string__subprogram_def
    [#"mystring.adb" 14 0 0] assume { [#"mystring.adb" 14 0 0] (Standard__integer___axiom.dynamic_invariant Variablestore__variables__from_string__j.j.int__content True False True True) } ));
    ([#"mystring.adb" 20 0 0] ());
    ();
-   ( [@GP_Sloc:mystring.adb:16:7:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 16 0 0] (if (( ([#"mystring.adb" 16 0 0] [#"mystring.adb" 16 0 0] (([@branch_id=111181] Main.spark__branch).bool__content <- ( (([#"mystring.adb" 16 0 0] ( [@vc:annotation] [@GP_Reason:VC_RANGE_CHECK] [@GP_Shape:if__cmp__typeconv__length_ref] [@comment:      if S'Length > Max_MyString_Length then           ^ mystring.adb:16:11:instantiated:variablestore.ads:11:4:VC_RANGE_CHECK] [@GP_Sloc:mystring.adb:16:11:instantiated:variablestore.ads:11:4] [@GP_Id:9] (Standard__integer.range_check_(( [#"mystring.adb" 16 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__from_string__s.s in (
+   ( [@GP_Sloc:mystring.adb:16:7:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 16 0 0] (if (( ([#"mystring.adb" 16 0 0] [#"mystring.adb" 16 0 0] (([@branch_id=110957] Main.spark__branch).bool__content <- ( (([#"mystring.adb" 16 0 0] ( [@vc:annotation] [@GP_Reason:VC_RANGE_CHECK] [@GP_Shape:if__cmp__typeconv__length_ref] [@comment:      if S'Length > Max_MyString_Length then           ^ mystring.adb:16:11:instantiated:variablestore.ads:11:4:VC_RANGE_CHECK] [@GP_Sloc:mystring.adb:16:11:instantiated:variablestore.ads:11:4] [@GP_Id:9] (Standard__integer.range_check_(( [#"mystring.adb" 16 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__from_string__s.s in (
     ()))
     in () end ;
    (Standard__string.length(Variablestore__variables__from_string__s.s)) ))) )) > (1024 : int)) )));
-   ( [@branch_id=111181] Main.spark__branch ).bool__content )) then (
+   ( [@branch_id=110957] Main.spark__branch ).bool__content )) then (
     ( ();
     ( [@GP_Sloc:mystring.adb:17:10:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 17 0 0] ([#"mystring.adb" 17 0 0] ( [@comment:         raise Constraint_Error;          ^ mystring.adb:17:10:instantiated:variablestore.ads:11:4:VC_RAISE] [@GP_Reason:VC_RAISE] [@vc:annotation] [@GP_Shape:if__raise_constraint_error] [@GP_Sloc:mystring.adb:17:10:instantiated:variablestore.ads:11:4] [@GP_Id:8] absurd ))) ) )) else (
     ()))) );
@@ -6663,23 +6663,23 @@ module Variablestore__variables__from_string__subprogram_def
     ;
     (if ((Boolean.andb((temp___323 <= Variablestore__variables__from_string__L_1__i.i.int__content)) ((Variablestore__variables__from_string__L_1__i.i.int__content <= temp___324)))) then (
      [#"mystring.adb" 20 0 0] try
-      ( [#"mystring.adb" 20 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__from_string__j.j.int__content in (
+      ( [#"mystring.adb" 20 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__from_string__L_1__i.i.int__content in (
        ()))
        in () end ;
       (let temp___331 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 20 0 0] (val _f : int
-      ensures {[#"mystring.adb" 20 0 0] (result = Variablestore__variables__from_string__j.j.int__content)} 
+      ensures {[#"mystring.adb" 20 0 0] (result = Variablestore__variables__from_string__L_1__i.i.int__content)} 
       in _f) in (
-       ( [#"mystring.adb" 20 0 0] begin ensures {true} let _ = (let _ = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content } in (
+       ( [#"mystring.adb" 20 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__from_string__j.j.int__content in (
         ()))
         in () end ;
-       (let temp___329 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 20 0 0] (val _f : Variablestore__variables__mystring.mystring
-       ensures {[#"mystring.adb" 20 0 0] (result = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content })} 
+       (let temp___330 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 20 0 0] (val _f : int
+       ensures {[#"mystring.adb" 20 0 0] (result = Variablestore__variables__from_string__j.j.int__content)} 
        in _f) in (
-        ( [#"mystring.adb" 20 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__from_string__L_1__i.i.int__content in (
+        ( [#"mystring.adb" 20 0 0] begin ensures {true} let _ = (let _ = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content } in (
          ()))
          in () end ;
-        (let temp___328 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 20 0 0] (val _f : int
-        ensures {[#"mystring.adb" 20 0 0] (result = Variablestore__variables__from_string__L_1__i.i.int__content)} 
+        (let temp___328 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 20 0 0] (val _f : Variablestore__variables__mystring.mystring
+        ensures {[#"mystring.adb" 20 0 0] (result = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content })} 
         in _f) in (
          ( () (* First unroling of the loop statements appearing before the loop invariant of loop mystring.adb:20 instantiated at variablestore.ads:11 *)
          ;
@@ -6695,12 +6695,12 @@ module Variablestore__variables__from_string__subprogram_def
          ;
           while True do
           invariant { 
-           ([#"mystring.adb" 21 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@GP_Id:15] [@vc:annotation] [@GP_Shape:L_1_while__pragargs__cmp] [@GP_Sloc:mystring.adb:21:33:instantiated:variablestore.ads:11:4] [@comment:         pragma Loop_Invariant (J = I - S'First + 1);                                 ^ mystring.adb:21:33:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] ( [@GP_Sloc:mystring.adb:21:33:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:111209] (Variablestore__variables__from_string__j.j.int__content = ((Variablestore__variables__from_string__L_1__i.i.int__content - (Standard__string.first Variablestore__variables__from_string__s.s)) + (1 : int))) ) ))
+           ([#"mystring.adb" 21 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@GP_Id:15] [@vc:annotation] [@GP_Shape:L_1_while__pragargs__cmp] [@GP_Sloc:mystring.adb:21:33:instantiated:variablestore.ads:11:4] [@comment:         pragma Loop_Invariant (J = I - S'First + 1);                                 ^ mystring.adb:21:33:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] ( [@GP_Pretty_Ada:110985] [@GP_Sloc:mystring.adb:21:33:instantiated:variablestore.ads:11:4] (Variablestore__variables__from_string__j.j.int__content = ((Variablestore__variables__from_string__L_1__i.i.int__content - (Standard__string.first Variablestore__variables__from_string__s.s)) + (1 : int))) ) ))
            }
           ( () (* Assume implicit invariants from the loop mystring.adb:20 instantiated at variablestore.ads:11 *)
           ;
-           assume {  (Boolean.andb(( ( ( ( ( ( true /\ (if (( True \/ ((Standard__string.first Variablestore__variables__from_string__s.s) <= (Standard__string.last Variablestore__variables__from_string__s.s)) )) then (
-           (Variablestore__variables__from_string__L_1__T277s.dynamic_property (Standard__string.first Variablestore__variables__from_string__s.s) (Standard__string.last Variablestore__variables__from_string__s.s) Variablestore__variables__from_string__L_1__i.i.int__content)) else true) )/\true ) /\ (Variablestore__variables__mystring___axiom.dynamic_invariant { Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content } True True True True) )/\({ Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content }.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length = temp___329.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length) ) /\ (Standard__integer___axiom.dynamic_invariant Variablestore__variables__from_string__j.j.int__content True True True True) )/\true )) (( ((Standard__string.first Variablestore__variables__from_string__s.s) <= Variablestore__variables__from_string__L_1__i.i.int__content) /\ (Variablestore__variables__from_string__L_1__i.i.int__content <= (Standard__string.last Variablestore__variables__from_string__s.s)) ))) };
+           assume {  (Boolean.andb(( ( ( ( ( ( true /\ (Variablestore__variables__mystring___axiom.dynamic_invariant { Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content } True True True True) )/\({ Variablestore__variables__mystring.__split_fields = Variablestore__variables__from_string__m.m__split_fields.Variablestore__variables__mystring.__split_fields__content }.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length = temp___328.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length) ) /\ (Standard__integer___axiom.dynamic_invariant Variablestore__variables__from_string__j.j.int__content True True True True) )/\true ) /\ (if (( True \/ ((Standard__string.first Variablestore__variables__from_string__s.s) <= (Standard__string.last Variablestore__variables__from_string__s.s)) )) then (
+           (Variablestore__variables__from_string__L_1__T277s.dynamic_property (Standard__string.first Variablestore__variables__from_string__s.s) (Standard__string.last Variablestore__variables__from_string__s.s) Variablestore__variables__from_string__L_1__i.i.int__content)) else true) )/\true )) (( ((Standard__string.first Variablestore__variables__from_string__s.s) <= Variablestore__variables__from_string__L_1__i.i.int__content) /\ (Variablestore__variables__from_string__L_1__i.i.int__content <= (Standard__string.last Variablestore__variables__from_string__s.s)) ))) };
           () (* Check for absence of RTE in the invariant of loop mystring.adb:20 instantiated at variablestore.ads:11 *)
           ;
           () (* Loop statements appearing after the loop invariant of loop mystring.adb:20 instantiated at variablestore.ads:11 *)
@@ -6797,7 +6797,7 @@ module Variablestore__variables__less__subprogram_def
  use        Variablestore__variables__less__i___axiom as Variablestore__variables__less__i___axiom
  use        Variablestore__variables__less__L_2___axiom as Variablestore__variables__less__L_2___axiom
 
- val variablestore__variables__less__result [@model_projected] [@name:Less] [@model_trace:68485@result]  : bool__ref 
+ val variablestore__variables__less__result [@model_trace:68261@result] [@model_projected] [@name:Less]  : bool__ref 
  
  let def [#"mystring.ads" 16 0 0][@GP_Subp:mystring.ads:16] 
    (__void_param : unit)
@@ -6822,13 +6822,13 @@ module Variablestore__variables__less__subprogram_def
    [#"mystring.adb" 29 0 0] assume { [#"mystring.adb" 29 0 0] (Standard__integer___axiom.dynamic_invariant Variablestore__variables__less__i.i.int__content True False True True) } ));
    ([#"mystring.adb" 36 0 0] ());
    ();
-   ( [@GP_Sloc:mystring.adb:31:7:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 31 0 0] (if (( ([#"mystring.adb" 31 0 0] [#"mystring.adb" 31 0 0] (([@branch_id=111338] Main.spark__branch).bool__content <- ( ((Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) < (Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length))) )));
-   ( [@branch_id=111338] Main.spark__branch ).bool__content )) then (
+   ( [@GP_Sloc:mystring.adb:31:7:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 31 0 0] (if (( ([#"mystring.adb" 31 0 0] [#"mystring.adb" 31 0 0] (([@branch_id=111114] Main.spark__branch).bool__content <- ( ((Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) < (Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length))) )));
+   ( [@branch_id=111114] Main.spark__branch ).bool__content )) then (
     ( ();
     ( [@GP_Sloc:mystring.adb:32:10:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 32 0 0] ( [#"mystring.adb" 32 0 0] (variablestore__variables__less__result.bool__content <- ( (Boolean.of_int((1 : int))) ));
     [#"mystring.adb" 32 0 0] raise Return__exc )) ) )) else (
-    ( [@GP_Sloc:mystring.adb:33:7:instantiated:variablestore.ads:11:4] (if (( ([#"mystring.adb" 33 0 0] [#"mystring.adb" 33 0 0] (([@branch_id=111348] Main.spark__branch).bool__content <- ( ((Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) > (Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length))) )));
-    ( [@branch_id=111348] Main.spark__branch ).bool__content )) then (
+    ( [@GP_Sloc:mystring.adb:33:7:instantiated:variablestore.ads:11:4] (if (( ([#"mystring.adb" 33 0 0] [#"mystring.adb" 33 0 0] (([@branch_id=111124] Main.spark__branch).bool__content <- ( ((Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) > (Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__less__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length))) )));
+    ( [@branch_id=111124] Main.spark__branch ).bool__content )) then (
      ( ();
      ( [@GP_Sloc:mystring.adb:34:10:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 34 0 0] ( [#"mystring.adb" 34 0 0] (variablestore__variables__less__result.bool__content <- ( (Boolean.of_int((0 : int))) ));
      [#"mystring.adb" 34 0 0] raise Return__exc )) ) )) else (
@@ -6854,7 +6854,7 @@ module Variablestore__variables__less__subprogram_def
         ;
         [#"mystring.adb" 36 0 0] while True do
          invariant { 
-          ([#"mystring.adb" 37 0 0] ( [@comment:            pragma Loop_Invariant (I >= M1.Str'First);                                    ^ mystring.adb:37:36:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] [@GP_Reason:VC_LOOP_INVARIANT] [@vc:annotation] [@GP_Sloc:mystring.adb:37:36:instantiated:variablestore.ads:11:4] [@GP_Id:24] [@GP_Shape:if__L_2_while__pragargs__cmp] ( [@GP_Sloc:mystring.adb:37:36:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:111369] (Variablestore__variables__less__i.i.int__content >= (1 : int)) ) ))
+          ([#"mystring.adb" 37 0 0] ( [@comment:            pragma Loop_Invariant (I >= M1.Str'First);                                    ^ mystring.adb:37:36:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] [@GP_Reason:VC_LOOP_INVARIANT] [@vc:annotation] [@GP_Sloc:mystring.adb:37:36:instantiated:variablestore.ads:11:4] [@GP_Id:24] [@GP_Shape:if__L_2_while__pragargs__cmp] ( [@GP_Pretty_Ada:111145] [@GP_Sloc:mystring.adb:37:36:instantiated:variablestore.ads:11:4] (Variablestore__variables__less__i.i.int__content >= (1 : int)) ) ))
           }
          ( () (* Assume implicit invariants from the loop mystring.adb:36 instantiated at variablestore.ads:11 *)
          ;
@@ -6866,25 +6866,25 @@ module Variablestore__variables__less__subprogram_def
          ();
          ( [@GP_Sloc:mystring.adb:38:23:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 38 0 0] ()) );
          ( [@GP_Sloc:mystring.adb:38:35:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 38 0 0] ()) );
-         ( [@GP_Sloc:mystring.adb:38:13:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 38 0 0] (if (( ([#"mystring.adb" 38 0 0] [#"mystring.adb" 38 0 0] (([@branch_id=111376] Main.spark__branch).bool__content <- ( ((Standard__character__rep.to_rep((let temp___338 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
+         ( [@GP_Sloc:mystring.adb:38:13:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 38 0 0] (if (( ([#"mystring.adb" 38 0 0] [#"mystring.adb" 38 0 0] (([@branch_id=111152] Main.spark__branch).bool__content <- ( ((Standard__character__rep.to_rep((let temp___338 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
           (Array__Int__Standard__character.get(temp___338) (( [#"mystring.adb" 38 0 0] assert { [#"mystring.adb" 38 0 0] ([#"mystring.adb" 38 0 0] ( [@GP_Shape:if__L_2_while__if__cmp__ixdcomp] [@vc:annotation] [@comment:            if M1.Str(I) < M2.Str(I) then                       ^ mystring.adb:38:23:instantiated:variablestore.ads:11:4:VC_INDEX_CHECK] [@GP_Reason:VC_INDEX_CHECK] [@GP_Sloc:mystring.adb:38:23:instantiated:variablestore.ads:11:4] [@GP_Id:22] ( (Variablestore__variables__TmystringstrD1.first <= Variablestore__variables__less__i.i.int__content) /\ (Variablestore__variables__less__i.i.int__content <= Variablestore__variables__TmystringstrD1.last) ) )) };
           Variablestore__variables__less__i.i.int__content )))))
          )) < (Standard__character__rep.to_rep((let temp___339 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__less__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
           (Array__Int__Standard__character.get(temp___339) ((  assert {  ([#"mystring.adb" 38 0 0] ( [@GP_Shape:if__L_2_while__if__cmp__ixdcomp] [@vc:annotation] [@comment:            if M1.Str(I) < M2.Str(I) then                                   ^ mystring.adb:38:35:instantiated:variablestore.ads:11:4:VC_INDEX_CHECK] [@GP_Sloc:mystring.adb:38:35:instantiated:variablestore.ads:11:4] [@GP_Reason:VC_INDEX_CHECK] [@GP_Id:23] ( (Variablestore__variables__TmystringstrD1.first <= Variablestore__variables__less__i.i.int__content) /\ (Variablestore__variables__less__i.i.int__content <= Variablestore__variables__TmystringstrD1.last) ) )) };
           Variablestore__variables__less__i.i.int__content )))))
          ))) )));
-         ( [@branch_id=111376] Main.spark__branch ).bool__content )) then (
+         ( [@branch_id=111152] Main.spark__branch ).bool__content )) then (
           ( ();
           ( [@GP_Sloc:mystring.adb:39:16:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 39 0 0] ( [#"mystring.adb" 39 0 0] (variablestore__variables__less__result.bool__content <- ( (Boolean.of_int((1 : int))) ));
           [#"mystring.adb" 39 0 0] raise Return__exc )) ) )) else (
-          ( [@GP_Sloc:mystring.adb:40:13:instantiated:variablestore.ads:11:4] (if (( ([#"mystring.adb" 40 0 0] [#"mystring.adb" 40 0 0] (([@branch_id=111390] Main.spark__branch).bool__content <- ( ((Standard__character__rep.to_rep((let temp___336 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
+          ( [@GP_Sloc:mystring.adb:40:13:instantiated:variablestore.ads:11:4] (if (( ([#"mystring.adb" 40 0 0] [#"mystring.adb" 40 0 0] (([@branch_id=111166] Main.spark__branch).bool__content <- ( ((Standard__character__rep.to_rep((let temp___336 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__less__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
            (Array__Int__Standard__character.get(temp___336) (( [#"mystring.adb" 40 0 0] assert { [#"mystring.adb" 40 0 0] ([#"mystring.adb" 40 0 0] ( [@comment:            elsif M1.Str(I) > M2.Str(I) then                          ^ mystring.adb:40:26:instantiated:variablestore.ads:11:4:VC_INDEX_CHECK] [@GP_Sloc:mystring.adb:40:26:instantiated:variablestore.ads:11:4] [@GP_Shape:if__L_2_while__if__cmp__ixdcomp] [@vc:annotation] [@GP_Reason:VC_INDEX_CHECK] [@GP_Id:20] ( (Variablestore__variables__TmystringstrD1.first <= Variablestore__variables__less__i.i.int__content) /\ (Variablestore__variables__less__i.i.int__content <= Variablestore__variables__TmystringstrD1.last) ) )) };
            Variablestore__variables__less__i.i.int__content )))))
           )) > (Standard__character__rep.to_rep((let temp___337 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__less__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
            (Array__Int__Standard__character.get(temp___337) ((  assert {  ([#"mystring.adb" 40 0 0] ( [@GP_Shape:if__L_2_while__if__cmp__ixdcomp] [@vc:annotation] [@GP_Reason:VC_INDEX_CHECK] [@comment:            elsif M1.Str(I) > M2.Str(I) then                                      ^ mystring.adb:40:38:instantiated:variablestore.ads:11:4:VC_INDEX_CHECK] [@GP_Id:21] [@GP_Sloc:mystring.adb:40:38:instantiated:variablestore.ads:11:4] ( (Variablestore__variables__TmystringstrD1.first <= Variablestore__variables__less__i.i.int__content) /\ (Variablestore__variables__less__i.i.int__content <= Variablestore__variables__TmystringstrD1.last) ) )) };
            Variablestore__variables__less__i.i.int__content )))))
           ))) )));
-          ( [@branch_id=111390] Main.spark__branch ).bool__content )) then (
+          ( [@branch_id=111166] Main.spark__branch ).bool__content )) then (
            ( ();
            ( [@GP_Sloc:mystring.adb:41:16:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 41 0 0] ( [#"mystring.adb" 41 0 0] (variablestore__variables__less__result.bool__content <- ( (Boolean.of_int((0 : int))) ));
            [#"mystring.adb" 41 0 0] raise Return__exc )) ) )) else (
@@ -6946,7 +6946,7 @@ module Variablestore__variables__get__subprogram_def
  use        Variablestore__variables__TmystringstrD1___axiom as Variablestore__variables__TmystringstrD1___axiom
  use        Variablestore__variables__mystring__T13s___axiom as Variablestore__variables__mystring__T13s___axiom
 
- val variablestore__variables__get__result [@model_projected] [@name:Get] [@model_trace:68669@result]  : int__ref 
+ val variablestore__variables__get__result [@model_trace:68445@result] [@model_projected] [@name:Get]  : int__ref 
  
  let def [#"mystring.ads" 30 0 0][@GP_Subp:mystring.ads:30] 
    (__void_param : unit)
@@ -6965,7 +6965,7 @@ module Variablestore__variables__get__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram mystring.ads:30 instantiated at variablestore.ads:11 *)
   ;
-  [#"mystring.ads" 30 0 0] assume { [#"mystring.ads" 30 0 0] ( [@GP_Pretty_Ada:69047] (Variablestore__variables__get__index.index <= (epsilon temp___result_346 : int.
+  [#"mystring.ads" 30 0 0] assume { [#"mystring.ads" 30 0 0] ( [@GP_Pretty_Ada:68823] (Variablestore__variables__get__index.index <= (epsilon temp___result_346 : int.
    ( (temp___result_346 = (Variablestore__variables__length.length Variablestore__variables__get__m.m)) /\ (Variablestore__variables__length.length__function_guard temp___result_346 Variablestore__variables__get__m.m) ))) ) };
   [#"mystring.ads" 30 0 0] try
    ( ();
@@ -7033,20 +7033,20 @@ module Variablestore__variables__equal__subprogram_def
  use        Variablestore__variables__equal__i___axiom as Variablestore__variables__equal__i___axiom
  use        Variablestore__variables__equal__L_3___axiom as Variablestore__variables__equal__L_3___axiom
 
- val variablestore__variables__equal__result [@name:Equal] [@model_projected] [@model_trace:68549@result]  : bool__ref 
+ val variablestore__variables__equal__result [@model_trace:68325@result] [@name:Equal] [@model_projected]  : bool__ref 
  
  let def [#"mystring.ads" 18 0 0][@GP_Subp:mystring.ads:18] 
    (__void_param : unit)
   requires { [#"mystring.ads" 18 0 0] true }
   ensures { [#"mystring.ads" 18 0 0] ([#"mystring.ads" 19 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@comment:     Post => (if Equal'Result then               ^ mystring.ads:19:15:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@GP_Id:35] [@model_vc_post] [@GP_Sloc:mystring.ads:19:15:instantiated:variablestore.ads:11:4] [@GP_Shape:pragargs__if] (if ((variablestore__variables__equal__result.bool__content = True)) then (
-   ( ( [@GP_Sloc:mystring.ads:20:11:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68518] ((epsilon temp___result_362 : int.
+   ( ( [@GP_Sloc:mystring.ads:20:11:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68294] ((epsilon temp___result_362 : int.
     ( (temp___result_362 = (Variablestore__variables__length.length Variablestore__variables__equal__m1.m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_362 Variablestore__variables__equal__m1.m1) )) = (epsilon temp___result_363 : int.
-    ( (temp___result_363 = (Variablestore__variables__length.length Variablestore__variables__equal__m2.m2)) /\ (Variablestore__variables__length.length__function_guard temp___result_363 Variablestore__variables__equal__m2.m2) ))) ) /\ (forall i [#"mystring.ads" 19 0 0]  [@name:I] [@model_trace:68536]  : int.
+    ( (temp___result_363 = (Variablestore__variables__length.length Variablestore__variables__equal__m2.m2)) /\ (Variablestore__variables__length.length__function_guard temp___result_363 Variablestore__variables__equal__m2.m2) ))) ) /\ (forall i [#"mystring.ads" 19 0 0]  [@model_trace:68312] [@name:I]  : int.
     ( ( ((1 : int) <= i) /\ (i <= (epsilon temp___result_364 : int.
-     ( (temp___result_364 = (Variablestore__variables__length.length Variablestore__variables__equal__m1.m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_364 Variablestore__variables__equal__m1.m1) ))) ) -> ( [@GP_Pretty_Ada:68526] [@GP_Sloc:mystring.ads:21:40:instantiated:variablestore.ads:11:4] ((epsilon temp___result_365 : int.
+     ( (temp___result_364 = (Variablestore__variables__length.length Variablestore__variables__equal__m1.m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_364 Variablestore__variables__equal__m1.m1) ))) ) -> ( [@GP_Sloc:mystring.ads:21:40:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:68302] ((epsilon temp___result_365 : int.
      ( (temp___result_365 = (Variablestore__variables__get.get Variablestore__variables__equal__m1.m1 i)) /\ (Variablestore__variables__get.get__function_guard temp___result_365 Variablestore__variables__equal__m1.m1 i) )) = (epsilon temp___result_366 : int.
      ( (temp___result_366 = (Variablestore__variables__get.get Variablestore__variables__equal__m2.m2 i)) /\ (Variablestore__variables__get.get__function_guard temp___result_366 Variablestore__variables__equal__m2.m2 i) ))) ) )) )) else (
-   ( [@GP_Pretty_Ada:69125] [@GP_Sloc:mystring.ads:19:15:instantiated:variablestore.ads:11:4] true ))) )) }
+   ( [@GP_Pretty_Ada:68901] [@GP_Sloc:mystring.ads:19:15:instantiated:variablestore.ads:11:4] true ))) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram mystring.ads:18 instantiated at variablestore.ads:11 *)
   ;
@@ -7067,8 +7067,8 @@ module Variablestore__variables__equal__subprogram_def
    [#"mystring.adb" 53 0 0] assume { [#"mystring.adb" 53 0 0] (Standard__integer___axiom.dynamic_invariant Variablestore__variables__equal__i.i.int__content True False True True) } ));
    ([#"mystring.adb" 58 0 0] ());
    ();
-   ( [@GP_Sloc:mystring.adb:55:7:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 55 0 0] (if (( ([#"mystring.adb" 55 0 0] [#"mystring.adb" 55 0 0] (([@branch_id=111527] Main.spark__branch).bool__content <- ( ((Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) <> (Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__equal__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length))) )));
-   ( [@branch_id=111527] Main.spark__branch ).bool__content )) then (
+   ( [@GP_Sloc:mystring.adb:55:7:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 55 0 0] (if (( ([#"mystring.adb" 55 0 0] [#"mystring.adb" 55 0 0] (([@branch_id=111303] Main.spark__branch).bool__content <- ( ((Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length)) <> (Variablestore__variables__mystring__T13s__rep.to_rep(Variablestore__variables__equal__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length))) )));
+   ( [@branch_id=111303] Main.spark__branch ).bool__content )) then (
     ( ();
     ( [@GP_Sloc:mystring.adb:56:10:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 56 0 0] ( [#"mystring.adb" 56 0 0] (variablestore__variables__equal__result.bool__content <- ( (Boolean.of_int((0 : int))) ));
     [#"mystring.adb" 56 0 0] raise Return__exc )) ) )) else (
@@ -7101,7 +7101,7 @@ module Variablestore__variables__equal__subprogram_def
           in () end ))))
        ;
         (val _f : bool
-       ensures { ( (result = True) <-> (forall j   [@model_trace:111568] [@name:J]  : int.
+       ensures { ( (result = True) <-> (forall j   [@model_trace:111344] [@name:J]  : int.
         ( ( ((1 : int) <= j) /\ (j <= (Variablestore__variables__equal__i.i.int__content - (1 : int))) ) -> ((Standard__character__rep.to_rep (let temp___353 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
          (Array__Int__Standard__character.get temp___353 j)))
         ) = (Standard__character__rep.to_rep (let temp___354 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
@@ -7114,8 +7114,8 @@ module Variablestore__variables__equal__subprogram_def
        ;
         while True do
         invariant { 
-         ([#"mystring.adb" 59 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@vc:annotation] [@comment:            pragma Loop_Invariant (I >= M1.Str'First and                                    ^ mystring.adb:59:36:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] [@GP_Sloc:mystring.adb:59:36:instantiated:variablestore.ads:11:4] [@GP_Id:32] [@GP_Shape:if__L_3_while__pragargs__and] ( ( [@GP_Pretty_Ada:111549] [@GP_Sloc:mystring.adb:59:36:instantiated:variablestore.ads:11:4] (Variablestore__variables__equal__i.i.int__content >= (1 : int)) ) /\ (forall j [#"mystring.adb" 59 0 0]  [@model_trace:111568] [@name:J]  : int.
-          ( ( ((1 : int) <= j) /\ (j <= (Variablestore__variables__equal__i.i.int__content - (1 : int))) ) -> ( [@GP_Sloc:mystring.adb:60:60:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:111556] ((Standard__character__rep.to_rep (let temp___355 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
+         ([#"mystring.adb" 59 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@vc:annotation] [@comment:            pragma Loop_Invariant (I >= M1.Str'First and                                    ^ mystring.adb:59:36:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] [@GP_Sloc:mystring.adb:59:36:instantiated:variablestore.ads:11:4] [@GP_Id:32] [@GP_Shape:if__L_3_while__pragargs__and] ( ( [@GP_Sloc:mystring.adb:59:36:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:111325] (Variablestore__variables__equal__i.i.int__content >= (1 : int)) ) /\ (forall j [#"mystring.adb" 59 0 0]  [@model_trace:111344] [@name:J]  : int.
+          ( ( ((1 : int) <= j) /\ (j <= (Variablestore__variables__equal__i.i.int__content - (1 : int))) ) -> ( [@GP_Pretty_Ada:111332] [@GP_Sloc:mystring.adb:60:60:instantiated:variablestore.ads:11:4] ((Standard__character__rep.to_rep (let temp___355 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
            (Array__Int__Standard__character.get temp___355 j)))
           ) = (Standard__character__rep.to_rep (let temp___356 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
            (Array__Int__Standard__character.get temp___356 j)))
@@ -7131,14 +7131,14 @@ module Variablestore__variables__equal__subprogram_def
         ();
         ( [@GP_Sloc:mystring.adb:61:23:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 61 0 0] ()) );
         ( [@GP_Sloc:mystring.adb:61:36:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 61 0 0] ()) );
-        ( [@GP_Sloc:mystring.adb:61:13:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 61 0 0] (if (( ([#"mystring.adb" 61 0 0] [#"mystring.adb" 61 0 0] (([@branch_id=111581] Main.spark__branch).bool__content <- ( ((Standard__character__rep.to_rep((let temp___347 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
+        ( [@GP_Sloc:mystring.adb:61:13:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 61 0 0] (if (( ([#"mystring.adb" 61 0 0] [#"mystring.adb" 61 0 0] (([@branch_id=111357] Main.spark__branch).bool__content <- ( ((Standard__character__rep.to_rep((let temp___347 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
          (Array__Int__Standard__character.get(temp___347) (( [#"mystring.adb" 61 0 0] assert { [#"mystring.adb" 61 0 0] ([#"mystring.adb" 61 0 0] ( [@GP_Shape:if__L_3_while__if__cmp__ixdcomp] [@vc:annotation] [@comment:            if M1.Str(I) /= M2.Str(I) then                       ^ mystring.adb:61:23:instantiated:variablestore.ads:11:4:VC_INDEX_CHECK] [@GP_Reason:VC_INDEX_CHECK] [@GP_Sloc:mystring.adb:61:23:instantiated:variablestore.ads:11:4] [@GP_Id:27] ( (Variablestore__variables__TmystringstrD1.first <= Variablestore__variables__equal__i.i.int__content) /\ (Variablestore__variables__equal__i.i.int__content <= Variablestore__variables__TmystringstrD1.last) ) )) };
          Variablestore__variables__equal__i.i.int__content )))))
         )) <> (Standard__character__rep.to_rep((let temp___348 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
          (Array__Int__Standard__character.get(temp___348) ((  assert {  ([#"mystring.adb" 61 0 0] ( [@GP_Shape:if__L_3_while__if__cmp__ixdcomp] [@vc:annotation] [@GP_Sloc:mystring.adb:61:36:instantiated:variablestore.ads:11:4] [@GP_Reason:VC_INDEX_CHECK] [@comment:            if M1.Str(I) /= M2.Str(I) then                                    ^ mystring.adb:61:36:instantiated:variablestore.ads:11:4:VC_INDEX_CHECK] [@GP_Id:28] ( (Variablestore__variables__TmystringstrD1.first <= Variablestore__variables__equal__i.i.int__content) /\ (Variablestore__variables__equal__i.i.int__content <= Variablestore__variables__TmystringstrD1.last) ) )) };
          Variablestore__variables__equal__i.i.int__content )))))
         ))) )));
-        ( [@branch_id=111581] Main.spark__branch ).bool__content )) then (
+        ( [@branch_id=111357] Main.spark__branch ).bool__content )) then (
          ( ();
          ( [@GP_Sloc:mystring.adb:62:16:instantiated:variablestore.ads:11:4] ([#"mystring.adb" 62 0 0] ( [#"mystring.adb" 62 0 0] (variablestore__variables__equal__result.bool__content <- ( (Boolean.of_int((0 : int))) ));
          [#"mystring.adb" 62 0 0] raise Return__exc )) ) )) else (
@@ -7164,7 +7164,7 @@ module Variablestore__variables__equal__subprogram_def
            in () end ))))
         ;
          (val _f : bool
-        ensures { ( (result = True) <-> (forall j   [@model_trace:111568] [@name:J]  : int.
+        ensures { ( (result = True) <-> (forall j   [@model_trace:111344] [@name:J]  : int.
          ( ( ((1 : int) <= j) /\ (j <= (Variablestore__variables__equal__i.i.int__content - (1 : int))) ) -> ((Standard__character__rep.to_rep (let temp___353 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m1.m1.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
           (Array__Int__Standard__character.get temp___353 j)))
          ) = (Standard__character__rep.to_rep (let temp___354 [@mlw:proxy_symbol] [@introduced] = Variablestore__variables__equal__m2.m2.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__str in (
@@ -7195,9 +7195,9 @@ module Variablestore__variables__equal__subprogram_def
       in () end ))))
    ;
     (val _f : bool
-   ensures { ( (result = True) <-> (forall i   [@name:I] [@model_trace:68536]  : int.
+   ensures { ( (result = True) <-> (forall i   [@model_trace:68312] [@name:I]  : int.
     ( ( ((1 : int) <= i) /\ (i <= (epsilon temp___result_357 : int.
-     ( (temp___result_357 = (Variablestore__variables__length.length Variablestore__variables__equal__m1.m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_357 Variablestore__variables__equal__m1.m1) ))) ) -> ( [@GP_Pretty_Ada:68526] ((epsilon temp___result_358 : int.
+     ( (temp___result_357 = (Variablestore__variables__length.length Variablestore__variables__equal__m1.m1)) /\ (Variablestore__variables__length.length__function_guard temp___result_357 Variablestore__variables__equal__m1.m1) ))) ) -> ( [@GP_Pretty_Ada:68302] ((epsilon temp___result_358 : int.
      ( (temp___result_358 = (Variablestore__variables__get.get Variablestore__variables__equal__m1.m1 i)) /\ (Variablestore__variables__get.get__function_guard temp___result_358 Variablestore__variables__equal__m1.m1 i) )) = (epsilon temp___result_359 : int.
      ( (temp___result_359 = (Variablestore__variables__get.get Variablestore__variables__equal__m2.m2 i)) /\ (Variablestore__variables__get.get__function_guard temp___result_359 Variablestore__variables__equal__m2.m2 i) ))) ) )) )} 
    in _f) )))) else (
@@ -7279,12 +7279,12 @@ module Variablestore__variables__substring__subprogram_def
  use        Temp_____aggregate_def_367___axiom as Temp_____aggregate_def_367___axiom
  use        Variablestore__variables__substring__L_4__T293s___axiom as Variablestore__variables__substring__L_4__T293s___axiom
 
- val variablestore__variables__substring__result [@model_projected] [@name:Substring] [@model_trace:68625@result]  : Variablestore__variables__mystring.mystring__ref 
+ val variablestore__variables__substring__result [@model_trace:68401@result] [@model_projected] [@name:Substring]  : Variablestore__variables__mystring.mystring__ref 
  
  let def [#"mystring.ads" 26 0 0][@GP_Subp:mystring.ads:26] 
    (__void_param : unit)
   requires { [#"mystring.ads" 26 0 0] true }
-  ensures { [#"mystring.ads" 26 0 0] ([#"mystring.ads" 28 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Id:45] [@GP_Shape:pragargs__cmp] [@comment:     Post => Length(Substring'Result) = To - From + 1;              ^ mystring.ads:28:14:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@model_vc_post] [@GP_Sloc:mystring.ads:28:14:instantiated:variablestore.ads:11:4] ( [@GP_Pretty_Ada:69020] [@GP_Sloc:mystring.ads:28:14:instantiated:variablestore.ads:11:4] ((epsilon temp___result_385 : int.
+  ensures { [#"mystring.ads" 26 0 0] ([#"mystring.ads" 28 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Id:45] [@GP_Shape:pragargs__cmp] [@comment:     Post => Length(Substring'Result) = To - From + 1;              ^ mystring.ads:28:14:instantiated:variablestore.ads:11:4:VC_POSTCONDITION] [@model_vc_post] [@GP_Sloc:mystring.ads:28:14:instantiated:variablestore.ads:11:4] ( [@GP_Pretty_Ada:68796] [@GP_Sloc:mystring.ads:28:14:instantiated:variablestore.ads:11:4] ((epsilon temp___result_385 : int.
    ( (temp___result_385 = (Variablestore__variables__length.length variablestore__variables__substring__result.Variablestore__variables__mystring.mystring__content)) /\ (Variablestore__variables__length.length__function_guard temp___result_385 variablestore__variables__substring__result.Variablestore__variables__mystring.mystring__content) )) = ((Variablestore__variables__substring__to.to__ - Variablestore__variables__substring__from.from) + (1 : int))) ) )) }
    = [@vc:divergent]
   ( () (* Assume dynamic invariants of inputs of the subprogram mystring.ads:26 instantiated at variablestore.ads:11 *)
@@ -7301,7 +7301,7 @@ module Variablestore__variables__substring__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram mystring.ads:26 instantiated at variablestore.ads:11 *)
   ;
-   assume {  ( ( [@GP_Pretty_Ada:68604] (Variablestore__variables__substring__from.from <= Variablestore__variables__substring__to.to__) ) /\ ( [@GP_Pretty_Ada:68607] (Variablestore__variables__substring__to.to__ <= (epsilon temp___result_384 : int.
+   assume {  ( ( [@GP_Pretty_Ada:68380] (Variablestore__variables__substring__from.from <= Variablestore__variables__substring__to.to__) ) /\ ( [@GP_Pretty_Ada:68383] (Variablestore__variables__substring__to.to__ <= (epsilon temp___result_384 : int.
    ( (temp___result_384 = (Variablestore__variables__length.length Variablestore__variables__substring__m.m)) /\ (Variablestore__variables__length.length__function_guard temp___result_384 Variablestore__variables__substring__m.m) ))) ) ) };
    try
    ( ();
@@ -7321,23 +7321,23 @@ module Variablestore__variables__substring__subprogram_def
     ;
     (if ((Boolean.andb((temp___371 <= Variablestore__variables__substring__L_4__i.i.int__content)) ((Variablestore__variables__substring__L_4__i.i.int__content <= temp___372)))) then (
      [#"mystring.adb" 75 0 0] try
-      ( [#"mystring.adb" 75 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__substring__j.j.int__content in (
+      ( [#"mystring.adb" 75 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__substring__L_4__i.i.int__content in (
        ()))
        in () end ;
       (let temp___380 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 75 0 0] (val _f : int
-      ensures {[#"mystring.adb" 75 0 0] (result = Variablestore__variables__substring__j.j.int__content)} 
+      ensures {[#"mystring.adb" 75 0 0] (result = Variablestore__variables__substring__L_4__i.i.int__content)} 
       in _f) in (
-       ( [#"mystring.adb" 75 0 0] begin ensures {true} let _ = (let _ = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content } in (
+       ( [#"mystring.adb" 75 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__substring__j.j.int__content in (
         ()))
         in () end ;
-       (let temp___378 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 75 0 0] (val _f : Variablestore__variables__mystring.mystring
-       ensures {[#"mystring.adb" 75 0 0] (result = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content })} 
+       (let temp___379 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 75 0 0] (val _f : int
+       ensures {[#"mystring.adb" 75 0 0] (result = Variablestore__variables__substring__j.j.int__content)} 
        in _f) in (
-        ( [#"mystring.adb" 75 0 0] begin ensures {true} let _ = (let _ = Variablestore__variables__substring__L_4__i.i.int__content in (
+        ( [#"mystring.adb" 75 0 0] begin ensures {true} let _ = (let _ = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content } in (
          ()))
          in () end ;
-        (let temp___377 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 75 0 0] (val _f : int
-        ensures {[#"mystring.adb" 75 0 0] (result = Variablestore__variables__substring__L_4__i.i.int__content)} 
+        (let temp___377 [@mlw:proxy_symbol] [@introduced] = [#"mystring.adb" 75 0 0] (val _f : Variablestore__variables__mystring.mystring
+        ensures {[#"mystring.adb" 75 0 0] (result = { Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content })} 
         in _f) in (
          ( () (* First unroling of the loop statements appearing before the loop invariant of loop mystring.adb:75 instantiated at variablestore.ads:11 *)
          ;
@@ -7350,12 +7350,12 @@ module Variablestore__variables__substring__subprogram_def
          ;
           while True do
           invariant { 
-           ([#"mystring.adb" 76 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@comment:         pragma Loop_Invariant (J = I - From + 1);                                 ^ mystring.adb:76:33:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] [@GP_Sloc:mystring.adb:76:33:instantiated:variablestore.ads:11:4] [@GP_Id:43] [@vc:annotation] [@GP_Shape:L_4_while__pragargs__cmp] ( [@GP_Sloc:mystring.adb:76:33:instantiated:variablestore.ads:11:4] [@GP_Pretty_Ada:111743] (Variablestore__variables__substring__j.j.int__content = ((Variablestore__variables__substring__L_4__i.i.int__content - Variablestore__variables__substring__from.from) + (1 : int))) ) ))
+           ([#"mystring.adb" 76 0 0] ( [@GP_Reason:VC_LOOP_INVARIANT] [@comment:         pragma Loop_Invariant (J = I - From + 1);                                 ^ mystring.adb:76:33:instantiated:variablestore.ads:11:4:VC_LOOP_INVARIANT] [@GP_Sloc:mystring.adb:76:33:instantiated:variablestore.ads:11:4] [@GP_Id:43] [@vc:annotation] [@GP_Shape:L_4_while__pragargs__cmp] ( [@GP_Pretty_Ada:111519] [@GP_Sloc:mystring.adb:76:33:instantiated:variablestore.ads:11:4] (Variablestore__variables__substring__j.j.int__content = ((Variablestore__variables__substring__L_4__i.i.int__content - Variablestore__variables__substring__from.from) + (1 : int))) ) ))
            }
           ( () (* Assume implicit invariants from the loop mystring.adb:75 instantiated at variablestore.ads:11 *)
           ;
-           assume {  (Boolean.andb(( ( ( ( ( ( true /\ (if (( True \/ (Variablestore__variables__substring__from.from <= Variablestore__variables__substring__to.to__) )) then (
-           (Variablestore__variables__substring__L_4__T293s.dynamic_property Variablestore__variables__substring__from.from Variablestore__variables__substring__to.to__ Variablestore__variables__substring__L_4__i.i.int__content)) else true) )/\true ) /\ (Variablestore__variables__mystring___axiom.dynamic_invariant { Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content } True True True True) )/\({ Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content }.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length = temp___378.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length) ) /\ (Standard__positive___axiom.dynamic_invariant Variablestore__variables__substring__j.j.int__content True True True True) )/\true )) (( (Variablestore__variables__substring__from.from <= Variablestore__variables__substring__L_4__i.i.int__content) /\ (Variablestore__variables__substring__L_4__i.i.int__content <= Variablestore__variables__substring__to.to__) ))) };
+           assume {  (Boolean.andb(( ( ( ( ( ( true /\ (Variablestore__variables__mystring___axiom.dynamic_invariant { Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content } True True True True) )/\({ Variablestore__variables__mystring.__split_fields = Variablestore__variables__substring__r.r__split_fields.Variablestore__variables__mystring.__split_fields__content }.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length = temp___377.Variablestore__variables__mystring.__split_fields.Variablestore__variables__mystring.rec__variablestore__variables__mystring__length) ) /\ (Standard__positive___axiom.dynamic_invariant Variablestore__variables__substring__j.j.int__content True True True True) )/\true ) /\ (if (( True \/ (Variablestore__variables__substring__from.from <= Variablestore__variables__substring__to.to__) )) then (
+           (Variablestore__variables__substring__L_4__T293s.dynamic_property Variablestore__variables__substring__from.from Variablestore__variables__substring__to.to__ Variablestore__variables__substring__L_4__i.i.int__content)) else true) )/\true )) (( (Variablestore__variables__substring__from.from <= Variablestore__variables__substring__L_4__i.i.int__content) /\ (Variablestore__variables__substring__L_4__i.i.int__content <= Variablestore__variables__substring__to.to__) ))) };
           () (* Check for absence of RTE in the invariant of loop mystring.adb:75 instantiated at variablestore.ads:11 *)
           ;
           () (* Loop statements appearing after the loop invariant of loop mystring.adb:75 instantiated at variablestore.ads:11 *)
@@ -7607,7 +7607,7 @@ module Variablestore__get__2__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram variablestore.ads:21 *)
   ;
-  [#"variablestore.ads" 21 0 0] assume { [#"variablestore.ads" 21 0 0] ( [@GP_Pretty_Ada:69449] ((epsilon temp___result_395 : bool.
+  [#"variablestore.ads" 21 0 0] assume { [#"variablestore.ads" 21 0 0] ( [@GP_Pretty_Ada:69225] ((epsilon temp___result_395 : bool.
    ( (temp___result_395 = (Variablestore__has_variable.has_variable Variablestore__get__2__d.d Variablestore__get__2__v.v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_395 Variablestore__get__2__d.d Variablestore__get__2__v.v) )) = True) ) } )
 end
 
@@ -7681,7 +7681,7 @@ module Variablestore__put__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram variablestore.ads:24 *)
   ;
-  [#"variablestore.ads" 24 0 0] assume { [#"variablestore.ads" 24 0 0] ( [@GP_Pretty_Ada:69474] ( ((epsilon temp___result_397 : int.
+  [#"variablestore.ads" 24 0 0] assume { [#"variablestore.ads" 24 0 0] ( [@GP_Pretty_Ada:69250] ( ((epsilon temp___result_397 : int.
    ( (temp___result_397 = (Variablestore__length__2.length__2 Variablestore__put__d.d.Variablestore__database.database__content)) /\ (Variablestore__length__2.length__2__function_guard temp___result_397 Variablestore__put__d.d.Variablestore__database.database__content) )) < (1000 : int)) \/ ((epsilon temp___result_398 : bool.
    ( (temp___result_398 = (Variablestore__has_variable.has_variable Variablestore__put__d.d.Variablestore__database.database__content Variablestore__put__v.v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_398 Variablestore__put__d.d.Variablestore__database.database__content Variablestore__put__v.v) )) = True) ) ) } )
 end
@@ -7718,7 +7718,7 @@ module Variablestore__remove__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram variablestore.ads:27 *)
   ;
-  [#"variablestore.ads" 27 0 0] assume { [#"variablestore.ads" 27 0 0] ( [@GP_Pretty_Ada:69493] ((epsilon temp___result_400 : bool.
+  [#"variablestore.ads" 27 0 0] assume { [#"variablestore.ads" 27 0 0] ( [@GP_Pretty_Ada:69269] ((epsilon temp___result_400 : bool.
    ( (temp___result_400 = (Variablestore__has_variable.has_variable Variablestore__remove__d.d.Variablestore__database.database__content Variablestore__remove__v.v)) /\ (Variablestore__has_variable.has_variable__function_guard temp___result_400 Variablestore__remove__d.d.Variablestore__database.database__content Variablestore__remove__v.v) )) = True) ) } )
 end
 
@@ -7758,7 +7758,7 @@ module Variablestore__from_string__subprogram_def
    in () end ;
   () (* Assume Pre of the subprogram variablestore.ads:30 *)
   ;
-   assume {  ( [@GP_Pretty_Ada:69512] ((Standard__string.length Variablestore__from_string__s.s) <= (1024 : int)) ) } )
+   assume {  ( [@GP_Pretty_Ada:69288] ((Standard__string.length Variablestore__from_string__s.s) <= (1024 : int)) ) } )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "to_string" defined at variablestore.ads:32, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)

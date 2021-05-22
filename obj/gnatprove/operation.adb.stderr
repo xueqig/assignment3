@@ -1,8 +1,0 @@
-operation.adb:16:15: medium: precondition might fail, cannot prove Get_Size(Stack) < Max_Size (e.g. when S = (Size => 0, Data => (others => 0)))[#0]
-operation.adb:29:15: medium: precondition might fail, cannot prove Get_Size(Stack) < Max_Size (e.g. when S = (Size => 0, Data => (others => 0)))[#2]
-operation.adb:44:15: medium: precondition might fail, cannot prove Get_Size(Stack) < Max_Size (e.g. when S = (Size => 0, Data => (others => 0)))[#4]
-operation.adb:57:18: medium: precondition might fail, cannot prove Get_Size(Stack) < Max_Size (e.g. when S = (Size => 0, Data => (others => 0)))[#6]
-operation.ads:7:14: medium: postcondition might fail, cannot prove Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1) (e.g. when S = (Size => 0, Data => (others => 0)) and S'Old = (Size => 0, Data => (others => 0)))[#1]
-operation.ads:11:14: medium: postcondition might fail, cannot prove Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1) (e.g. when S = (Size => 0, Data => (others => 0)) and S'Old = (Size => 0, Data => (others => 0)))[#3]
-operation.ads:15:14: medium: postcondition might fail, cannot prove Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1) (e.g. when S = (Size => 0, Data => (others => 0)) and S'Old = (Size => 0, Data => (others => 0)))[#5]
-operation.ads:19:14: medium: postcondition might fail, cannot prove Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1) (e.g. when S = (Size => 0, Data => (others => 0)) and S'Old = (Size => 0, Data => (others => 0)))[#7]

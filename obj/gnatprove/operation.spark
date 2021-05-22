@@ -74,6 +74,17 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
               "steps": 19,
               "time": 0
             }
@@ -88,7 +99,7 @@
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -120,6 +131,17 @@
           },
           "transformations": {
           }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
         }
       ],
       "check_file": "operation.adb",
@@ -128,7 +150,7 @@
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -136,7 +158,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 15,
+      "line": 16,
       "col": 22,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -163,7 +185,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 15,
+      "check_line": 16,
       "check_col": 22,
       "how_proved": "prover",
       "stats": {
@@ -176,10 +198,10 @@
     },
     {
       "file": "operation.adb",
-      "line": 16,
+      "line": 17,
       "col": 15,
       "rule": "VC_PRECONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Addition",
         "sloc": [
@@ -193,13 +215,19 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 210,
+              "result": "Valid",
+              "steps": 19,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 220,
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
               "time": 0
             }
           },
@@ -208,86 +236,71 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 16,
+      "check_line": 17,
       "check_col": 15,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "10": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "11": [
-            {
-              "name": "J",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "15": [
-            {
-              "name": "Result",
-              "value": "-1",
-              "kind": "variable"
-            }
-          ],
-          "16": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
-        },
-        "operation.ads": {
-          "5": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 0,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "operation.adb",
-      "line": 14,
+      "line": 19,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 19,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 15,
       "col": 45,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -314,7 +327,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 14,
+      "check_line": 15,
       "check_col": 45,
       "how_proved": "prover",
       "stats": {
@@ -327,7 +340,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 14,
+      "line": 15,
       "col": 88,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -354,7 +367,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 14,
+      "check_line": 15,
       "check_col": 88,
       "how_proved": "prover",
       "stats": {
@@ -370,7 +383,7 @@
       "line": 7,
       "col": 14,
       "rule": "VC_POSTCONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Addition",
         "sloc": [
@@ -384,13 +397,8 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 381,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 370,
+              "result": "Valid",
+              "steps": 63,
               "time": 0
             }
           },
@@ -401,82 +409,69 @@
       "check_file": "operation.ads",
       "check_line": 7,
       "check_col": 14,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 26,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "10": [
-            {
-              "name": "I",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "11": [
-            {
-              "name": "J",
-              "value": "Integer'Last",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+          },
+          "transformations": {
+          }
         },
-        "operation.ads": {
-          "5": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
             }
-          ],
-          "7": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            },
-            {
-              "name": "S'Old",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+          },
+          "transformations": {
+          }
         }
-      },
-      "msg_id": 1,
-      "how_proved": "prover"
+      ],
+      "check_file": "operation.adb",
+      "check_line": 26,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
     },
     {
       "file": "operation.adb",
-      "line": 23,
+      "line": 27,
       "col": 12,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -500,36 +495,7 @@
           },
           "transformations": {
           }
-        }
-      ],
-      "check_file": "operation.adb",
-      "check_line": 23,
-      "check_col": 12,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "operation.adb",
-      "line": 24,
-      "col": 12,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "OPERATION.Subtraction",
-        "sloc": [
-          {
-            "file": "operation.ads",
-            "line": 9
-          }
-        ]
-      },
-      "check_tree": [
+        },
         {
           "proof_attempts": {
             "CVC4": {
@@ -543,12 +509,12 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 24,
+      "check_line": 27,
       "check_col": 12,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -556,7 +522,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 28,
+      "line": 32,
       "col": 22,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -583,7 +549,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 28,
+      "check_line": 32,
       "check_col": 22,
       "how_proved": "prover",
       "stats": {
@@ -596,10 +562,10 @@
     },
     {
       "file": "operation.adb",
-      "line": 29,
+      "line": 33,
       "col": 15,
       "rule": "VC_PRECONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Subtraction",
         "sloc": [
@@ -613,13 +579,19 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 210,
+              "result": "Valid",
+              "steps": 19,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 220,
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
               "time": 0
             }
           },
@@ -628,86 +600,71 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 29,
+      "check_line": 33,
       "check_col": 15,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "23": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "J",
-              "value": "1",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "28": [
-            {
-              "name": "Result",
-              "value": "-1",
-              "kind": "variable"
-            }
-          ],
-          "29": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
-        },
-        "operation.ads": {
-          "9": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 2,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "operation.adb",
-      "line": 27,
+      "line": 35,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 35,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 31,
       "col": 46,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -734,7 +691,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 27,
+      "check_line": 31,
       "check_col": 46,
       "how_proved": "prover",
       "stats": {
@@ -747,7 +704,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 27,
+      "line": 31,
       "col": 88,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -774,7 +731,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 27,
+      "check_line": 31,
       "check_col": 88,
       "how_proved": "prover",
       "stats": {
@@ -790,7 +747,7 @@
       "line": 11,
       "col": 14,
       "rule": "VC_POSTCONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Subtraction",
         "sloc": [
@@ -804,13 +761,8 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 393,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 388,
+              "result": "Valid",
+              "steps": 63,
               "time": 0
             }
           },
@@ -821,82 +773,69 @@
       "check_file": "operation.ads",
       "check_line": 11,
       "check_col": 14,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 41,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "23": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "24": [
-            {
-              "name": "J",
-              "value": "Integer'First",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+          },
+          "transformations": {
+          }
         },
-        "operation.ads": {
-          "9": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
             }
-          ],
-          "11": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            },
-            {
-              "name": "S'Old",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+          },
+          "transformations": {
+          }
         }
-      },
-      "msg_id": 3,
-      "how_proved": "prover"
+      ],
+      "check_file": "operation.adb",
+      "check_line": 41,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
     },
     {
       "file": "operation.adb",
-      "line": 35,
+      "line": 42,
       "col": 12,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -920,36 +859,7 @@
           },
           "transformations": {
           }
-        }
-      ],
-      "check_file": "operation.adb",
-      "check_line": 35,
-      "check_col": 12,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "operation.adb",
-      "line": 36,
-      "col": 12,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "OPERATION.Multiplication",
-        "sloc": [
-          {
-            "file": "operation.ads",
-            "line": 13
-          }
-        ]
-      },
-      "check_tree": [
+        },
         {
           "proof_attempts": {
             "CVC4": {
@@ -963,12 +873,12 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 36,
+      "check_line": 42,
       "check_col": 12,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -976,7 +886,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 43,
+      "line": 50,
       "col": 22,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -994,7 +904,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 3314,
+              "steps": 3118,
               "time": 0
             }
           },
@@ -1003,7 +913,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 43,
+      "check_line": 50,
       "check_col": 22,
       "how_proved": "prover",
       "stats": {
@@ -1016,10 +926,10 @@
     },
     {
       "file": "operation.adb",
-      "line": 44,
+      "line": 51,
       "col": 15,
       "rule": "VC_PRECONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Multiplication",
         "sloc": [
@@ -1033,14 +943,20 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 422,
+              "result": "Valid",
+              "steps": 19,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 1061,
-              "time": 2.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
             }
           },
           "transformations": {
@@ -1048,86 +964,71 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 44,
+      "check_line": 51,
       "check_col": 15,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "35": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "36": [
-            {
-              "name": "J",
-              "value": "2",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "43": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "44": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
-        },
-        "operation.ads": {
-          "13": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 4,
-      "how_proved": "prover"
+      }
     },
     {
       "file": "operation.adb",
-      "line": 39,
+      "line": 53,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 53,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 46,
       "col": 47,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -1154,7 +1055,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 39,
+      "check_line": 46,
       "check_col": 47,
       "how_proved": "prover",
       "stats": {
@@ -1167,7 +1068,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 39,
+      "line": 46,
       "col": 47,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -1185,7 +1086,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 635,
+              "steps": 601,
               "time": 0
             }
           },
@@ -1194,7 +1095,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 39,
+      "check_line": 46,
       "check_col": 47,
       "how_proved": "prover",
       "stats": {
@@ -1207,7 +1108,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 39,
+      "line": 46,
       "col": 73,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -1234,7 +1135,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 39,
+      "check_line": 46,
       "check_col": 73,
       "how_proved": "prover",
       "stats": {
@@ -1247,7 +1148,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 42,
+      "line": 49,
       "col": 45,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -1274,7 +1175,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 42,
+      "check_line": 49,
       "check_col": 45,
       "how_proved": "prover",
       "stats": {
@@ -1287,7 +1188,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 42,
+      "line": 49,
       "col": 45,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -1305,7 +1206,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 589,
+              "steps": 543,
               "time": 0
             }
           },
@@ -1314,7 +1215,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 42,
+      "check_line": 49,
       "check_col": 45,
       "how_proved": "prover",
       "stats": {
@@ -1327,7 +1228,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 42,
+      "line": 49,
       "col": 71,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -1354,7 +1255,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 42,
+      "check_line": 49,
       "check_col": 71,
       "how_proved": "prover",
       "stats": {
@@ -1370,7 +1271,7 @@
       "line": 15,
       "col": 14,
       "rule": "VC_POSTCONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Multiplication",
         "sloc": [
@@ -1384,14 +1285,9 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown ()",
-              "steps": 1293,
+              "result": "Valid",
+              "steps": 154,
               "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 1310,
-              "time": 2.00000000000000E-01
             }
           },
           "transformations": {
@@ -1401,82 +1297,69 @@
       "check_file": "operation.ads",
       "check_line": 15,
       "check_col": 14,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 60,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
             }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "35": [
-            {
-              "name": "I",
-              "value": "Integer'First",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "36": [
-            {
-              "name": "J",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+          },
+          "transformations": {
+          }
         },
-        "operation.ads": {
-          "13": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
             }
-          ],
-          "15": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            },
-            {
-              "name": "S'Old",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+          },
+          "transformations": {
+          }
         }
-      },
-      "msg_id": 5,
-      "how_proved": "prover"
+      ],
+      "check_file": "operation.adb",
+      "check_line": 60,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
     },
     {
       "file": "operation.adb",
-      "line": 51,
+      "line": 61,
       "col": 12,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1500,36 +1383,7 @@
           },
           "transformations": {
           }
-        }
-      ],
-      "check_file": "operation.adb",
-      "check_line": 51,
-      "check_col": 12,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 0.00000000000000E+00
-        }
-      }
-    },
-    {
-      "file": "operation.adb",
-      "line": 52,
-      "col": 12,
-      "rule": "VC_PRECONDITION",
-      "severity": "info",
-      "entity": {
-        "name": "OPERATION.Division",
-        "sloc": [
-          {
-            "file": "operation.ads",
-            "line": 17
-          }
-        ]
-      },
-      "check_tree": [
+        },
         {
           "proof_attempts": {
             "CVC4": {
@@ -1543,12 +1397,12 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 52,
+      "check_line": 61,
       "check_col": 12,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 1,
+          "count": 2,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
@@ -1556,7 +1410,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 56,
+      "line": 69,
       "col": 25,
       "rule": "VC_DIVISION_CHECK",
       "severity": "info",
@@ -1583,7 +1437,7 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 56,
+      "check_line": 69,
       "check_col": 25,
       "how_proved": "prover",
       "stats": {
@@ -1596,7 +1450,7 @@
     },
     {
       "file": "operation.adb",
-      "line": 56,
+      "line": 69,
       "col": 25,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -1614,8 +1468,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 1075,
-              "time": 1.80000000000000E-01
+              "steps": 1002,
+              "time": 0
             }
           },
           "transformations": {
@@ -1623,23 +1477,23 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 56,
+      "check_line": 69,
       "check_col": 25,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.80000007152557E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "operation.adb",
-      "line": 57,
+      "line": 70,
       "col": 18,
       "rule": "VC_PRECONDITION",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Division",
         "sloc": [
@@ -1653,14 +1507,20 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (unknown)",
-              "steps": 439,
-              "time": 1.30000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 445,
-              "time": 1.40000000000000E-01
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
             }
           },
           "transformations": {
@@ -1668,89 +1528,23 @@
         }
       ],
       "check_file": "operation.adb",
-      "check_line": 57,
+      "check_line": 70,
       "check_col": 18,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "51": [
-            {
-              "name": "I",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "52": [
-            {
-              "name": "J",
-              "value": "-2",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "56": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "57": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
-        },
-        "operation.ads": {
-          "17": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 6,
-      "how_proved": "prover"
+      }
     },
     {
-      "file": "operation.ads",
-      "line": 19,
-      "col": 14,
-      "rule": "VC_POSTCONDITION",
-      "severity": "medium",
+      "file": "operation.adb",
+      "line": 72,
+      "col": 18,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
       "entity": {
         "name": "OPERATION.Division",
         "sloc": [
@@ -1764,14 +1558,111 @@
         {
           "proof_attempts": {
             "CVC4": {
-              "result": "Unknown (unknown)",
-              "steps": 999,
-              "time": 1.70000000000000E-01
-            },
-            "CVC4_CE": {
-              "result": "Unknown (unknown)",
-              "steps": 1001,
-              "time": 1.40000000000000E-01
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 72,
+      "check_col": 18,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 75,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 75,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.ads",
+      "line": 19,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 160,
+              "time": 0
             }
           },
           "transformations": {
@@ -1781,83 +1672,43 @@
       "check_file": "operation.ads",
       "check_line": 19,
       "check_col": 14,
-      "cntexmp": {
-        "operation.adb": {
-          "4": [
-            {
-              "name": "I",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "5": [
-            {
-              "name": "J",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "6": [
-            {
-              "name": "Result",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "51": [
-            {
-              "name": "I",
-              "value": "Integer'First",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "52": [
-            {
-              "name": "J",
-              "value": "-1",
-              "kind": "variable"
-            },
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
-        },
-        "operation.ads": {
-          "17": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ],
-          "19": [
-            {
-              "name": "S",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            },
-            {
-              "name": "S'Old",
-              "value": "(Size => 0, Data => (others => 0))",
-              "kind": "variable"
-            }
-          ]
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
         }
-      },
-      "msg_id": 7,
-      "how_proved": "prover"
+      }
     }
   ],
   "assumptions": [
     {
       "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
         {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
@@ -1865,7 +1716,7 @@
             "sloc": [
               {
                 "file": "stack.ads",
-                "line": 40
+                "line": 39
               }
             ]
           }
@@ -1893,16 +1744,52 @@
               }
             ]
           }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
         }
       ],
       "claim": {
-        "predicate": "CLAIM_EFFECTS",
+        "predicate": "CLAIM_POST",
         "arg": {
-          "name": "OPERATION.Subtraction",
+          "name": "OPERATION.Division",
           "sloc": [
             {
               "file": "operation.ads",
-              "line": 9
+              "line": 17
             }
           ]
         }
@@ -1917,7 +1804,7 @@
             "sloc": [
               {
                 "file": "stack.ads",
-                "line": 40
+                "line": 39
               }
             ]
           }
@@ -1963,13 +1850,789 @@
     {
       "assumptions": [
         {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
             "name": "Stack.Get_Size",
             "sloc": [
               {
                 "file": "stack.ads",
-                "line": 40
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Division",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Subtraction",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "OPERATION.Subtraction",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Subtraction",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Multiplication",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "OPERATION.Multiplication",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Multiplication",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Addition",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
               }
             ]
           }
@@ -2014,22 +2677,30 @@
     },
     {
       "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "OPERATION",
-          "sloc": [
-            {
-              "file": "operation.ads",
-              "line": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
         {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
@@ -2037,7 +2708,7 @@
             "sloc": [
               {
                 "file": "stack.ads",
-                "line": 40
+                "line": 39
               }
             ]
           }
@@ -2065,16 +2736,68 @@
               }
             ]
           }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
         }
       ],
       "claim": {
-        "predicate": "CLAIM_EFFECTS",
+        "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "OPERATION.Multiplication",
+          "name": "OPERATION.Addition",
           "sloc": [
             {
               "file": "operation.ads",
-              "line": 13
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 3
             }
           ]
         }
@@ -2082,14 +2805,14 @@
     }
   ],
   "timings": {
-    "marking": 2.82000005245209E-03,
-    "globals (basic)": 7.92799983173609E-03,
-    "globals/properties (advanced)": 2.16480009257793E-02,
-    "flow analysis": 2.13190000504255E-02,
-    "codepeer results": 9.99999974737875E-06,
-    "init_why_sections": 8.70999996550381E-04,
-    "translation of standard": 4.29600011557341E-03,
-    "translation of compilation unit": 2.67409998923540E-02,
-    "proof": 2.20773196220398E+00
+    "marking": 3.04799992591143E-03,
+    "globals (basic)": 9.31200012564659E-03,
+    "globals/properties (advanced)": 2.04850006848574E-02,
+    "flow analysis": 2.39380002021790E-02,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 7.90000020060688E-04,
+    "translation of standard": 4.32500010356307E-03,
+    "translation of compilation unit": 2.55040004849434E-02,
+    "proof": 9.46748018264771E-01
   }
 }

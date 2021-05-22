@@ -10,17 +10,17 @@ Initialization                   16         16          .          .            
 Non-Aliasing                      2          2          .          .             .           .          .
 Run-time Checks                 159          .          .          .    159 (CVC4)           .          .
 Assertions                       26          .          .          .     26 (CVC4)           .          .
-Functional Contracts             61          .          .          .     52 (CVC4)           .          9
+Functional Contracts             64          .          .          .     64 (CVC4)           .          .
 LSP Verification                  .          .          .          .             .           .          .
 ---------------------------------------------------------------------------------------------------------
-Total                           264    18 (7%)          .          .     237 (90%)           .     9 (3%)
+Total                           267    18 (7%)          .          .     249 (93%)           .          .
 
 
 max steps used for successful proof: 1
 
 Analyzed 9 units
 in unit main, 11 subprograms and packages out of 11 analyzed
-  Main at main.adb:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (30 checks)
+  Main at main.adb:22 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (29 checks)
   Main.Lines at main.adb:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   Main.Lines.Equal at mystring.ads:18, instantiated at main.adb:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (11 checks)
   Main.Lines.From_String at mystring.ads:12, instantiated at main.adb:30 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
@@ -42,10 +42,10 @@ in unit mystringtokeniser, 3 subprograms and packages out of 3 analyzed
   MyStringTokeniser.Tokenise at mystringtokeniser.ads:16 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (35 checks)
 in unit operation, 5 subprograms and packages out of 5 analyzed
   OPERATION at operation.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  OPERATION.Addition at operation.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 5 checks out of 7 proved
-  OPERATION.Division at operation.ads:17 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 4 checks out of 6 proved
-  OPERATION.Multiplication at operation.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 9 checks out of 11 proved
-  OPERATION.Subtraction at operation.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 5 checks out of 7 proved
+  OPERATION.Addition at operation.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (8 checks)
+  OPERATION.Division at operation.ads:17 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (8 checks)
+  OPERATION.Multiplication at operation.ads:13 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (12 checks)
+  OPERATION.Subtraction at operation.ads:9 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (8 checks)
 in unit passwordmanager, 5 subprograms and packages out of 5 analyzed
   passwordmanager at passwordmanager.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
   passwordmanager.IsPin at passwordmanager.ads:26 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (7 checks)
@@ -58,8 +58,8 @@ in unit pin, 3 subprograms and packages out of 3 analyzed
   PIN.PIN at pin.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
 in unit stack, 1 subprograms and packages out of 11 analyzed
   Stack at stack.ads:3 skipped
-  Stack.Get_Element at stack.ads:42 skipped
-  Stack.Get_Size at stack.ads:40 skipped
+  Stack.Get_Element at stack.ads:41 skipped
+  Stack.Get_Size at stack.ads:39 skipped
   Stack.Init_Stack at stack.ads:7 skipped
   Stack.List at stack.ads:34 skipped
   Stack.Load at stack.ads:23 skipped

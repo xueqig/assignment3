@@ -112,7 +112,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -127,13 +127,13 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 5.00000007450581E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 27,
+      "line": 39,
       "col": 28,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -152,7 +152,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 20,
-              "time": 9.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -160,20 +160,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 27,
+      "check_line": 39,
       "check_col": 28,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 9.00000035762787E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 26,
+      "line": 38,
       "col": 79,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -192,7 +192,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -203,7 +203,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -214,7 +214,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -225,7 +225,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -233,20 +233,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 26,
+      "check_line": 38,
       "check_col": 79,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 36,
+      "line": 48,
       "col": 47,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -265,7 +265,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 28,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -273,20 +273,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 36,
+      "check_line": 48,
       "check_col": 47,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 35,
+      "line": 47,
       "col": 33,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -305,7 +305,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 174,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -316,7 +316,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.00000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -324,20 +324,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 35,
+      "check_line": 47,
       "check_col": 33,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 35,
+      "line": 47,
       "col": 73,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -356,7 +356,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -367,7 +367,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -375,20 +375,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 35,
+      "check_line": 47,
       "check_col": 73,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 35,
+      "line": 47,
       "col": 108,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -407,7 +407,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 1.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -418,7 +418,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -426,20 +426,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 35,
+      "check_line": 47,
       "check_col": 108,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.40000000596046E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 35,
+      "line": 47,
       "col": 168,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -458,7 +458,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -469,7 +469,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -477,20 +477,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 35,
+      "check_line": 47,
       "check_col": 168,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.59999996423721E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 35,
+      "line": 47,
       "col": 168,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -509,7 +509,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -520,7 +520,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -531,7 +531,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -542,7 +542,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 1.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -550,20 +550,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 35,
+      "check_line": 47,
       "check_col": 168,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 1.50000005960464E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 39,
+      "line": 51,
       "col": 20,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -582,7 +582,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -593,7 +593,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -601,20 +601,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 39,
+      "check_line": 51,
       "check_col": 20,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.19999997317791E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 40,
+      "line": 52,
       "col": 28,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -633,7 +633,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -641,20 +641,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 40,
+      "check_line": 52,
       "check_col": 28,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 46,
+      "line": 58,
       "col": 37,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -673,7 +673,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 28,
-              "time": 1.70000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -681,20 +681,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 46,
+      "check_line": 58,
       "check_col": 37,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.70000001788139E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 53,
+      "line": 65,
       "col": 31,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -713,7 +713,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 114,
-              "time": 1.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -721,20 +721,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 53,
+      "check_line": 65,
       "check_col": 31,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.89999997615814E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 50,
+      "line": 62,
       "col": 23,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -753,7 +753,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 107,
-              "time": 1.80000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -761,20 +761,20 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 50,
+      "check_line": 62,
       "check_col": 23,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.80000007152557E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
     {
       "file": "mystringtokeniser.adb",
-      "line": 29,
+      "line": 41,
       "col": 81,
       "rule": "VC_INDEX_CHECK",
       "severity": "info",
@@ -793,7 +793,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -804,7 +804,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -812,14 +812,14 @@
         }
       ],
       "check_file": "mystringtokeniser.adb",
-      "check_line": 29,
+      "check_line": 41,
       "check_col": 81,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -844,7 +844,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 93,
-              "time": 2.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -855,7 +855,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -870,7 +870,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 2.09999993443489E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -895,7 +895,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -910,7 +910,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -935,7 +935,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 169,
-              "time": 2.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -950,7 +950,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 2.19999998807907E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -975,7 +975,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 82,
-              "time": 2.00000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -986,7 +986,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 7.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1001,7 +1001,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 2.00000002980232E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1026,7 +1026,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1037,7 +1037,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1048,7 +1048,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1059,7 +1059,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1074,7 +1074,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1099,7 +1099,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 2.10000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1110,7 +1110,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1121,7 +1121,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1132,7 +1132,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1147,7 +1147,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 2.09999993443489E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1172,7 +1172,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1183,7 +1183,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1194,7 +1194,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1205,7 +1205,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1220,7 +1220,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1245,7 +1245,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1256,7 +1256,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.20000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1267,7 +1267,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1278,7 +1278,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 5.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1293,7 +1293,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1318,7 +1318,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 335,
-              "time": 2.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1329,7 +1329,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1344,7 +1344,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 2.50000000000000E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1369,7 +1369,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 464,
-              "time": 2.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1380,7 +1380,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 739,
-              "time": 2.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1391,7 +1391,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 468,
-              "time": 2.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1406,7 +1406,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 2.59999990463257E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1431,7 +1431,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1442,7 +1442,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1453,7 +1453,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 6.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1468,7 +1468,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 5.99999986588955E-02
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1493,7 +1493,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 1.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1504,7 +1504,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 13,
-              "time": 7.00000000000000E-02
+              "time": 0
             }
           },
           "transformations": {
@@ -1519,7 +1519,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 1.50000005960464E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1544,7 +1544,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 4.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1559,7 +1559,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 4.90000009536743E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1584,7 +1584,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 119,
-              "time": 4.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1599,7 +1599,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 4.90000009536743E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1624,7 +1624,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1635,7 +1635,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1650,7 +1650,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 3.49999994039536E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1675,7 +1675,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 89,
-              "time": 4.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1686,7 +1686,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1701,7 +1701,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 4.90000009536743E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1726,7 +1726,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1737,7 +1737,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1752,7 +1752,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 3.60000014305115E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1777,7 +1777,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.60000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1788,7 +1788,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 3.50000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1803,7 +1803,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 3.60000014305115E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1828,7 +1828,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 495,
-              "time": 5.40000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1843,7 +1843,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 5.40000021457672E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -1868,7 +1868,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 1526,
-              "time": 5.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1879,7 +1879,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 1497,
-              "time": 5.80000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1890,7 +1890,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 1532,
-              "time": 5.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1901,7 +1901,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 89,
-              "time": 4.90000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1916,7 +1916,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 5.89999973773956E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     }
@@ -2080,14 +2080,14 @@
     }
   ],
   "timings": {
-    "marking": 3.63799999468029E-03,
-    "globals (basic)": 1.34499999694526E-03,
-    "globals/properties (advanced)": 1.16300000809133E-03,
-    "flow analysis": 1.29540003836155E-02,
-    "codepeer results": 1.20000004244503E-05,
-    "init_why_sections": 1.18300004396588E-03,
-    "translation of standard": 8.04600026458502E-03,
-    "translation of compilation unit": 2.04300004988909E-02,
-    "proof": 1.22993373870850E+01
+    "marking": 1.02600001264364E-03,
+    "globals (basic)": 2.18500010669231E-03,
+    "globals/properties (advanced)": 2.23099999129772E-03,
+    "flow analysis": 1.52620002627373E-02,
+    "codepeer results": 1.10000000859145E-05,
+    "init_why_sections": 1.18599995039403E-03,
+    "translation of standard": 8.33700038492680E-03,
+    "translation of compilation unit": 8.08589980006218E-02,
+    "proof": 2.85118508338928E+00
   }
 }

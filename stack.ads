@@ -34,7 +34,6 @@ package Stack with SPARK_Mode is
    procedure List(Database : VariableStore.Database);
 
    procedure Remove(Variable: in String; Database : in out VariableStore.Database) with
-     Pre => VariableStore.Has_Variable(Database, VariableStore.From_String(Variable)),
      Post => VariableStore.Has_Variable(Database, VariableStore.From_String(Variable)) = False;
 
    function Get_Size(Stack : in Stack_Type) return Natural;

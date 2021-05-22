@@ -1365,7 +1365,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 146,
-              "time": 1.30000000000000E-01
+              "time": 0
             }
           },
           "transformations": {
@@ -1380,7 +1380,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 1.29999995231628E-01
+          "max_time": 0.00000000000000E+00
         }
       }
     },
@@ -3096,17 +3096,13 @@
       "assumptions": [
       ],
       "claim": {
-        "predicate": "CLAIM_POST",
+        "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "VariableStore.Variables.Length",
+          "name": "VariableStore.Less",
           "sloc": [
             {
-              "file": "mystring.ads",
-              "line": 23
-            },
-            {
               "file": "variablestore.ads",
-              "line": 11
+              "line": 34
             }
           ]
         }
@@ -3118,11 +3114,31 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "VariableStore.Less",
+          "name": "VariableStore.Put",
           "sloc": [
             {
               "file": "variablestore.ads",
-              "line": 34
+              "line": 24
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "VariableStore.Variables.Length",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 23
+            },
+            {
+              "file": "variablestore.ads",
+              "line": 11
             }
           ]
         }
@@ -3174,11 +3190,11 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "VariableStore.Put",
+          "name": "VariableStore.Equal",
           "sloc": [
             {
               "file": "variablestore.ads",
-              "line": 24
+              "line": 35
             }
           ]
         }
@@ -3206,11 +3222,27 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "VariableStore.Equal",
+          "name": "VariableStore.Has_Variable",
           "sloc": [
             {
               "file": "variablestore.ads",
-              "line": 35
+              "line": 19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Length",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 37
             }
           ]
         }
@@ -3347,6 +3379,22 @@
             {
               "file": "variablestore.ads",
               "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.Database",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 15
             }
           ]
         }
@@ -3586,59 +3634,27 @@
       "claim": {
         "predicate": "CLAIM_AORTE",
         "arg": {
-          "name": "VariableStore.Has_Variable",
-          "sloc": [
-            {
-              "file": "variablestore.ads",
-              "line": 19
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "VariableStore.Length",
-          "sloc": [
-            {
-              "file": "variablestore.ads",
-              "line": 37
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "VariableStore.Database",
-          "sloc": [
-            {
-              "file": "variablestore.ads",
-              "line": 15
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
           "name": "VariableStore.Get",
           "sloc": [
             {
               "file": "variablestore.ads",
               "line": 21
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.From_String",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 30
             }
           ]
         }
@@ -3798,22 +3814,6 @@
     },
     {
       "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "VariableStore.From_String",
-          "sloc": [
-            {
-              "file": "variablestore.ads",
-              "line": 30
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
         {
           "predicate": "CLAIM_POST",
           "arg": {
@@ -3907,6 +3907,62 @@
             {
               "file": "variablestore.ads",
               "line": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Variables",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Variables",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "VariableStore.To_String",
+          "sloc": [
+            {
+              "file": "variablestore.ads",
+              "line": 32
             }
           ]
         }
@@ -4011,62 +4067,6 @@
             {
               "file": "variablestore.ads",
               "line": 11
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.Variables",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 11
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "VariableStore.Variables",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 11
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "VariableStore",
-          "sloc": [
-            {
-              "file": "variablestore.ads",
-              "line": 7
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "VariableStore.To_String",
-          "sloc": [
-            {
-              "file": "variablestore.ads",
-              "line": 32
             }
           ]
         }
@@ -4406,14 +4406,14 @@
     }
   ],
   "timings": {
-    "marking": 7.56470020860434E-03,
-    "globals (basic)": 4.67975996434689E-02,
-    "globals/properties (advanced)": 7.53823965787888E-02,
-    "flow analysis": 7.16843977570534E-02,
-    "codepeer results": 1.09000002339599E-05,
-    "init_why_sections": 2.30160006321967E-03,
-    "translation of standard": 6.51160022243857E-03,
-    "translation of compilation unit": 1.45142197608948E-01,
-    "proof": 3.78973054885864E+00
+    "marking": 1.00239999592304E-02,
+    "globals (basic)": 2.35660001635551E-02,
+    "globals/properties (advanced)": 3.27659994363785E-02,
+    "flow analysis": 9.59940031170845E-02,
+    "codepeer results": 1.40000001920271E-05,
+    "init_why_sections": 6.93999987561256E-04,
+    "translation of standard": 8.08299984782934E-03,
+    "translation of compilation unit": 1.77118003368378E-01,
+    "proof": 2.33669805526733E+00
   }
 }

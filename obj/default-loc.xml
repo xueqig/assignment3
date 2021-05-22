@@ -2,33 +2,665 @@
 <Locations >
   <Project>
     <vfs_file />
-    <file_marker column=" 19" line=" 35" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 30" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/simplestack.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 16" >
+    <file_marker column=" 63" line=" 37" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 15" line=" 49" >
+    <file_marker column=" 22" line=" 32" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 10" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 20" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 15" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 16" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 69" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 88" line=" 15" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 10" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 32" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 32" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 25" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 23" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 50" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 36" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 20" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 50" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 46" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 56" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 54" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 42" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 50" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 59" line=" 39" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 41" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 49" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 49" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 54" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 49" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 49" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 58" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 69" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 26" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 31" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 18" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 84" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 135" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 69" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 70" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 20" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 84" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 33" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 14" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 3" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 69" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 33" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 50" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 77" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 33" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 70" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 18" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 51" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 70" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 15" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 19" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 70" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/mystringtokeniser.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 16" line=" 17" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/mystringtokeniser.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 38" line=" 8" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/mycommandline.ads</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/mystringtokeniser.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
@@ -38,59 +670,103 @@
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/mystring.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 12" line=" 27" >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/mystring.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/mystringtokeniser.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 19" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/mystringtokeniser.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 14" line=" 7" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/simplestack.adb</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 5" line=" 16" >
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 70" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 27" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 33" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 15" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/pin.adb</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 24" line=" 3" >
-      <vfs_project />
-      <vfs_file>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_file>
-    </file_marker>
-    <file_marker column=" 17" line=" 14" >
+    <file_marker column=" 37" line=" 15" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/readcommand.adb</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 63" line=" 37" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/mycommandline.adb</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 14" line=" 15" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/pin.ads</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 35" line=" 28" >
+    <file_marker column=" 14" line=" 11" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/passwordmanager.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 31" line=" 40" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/passwordmanager.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/readcommand.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/stringtointeger.ads</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 75" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 19" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 72" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
     </file_marker>
@@ -98,269 +774,836 @@
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 40" line=" 6" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 34" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 12" line=" 11" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 1" line=" 57" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 67" line=" 19" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 120" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 34" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 34" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 22" line=" 33" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 120" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 17" line=" 19" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 120" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 64" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 40" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 32" line=" 30" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 29" line=" 13" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 120" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 55" line=" 113" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 84" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 62" line=" 13" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 34" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 116" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 12" line=" 11" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 12" line=" 19" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 26" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 12" line=" 27" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 34" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 12" line=" 35" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 84" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 120" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 84" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 54" line=" 113" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 84" line=" 18" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
+    <file_marker column=" 63" line=" 37" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
       <vfs_file>/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
     </file_marker>
+    <file_marker column=" 15" line=" 33" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 17" >
+      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 9" line=" 47" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 10" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 34" >
-      <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
     </file_marker>
     <file_marker current="true" column=" 1" line=" 1" >
       <vfs_project>/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
-      <vfs_file>/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+      <vfs_file>/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_file>
+    <file_marker column=" 27" line=" 30">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/variablestore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 55" line=" 27">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/variablestore.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 33">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 47" line=" 31">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 14">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 23">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 25">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 28">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 28">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 28">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 86" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 18">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 28">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 10">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 17">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 14">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 56">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 88" line=" 14">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 30">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 38" line=" 10">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 28">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 16">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 28">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 22">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 31">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 20">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 43">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 30">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 17">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 43">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 39">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 47">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 45">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 36">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 43">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 59" line=" 33">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 35">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 42">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 42">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 45">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 42">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 45" line=" 42">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 49">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 56">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 23">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 16">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 27">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 18">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 84">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 135">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 44" line=" 17">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 56">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 57">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 20">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 84">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 16">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 32" line=" 16">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 29">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 50" line=" 14">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 13" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 3">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 56">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 16">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 29">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 43">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 11">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 60">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 29">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 16">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 57">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 18">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 63" line=" 37">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/stack.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 15" line=" 44">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 57">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 7">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 15">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 19">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 57">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/operation.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/mystringtokeniser.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/mystringtokeniser.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/mystringtokeniser.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >/Users/wendy/Ada/team/assignment3/default.gpr</vfs_project>
+      <vfs_file >/Users/wendy/Ada/team/assignment3/main.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
