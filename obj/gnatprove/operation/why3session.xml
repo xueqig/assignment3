@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="6">
+<prover id="0" name="CVC4" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
+<prover id="1" name="CVC4_CE" version="1.6-gnatprove" timelimit="1" steplimit="0" memlimit="1000"/>
+<file>
+<path name=".."/>
+<path name="operation.mlw"/>
+<theory name="Operation__addition__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  <proof prover="0" obsolete="true"><result status="unknown" steps="226"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="237"/></proof>
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="228"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="109"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="52"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="227"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="221"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="33"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="221"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="214"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="220"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="221"/></proof>
+  </goal>
+  <goal name="VC def.14" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="213"/></proof>
+  </goal>
+  <goal name="VC def.15" expl="precondition">
+  </goal>
+  <goal name="VC def.16" expl="precondition">
+  </goal>
+  <goal name="VC def.17" expl="postcondition">
+  </goal>
+  <goal name="VC def.18" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="63"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="370"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="precondition">
+  </goal>
+  <goal name="VC def.11" expl="precondition">
+  </goal>
+  <goal name="VC def.5" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.24" expl="postcondition">
+  <proof prover="0"><result status="unknown" steps="1115"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="909"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Operation__subtraction__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="109"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="52"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="252"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="33"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="226"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="220"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="221"/></proof>
+  </goal>
+  <goal name="VC def.14" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="225"/></proof>
+  </goal>
+  <goal name="VC def.15" expl="precondition">
+  </goal>
+  <goal name="VC def.16" expl="precondition">
+  </goal>
+  <goal name="VC def.17" expl="postcondition">
+  </goal>
+  <goal name="VC def.18" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="63"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="387"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="precondition">
+  </goal>
+  <goal name="VC def.10" expl="precondition">
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Operation__multiplication__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="318"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="219"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="543"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="143"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1145"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="330"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="601"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="850"/></proof>
+  </goal>
+  <goal name="VC def.14" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="3118"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="2211"/></proof>
+  </goal>
+  <goal name="VC def.15" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1175"/></proof>
+  </goal>
+  <goal name="VC def.16" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1061"/></proof>
+  </goal>
+  <goal name="VC def.17" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1063"/></proof>
+  </goal>
+  <goal name="VC def.18" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1174"/></proof>
+  </goal>
+  <goal name="VC def.19" expl="precondition">
+  </goal>
+  <goal name="VC def.20" expl="precondition">
+  </goal>
+  <goal name="VC def.21" expl="postcondition">
+  </goal>
+  <goal name="VC def.22" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="154"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1310"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Operation__division__subprogram_def">
+ <goal name="VC def" expl="VC for def">
+ <transf name="split_goal_wp_conj" >
+  <goal name="VC def.0" expl="precondition">
+  </goal>
+  <goal name="VC def.1" expl="precondition">
+  </goal>
+  <goal name="VC def.2" expl="postcondition">
+  </goal>
+  <goal name="VC def.3" expl="postcondition">
+  </goal>
+  <goal name="VC def.4" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.5" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  </goal>
+  <goal name="VC def.6" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  </goal>
+  <goal name="VC def.7" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="548"/></proof>
+  </goal>
+  <goal name="VC def.8" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="5"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="582"/></proof>
+  </goal>
+  <goal name="VC def.9" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="1002"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1520"/></proof>
+  </goal>
+  <goal name="VC def.10" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="302"/></proof>
+  </goal>
+  <goal name="VC def.11" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="445"/></proof>
+  </goal>
+  <goal name="VC def.12" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="302"/></proof>
+  </goal>
+  <goal name="VC def.13" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="301"/></proof>
+  </goal>
+  <goal name="VC def.14" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="446"/></proof>
+  </goal>
+  <goal name="VC def.15" expl="precondition" proved="true">
+  <proof prover="0"><result status="valid" steps="20"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="301"/></proof>
+  </goal>
+  <goal name="VC def.16" expl="precondition">
+  </goal>
+  <goal name="VC def.17" expl="precondition">
+  </goal>
+  <goal name="VC def.18" expl="postcondition">
+  </goal>
+  <goal name="VC def.19" expl="postcondition" proved="true">
+  <proof prover="0"><result status="valid" steps="160"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="1203"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+</file>
+</why3session>

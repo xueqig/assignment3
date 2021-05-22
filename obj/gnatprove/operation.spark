@@ -1,0 +1,2818 @@
+{
+  "spark": [
+    {
+      "name": "OPERATION",
+      "sloc": [
+        {
+          "file": "operation.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "OPERATION.Addition",
+      "sloc": [
+        {
+          "file": "operation.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "OPERATION.Subtraction",
+      "sloc": [
+        {
+          "file": "operation.ads",
+          "line": 9
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "OPERATION.Multiplication",
+      "sloc": [
+        {
+          "file": "operation.ads",
+          "line": 13
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "OPERATION.Division",
+      "sloc": [
+        {
+          "file": "operation.ads",
+          "line": 17
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+    {
+      "file": "operation.adb",
+      "line": 10,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 10,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 11,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 11,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 16,
+      "col": 22,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 33,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 16,
+      "check_col": 22,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 17,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 17,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 19,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 19,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 15,
+      "col": 45,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 15,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 15,
+      "col": 88,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 15,
+      "check_col": 88,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.ads",
+      "line": 7,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Addition",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 63,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.ads",
+      "check_line": 7,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 26,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 26,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 27,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 27,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 32,
+      "col": 22,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 33,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 32,
+      "check_col": 22,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 33,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 33,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 35,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 35,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 31,
+      "col": 46,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 31,
+      "check_col": 46,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 31,
+      "col": 88,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 31,
+      "check_col": 88,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.ads",
+      "line": 11,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Subtraction",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 9
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 63,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.ads",
+      "check_line": 11,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 41,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 41,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 42,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 42,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 50,
+      "col": 22,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 3118,
+              "time": 3.00000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 50,
+      "check_col": 22,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 3.00000011920929E-01
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 51,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 51,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 53,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 53,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 46,
+      "col": 47,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 46,
+      "check_col": 47,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 46,
+      "col": 47,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 601,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 46,
+      "check_col": 47,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 46,
+      "col": 73,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 46,
+      "check_col": 73,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 49,
+      "col": 45,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 49,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 49,
+      "col": 45,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 543,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 49,
+      "check_col": 45,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 49,
+      "col": 71,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 49,
+      "check_col": 71,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.ads",
+      "line": 15,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Multiplication",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 13
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 154,
+              "time": 1.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.ads",
+      "check_line": 15,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.19999997317791E-01
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 60,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 60,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 61,
+      "col": 12,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 61,
+      "check_col": 12,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 69,
+      "col": 25,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 69,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 69,
+      "col": 25,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1002,
+              "time": 1.80000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 69,
+      "check_col": 25,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.80000007152557E-01
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 70,
+      "col": 18,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 70,
+      "check_col": 18,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 72,
+      "col": 18,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 72,
+      "check_col": 18,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.adb",
+      "line": 75,
+      "col": 15,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.adb",
+      "check_line": 75,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "operation.ads",
+      "line": 19,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "OPERATION.Division",
+        "sloc": [
+          {
+            "file": "operation.ads",
+            "line": 17
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 160,
+              "time": 1.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "operation.ads",
+      "check_line": 19,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.19999997317791E-01
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Division",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "OPERATION.Division",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Division",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Subtraction",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "OPERATION.Subtraction",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Subtraction",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Multiplication",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "OPERATION.Multiplication",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Multiplication",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 13
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "OPERATION.Addition",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "OPERATION.Addition",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION.Addition",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "OPERATION",
+          "sloc": [
+            {
+              "file": "operation.ads",
+              "line": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 3.34600009955466E-03,
+    "globals (basic)": 1.06330001726747E-02,
+    "globals/properties (advanced)": 2.24120002239943E-02,
+    "flow analysis": 2.71390005946159E-02,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 7.98999972175807E-04,
+    "translation of standard": 4.69199987128377E-03,
+    "translation of compilation unit": 2.60869991034269E-02,
+    "proof": 3.27111411094666E+00
+  }
+}

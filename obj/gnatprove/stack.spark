@@ -1,0 +1,307 @@
+{
+  "spark": [
+    {
+      "name": "Stack",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 3
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Stack_Type",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 4
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Stack.Get_Size",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 39
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Get_Element",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 41
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Init_Stack",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 7
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Push",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 11
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Pop",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 17
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Load",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 23
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Store",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 29
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.List",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 34
+        }
+      ],
+      "spark": "spec"
+    },
+    {
+      "name": "Stack.Remove",
+      "sloc": [
+        {
+          "file": "stack.ads",
+          "line": 36
+        }
+      ],
+      "spark": "spec"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.Store",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 29
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Stack.Pop",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.Pop",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 17
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.Get_Size",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 39
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.Stack_Type",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 4
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.List",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 34
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Stack.Init_Stack",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.Init_Stack",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Stack.Get_Element",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 41
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Stack.Store",
+          "sloc": [
+            {
+              "file": "stack.ads",
+              "line": 29
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 3.43000004068017E-03,
+    "globals (basic)": 9.03999991714954E-03,
+    "globals/properties (advanced)": 1.97359994053841E-02,
+    "flow analysis": 1.88800005707890E-03,
+    "codepeer results": 9.00000031833770E-06,
+    "init_why_sections": 8.73000011779368E-04,
+    "translation of standard": 5.09400013834238E-03,
+    "translation of compilation unit": 4.93719987571239E-02,
+    "proof": 1.02547299861908E+00
+  }
+}

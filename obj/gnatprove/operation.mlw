@@ -1,0 +1,4017 @@
+(* Module for axiomatizing type "short_short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_short_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type short_short_integer =
+  < range -128 127 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -128) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (127 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = short_short_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type short_short_integer__ref =
+  { mutable short_short_integer__content : short_short_integer }
+ 
+ function short_short_integer__ref_short_short_integer__content__projection 
+   (a : short_short_integer__ref) : short_short_integer =
+  a.short_short_integer__content
+ 
+ meta "model_projection" function short_short_integer__ref_short_short_integer__content__projection
+ 
+ meta "inline:no" function short_short_integer__ref_short_short_integer__content__projection
+ 
+ val short_short_integer__havoc 
+   (x : short_short_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "short_short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_short_integer__rep
+ use        Standard__short_short_integer as Standard__short_short_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__short_short_integer.short_short_integer) : int =
+  (Standard__short_short_integer.short_short_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__short_short_integer.short_short_integer, 
+ predicate in_range = Standard__short_short_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type short_integer =
+  < range -32768 32767 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -32768) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (32767 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = short_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type short_integer__ref =
+  { mutable short_integer__content : short_integer }
+ 
+ function short_integer__ref_short_integer__content__projection 
+   (a : short_integer__ref) : short_integer =
+  a.short_integer__content
+ 
+ meta "model_projection" function short_integer__ref_short_integer__content__projection
+ 
+ meta "inline:no" function short_integer__ref_short_integer__content__projection
+ 
+ val short_integer__havoc 
+   (x : short_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_integer__rep
+ use        Standard__short_integer as Standard__short_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__short_integer.short_integer) : int =
+  (Standard__short_integer.short_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__short_integer.short_integer, 
+ predicate in_range = Standard__short_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type integer =
+  < range -2147483648 2147483647 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -2147483648) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (2147483647 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer__ref =
+  { mutable integer__content : integer }
+ 
+ function integer__ref_integer__content__projection 
+   (a : integer__ref) : integer =
+  a.integer__content
+ 
+ meta "model_projection" function integer__ref_integer__content__projection
+ 
+ meta "inline:no" function integer__ref_integer__content__projection
+ 
+ val integer__havoc 
+   (x : integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer__rep
+ use        Standard__integer as Standard__integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__integer.integer) : int =
+  (Standard__integer.integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__integer.integer, 
+ predicate in_range = Standard__integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type long_integer =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -9223372036854775808) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (9223372036854775807 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = long_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type long_integer__ref =
+  { mutable long_integer__content : long_integer }
+ 
+ function long_integer__ref_long_integer__content__projection 
+   (a : long_integer__ref) : long_integer =
+  a.long_integer__content
+ 
+ meta "model_projection" function long_integer__ref_long_integer__content__projection
+ 
+ meta "inline:no" function long_integer__ref_long_integer__content__projection
+ 
+ val long_integer__havoc 
+   (x : long_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_integer__rep
+ use        Standard__long_integer as Standard__long_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__long_integer.long_integer) : int =
+  (Standard__long_integer.long_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__long_integer.long_integer, 
+ predicate in_range = Standard__long_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "long_long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_long_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type long_long_integer =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -9223372036854775808) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (9223372036854775807 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = long_long_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type long_long_integer__ref =
+  { mutable long_long_integer__content : long_long_integer }
+ 
+ function long_long_integer__ref_long_long_integer__content__projection 
+   (a : long_long_integer__ref) : long_long_integer =
+  a.long_long_integer__content
+ 
+ meta "model_projection" function long_long_integer__ref_long_long_integer__content__projection
+ 
+ meta "inline:no" function long_long_integer__ref_long_long_integer__content__projection
+ 
+ val long_long_integer__havoc 
+   (x : long_long_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "long_long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_long_integer__rep
+ use        Standard__long_long_integer as Standard__long_long_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__long_long_integer.long_long_integer) : int =
+  (Standard__long_long_integer.long_long_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__long_long_integer.long_long_integer, 
+ predicate in_range = Standard__long_long_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "natural", created in Gnat2Why.Types.Translate_Type *)
+module Standard__natural
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type natural =
+  < range 0 2147483647 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (0 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (2147483647 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = natural, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type natural__ref =
+  { mutable natural__content : natural }
+ 
+ function natural__ref_natural__content__projection 
+   (a : natural__ref) : natural =
+  a.natural__content
+ 
+ meta "model_projection" function natural__ref_natural__content__projection
+ 
+ meta "inline:no" function natural__ref_natural__content__projection
+ 
+ val natural__havoc 
+   (x : natural__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "natural", created in Gnat2Why.Types.Translate_Type *)
+module Standard__natural__rep
+ use        Standard__natural as Standard__natural
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__natural.natural) : int =
+  (Standard__natural.natural'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__natural.natural, 
+ predicate in_range = Standard__natural.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "positive", created in Gnat2Why.Types.Translate_Type *)
+module Standard__positive
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type positive =
+  < range 1 2147483647 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (2147483647 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = positive, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type positive__ref =
+  { mutable positive__content : positive }
+ 
+ function positive__ref_positive__content__projection 
+   (a : positive__ref) : positive =
+  a.positive__content
+ 
+ meta "model_projection" function positive__ref_positive__content__projection
+ 
+ meta "inline:no" function positive__ref_positive__content__projection
+ 
+ val positive__havoc 
+   (x : positive__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "positive", created in Gnat2Why.Types.Translate_Type *)
+module Standard__positive__rep
+ use        Standard__positive as Standard__positive
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__positive.positive) : int =
+  (Standard__positive.positive'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__positive.positive, 
+ predicate in_range = Standard__positive.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "short_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_float
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "_gnatprove_standard".Float32 as Float32
+
+ type short_float 
+ 
+ val constant first 
+   : Float32.t
+  ensures { result =  (Float32.neg (340282346638528859811704183484516925440.0:Float32.t)) }
+ 
+ val constant last 
+   : Float32.t
+  ensures { result =  (340282346638528859811704183484516925440.0:Float32.t) }
+ 
+ predicate in_range 
+   (x : Float32.t) =
+  (Float32.t'isFinite x)
+ val in_range 
+   (x : Float32.t) : bool
+  ensures { result <-> in_range (x : Float32.t) }
+ 
+ clone export "ada__model".Static_Float32 with axiom .,
+ type t = short_float, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type short_float__ref =
+  { mutable short_float__content : short_float }
+ 
+ function short_float__ref_short_float__content__projection 
+   (a : short_float__ref) : short_float =
+  a.short_float__content
+ 
+ meta "model_projection" function short_float__ref_short_float__content__projection
+ 
+ meta "inline:no" function short_float__ref_short_float__content__projection
+ 
+ val short_float__havoc 
+   (x : short_float__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "short_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_float__rep
+ use        Standard__short_float as Standard__short_float
+ use        "_gnatprove_standard".Float32 as Float32
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Float32 with axiom .,
+ type t = Standard__short_float.short_float, 
+ predicate in_range = Standard__short_float.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__float
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "_gnatprove_standard".Float32 as Float32
+
+ type float__ 
+ 
+ val constant first 
+   : Float32.t
+  ensures { result =  (Float32.neg (340282346638528859811704183484516925440.0:Float32.t)) }
+ 
+ val constant last 
+   : Float32.t
+  ensures { result =  (340282346638528859811704183484516925440.0:Float32.t) }
+ 
+ predicate in_range 
+   (x : Float32.t) =
+  (Float32.t'isFinite x)
+ val in_range 
+   (x : Float32.t) : bool
+  ensures { result <-> in_range (x : Float32.t) }
+ 
+ clone export "ada__model".Static_Float32 with axiom .,
+ type t = float__, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type float____ref =
+  { mutable float____content : float__ }
+ 
+ function float____ref_float____content__projection 
+   (a : float____ref) : float__ =
+  a.float____content
+ 
+ meta "model_projection" function float____ref_float____content__projection
+ 
+ meta "inline:no" function float____ref_float____content__projection
+ 
+ val float____havoc 
+   (x : float____ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__float__rep
+ use        Standard__float as Standard__float
+ use        "_gnatprove_standard".Float32 as Float32
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Float32 with axiom .,
+ type t = Standard__float.float__, 
+ predicate in_range = Standard__float.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "long_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_float
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "_gnatprove_standard".Float64 as Float64
+
+ type long_float 
+ 
+ val constant first 
+   : Float64.t
+  ensures { result =  (Float64.neg (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.0:Float64.t)) }
+ 
+ val constant last 
+   : Float64.t
+  ensures { result =  (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.0:Float64.t) }
+ 
+ predicate in_range 
+   (x : Float64.t) =
+  (Float64.t'isFinite x)
+ val in_range 
+   (x : Float64.t) : bool
+  ensures { result <-> in_range (x : Float64.t) }
+ 
+ clone export "ada__model".Static_Float64 with axiom .,
+ type t = long_float, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type long_float__ref =
+  { mutable long_float__content : long_float }
+ 
+ function long_float__ref_long_float__content__projection 
+   (a : long_float__ref) : long_float =
+  a.long_float__content
+ 
+ meta "model_projection" function long_float__ref_long_float__content__projection
+ 
+ meta "inline:no" function long_float__ref_long_float__content__projection
+ 
+ val long_float__havoc 
+   (x : long_float__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "long_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_float__rep
+ use        Standard__long_float as Standard__long_float
+ use        "_gnatprove_standard".Float64 as Float64
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Float64 with axiom .,
+ type t = Standard__long_float.long_float, 
+ predicate in_range = Standard__long_float.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type character 
+ 
+ val constant first 
+   : int
+  ensures { result =  (0 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (255 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = character, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type character__ref =
+  { mutable character__content : character }
+ 
+ function character__ref_character__content__projection 
+   (a : character__ref) : character =
+  a.character__content
+ 
+ meta "model_projection" function character__ref_character__content__projection
+ 
+ meta "inline:no" function character__ref_character__content__projection
+ 
+ val character__havoc 
+   (x : character__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__character__rep
+ use        Standard__character as Standard__character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__character.character, 
+ predicate in_range = Standard__character.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type wide_character 
+ 
+ val constant first 
+   : int
+  ensures { result =  (0 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (65535 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = wide_character, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type wide_character__ref =
+  { mutable wide_character__content : wide_character }
+ 
+ function wide_character__ref_wide_character__content__projection 
+   (a : wide_character__ref) : wide_character =
+  a.wide_character__content
+ 
+ meta "model_projection" function wide_character__ref_wide_character__content__projection
+ 
+ meta "inline:no" function wide_character__ref_wide_character__content__projection
+ 
+ val wide_character__havoc 
+   (x : wide_character__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_character__rep
+ use        Standard__wide_character as Standard__wide_character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__wide_character.wide_character, 
+ predicate in_range = Standard__wide_character.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "wide_wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_wide_character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type wide_wide_character 
+ 
+ val constant first 
+   : int
+  ensures { result =  (0 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (2147483647 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = wide_wide_character, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type wide_wide_character__ref =
+  { mutable wide_wide_character__content : wide_wide_character }
+ 
+ function wide_wide_character__ref_wide_wide_character__content__projection 
+   (a : wide_wide_character__ref) : wide_wide_character =
+  a.wide_wide_character__content
+ 
+ meta "model_projection" function wide_wide_character__ref_wide_wide_character__content__projection
+ 
+ meta "inline:no" function wide_wide_character__ref_wide_wide_character__content__projection
+ 
+ val wide_wide_character__havoc 
+   (x : wide_wide_character__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "wide_wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_wide_character__rep
+ use        Standard__wide_wide_character as Standard__wide_wide_character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__wide_wide_character.wide_wide_character, 
+ predicate in_range = Standard__wide_wide_character.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing the array theory associated to type "string", created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+ use        Standard__character__rep as Standard__character__rep
+
+ function index_I1_one 
+   : int =
+  (1 : int)
+ 
+ type component_type =
+  Standard__character.character
+ 
+ clone export "_gnatprove_standard".Array__1 with axiom .,
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_91   : int.
+   (if (( (a__first <= temp___idx_91) /\ (temp___idx_91 <= a__last) )) then (
+    ((Standard__character__rep.to_rep (get a temp___idx_91)) = (Standard__character__rep.to_rep (get b ((b__first - a__first) + temp___idx_91))))) else true)) )
+ val bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool
+  ensures { result = bool_eq (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) }
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_91   : int.
+    (if (( (a__first <= temp___idx_91) /\ (temp___idx_91 <= a__last) )) then (
+     ((Standard__character__rep.to_rep (get a temp___idx_91)) = (Standard__character__rep.to_rep (get b ((b__first - a__first) + temp___idx_91))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "string", created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__character__Concat
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with axiom .,
+ type component_type = Array__Int__Standard__character.component_type, 
+ type map = Array__Int__Standard__character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__character.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "string", created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__character_Comp
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character__rep as Standard__character__rep
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with axiom .,
+ type component_type = Array__Int__Standard__character.component_type, 
+ function to_rep = Standard__character__rep.to_rep, 
+ type map = Array__Int__Standard__character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__character.get, 
+ function bool_eq = Array__Int__Standard__character.bool_eq
+
+end
+
+(* Module for axiomatizing type "string", created in Gnat2Why.Types.Translate_Type *)
+module Standard__string
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__positive as Standard__positive
+ use        Standard__character as Standard__character
+ use        Array__Int__Standard__character as Array__Int__Standard__character
+ use        Standard__integer__rep as Standard__integer__rep
+
+ type component_type =
+  Standard__character.character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with axiom .,
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type string =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline:no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline:no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline:no" function last
+ 
+ type string__ref =
+  { mutable string__content : string }
+ 
+ function string__ref_string__content__projection 
+   (a : string__ref) : string =
+  a.string__content
+ 
+ meta "model_projection" function string__ref_string__content__projection
+ 
+ meta "inline:no" function string__ref_string__content__projection
+ 
+ val string__havoc 
+   (x : string__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_string/of_string functions, created in Gnat2Why.Types.Translate_Type *)
+module Standard_String__Img
+ use        "int".Int
+ use        Standard__string as Standard__string
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val function to_string 
+   (x : Main.__image) (s : int) : Standard__string.string
+ 
+ val function from_string 
+   (x : Standard__string.string) : Main.__image
+ 
+ axiom to_string__first :
+  (forall x   : Main.__image.
+  (forall s   : int [(to_string x s)].
+   ((Standard__string.first (to_string x s)) = (1 : int))))
+ 
+ axiom to_string__length :
+  (forall x   : Main.__image.
+  (forall s   : int [(to_string x s)].
+   ( (s >= (0 : int)) -> ((Standard__string.length (to_string x s)) <= s) )))
+
+end
+
+(* Module for axiomatizing the array theory associated to type "wide_string", created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__wide_character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__wide_character as Standard__wide_character
+ use        Standard__wide_character__rep as Standard__wide_character__rep
+
+ function index_I1_one 
+   : int =
+  (1 : int)
+ 
+ type component_type =
+  Standard__wide_character.wide_character
+ 
+ clone export "_gnatprove_standard".Array__1 with axiom .,
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_98   : int.
+   (if (( (a__first <= temp___idx_98) /\ (temp___idx_98 <= a__last) )) then (
+    ((Standard__wide_character__rep.to_rep (get a temp___idx_98)) = (Standard__wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_98))))) else true)) )
+ val bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool
+  ensures { result = bool_eq (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) }
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_98   : int.
+    (if (( (a__first <= temp___idx_98) /\ (temp___idx_98 <= a__last) )) then (
+     ((Standard__wide_character__rep.to_rep (get a temp___idx_98)) = (Standard__wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_98))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "wide_string", created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__wide_character__Concat
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Array__Int__Standard__wide_character as Array__Int__Standard__wide_character
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with axiom .,
+ type component_type = Array__Int__Standard__wide_character.component_type, 
+ type map = Array__Int__Standard__wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_character.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "wide_string", created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__wide_character_Comp
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__wide_character__rep as Standard__wide_character__rep
+ use        Array__Int__Standard__wide_character as Array__Int__Standard__wide_character
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with axiom .,
+ type component_type = Array__Int__Standard__wide_character.component_type, 
+ function to_rep = Standard__wide_character__rep.to_rep, 
+ type map = Array__Int__Standard__wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_character.get, 
+ function bool_eq = Array__Int__Standard__wide_character.bool_eq
+
+end
+
+(* Module for axiomatizing type "wide_string", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_string
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__positive as Standard__positive
+ use        Standard__wide_character as Standard__wide_character
+ use        Standard__integer__rep as Standard__integer__rep
+ use        Array__Int__Standard__wide_character as Array__Int__Standard__wide_character
+
+ type component_type =
+  Standard__wide_character.wide_character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with axiom .,
+ type map = Array__Int__Standard__wide_character.map, 
+ function array_bool_eq = Array__Int__Standard__wide_character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type wide_string =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline:no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline:no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline:no" function last
+ 
+ type wide_string__ref =
+  { mutable wide_string__content : wide_string }
+ 
+ function wide_string__ref_wide_string__content__projection 
+   (a : wide_string__ref) : wide_string =
+  a.wide_string__content
+ 
+ meta "model_projection" function wide_string__ref_wide_string__content__projection
+ 
+ meta "inline:no" function wide_string__ref_wide_string__content__projection
+ 
+ val wide_string__havoc 
+   (x : wide_string__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing the array theory associated to type "wide_wide_string", created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__wide_wide_character
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__wide_wide_character as Standard__wide_wide_character
+ use        Standard__wide_wide_character__rep as Standard__wide_wide_character__rep
+
+ function index_I1_one 
+   : int =
+  (1 : int)
+ 
+ type component_type =
+  Standard__wide_wide_character.wide_wide_character
+ 
+ clone export "_gnatprove_standard".Array__1 with axiom .,
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_105   : int.
+   (if (( (a__first <= temp___idx_105) /\ (temp___idx_105 <= a__last) )) then (
+    ((Standard__wide_wide_character__rep.to_rep (get a temp___idx_105)) = (Standard__wide_wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_105))))) else true)) )
+ val bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool
+  ensures { result = bool_eq (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) }
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_105   : int.
+    (if (( (a__first <= temp___idx_105) /\ (temp___idx_105 <= a__last) )) then (
+     ((Standard__wide_wide_character__rep.to_rep (get a temp___idx_105)) = (Standard__wide_wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_105))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "wide_wide_string", created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__wide_wide_character__Concat
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Array__Int__Standard__wide_wide_character as Array__Int__Standard__wide_wide_character
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with axiom .,
+ type component_type = Array__Int__Standard__wide_wide_character.component_type, 
+ type map = Array__Int__Standard__wide_wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_wide_character.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "wide_wide_string", created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__wide_wide_character_Comp
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__wide_wide_character__rep as Standard__wide_wide_character__rep
+ use        Array__Int__Standard__wide_wide_character as Array__Int__Standard__wide_wide_character
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with axiom .,
+ type component_type = Array__Int__Standard__wide_wide_character.component_type, 
+ function to_rep = Standard__wide_wide_character__rep.to_rep, 
+ type map = Array__Int__Standard__wide_wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_wide_character.get, 
+ function bool_eq = Array__Int__Standard__wide_wide_character.bool_eq
+
+end
+
+(* Module for axiomatizing type "wide_wide_string", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_wide_string
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__positive as Standard__positive
+ use        Standard__wide_wide_character as Standard__wide_wide_character
+ use        Standard__integer__rep as Standard__integer__rep
+ use        Array__Int__Standard__wide_wide_character as Array__Int__Standard__wide_wide_character
+
+ type component_type =
+  Standard__wide_wide_character.wide_wide_character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with axiom .,
+ type map = Array__Int__Standard__wide_wide_character.map, 
+ function array_bool_eq = Array__Int__Standard__wide_wide_character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type wide_wide_string =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline:no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline:no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline:no" function last
+ 
+ type wide_wide_string__ref =
+  { mutable wide_wide_string__content : wide_wide_string }
+ 
+ function wide_wide_string__ref_wide_wide_string__content__projection 
+   (a : wide_wide_string__ref) : wide_wide_string =
+  a.wide_wide_string__content
+ 
+ meta "model_projection" function wide_wide_string__ref_wide_wide_string__content__projection
+ 
+ meta "inline:no" function wide_wide_string__ref_wide_wide_string__content__projection
+ 
+ val wide_wide_string__havoc 
+   (x : wide_wide_string__ref) : unit
+  writes {x}
+
+end
+
+(* Module for fixed-point operation for type at system.ads:1, created in Why.Gen.Scalars.Create_Fixed_Point_Theory_If_Needed *)
+module Fixed_Point__1_1000000000
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ function num_small 
+   : int =
+  (1 : int)
+ 
+ function den_small 
+   : int =
+  (1000000000 : int)
+ 
+ clone export "ada__model".Fixed_Point_Rep with axiom .,
+ function num_small = num_small, 
+ function den_small = den_small
+
+end
+
+(* Module for axiomatizing type "duration", created in Gnat2Why.Types.Translate_Type *)
+module Standard__duration
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+
+ type duration 
+ 
+ val constant num_small 
+   : Main.__fixed
+  ensures { result =  (1 : int) }
+ 
+ val constant den_small 
+   : Main.__fixed
+  ensures { result =  (1000000000 : int) }
+ 
+ val constant first 
+   : Main.__fixed
+  ensures { result =  ( ( -9223372036854775808 ) : int ) }
+ 
+ val constant last 
+   : Main.__fixed
+  ensures { result =  ( 9223372036854775807 : int ) }
+ 
+ predicate in_range 
+   (x : Main.__fixed) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : Main.__fixed) : bool
+  ensures { result <-> in_range (x : Main.__fixed) }
+ 
+ clone export "ada__model".Static_Fixed_Point with axiom .,
+ type t = duration, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type duration__ref =
+  { mutable duration__content : duration }
+ 
+ function duration__ref_duration__content__projection 
+   (a : duration__ref) : duration =
+  a.duration__content
+ 
+ meta "model_projection" function duration__ref_duration__content__projection
+ 
+ meta "inline:no" function duration__ref_duration__content__projection
+ 
+ val duration__havoc 
+   (x : duration__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "duration", created in Gnat2Why.Types.Translate_Type *)
+module Standard__duration__rep
+ use        Standard__duration as Standard__duration
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ clone export "ada__model".Rep_Proj_Fixed with axiom .,
+ type t = Standard__duration.duration, 
+ predicate in_range = Standard__duration.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_8", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_8
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type integer_8 =
+  < range -128 127 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -128) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (127 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = integer_8, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_8__ref =
+  { mutable integer_8__content : integer_8 }
+ 
+ function integer_8__ref_integer_8__content__projection 
+   (a : integer_8__ref) : integer_8 =
+  a.integer_8__content
+ 
+ meta "model_projection" function integer_8__ref_integer_8__content__projection
+ 
+ meta "inline:no" function integer_8__ref_integer_8__content__projection
+ 
+ val integer_8__havoc 
+   (x : integer_8__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_8", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_8__rep
+ use        Standard__integer_8 as Standard__integer_8
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__integer_8.integer_8) : int =
+  (Standard__integer_8.integer_8'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__integer_8.integer_8, 
+ predicate in_range = Standard__integer_8.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_16", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_16
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type integer_16 =
+  < range -32768 32767 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -32768) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (32767 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = integer_16, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_16__ref =
+  { mutable integer_16__content : integer_16 }
+ 
+ function integer_16__ref_integer_16__content__projection 
+   (a : integer_16__ref) : integer_16 =
+  a.integer_16__content
+ 
+ meta "model_projection" function integer_16__ref_integer_16__content__projection
+ 
+ meta "inline:no" function integer_16__ref_integer_16__content__projection
+ 
+ val integer_16__havoc 
+   (x : integer_16__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_16", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_16__rep
+ use        Standard__integer_16 as Standard__integer_16
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__integer_16.integer_16) : int =
+  (Standard__integer_16.integer_16'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__integer_16.integer_16, 
+ predicate in_range = Standard__integer_16.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_32", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_32
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type integer_32 =
+  < range -2147483648 2147483647 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -2147483648) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (2147483647 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = integer_32, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_32__ref =
+  { mutable integer_32__content : integer_32 }
+ 
+ function integer_32__ref_integer_32__content__projection 
+   (a : integer_32__ref) : integer_32 =
+  a.integer_32__content
+ 
+ meta "model_projection" function integer_32__ref_integer_32__content__projection
+ 
+ meta "inline:no" function integer_32__ref_integer_32__content__projection
+ 
+ val integer_32__havoc 
+   (x : integer_32__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_32", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_32__rep
+ use        Standard__integer_32 as Standard__integer_32
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__integer_32.integer_32) : int =
+  (Standard__integer_32.integer_32'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__integer_32.integer_32, 
+ predicate in_range = Standard__integer_32.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_64", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_64
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type integer_64 =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -9223372036854775808) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (9223372036854775807 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = integer_64, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_64__ref =
+  { mutable integer_64__content : integer_64 }
+ 
+ function integer_64__ref_integer_64__content__projection 
+   (a : integer_64__ref) : integer_64 =
+  a.integer_64__content
+ 
+ meta "model_projection" function integer_64__ref_integer_64__content__projection
+ 
+ meta "inline:no" function integer_64__ref_integer_64__content__projection
+ 
+ val integer_64__havoc 
+   (x : integer_64__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_64", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_64__rep
+ use        Standard__integer_64 as Standard__integer_64
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__integer_64.integer_64) : int =
+  (Standard__integer_64.integer_64'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__integer_64.integer_64, 
+ predicate in_range = Standard__integer_64.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "universal_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__universal_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type universal_integer =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (( -9223372036854775808) : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (9223372036854775807 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = universal_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type universal_integer__ref =
+  { mutable universal_integer__content : universal_integer }
+ 
+ function universal_integer__ref_universal_integer__content__projection 
+   (a : universal_integer__ref) : universal_integer =
+  a.universal_integer__content
+ 
+ meta "model_projection" function universal_integer__ref_universal_integer__content__projection
+ 
+ meta "inline:no" function universal_integer__ref_universal_integer__content__projection
+ 
+ val universal_integer__havoc 
+   (x : universal_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "universal_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__universal_integer__rep
+ use        Standard__universal_integer as Standard__universal_integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Standard__universal_integer.universal_integer) : int =
+  (Standard__universal_integer.universal_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Standard__universal_integer.universal_integer, 
+ predicate in_range = Standard__universal_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing type "Tstack_dataD1" defined at stack.ads:44, created in Gnat2Why.Types.Translate_Type *)
+module Stack__Tstack_dataD1
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type tstack_dataD1 =
+  < range 1 512 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (512 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = tstack_dataD1, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type tstack_dataD1__ref =
+  { mutable tstack_dataD1__content : tstack_dataD1 }
+ 
+ function tstack_dataD1__ref_tstack_dataD1__content__projection 
+   (a : tstack_dataD1__ref) : tstack_dataD1 =
+  a.tstack_dataD1__content
+ 
+ meta "model_projection" function tstack_dataD1__ref_tstack_dataD1__content__projection
+ 
+ meta "inline:no" function tstack_dataD1__ref_tstack_dataD1__content__projection
+ 
+ val tstack_dataD1__havoc 
+   (x : tstack_dataD1__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "Tstack_dataD1" defined at stack.ads:44, created in Gnat2Why.Types.Translate_Type *)
+module Stack__Tstack_dataD1__rep
+ use        Stack__Tstack_dataD1 as Stack__Tstack_dataD1
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Stack__Tstack_dataD1.tstack_dataD1) : int =
+  (Stack__Tstack_dataD1.tstack_dataD1'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Stack__Tstack_dataD1.tstack_dataD1, 
+ predicate in_range = Stack__Tstack_dataD1.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for axiomatizing the array theory associated to type "Tstack_dataB" defined at stack.ads:44, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__integer
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__integer__rep as Standard__integer__rep
+
+ function index_I1_one 
+   : int =
+  (1 : int)
+ 
+ type component_type =
+  Standard__integer.integer
+ 
+ clone export "_gnatprove_standard".Array__1 with axiom .,
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_154   : int.
+   (if (( (a__first <= temp___idx_154) /\ (temp___idx_154 <= a__last) )) then (
+    ((Standard__integer__rep.to_rep (get a temp___idx_154)) = (Standard__integer__rep.to_rep (get b ((b__first - a__first) + temp___idx_154))))) else true)) )
+ val bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool
+  ensures { result = bool_eq (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) }
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_154   : int.
+    (if (( (a__first <= temp___idx_154) /\ (temp___idx_154 <= a__last) )) then (
+     ((Standard__integer__rep.to_rep (get a temp___idx_154)) = (Standard__integer__rep.to_rep (get b ((b__first - a__first) + temp___idx_154))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "Tstack_dataB" defined at stack.ads:44, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__integer__Concat
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with axiom .,
+ type component_type = Array__Int__Standard__integer.component_type, 
+ type map = Array__Int__Standard__integer.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__integer.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "Tstack_dataB" defined at stack.ads:44, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__integer_Comp
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer__rep as Standard__integer__rep
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+
+ function index_Index_one 
+   : int =
+  (1 : int)
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with axiom .,
+ type component_type = Array__Int__Standard__integer.component_type, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ type map = Array__Int__Standard__integer.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__integer.get, 
+ function bool_eq = Array__Int__Standard__integer.bool_eq
+
+end
+
+(* Module for axiomatizing type "Tstack_dataB" defined at stack.ads:44, created in Gnat2Why.Types.Translate_Type *)
+module Stack__Tstack_dataB
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__integer as Standard__integer
+ use        Standard__integer__rep as Standard__integer__rep
+ use        Stack__Tstack_dataD1 as Stack__Tstack_dataD1
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+
+ type component_type =
+  Standard__integer.integer
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with axiom .,
+ type map = Array__Int__Standard__integer.map, 
+ function array_bool_eq = Array__Int__Standard__integer.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Stack__Tstack_dataD1.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type tstack_dataB =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline:no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline:no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline:no" function last
+ 
+ type tstack_dataB__ref =
+  { mutable tstack_dataB__content : tstack_dataB }
+ 
+ function tstack_dataB__ref_tstack_dataB__content__projection 
+   (a : tstack_dataB__ref) : tstack_dataB =
+  a.tstack_dataB__content
+ 
+ meta "model_projection" function tstack_dataB__ref_tstack_dataB__content__projection
+ 
+ meta "inline:no" function tstack_dataB__ref_tstack_dataB__content__projection
+ 
+ val tstack_dataB__havoc 
+   (x : tstack_dataB__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "stack_data" defined at stack.ads:44, created in Gnat2Why.Types.Translate_Type *)
+module Stack__stack_data
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+
+ type component_type =
+  Standard__integer.integer
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (512 : int) }
+ 
+ clone export "ada__model".Constr_Array with axiom .,
+ type map = Array__Int__Standard__integer.map, 
+ function array_bool_eq = Array__Int__Standard__integer.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
+
+end
+
+(* Module for axiomatizing the record theory associated to type "stack_type" defined at stack.ads:46, created in Why.Gen.Records.Create_Rep_Record_Theory_If_Needed *)
+module Stack__stack_type__rep
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__natural as Standard__natural
+ use        Standard__natural__rep as Standard__natural__rep
+ use        Stack__stack_data as Stack__stack_data
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+
+ type __split_fields =
+  { rec__stack__stack_type__size [@name:Size] [@model_trace:.3529] : Standard__natural.natural; rec__stack__stack_type__data [@name:Data] [@model_trace:.3540] : Array__Int__Standard__integer.map }
+ 
+ function __split_fields_rec__stack__stack_type__size__projection [@name:Size] [@model_trace:.3529] 
+   (a : __split_fields) : Standard__natural.natural =
+  a.rec__stack__stack_type__size
+ 
+ meta "model_projection" function __split_fields_rec__stack__stack_type__size__projection
+ 
+ meta "inline:no" function __split_fields_rec__stack__stack_type__size__projection
+ 
+ function __split_fields_rec__stack__stack_type__data__projection [@name:Data] [@model_trace:.3540] 
+   (a : __split_fields) : Array__Int__Standard__integer.map =
+  a.rec__stack__stack_type__data
+ 
+ meta "model_projection" function __split_fields_rec__stack__stack_type__data__projection
+ 
+ meta "inline:no" function __split_fields_rec__stack__stack_type__data__projection
+ 
+ type __split_fields__ref =
+  { mutable __split_fields__content : __split_fields }
+ 
+ function __split_fields__ref___split_fields__content__projection 
+   (a : __split_fields__ref) : __split_fields =
+  a.__split_fields__content
+ 
+ meta "model_projection" function __split_fields__ref___split_fields__content__projection
+ 
+ meta "inline:no" function __split_fields__ref___split_fields__content__projection
+ 
+ val __split_fields__havoc 
+   (x : __split_fields__ref) : unit
+  writes {x}
+ 
+ type __rep =
+  { __split_fields : __split_fields }
+ 
+ function __rep___split_fields__projection 
+   (a : __rep) : __split_fields =
+  a.__split_fields
+ 
+ meta "model_projection" function __rep___split_fields__projection
+ 
+ meta "inline:no" function __rep___split_fields__projection
+ 
+ function to_base 
+   (a : __rep) : __rep =
+  a
+ val to_base 
+   (a : __rep) : __rep
+  ensures { result = to_base (a : __rep) }
+ 
+ function of_base 
+   (a : __rep) : __rep =
+  a
+ val of_base 
+   (a : __rep) : __rep
+  ensures { result = of_base (a : __rep) }
+ 
+ predicate stack__stack_type__size__pred 
+   (a : __rep) =
+  true
+ val stack__stack_type__size__pred 
+   (a : __rep) : bool
+  ensures { result <-> stack__stack_type__size__pred (a : __rep) }
+ 
+ val rec__stack__stack_type__size_ 
+   (a : __rep) : Standard__natural.natural
+  requires {  (stack__stack_type__size__pred a) }
+  ensures {  (result = a.__split_fields.rec__stack__stack_type__size) }
+ 
+ predicate stack__stack_type__data__pred 
+   (a : __rep) =
+  true
+ val stack__stack_type__data__pred 
+   (a : __rep) : bool
+  ensures { result <-> stack__stack_type__data__pred (a : __rep) }
+ 
+ val rec__stack__stack_type__data_ 
+   (a : __rep) : Array__Int__Standard__integer.map
+  requires {  (stack__stack_type__data__pred a) }
+  ensures {  (result = a.__split_fields.rec__stack__stack_type__data) }
+ 
+ function bool_eq 
+   (a : __rep) (b : __rep) : bool =
+  (if (( ((Standard__natural__rep.to_rep a.__split_fields.rec__stack__stack_type__size) = (Standard__natural__rep.to_rep b.__split_fields.rec__stack__stack_type__size)) /\ (Stack__stack_data.bool_eq a.__split_fields.rec__stack__stack_type__data b.__split_fields.rec__stack__stack_type__data) )) then (
+   True) else (
+   False))
+ val bool_eq 
+   (a : __rep) (b : __rep) : bool
+  ensures { result = bool_eq (a : __rep) (b : __rep) }
+
+end
+
+(* Module for axiomatizing type "stack_type" defined at stack.ads:46, created in Gnat2Why.Types.Translate_Type *)
+module Stack__stack_type
+ use export Stack__stack_type__rep
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type stack_type =
+  __rep
+ 
+ val constant value__size 
+   : int
+
+ 
+ val constant object__size 
+   : int
+
+ 
+ val constant alignment 
+   : int
+
+ 
+ axiom value__size_axiom :
+  ((value__size ) >= (0 : int))
+ 
+ axiom object__size_axiom :
+  ((object__size ) >= (0 : int))
+ 
+ axiom alignment_axiom :
+  ((alignment ) >= (0 : int))
+ 
+ val constant stack__stack_type__size__first__bit 
+   : int
+
+ 
+ val constant stack__stack_type__size__last__bit 
+   : int
+
+ 
+ val constant stack__stack_type__size__position 
+   : int
+
+ 
+ axiom stack__stack_type__size__first__bit_axiom :
+  ((stack__stack_type__size__first__bit ) >= (0 : int))
+ 
+ axiom stack__stack_type__size__last__bit_axiom :
+  ((stack__stack_type__size__last__bit ) > (stack__stack_type__size__first__bit ))
+ 
+ axiom stack__stack_type__size__position_axiom :
+  ((stack__stack_type__size__position ) >= (0 : int))
+ 
+ val constant stack__stack_type__data__first__bit 
+   : int
+
+ 
+ val constant stack__stack_type__data__last__bit 
+   : int
+
+ 
+ val constant stack__stack_type__data__position 
+   : int
+
+ 
+ axiom stack__stack_type__data__first__bit_axiom :
+  ((stack__stack_type__data__first__bit ) >= (0 : int))
+ 
+ axiom stack__stack_type__data__last__bit_axiom :
+  ((stack__stack_type__data__last__bit ) > (stack__stack_type__data__first__bit ))
+ 
+ axiom stack__stack_type__data__position_axiom :
+  ((stack__stack_type__data__position ) >= (0 : int))
+ 
+ val function user_eq 
+   (a : stack_type) (b : stack_type) : bool
+ 
+ val constant dummy 
+   : stack_type
+
+ 
+ type stack_type__ref =
+  { mutable stack_type__content : stack_type }
+ 
+ function stack_type__ref_stack_type__content__projection 
+   (a : stack_type__ref) : stack_type =
+  a.stack_type__content
+ 
+ meta "model_projection" function stack_type__ref_stack_type__content__projection
+ 
+ meta "inline:no" function stack_type__ref_stack_type__content__projection
+ 
+ val stack_type__havoc 
+   (x : stack_type__ref) : unit
+  writes {x}
+
+end
+
+(* Module for defining the constant "stack" defined at stack.ads:39, created in Gnat2Why.Decls.Translate_Constant *)
+module Stack__get_size__stack
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val constant stack [#"stack.ads" 39 0 0][@model_projected] [@name:Stack] [@model_trace:3465] 
+   : Stack__stack_type.stack_type
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:39, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__get_size__stack___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "get_size" defined at stack.ads:39, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Stack__get_size
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val function get_size 
+   (stack : Stack__stack_type.stack_type) : int
+ 
+ val predicate get_size__function_guard 
+   (temp___result_155 : int) (stack : Stack__stack_type.stack_type)
+
+end
+
+(* Module for defining the constant "max_size" defined at stack.ads:5, created in Gnat2Why.Decls.Translate_Constant *)
+module Stack__max_size
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val constant max_size [#"stack.ads" 5 0 0][@name:Max_Size] [@model_trace:2963] 
+   : int
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module for defining the constant "stack" defined at stack.ads:41, created in Gnat2Why.Decls.Translate_Constant *)
+module Stack__get_element__stack
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val constant stack [#"stack.ads" 41 0 0][@model_trace:3484] [@model_projected] [@name:Stack] 
+   : Stack__stack_type.stack_type
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:41, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__get_element__stack___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining the constant "index" defined at stack.ads:41, created in Gnat2Why.Decls.Translate_Constant *)
+module Stack__get_element__index
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val constant index [#"stack.ads" 41 0 0][@model_trace:3493] [@name:Index] 
+   : int
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "index" defined at stack.ads:41, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__get_element__index___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "get_element" defined at stack.ads:41, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Stack__get_element
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val function get_element 
+   (stack : Stack__stack_type.stack_type) (index : int) : int
+ 
+ val predicate get_element__function_guard 
+   (temp___result_156 : int) (stack : Stack__stack_type.stack_type) (index : int)
+
+end
+
+(* Module for axiomatizing type "T16s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Stack__pop__L15s__T16s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+
+ type t16s =
+  < range 1 512 >
+ 
+ val constant first 
+   : int
+  ensures { result =  (1 : int) }
+ 
+ val constant last 
+   : int
+  ensures { result =  (512 : int) }
+ 
+ predicate in_range 
+   (x : int) =
+  ( (first <= x) /\ (x <= last) )
+ val in_range 
+   (x : int) : bool
+  ensures { result <-> in_range (x : int) }
+ 
+ clone export "ada__model".Static_Discrete with axiom .,
+ type t = t16s, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type t16s__ref =
+  { mutable t16s__content : t16s }
+ 
+ function t16s__ref_t16s__content__projection 
+   (a : t16s__ref) : t16s =
+  a.t16s__content
+ 
+ meta "model_projection" function t16s__ref_t16s__content__projection
+ 
+ meta "inline:no" function t16s__ref_t16s__content__projection
+ 
+ val t16s__havoc 
+   (x : t16s__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "T16s" defined at stack.ads:21, created in Gnat2Why.Types.Translate_Type *)
+module Stack__pop__L15s__T16s__rep
+ use        Stack__pop__L15s__T16s as Stack__pop__L15s__T16s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ function to_rep 
+   (x : Stack__pop__L15s__T16s.t16s) : int =
+  (Stack__pop__L15s__T16s.t16s'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with axiom .,
+ type t = Stack__pop__L15s__T16s.t16s, 
+ predicate in_range = Stack__pop__L15s__T16s.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline:no" function to_rep
+
+end
+
+(* Module for defining the constant "value" defined at stack.ads:11, created in Gnat2Why.Decls.Translate_Constant *)
+module Stack__push__value
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val constant value [#"stack.ads" 11 0 0][@name:Value] [@model_trace:3035] 
+   : int
+
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "value" defined at stack.ads:11, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__push__value___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for axiomatizing type "T14s" defined at stack.ads:15, created in Gnat2Why.Types.Translate_Type *)
+module Stack__push__L13s__T14s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__integer__rep as Standard__integer__rep
+
+ type t14s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int) =
+  ( (first_int <= x) /\ (x <= last_int) )
+ val dynamic_property 
+   (first_int : int) (last_int : int) (x : int) : bool
+  ensures { result <-> dynamic_property (first_int : int) (last_int : int) (x : int) }
+ 
+ clone export "ada__model".Dynamic_Discrete with axiom .,
+ type t = t14s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t14s__ref =
+  { mutable t14s__content : t14s }
+ 
+ function t14s__ref_t14s__content__projection 
+   (a : t14s__ref) : t14s =
+  a.t14s__content
+ 
+ meta "model_projection" function t14s__ref_t14s__content__projection
+ 
+ meta "inline:no" function t14s__ref_t14s__content__projection
+ 
+ val t14s__havoc 
+   (x : t14s__ref) : unit
+  writes {x}
+
+end
+(* Module for defining a ref holding the value of variable "s" defined at operation.ads:5, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__addition__s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val s__split_fields [#"operation.ads" 5 0 0][@model_projected] [@model_trace:2705] [@name:S]  : Stack__stack_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "s" defined at operation.ads:5, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__addition__s___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "s" defined at operation.ads:9, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__subtraction__s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val s__split_fields [#"operation.ads" 9 0 0][@model_projected] [@name:S] [@model_trace:2764]  : Stack__stack_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "s" defined at operation.ads:9, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__subtraction__s___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "s" defined at operation.ads:13, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__multiplication__s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val s__split_fields [#"operation.ads" 13 0 0][@model_projected] [@model_trace:2823] [@name:S]  : Stack__stack_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "s" defined at operation.ads:13, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__multiplication__s___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "s" defined at operation.ads:17, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__division__s
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val s__split_fields [#"operation.ads" 17 0 0][@model_projected] [@model_trace:2882] [@name:S]  : Stack__stack_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "s" defined at operation.ads:17, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__division__s___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at operation.adb:4, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__i
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val i [#"operation.adb" 4 0 0][@model_projected] [@name:I] [@model_trace:2309]  : int__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at operation.adb:4, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__i___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "j" defined at operation.adb:5, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__j
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val j [#"operation.adb" 5 0 0][@model_projected] [@model_trace:2319] [@name:J]  : int__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "j" defined at operation.adb:5, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__j___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "result" defined at operation.adb:6, created in Gnat2Why.Decls.Translate_Variable *)
+module Operation__result
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val result__ [#"operation.adb" 6 0 0][@model_trace:2329] [@model_projected] [@name:Result]  : int__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "result" defined at operation.adb:6, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Operation__result___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "stack" defined at stack.ads:17, created in Gnat2Why.Decls.Translate_Variable *)
+module Stack__pop__stack
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val stack__split_fields [#"stack.ads" 17 0 0][@model_trace:3119] [@model_projected] [@name:Stack]  : Stack__stack_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:17, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__pop__stack___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "value" defined at stack.ads:17, created in Gnat2Why.Decls.Translate_Variable *)
+module Stack__pop__value
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+ val value [#"stack.ads" 17 0 0][@model_projected] [@model_trace:3128] [@name:Value]  : int__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "value" defined at stack.ads:17, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__pop__value___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for defining a ref holding the value of variable "stack" defined at stack.ads:11, created in Gnat2Why.Decls.Translate_Variable *)
+module Stack__push__stack
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+
+ val stack__split_fields [#"stack.ads" 11 0 0][@model_trace:3026] [@model_projected] [@name:Stack]  : Stack__stack_type.__split_fields__ref 
+ 
+ val constant attr__ATTRIBUTE_ADDRESS 
+   : int
+
+
+end
+
+(* Module giving an empty axiom for the entity "stack" defined at stack.ads:11, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Stack__push__stack___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+(* Module giving axioms for type "short_short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__short_short_integer___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__short_short_integer as Standard__short_short_integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_4 : int) (temp___is_init_0 : bool) (temp___skip_constant_1 : bool) (temp___do_toplevel_2 : bool) (temp___do_typ_inv_3 : bool) =
+  (if (( temp___is_init_0 \/ (Standard__short_short_integer.first <= Standard__short_short_integer.last) )) then (
+   (Standard__short_short_integer.dynamic_property Standard__short_short_integer.first Standard__short_short_integer.last temp___expr_4)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_4 : int) (temp___is_init_0 : bool) (temp___skip_constant_1 : bool) (temp___do_toplevel_2 : bool) (temp___do_typ_inv_3 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_4 : int) (temp___is_init_0 : bool) (temp___skip_constant_1 : bool) (temp___do_toplevel_2 : bool) (temp___do_typ_inv_3 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_5 : int) (temp___skip_top_level_6 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_5 : int) (temp___skip_top_level_6 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_5 : int) (temp___skip_top_level_6 : bool) }
+
+end
+
+(* Module giving axioms for type "short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__short_integer___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__short_integer as Standard__short_integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_11 : int) (temp___is_init_7 : bool) (temp___skip_constant_8 : bool) (temp___do_toplevel_9 : bool) (temp___do_typ_inv_10 : bool) =
+  (if (( temp___is_init_7 \/ (Standard__short_integer.first <= Standard__short_integer.last) )) then (
+   (Standard__short_integer.dynamic_property Standard__short_integer.first Standard__short_integer.last temp___expr_11)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_11 : int) (temp___is_init_7 : bool) (temp___skip_constant_8 : bool) (temp___do_toplevel_9 : bool) (temp___do_typ_inv_10 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_11 : int) (temp___is_init_7 : bool) (temp___skip_constant_8 : bool) (temp___do_toplevel_9 : bool) (temp___do_typ_inv_10 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_12 : int) (temp___skip_top_level_13 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_12 : int) (temp___skip_top_level_13 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_12 : int) (temp___skip_top_level_13 : bool) }
+
+end
+
+(* Module giving axioms for type "integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_18 : int) (temp___is_init_14 : bool) (temp___skip_constant_15 : bool) (temp___do_toplevel_16 : bool) (temp___do_typ_inv_17 : bool) =
+  (if (( temp___is_init_14 \/ (Standard__integer.first <= Standard__integer.last) )) then (
+   (Standard__integer.dynamic_property Standard__integer.first Standard__integer.last temp___expr_18)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_18 : int) (temp___is_init_14 : bool) (temp___skip_constant_15 : bool) (temp___do_toplevel_16 : bool) (temp___do_typ_inv_17 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_18 : int) (temp___is_init_14 : bool) (temp___skip_constant_15 : bool) (temp___do_toplevel_16 : bool) (temp___do_typ_inv_17 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_19 : int) (temp___skip_top_level_20 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_19 : int) (temp___skip_top_level_20 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_19 : int) (temp___skip_top_level_20 : bool) }
+
+end
+
+(* Module giving axioms for type "long_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__long_integer___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__long_integer as Standard__long_integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_25 : int) (temp___is_init_21 : bool) (temp___skip_constant_22 : bool) (temp___do_toplevel_23 : bool) (temp___do_typ_inv_24 : bool) =
+  (if (( temp___is_init_21 \/ (Standard__long_integer.first <= Standard__long_integer.last) )) then (
+   (Standard__long_integer.dynamic_property Standard__long_integer.first Standard__long_integer.last temp___expr_25)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_25 : int) (temp___is_init_21 : bool) (temp___skip_constant_22 : bool) (temp___do_toplevel_23 : bool) (temp___do_typ_inv_24 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_25 : int) (temp___is_init_21 : bool) (temp___skip_constant_22 : bool) (temp___do_toplevel_23 : bool) (temp___do_typ_inv_24 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_26 : int) (temp___skip_top_level_27 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_26 : int) (temp___skip_top_level_27 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_26 : int) (temp___skip_top_level_27 : bool) }
+
+end
+
+(* Module giving axioms for type "long_long_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__long_long_integer___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__long_long_integer as Standard__long_long_integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_32 : int) (temp___is_init_28 : bool) (temp___skip_constant_29 : bool) (temp___do_toplevel_30 : bool) (temp___do_typ_inv_31 : bool) =
+  (if (( temp___is_init_28 \/ (Standard__long_long_integer.first <= Standard__long_long_integer.last) )) then (
+   (Standard__long_long_integer.dynamic_property Standard__long_long_integer.first Standard__long_long_integer.last temp___expr_32)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_32 : int) (temp___is_init_28 : bool) (temp___skip_constant_29 : bool) (temp___do_toplevel_30 : bool) (temp___do_typ_inv_31 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_32 : int) (temp___is_init_28 : bool) (temp___skip_constant_29 : bool) (temp___do_toplevel_30 : bool) (temp___do_typ_inv_31 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_33 : int) (temp___skip_top_level_34 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_33 : int) (temp___skip_top_level_34 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_33 : int) (temp___skip_top_level_34 : bool) }
+
+end
+
+(* Module giving axioms for type "natural", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__natural___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__natural as Standard__natural
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_39 : int) (temp___is_init_35 : bool) (temp___skip_constant_36 : bool) (temp___do_toplevel_37 : bool) (temp___do_typ_inv_38 : bool) =
+  (if (( temp___is_init_35 \/ (Standard__natural.first <= Standard__natural.last) )) then (
+   (Standard__natural.dynamic_property Standard__natural.first Standard__natural.last temp___expr_39)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_39 : int) (temp___is_init_35 : bool) (temp___skip_constant_36 : bool) (temp___do_toplevel_37 : bool) (temp___do_typ_inv_38 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_39 : int) (temp___is_init_35 : bool) (temp___skip_constant_36 : bool) (temp___do_toplevel_37 : bool) (temp___do_typ_inv_38 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_40 : int) (temp___skip_top_level_41 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_40 : int) (temp___skip_top_level_41 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_40 : int) (temp___skip_top_level_41 : bool) }
+
+end
+
+(* Module giving axioms for type "positive", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__positive___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__positive as Standard__positive
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_46 : int) (temp___is_init_42 : bool) (temp___skip_constant_43 : bool) (temp___do_toplevel_44 : bool) (temp___do_typ_inv_45 : bool) =
+  (if (( temp___is_init_42 \/ (Standard__positive.first <= Standard__positive.last) )) then (
+   (Standard__positive.dynamic_property Standard__positive.first Standard__positive.last temp___expr_46)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_46 : int) (temp___is_init_42 : bool) (temp___skip_constant_43 : bool) (temp___do_toplevel_44 : bool) (temp___do_typ_inv_45 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_46 : int) (temp___is_init_42 : bool) (temp___skip_constant_43 : bool) (temp___do_toplevel_44 : bool) (temp___do_typ_inv_45 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_47 : int) (temp___skip_top_level_48 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_47 : int) (temp___skip_top_level_48 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_47 : int) (temp___skip_top_level_48 : bool) }
+
+end
+
+(* Module giving axioms for type "short_float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__short_float___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "_gnatprove_standard".Float32 as Float32
+ use        Standard__short_float as Standard__short_float
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_53 : Float32.t) (temp___is_init_49 : bool) (temp___skip_constant_50 : bool) (temp___do_toplevel_51 : bool) (temp___do_typ_inv_52 : bool) =
+  (if (( temp___is_init_49 \/ (Float32.le Standard__short_float.first Standard__short_float.last) )) then (
+   (Standard__short_float.dynamic_property Standard__short_float.first Standard__short_float.last temp___expr_53)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_53 : Float32.t) (temp___is_init_49 : bool) (temp___skip_constant_50 : bool) (temp___do_toplevel_51 : bool) (temp___do_typ_inv_52 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_53 : Float32.t) (temp___is_init_49 : bool) (temp___skip_constant_50 : bool) (temp___do_toplevel_51 : bool) (temp___do_typ_inv_52 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_54 : Float32.t) (temp___skip_top_level_55 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_54 : Float32.t) (temp___skip_top_level_55 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_54 : Float32.t) (temp___skip_top_level_55 : bool) }
+
+end
+
+(* Module giving axioms for type "float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__float___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "_gnatprove_standard".Float32 as Float32
+ use        Standard__float as Standard__float
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_60 : Float32.t) (temp___is_init_56 : bool) (temp___skip_constant_57 : bool) (temp___do_toplevel_58 : bool) (temp___do_typ_inv_59 : bool) =
+  (if (( temp___is_init_56 \/ (Float32.le Standard__float.first Standard__float.last) )) then (
+   (Standard__float.dynamic_property Standard__float.first Standard__float.last temp___expr_60)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_60 : Float32.t) (temp___is_init_56 : bool) (temp___skip_constant_57 : bool) (temp___do_toplevel_58 : bool) (temp___do_typ_inv_59 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_60 : Float32.t) (temp___is_init_56 : bool) (temp___skip_constant_57 : bool) (temp___do_toplevel_58 : bool) (temp___do_typ_inv_59 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_61 : Float32.t) (temp___skip_top_level_62 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_61 : Float32.t) (temp___skip_top_level_62 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_61 : Float32.t) (temp___skip_top_level_62 : bool) }
+
+end
+
+(* Module giving axioms for type "long_float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__long_float___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "_gnatprove_standard".Float64 as Float64
+ use        Standard__long_float as Standard__long_float
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_67 : Float64.t) (temp___is_init_63 : bool) (temp___skip_constant_64 : bool) (temp___do_toplevel_65 : bool) (temp___do_typ_inv_66 : bool) =
+  (if (( temp___is_init_63 \/ (Float64.le Standard__long_float.first Standard__long_float.last) )) then (
+   (Standard__long_float.dynamic_property Standard__long_float.first Standard__long_float.last temp___expr_67)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_67 : Float64.t) (temp___is_init_63 : bool) (temp___skip_constant_64 : bool) (temp___do_toplevel_65 : bool) (temp___do_typ_inv_66 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_67 : Float64.t) (temp___is_init_63 : bool) (temp___skip_constant_64 : bool) (temp___do_toplevel_65 : bool) (temp___do_typ_inv_66 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_68 : Float64.t) (temp___skip_top_level_69 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_68 : Float64.t) (temp___skip_top_level_69 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_68 : Float64.t) (temp___skip_top_level_69 : bool) }
+
+end
+
+(* Module giving axioms for type "character", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__character___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__character as Standard__character
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_74 : int) (temp___is_init_70 : bool) (temp___skip_constant_71 : bool) (temp___do_toplevel_72 : bool) (temp___do_typ_inv_73 : bool) =
+  (if (( temp___is_init_70 \/ (Standard__character.first <= Standard__character.last) )) then (
+   (Standard__character.dynamic_property Standard__character.first Standard__character.last temp___expr_74)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_74 : int) (temp___is_init_70 : bool) (temp___skip_constant_71 : bool) (temp___do_toplevel_72 : bool) (temp___do_typ_inv_73 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_74 : int) (temp___is_init_70 : bool) (temp___skip_constant_71 : bool) (temp___do_toplevel_72 : bool) (temp___do_typ_inv_73 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_75 : int) (temp___skip_top_level_76 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_75 : int) (temp___skip_top_level_76 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_75 : int) (temp___skip_top_level_76 : bool) }
+
+end
+
+(* Module giving axioms for type "wide_character", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_character___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__wide_character as Standard__wide_character
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_81 : int) (temp___is_init_77 : bool) (temp___skip_constant_78 : bool) (temp___do_toplevel_79 : bool) (temp___do_typ_inv_80 : bool) =
+  (if (( temp___is_init_77 \/ (Standard__wide_character.first <= Standard__wide_character.last) )) then (
+   (Standard__wide_character.dynamic_property Standard__wide_character.first Standard__wide_character.last temp___expr_81)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_81 : int) (temp___is_init_77 : bool) (temp___skip_constant_78 : bool) (temp___do_toplevel_79 : bool) (temp___do_typ_inv_80 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_81 : int) (temp___is_init_77 : bool) (temp___skip_constant_78 : bool) (temp___do_toplevel_79 : bool) (temp___do_typ_inv_80 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_82 : int) (temp___skip_top_level_83 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_82 : int) (temp___skip_top_level_83 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_82 : int) (temp___skip_top_level_83 : bool) }
+
+end
+
+(* Module giving axioms for type "wide_wide_character", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_wide_character___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__wide_wide_character as Standard__wide_wide_character
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_88 : int) (temp___is_init_84 : bool) (temp___skip_constant_85 : bool) (temp___do_toplevel_86 : bool) (temp___do_typ_inv_87 : bool) =
+  (if (( temp___is_init_84 \/ (Standard__wide_wide_character.first <= Standard__wide_wide_character.last) )) then (
+   (Standard__wide_wide_character.dynamic_property Standard__wide_wide_character.first Standard__wide_wide_character.last temp___expr_88)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_88 : int) (temp___is_init_84 : bool) (temp___skip_constant_85 : bool) (temp___do_toplevel_86 : bool) (temp___do_typ_inv_87 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_88 : int) (temp___is_init_84 : bool) (temp___skip_constant_85 : bool) (temp___do_toplevel_86 : bool) (temp___do_typ_inv_87 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_89 : int) (temp___skip_top_level_90 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_89 : int) (temp___skip_top_level_90 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_89 : int) (temp___skip_top_level_90 : bool) }
+
+end
+
+(* Module giving axioms for type "string", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__string___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__positive as Standard__positive
+ use        Standard__string as Standard__string
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_96 : Standard__string.string) (temp___is_init_92 : bool) (temp___skip_constant_93 : bool) (temp___do_toplevel_94 : bool) (temp___do_typ_inv_95 : bool) =
+  (if (temp___skip_constant_93) then (
+   true) else (
+   (Standard__string.dynamic_property Standard__positive.first Standard__positive.last (Standard__string.first temp___expr_96) (Standard__string.last temp___expr_96))))
+ val dynamic_invariant [@inline] 
+   (temp___expr_96 : Standard__string.string) (temp___is_init_92 : bool) (temp___skip_constant_93 : bool) (temp___do_toplevel_94 : bool) (temp___do_typ_inv_95 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_96 : Standard__string.string) (temp___is_init_92 : bool) (temp___skip_constant_93 : bool) (temp___do_toplevel_94 : bool) (temp___do_typ_inv_95 : bool) }
+
+end
+
+(* Module giving axioms for type "wide_string", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_string___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__positive as Standard__positive
+ use        Standard__wide_string as Standard__wide_string
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_103 : Standard__wide_string.wide_string) (temp___is_init_99 : bool) (temp___skip_constant_100 : bool) (temp___do_toplevel_101 : bool) (temp___do_typ_inv_102 : bool) =
+  (if (temp___skip_constant_100) then (
+   true) else (
+   (Standard__wide_string.dynamic_property Standard__positive.first Standard__positive.last (Standard__wide_string.first temp___expr_103) (Standard__wide_string.last temp___expr_103))))
+ val dynamic_invariant [@inline] 
+   (temp___expr_103 : Standard__wide_string.wide_string) (temp___is_init_99 : bool) (temp___skip_constant_100 : bool) (temp___do_toplevel_101 : bool) (temp___do_typ_inv_102 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_103 : Standard__wide_string.wide_string) (temp___is_init_99 : bool) (temp___skip_constant_100 : bool) (temp___do_toplevel_101 : bool) (temp___do_typ_inv_102 : bool) }
+
+end
+
+(* Module giving axioms for type "wide_wide_string", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_wide_string___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__positive as Standard__positive
+ use        Standard__wide_wide_string as Standard__wide_wide_string
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_110 : Standard__wide_wide_string.wide_wide_string) (temp___is_init_106 : bool) (temp___skip_constant_107 : bool) (temp___do_toplevel_108 : bool) (temp___do_typ_inv_109 : bool) =
+  (if (temp___skip_constant_107) then (
+   true) else (
+   (Standard__wide_wide_string.dynamic_property Standard__positive.first Standard__positive.last (Standard__wide_wide_string.first temp___expr_110) (Standard__wide_wide_string.last temp___expr_110))))
+ val dynamic_invariant [@inline] 
+   (temp___expr_110 : Standard__wide_wide_string.wide_wide_string) (temp___is_init_106 : bool) (temp___skip_constant_107 : bool) (temp___do_toplevel_108 : bool) (temp___do_typ_inv_109 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_110 : Standard__wide_wide_string.wide_wide_string) (temp___is_init_106 : bool) (temp___skip_constant_107 : bool) (temp___do_toplevel_108 : bool) (temp___do_typ_inv_109 : bool) }
+
+end
+
+(* Module giving axioms for type "duration", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__duration___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        Standard__duration as Standard__duration
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_116 : Main.__fixed) (temp___is_init_112 : bool) (temp___skip_constant_113 : bool) (temp___do_toplevel_114 : bool) (temp___do_typ_inv_115 : bool) =
+  (if (( temp___is_init_112 \/ (Standard__duration.first <= Standard__duration.last) )) then (
+   (Standard__duration.dynamic_property Standard__duration.first Standard__duration.last temp___expr_116)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_116 : Main.__fixed) (temp___is_init_112 : bool) (temp___skip_constant_113 : bool) (temp___do_toplevel_114 : bool) (temp___do_typ_inv_115 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_116 : Main.__fixed) (temp___is_init_112 : bool) (temp___skip_constant_113 : bool) (temp___do_toplevel_114 : bool) (temp___do_typ_inv_115 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_117 : Main.__fixed) (temp___skip_top_level_118 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_117 : Main.__fixed) (temp___skip_top_level_118 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_117 : Main.__fixed) (temp___skip_top_level_118 : bool) }
+
+end
+
+(* Module giving axioms for type "integer_8", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_8___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer_8 as Standard__integer_8
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_123 : int) (temp___is_init_119 : bool) (temp___skip_constant_120 : bool) (temp___do_toplevel_121 : bool) (temp___do_typ_inv_122 : bool) =
+  (if (( temp___is_init_119 \/ (Standard__integer_8.first <= Standard__integer_8.last) )) then (
+   (Standard__integer_8.dynamic_property Standard__integer_8.first Standard__integer_8.last temp___expr_123)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_123 : int) (temp___is_init_119 : bool) (temp___skip_constant_120 : bool) (temp___do_toplevel_121 : bool) (temp___do_typ_inv_122 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_123 : int) (temp___is_init_119 : bool) (temp___skip_constant_120 : bool) (temp___do_toplevel_121 : bool) (temp___do_typ_inv_122 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_124 : int) (temp___skip_top_level_125 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_124 : int) (temp___skip_top_level_125 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_124 : int) (temp___skip_top_level_125 : bool) }
+
+end
+
+(* Module giving axioms for type "integer_16", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_16___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer_16 as Standard__integer_16
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_130 : int) (temp___is_init_126 : bool) (temp___skip_constant_127 : bool) (temp___do_toplevel_128 : bool) (temp___do_typ_inv_129 : bool) =
+  (if (( temp___is_init_126 \/ (Standard__integer_16.first <= Standard__integer_16.last) )) then (
+   (Standard__integer_16.dynamic_property Standard__integer_16.first Standard__integer_16.last temp___expr_130)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_130 : int) (temp___is_init_126 : bool) (temp___skip_constant_127 : bool) (temp___do_toplevel_128 : bool) (temp___do_typ_inv_129 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_130 : int) (temp___is_init_126 : bool) (temp___skip_constant_127 : bool) (temp___do_toplevel_128 : bool) (temp___do_typ_inv_129 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_131 : int) (temp___skip_top_level_132 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_131 : int) (temp___skip_top_level_132 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_131 : int) (temp___skip_top_level_132 : bool) }
+
+end
+
+(* Module giving axioms for type "integer_32", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_32___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer_32 as Standard__integer_32
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_137 : int) (temp___is_init_133 : bool) (temp___skip_constant_134 : bool) (temp___do_toplevel_135 : bool) (temp___do_typ_inv_136 : bool) =
+  (if (( temp___is_init_133 \/ (Standard__integer_32.first <= Standard__integer_32.last) )) then (
+   (Standard__integer_32.dynamic_property Standard__integer_32.first Standard__integer_32.last temp___expr_137)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_137 : int) (temp___is_init_133 : bool) (temp___skip_constant_134 : bool) (temp___do_toplevel_135 : bool) (temp___do_typ_inv_136 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_137 : int) (temp___is_init_133 : bool) (temp___skip_constant_134 : bool) (temp___do_toplevel_135 : bool) (temp___do_typ_inv_136 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_138 : int) (temp___skip_top_level_139 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_138 : int) (temp___skip_top_level_139 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_138 : int) (temp___skip_top_level_139 : bool) }
+
+end
+
+(* Module giving axioms for type "integer_64", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_64___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer_64 as Standard__integer_64
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_144 : int) (temp___is_init_140 : bool) (temp___skip_constant_141 : bool) (temp___do_toplevel_142 : bool) (temp___do_typ_inv_143 : bool) =
+  (if (( temp___is_init_140 \/ (Standard__integer_64.first <= Standard__integer_64.last) )) then (
+   (Standard__integer_64.dynamic_property Standard__integer_64.first Standard__integer_64.last temp___expr_144)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_144 : int) (temp___is_init_140 : bool) (temp___skip_constant_141 : bool) (temp___do_toplevel_142 : bool) (temp___do_typ_inv_143 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_144 : int) (temp___is_init_140 : bool) (temp___skip_constant_141 : bool) (temp___do_toplevel_142 : bool) (temp___do_typ_inv_143 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_145 : int) (temp___skip_top_level_146 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_145 : int) (temp___skip_top_level_146 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_145 : int) (temp___skip_top_level_146 : bool) }
+
+end
+
+(* Module giving axioms for type "universal_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__universal_integer___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__universal_integer as Standard__universal_integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_151 : int) (temp___is_init_147 : bool) (temp___skip_constant_148 : bool) (temp___do_toplevel_149 : bool) (temp___do_typ_inv_150 : bool) =
+  (if (( temp___is_init_147 \/ (Standard__universal_integer.first <= Standard__universal_integer.last) )) then (
+   (Standard__universal_integer.dynamic_property Standard__universal_integer.first Standard__universal_integer.last temp___expr_151)) else true)
+ val dynamic_invariant [@inline] 
+   (temp___expr_151 : int) (temp___is_init_147 : bool) (temp___skip_constant_148 : bool) (temp___do_toplevel_149 : bool) (temp___do_typ_inv_150 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_151 : int) (temp___is_init_147 : bool) (temp___skip_constant_148 : bool) (temp___do_toplevel_149 : bool) (temp___do_typ_inv_150 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_152 : int) (temp___skip_top_level_153 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_152 : int) (temp___skip_top_level_153 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_152 : int) (temp___skip_top_level_153 : bool) }
+
+end
+
+(* Module for possibly declaring a logic function for "addition" defined at operation.ads:5, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Operation__addition
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "subtraction" defined at operation.ads:9, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Operation__subtraction
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "multiplication" defined at operation.ads:13, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Operation__multiplication
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "division" defined at operation.ads:17, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Operation__division
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "pop" defined at stack.ads:17, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Stack__pop
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module for possibly declaring a logic function for "push" defined at stack.ads:11, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Stack__push
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "Tstack_dataD1" defined at stack.ads:44, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__Tstack_dataD1___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "Tstack_dataB" defined at stack.ads:44, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__Tstack_dataB___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "stack_data" defined at stack.ads:44, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__stack_data___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+ use        Array__Int__Standard__integer as Array__Int__Standard__integer
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_161 : Array__Int__Standard__integer.map) (temp___is_init_157 : bool) (temp___skip_constant_158 : bool) (temp___do_toplevel_159 : bool) (temp___do_typ_inv_160 : bool) =
+  true
+ val dynamic_invariant [@inline] 
+   (temp___expr_161 : Array__Int__Standard__integer.map) (temp___is_init_157 : bool) (temp___skip_constant_158 : bool) (temp___do_toplevel_159 : bool) (temp___do_typ_inv_160 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_161 : Array__Int__Standard__integer.map) (temp___is_init_157 : bool) (temp___skip_constant_158 : bool) (temp___do_toplevel_159 : bool) (temp___do_typ_inv_160 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_163 : Array__Int__Standard__integer.map) (temp___skip_top_level_164 : bool) =
+  true
+ val default_initial_assumption [@inline] 
+   (temp___expr_163 : Array__Int__Standard__integer.map) (temp___skip_top_level_164 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_163 : Array__Int__Standard__integer.map) (temp___skip_top_level_164 : bool) }
+
+end
+
+(* Module giving axioms for type "stack_type" defined at stack.ads:46, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__stack_type___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__natural as Standard__natural
+ use        Standard__natural__rep as Standard__natural__rep
+ use        Stack__stack_type as Stack__stack_type
+
+ predicate dynamic_invariant [@inline] 
+   (temp___expr_171 : Stack__stack_type.stack_type) (temp___is_init_167 : bool) (temp___skip_constant_168 : bool) (temp___do_toplevel_169 : bool) (temp___do_typ_inv_170 : bool) =
+  true
+ val dynamic_invariant [@inline] 
+   (temp___expr_171 : Stack__stack_type.stack_type) (temp___is_init_167 : bool) (temp___skip_constant_168 : bool) (temp___do_toplevel_169 : bool) (temp___do_typ_inv_170 : bool) : bool
+  ensures { result <-> dynamic_invariant (temp___expr_171 : Stack__stack_type.stack_type) (temp___is_init_167 : bool) (temp___skip_constant_168 : bool) (temp___do_toplevel_169 : bool) (temp___do_typ_inv_170 : bool) }
+ 
+ predicate default_initial_assumption [@inline] 
+   (temp___expr_173 : Stack__stack_type.stack_type) (temp___skip_top_level_174 : bool) =
+  (if ((Stack__stack_type.stack__stack_type__size__pred temp___expr_173)) then (
+   ((Standard__natural__rep.to_rep temp___expr_173.Stack__stack_type.__split_fields.Stack__stack_type.rec__stack__stack_type__size) = (0 : int))) else true)
+ val default_initial_assumption [@inline] 
+   (temp___expr_173 : Stack__stack_type.stack_type) (temp___skip_top_level_174 : bool) : bool
+  ensures { result <-> default_initial_assumption (temp___expr_173 : Stack__stack_type.stack_type) (temp___skip_top_level_174 : bool) }
+
+end
+
+(* Module giving axioms for type "T16s" defined at stack.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__pop__L15s__T16s___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+
+(* Module giving axioms for type "T14s" defined at stack.ads:15, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Stack__push__L13s__T14s___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+
+
+end
+(* Module for defining the value of constant "max_size" defined at stack.ads:5, created in Gnat2Why.Decls.Translate_Constant_Value *)
+module Stack__max_size___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Stack__max_size as Stack__max_size
+
+ axiom max_size__def_axiom :
+  ((Stack__max_size.max_size ) = (512 : int))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "get_size" defined at stack.ads:39, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Stack__get_size___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__natural as Standard__natural
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__get_size as Stack__get_size
+
+ val get_size 
+   (stack : Stack__stack_type.stack_type) : int
+  requires {  true }
+  ensures {  ( ( (result = (Stack__get_size.get_size stack)) /\ (Stack__get_size.get_size__function_guard result stack) )/\(Standard__natural___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom get_size__post_axiom :
+  (forall stack   : Stack__stack_type.stack_type [(Stack__get_size.get_size stack)].
+   (let result = (Stack__get_size.get_size stack) in (
+    (Standard__natural.dynamic_property Standard__natural.first Standard__natural.last result)))
+  )
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "addition" defined at operation.ads:5, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Operation__addition___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+
+ val addition 
+   (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
+  requires {  ( ( [@GP_Pretty_Ada:2728] ((epsilon temp___result_179 : int.
+   ( (temp___result_179 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_179 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2736] ((epsilon temp___result_180 : int.
+   ( (temp___result_180 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_180 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:79603] ((epsilon temp___result_181 : int.
+   ( (temp___result_181 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_181 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_182 : int.
+   ( (temp___result_182 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_182 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
+  writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "subtraction" defined at operation.ads:9, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Operation__subtraction___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+
+ val subtraction 
+   (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
+  requires {  ( ( [@GP_Pretty_Ada:2787] ((epsilon temp___result_185 : int.
+   ( (temp___result_185 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_185 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2795] ((epsilon temp___result_186 : int.
+   ( (temp___result_186 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_186 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:79663] ((epsilon temp___result_187 : int.
+   ( (temp___result_187 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_187 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_188 : int.
+   ( (temp___result_188 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_188 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
+  writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "multiplication" defined at operation.ads:13, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Operation__multiplication___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+
+ val multiplication 
+   (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
+  requires {  ( ( [@GP_Pretty_Ada:2846] ((epsilon temp___result_191 : int.
+   ( (temp___result_191 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_191 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2854] ((epsilon temp___result_192 : int.
+   ( (temp___result_192 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_192 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:79723] ((epsilon temp___result_193 : int.
+   ( (temp___result_193 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_193 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_194 : int.
+   ( (temp___result_194 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_194 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
+  writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "division" defined at operation.ads:17, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Operation__division___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+
+ val division 
+   (s__split_fields : Stack__stack_type.__split_fields__ref) : unit
+  requires {  ( ( [@GP_Pretty_Ada:2905] ((epsilon temp___result_197 : int.
+   ( (temp___result_197 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_197 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2913] ((epsilon temp___result_198 : int.
+   ( (temp___result_198 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_198 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) }
+  ensures {  ( ( [@GP_Pretty_Ada:79783] ((epsilon temp___result_199 : int.
+   ( (temp___result_199 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_199 { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_200 : int.
+   ( (temp___result_200 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_200 (old { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( ( ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = s__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True True True True) ) /\ (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True True True True) ) ) }
+  reads {Operation__result.result__}
+  writes {Operation__i.i, Operation__j.j, Operation__result.result__, s__split_fields}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "get_element" defined at stack.ads:41, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Stack__get_element___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        Standard__integer as Standard__integer
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__get_element as Stack__get_element
+
+ val get_element 
+   (stack : Stack__stack_type.stack_type) (index : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Stack__get_element.get_element stack index)) /\ (Stack__get_element.get_element__function_guard result stack index) )/\(Standard__integer___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom get_element__post_axiom :
+  (forall stack   : Stack__stack_type.stack_type.
+  (forall index   : int [(Stack__get_element.get_element stack index)].
+   (let result = (Stack__get_element.get_element stack index) in (
+    (Standard__integer.dynamic_property Standard__integer.first Standard__integer.last result)))
+  ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "pop" defined at stack.ads:17, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Stack__pop___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Stack__get_element as Stack__get_element
+
+ val pop 
+   (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int__ref) : unit
+  requires {  ( ( [@GP_Pretty_Ada:3147] ((epsilon temp___result_204 : int.
+   ( (temp___result_204 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_204 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) > (0 : int)) ) /\ ( [@GP_Pretty_Ada:3153] ((epsilon temp___result_205 : int.
+   ( (temp___result_205 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_205 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) }
+  ensures {  ( ( ( ( [@GP_Pretty_Ada:3161] ((epsilon temp___result_206 : int.
+   ( (temp___result_206 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_206 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_207 : int.
+   ( (temp___result_207 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_207 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) /\ ( [@GP_Pretty_Ada:3171] (value.int__content = (epsilon temp___result_209 : int.
+   ( (temp___result_209 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_208 : int.
+    ( (temp___result_208 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_208 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )))) /\ (Stack__get_element.get_element__function_guard temp___result_209 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_208 : int.
+    ( (temp___result_208 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_208 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ))) ) ) /\ (forall i   [@name:I] [@model_trace:3181]  : int.
+   ( ( ((1 : int) <= i) /\ (i <= (512 : int)) ) -> ( [@GP_Pretty_Ada:3197] ((epsilon temp___result_210 : int.
+    ( (temp___result_210 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_210 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_211 : int.
+    ( (temp___result_211 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_211 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ ( (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) /\ (Standard__integer___axiom.dynamic_invariant value.int__content True True True True) ) ) }
+  writes {stack__split_fields, value}
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "push" defined at stack.ads:11, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Stack__push___axiom
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Stack__get_element as Stack__get_element
+
+ val push 
+   (stack__split_fields : Stack__stack_type.__split_fields__ref) (value : int) : unit
+  requires {  ( ( [@GP_Pretty_Ada:3054] ((epsilon temp___result_214 : int.
+   ( (temp___result_214 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_214 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) >= (0 : int)) ) /\ ( [@GP_Pretty_Ada:3060] ((epsilon temp___result_215 : int.
+   ( (temp___result_215 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_215 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) < (512 : int)) ) ) }
+  ensures {  ( ( ( ( [@GP_Pretty_Ada:3068] ((epsilon temp___result_216 : int.
+   ( (temp___result_216 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_216 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_217 : int.
+   ( (temp___result_217 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_217 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) )) + (1 : int))) ) /\ ( [@GP_Pretty_Ada:3078] (value = (epsilon temp___result_219 : int.
+   ( (temp___result_219 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_218 : int.
+    ( (temp___result_218 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_218 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) )))) /\ (Stack__get_element.get_element__function_guard temp___result_219 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } (epsilon temp___result_218 : int.
+    ( (temp___result_218 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_218 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content }) ))) ))) ) ) /\ (forall i   [@model_trace:3086] [@name:I]  : int.
+   ( ( ((1 : int) <= i) /\ (i <= (epsilon temp___result_220 : int.
+    ( (temp___result_220 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_220 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } )) ))) ) -> ( [@GP_Pretty_Ada:3106] ((epsilon temp___result_221 : int.
+    ( (temp___result_221 = (Stack__get_element.get_element { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i)) /\ (Stack__get_element.get_element__function_guard temp___result_221 { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } i) )) = (epsilon temp___result_222 : int.
+    ( (temp___result_222 = (Stack__get_element.get_element (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i)) /\ (Stack__get_element.get_element__function_guard temp___result_222 (old { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } ) i) ))) ) )) ) /\ (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = stack__split_fields.Stack__stack_type.__split_fields__content } True True True True) ) }
+  writes {stack__split_fields}
+
+end
+
+(* Module for checking absence of run-time errors and package initial condition on package elaboration of "operation" defined at operation.ads:3, created in Gnat2Why.Subprograms.Generate_VCs_For_Package_Elaboration *)
+module Operation__package_def
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__i___axiom as Operation__i___axiom
+ use        Operation__j___axiom as Operation__j___axiom
+ use        Operation__result___axiom as Operation__result___axiom
+
+ let def [#"operation.ads" 3 0 0][@GP_Subp:operation.ads:3] 
+   (__void_param : unit)
+  requires { [#"operation.ads" 3 0 0] true }
+   = [@vc:divergent]
+  ( ();
+  ([#"operation.ads" 3 0 0] ());
+  ([#"operation.ads" 5 0 0] ());
+  ([#"operation.ads" 7 0 0] ());
+  ([#"operation.ads" 6 0 0] ());
+  ([#"operation.ads" 9 0 0] ());
+  ([#"operation.ads" 11 0 0] ());
+  ([#"operation.ads" 10 0 0] ());
+  ([#"operation.ads" 13 0 0] ());
+  ([#"operation.ads" 15 0 0] ());
+  ([#"operation.ads" 14 0 0] ());
+  ([#"operation.ads" 17 0 0] ());
+  ([#"operation.ads" 19 0 0] ());
+  ([#"operation.ads" 18 0 0] ());
+  ();
+  ([#"operation.adb" 3 0 0] ());
+  ([#"operation.adb" 4 0 0] ( [#"operation.adb" 4 0 0] (Operation__i.i.int__content <- ( (0 : int) ));
+  [#"operation.adb" 4 0 0] assume { [#"operation.adb" 4 0 0] (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content True False True True) } ));
+  ([#"operation.adb" 5 0 0] ( [#"operation.adb" 5 0 0] (Operation__j.j.int__content <- ( (0 : int) ));
+  [#"operation.adb" 5 0 0] assume { [#"operation.adb" 5 0 0] (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content True False True True) } ));
+  ([#"operation.adb" 6 0 0] ( [#"operation.adb" 6 0 0] (Operation__result.result__.int__content <- ( (0 : int) ));
+  [#"operation.adb" 6 0 0] assume { [#"operation.adb" 6 0 0] (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) } ));
+  ([#"operation.adb" 8 0 0] ());
+  ([#"operation.adb" 24 0 0] ());
+  ([#"operation.adb" 39 0 0] ());
+  ([#"operation.adb" 58 0 0] ());
+  ();
+  ( [@GP_Sloc:operation.adb:79:1] ([#"operation.adb" 79 0 0] ()) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "addition" defined at operation.ads:5, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Operation__addition__subprogram_def
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Boolean as Boolean
+ use        Standard__integer as Standard__integer
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__addition__s as Operation__addition__s
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__i___axiom as Operation__i___axiom
+ use        Operation__j___axiom as Operation__j___axiom
+ use        Operation__result___axiom as Operation__result___axiom
+ use        Operation__addition__s___axiom as Operation__addition__s___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Stack__get_element___axiom as Stack__get_element___axiom
+ use        Stack__stack_data___axiom as Stack__stack_data___axiom
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+
+ let def [#"operation.ads" 5 0 0][@GP_Subp:operation.ads:5] 
+   (__void_param : unit)
+  requires { [#"operation.ads" 5 0 0] true }
+  ensures { [#"operation.ads" 5 0 0] ([#"operation.ads" 7 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@GP_Sloc:operation.ads:7:14] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:7:14:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:7] ( [@GP_Sloc:operation.ads:7:14] [@GP_Pretty_Ada:79603] ((epsilon temp___result_230 : int.
+   ( (temp___result_230 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_230 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_231 : int.
+   ( (temp___result_231 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_231 (old { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+   = [@vc:divergent]
+  ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:5 *)
+  ;
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
+   assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
+  () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:5 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram operation.ads:5 *)
+  ;
+   begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) >= (2 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) <= (512 : int)))) in (
+   ()))
+   in () end ;
+  () (* Assume Pre of the subprogram operation.ads:5 *)
+  ;
+   assume {  ( ( [@GP_Pretty_Ada:2728] ((epsilon temp___result_228 : int.
+   ( (temp___result_228 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_228 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2736] ((epsilon temp___result_229 : int.
+   ( (temp___result_229 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_229 { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) };
+   begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
+   ()))
+   in () end ;
+  (let temp___old_226 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  ensures { (result = { Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
+  in _f) in (
+   (  try
+    ( ();
+    ( [@GP_Sloc:operation.adb:10:19] ([#"operation.adb" 10 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:10:12] ([#"operation.adb" 10 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:10:12] ([#"operation.adb" 10 0 0] ( ([#"operation.adb" 10 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:10:12] [@comment:      Stack.Pop(S,I);            ^ operation.adb:10:12:VC_PRECONDITION] [@GP_Id:0] (Stack__pop___axiom.pop(Operation__addition__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:11:19] ([#"operation.adb" 11 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:11:12] ([#"operation.adb" 11 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:11:12] ([#"operation.adb" 11 0 0] ( ([#"operation.adb" 11 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,J);            ^ operation.adb:11:12:VC_PRECONDITION] [@GP_Id:1] [@GP_Sloc:operation.adb:11:12] (Stack__pop___axiom.pop(Operation__addition__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:15:11] ([#"operation.adb" 15 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:15:54] ([#"operation.adb" 15 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:15:7] ([#"operation.adb" 15 0 0] (if (( ([#"operation.adb" 15 0 0] [#"operation.adb" 15 0 0] (([@branch_id=2372] Main.spark__branch).bool__content <- ( (Boolean.orb(( (Operation__j.j.int__content < (1 : int)) && (Operation__i.i.int__content >= ([#"operation.adb" 15 0 0] ( [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:15:45] [@GP_Shape:if__or__andthen__cmp__sub] [@GP_Id:5] [@comment:      if (J < 1 and then I >= Integer'First - J) or (J > -1 and then I <= Integer'Last - J) then                                             ^ operation.adb:15:45:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(((( -2147483648) : int) - Operation__j.j.int__content))) ))) )) (( (Operation__j.j.int__content > (( -1) : int)) && (Operation__i.i.int__content <= ([#"operation.adb" 15 0 0] ( [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:15:88] [@comment:      if (J < 1 and then I >= Integer'First - J) or (J > -1 and then I <= Integer'Last - J) then                                                                                        ^ operation.adb:15:88:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__cmp__sub] [@GP_Id:6] (Standard__integer.range_check_(((2147483647 : int) - Operation__j.j.int__content))) ))) ))) )));
+    ( [@branch_id=2372] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:16:10] ([#"operation.adb" 16 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:16:20] ([#"operation.adb" 16 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:16:24] ([#"operation.adb" 16 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:16:17] ([#"operation.adb" 16 0 0] [#"operation.adb" 16 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 16 0 0] ( [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:16:22] [@comment:         Result := I + J;                      ^ operation.adb:16:22:VC_OVERFLOW_CHECK] [@GP_Id:2] [@GP_Shape:if__result_assign__add] (Standard__integer.range_check_((Operation__i.i.int__content + Operation__j.j.int__content))) )) ))) );
+     ( [@GP_Sloc:operation.adb:17:24] ([#"operation.adb" 17 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:17:15] ([#"operation.adb" 17 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:17:15] ([#"operation.adb" 17 0 0] ( ([#"operation.adb" 17 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:operation.adb:17:15] [@vc:annotation] [@GP_Shape:if__call_push] [@GP_Id:3] [@comment:         Stack.Push(S, Result);               ^ operation.adb:17:15:VC_PRECONDITION] (Stack__push___axiom.push(Operation__addition__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+     ( ();
+     ( [@GP_Sloc:operation.adb:19:15] ([#"operation.adb" 19 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:19:15] ([#"operation.adb" 19 0 0] ( ([#"operation.adb" 19 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:if__call_push] [@GP_Id:4] [@comment:         Stack.Push(S, 0);               ^ operation.adb:19:15:VC_PRECONDITION] [@GP_Sloc:operation.adb:19:15] (Stack__push___axiom.push(Operation__addition__s.s__split_fields) ((0 : int))) )) )) ) )))) );
+     raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__addition__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_226)) - (1 : int))) in (
+    ()))
+    in () end  )))
+   )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "subtraction" defined at operation.ads:9, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Operation__subtraction__subprogram_def
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Boolean as Boolean
+ use        Standard__integer as Standard__integer
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Operation__subtraction__s as Operation__subtraction__s
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__i___axiom as Operation__i___axiom
+ use        Operation__j___axiom as Operation__j___axiom
+ use        Operation__result___axiom as Operation__result___axiom
+ use        Operation__subtraction__s___axiom as Operation__subtraction__s___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Stack__get_element___axiom as Stack__get_element___axiom
+ use        Stack__stack_data___axiom as Stack__stack_data___axiom
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+
+ let def [#"operation.ads" 9 0 0][@GP_Subp:operation.ads:9] 
+   (__void_param : unit)
+  requires { [#"operation.ads" 9 0 0] true }
+  ensures { [#"operation.ads" 9 0 0] ([#"operation.ads" 11 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Id:15] [@GP_Shape:pragargs__cmp] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:11:14:VC_POSTCONDITION] [@GP_Sloc:operation.ads:11:14] [@model_vc_post] ( [@GP_Sloc:operation.ads:11:14] [@GP_Pretty_Ada:79663] ((epsilon temp___result_237 : int.
+   ( (temp___result_237 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_237 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_238 : int.
+   ( (temp___result_238 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_238 (old { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+   = [@vc:divergent]
+  ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:9 *)
+  ;
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
+   assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
+  () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:9 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram operation.ads:9 *)
+  ;
+   begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) >= (2 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) <= (512 : int)))) in (
+   ()))
+   in () end ;
+  () (* Assume Pre of the subprogram operation.ads:9 *)
+  ;
+   assume {  ( ( [@GP_Pretty_Ada:2787] ((epsilon temp___result_235 : int.
+   ( (temp___result_235 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_235 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2795] ((epsilon temp___result_236 : int.
+   ( (temp___result_236 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_236 { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) };
+   begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
+   ()))
+   in () end ;
+  (let temp___old_233 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  ensures { (result = { Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
+  in _f) in (
+   (  try
+    ( ();
+    ( [@GP_Sloc:operation.adb:26:19] ([#"operation.adb" 26 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:26:12] ([#"operation.adb" 26 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:26:12] ([#"operation.adb" 26 0 0] ( ([#"operation.adb" 26 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@comment:      Stack.Pop(S,I);            ^ operation.adb:26:12:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:operation.adb:26:12] [@GP_Id:8] (Stack__pop___axiom.pop(Operation__subtraction__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:27:19] ([#"operation.adb" 27 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:27:12] ([#"operation.adb" 27 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:27:12] ([#"operation.adb" 27 0 0] ( ([#"operation.adb" 27 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@GP_Sloc:operation.adb:27:12] [@vc:annotation] [@comment:      Stack.Pop(S,J);            ^ operation.adb:27:12:VC_PRECONDITION] [@GP_Id:9] (Stack__pop___axiom.pop(Operation__subtraction__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:31:11] ([#"operation.adb" 31 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:31:55] ([#"operation.adb" 31 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:31:7] ([#"operation.adb" 31 0 0] (if (( ([#"operation.adb" 31 0 0] [#"operation.adb" 31 0 0] (([@branch_id=2448] Main.spark__branch).bool__content <- ( (Boolean.orb(( (Operation__j.j.int__content > (( -1) : int)) && (Operation__i.i.int__content >= ([#"operation.adb" 31 0 0] ( [@GP_Id:13] [@GP_Sloc:operation.adb:31:46] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__cmp__add] [@comment:      if (J > -1 and then I >= Integer'First + J) or (J < 1 and then I <= Integer'Last + J) then                                              ^ operation.adb:31:46:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(((( -2147483648) : int) + Operation__j.j.int__content))) ))) )) (( (Operation__j.j.int__content < (1 : int)) && (Operation__i.i.int__content <= ([#"operation.adb" 31 0 0] ( [@GP_Id:14] [@GP_Sloc:operation.adb:31:88] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__cmp__add] [@comment:      if (J > -1 and then I >= Integer'First + J) or (J < 1 and then I <= Integer'Last + J) then                                                                                        ^ operation.adb:31:88:VC_OVERFLOW_CHECK] (Standard__integer.range_check_(((2147483647 : int) + Operation__j.j.int__content))) ))) ))) )));
+    ( [@branch_id=2448] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:32:10] ([#"operation.adb" 32 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:32:20] ([#"operation.adb" 32 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:32:24] ([#"operation.adb" 32 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:32:17] ([#"operation.adb" 32 0 0] [#"operation.adb" 32 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 32 0 0] ( [@comment:         Result := I - J;                      ^ operation.adb:32:22:VC_OVERFLOW_CHECK] [@GP_Id:10] [@GP_Sloc:operation.adb:32:22] [@GP_Shape:if__result_assign__sub] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] (Standard__integer.range_check_((Operation__i.i.int__content - Operation__j.j.int__content))) )) ))) );
+     ( [@GP_Sloc:operation.adb:33:24] ([#"operation.adb" 33 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:33:15] ([#"operation.adb" 33 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:33:15] ([#"operation.adb" 33 0 0] ( ([#"operation.adb" 33 0 0] ( [@GP_Id:11] [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:if__call_push] [@GP_Sloc:operation.adb:33:15] [@comment:         Stack.Push(S, Result);                 ^ operation.adb:33:15:VC_PRECONDITION] (Stack__push___axiom.push(Operation__subtraction__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+     ( ();
+     ( [@GP_Sloc:operation.adb:35:15] ([#"operation.adb" 35 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:35:15] ([#"operation.adb" 35 0 0] ( ([#"operation.adb" 35 0 0] ( [@GP_Id:12] [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Sloc:operation.adb:35:15] [@GP_Shape:if__call_push] [@comment:         Stack.Push(S, 0);               ^ operation.adb:35:15:VC_PRECONDITION] (Stack__push___axiom.push(Operation__subtraction__s.s__split_fields) ((0 : int))) )) )) ) )))) );
+     raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__subtraction__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_233)) - (1 : int))) in (
+    ()))
+    in () end  )))
+   )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "multiplication" defined at operation.ads:13, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Operation__multiplication__subprogram_def
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Int_Division as Int_Division
+ use        "_gnatprove_standard".Boolean as Boolean
+ use        Standard__integer as Standard__integer
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Operation__multiplication__s as Operation__multiplication__s
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__i___axiom as Operation__i___axiom
+ use        Operation__j___axiom as Operation__j___axiom
+ use        Operation__result___axiom as Operation__result___axiom
+ use        Operation__multiplication__s___axiom as Operation__multiplication__s___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Stack__get_element___axiom as Stack__get_element___axiom
+ use        Stack__stack_data___axiom as Stack__stack_data___axiom
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+
+ let def [#"operation.ads" 13 0 0][@GP_Subp:operation.ads:13] 
+   (__void_param : unit)
+  requires { [#"operation.ads" 13 0 0] true }
+  ensures { [#"operation.ads" 13 0 0] ([#"operation.ads" 15 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@GP_Sloc:operation.ads:15:14] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:15:14:VC_POSTCONDITION] [@model_vc_post] [@GP_Id:27] ( [@GP_Sloc:operation.ads:15:14] [@GP_Pretty_Ada:79723] ((epsilon temp___result_244 : int.
+   ( (temp___result_244 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_244 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_245 : int.
+   ( (temp___result_245 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_245 (old { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+   = [@vc:divergent]
+  ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:13 *)
+  ;
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
+   assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
+  () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:13 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram operation.ads:13 *)
+  ;
+   begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) >= (2 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) <= (512 : int)))) in (
+   ()))
+   in () end ;
+  () (* Assume Pre of the subprogram operation.ads:13 *)
+  ;
+   assume {  ( ( [@GP_Pretty_Ada:2846] ((epsilon temp___result_242 : int.
+   ( (temp___result_242 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_242 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2854] ((epsilon temp___result_243 : int.
+   ( (temp___result_243 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_243 { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) };
+   begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
+   ()))
+   in () end ;
+  (let temp___old_240 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  ensures { (result = { Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
+  in _f) in (
+   (  try
+    ( ();
+    ( [@GP_Sloc:operation.adb:41:19] ([#"operation.adb" 41 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:41:12] ([#"operation.adb" 41 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:41:12] ([#"operation.adb" 41 0 0] ( ([#"operation.adb" 41 0 0] ( [@GP_Sloc:operation.adb:41:12] [@GP_Reason:VC_PRECONDITION] [@GP_Id:16] [@comment:      Stack.Pop(S,I);            ^ operation.adb:41:12:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] (Stack__pop___axiom.pop(Operation__multiplication__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:42:19] ([#"operation.adb" 42 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:42:12] ([#"operation.adb" 42 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:42:12] ([#"operation.adb" 42 0 0] ( ([#"operation.adb" 42 0 0] ( [@comment:      Stack.Pop(S,J);            ^ operation.adb:42:12:VC_PRECONDITION] [@GP_Reason:VC_PRECONDITION] [@GP_Id:17] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:42:12] (Stack__pop___axiom.pop(Operation__multiplication__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:46:11] ([#"operation.adb" 46 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:47:10] ([#"operation.adb" 47 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:47:21] ([#"operation.adb" 47 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:48:10] ([#"operation.adb" 48 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:49:10] ([#"operation.adb" 49 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:46:7] ([#"operation.adb" 46 0 0] (if (( ([#"operation.adb" 46 0 0] [#"operation.adb" 46 0 0] (([@branch_id=2524] Main.spark__branch).bool__content <- ( (Boolean.orb((Boolean.orb((Boolean.orb(( (Operation__j.j.int__content < (( -1) : int)) && (Boolean.andb((Operation__i.i.int__content <= ([#"operation.adb" 46 0 0] ( [@GP_Sloc:operation.adb:46:47] [@vc:annotation] [@comment:      if (J < -1 and then (I <= Integer'First / J and I >= Integer'Last / J)) or                                                ^ operation.adb:46:47:VC_OVERFLOW_CHECK] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__or__or__andthen__and__cmp__div] [@GP_Id:22] (Standard__integer.range_check_(([#"operation.adb" 46 0 0] ( [@GP_Sloc:operation.adb:46:47] [@comment:      if (J < -1 and then (I <= Integer'First / J and I >= Integer'Last / J)) or                                                ^ operation.adb:46:47:VC_DIVISION_CHECK] [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Shape:if__or__or__or__andthen__and__cmp__div] [@GP_Id:21] (Int_Division.div_((( -2147483648) : int)) (Operation__j.j.int__content)) )))) )))) ((Operation__i.i.int__content >= ([#"operation.adb" 46 0 0] ( [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Sloc:operation.adb:46:73] [@GP_Shape:if__or__or__or__andthen__and__cmp__div] [@comment:      if (J < -1 and then (I <= Integer'First / J and I >= Integer'Last / J)) or                                                                          ^ operation.adb:46:73:VC_DIVISION_CHECK] [@GP_Id:23] (Int_Division.div_((2147483647 : int)) (Operation__j.j.int__content)) ))))) )) ((Boolean.andb((Operation__j.j.int__content = (( -1) : int))) ((Operation__i.i.int__content <> (( -2147483648) : int))))))) ((Operation__j.j.int__content = (0 : int))))) (( (Operation__j.j.int__content > (0 : int)) && (Boolean.andb((Operation__i.i.int__content >= ([#"operation.adb" 49 0 0] ( [@comment:        (J > 0 and then (I >= Integer'First / J and I <= Integer'Last / J)) then                                             ^ operation.adb:49:45:VC_OVERFLOW_CHECK] [@vc:annotation] [@GP_Sloc:operation.adb:49:45] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Shape:if__or__andthen__and__cmp__div] [@GP_Id:25] (Standard__integer.range_check_(([#"operation.adb" 49 0 0] ( [@comment:        (J > 0 and then (I >= Integer'First / J and I <= Integer'Last / J)) then                                             ^ operation.adb:49:45:VC_DIVISION_CHECK] [@vc:annotation] [@GP_Sloc:operation.adb:49:45] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Shape:if__or__andthen__and__cmp__div] [@GP_Id:24] (Int_Division.div_((( -2147483648) : int)) (Operation__j.j.int__content)) )))) )))) ((Operation__i.i.int__content <= ([#"operation.adb" 49 0 0] ( [@vc:annotation] [@comment:        (J > 0 and then (I >= Integer'First / J and I <= Integer'Last / J)) then                                                                       ^ operation.adb:49:71:VC_DIVISION_CHECK] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Sloc:operation.adb:49:71] [@GP_Shape:if__or__andthen__and__cmp__div] [@GP_Id:26] (Int_Division.div_((2147483647 : int)) (Operation__j.j.int__content)) ))))) ))) )));
+    ( [@branch_id=2524] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:50:10] ([#"operation.adb" 50 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:50:20] ([#"operation.adb" 50 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:50:24] ([#"operation.adb" 50 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:50:17] ([#"operation.adb" 50 0 0] [#"operation.adb" 50 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 50 0 0] ( [@GP_Id:18] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Sloc:operation.adb:50:22] [@comment:         Result := I * J;                      ^ operation.adb:50:22:VC_OVERFLOW_CHECK] [@GP_Shape:if__result_assign__mult] (Standard__integer.range_check_((Operation__i.i.int__content * Operation__j.j.int__content))) )) ))) );
+     ( [@GP_Sloc:operation.adb:51:23] ([#"operation.adb" 51 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:51:15] ([#"operation.adb" 51 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:51:15] ([#"operation.adb" 51 0 0] ( ([#"operation.adb" 51 0 0] ( [@comment:         Stack.push(S,Result);               ^ operation.adb:51:15:VC_PRECONDITION] [@GP_Reason:VC_PRECONDITION] [@GP_Sloc:operation.adb:51:15] [@GP_Id:19] [@vc:annotation] [@GP_Shape:if__call_push] (Stack__push___axiom.push(Operation__multiplication__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+     ( ();
+     ( [@GP_Sloc:operation.adb:53:15] ([#"operation.adb" 53 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:53:15] ([#"operation.adb" 53 0 0] ( ([#"operation.adb" 53 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@comment:         Stack.Push(S, 0);               ^ operation.adb:53:15:VC_PRECONDITION] [@GP_Shape:if__call_push] [@GP_Id:20] [@GP_Sloc:operation.adb:53:15] (Stack__push___axiom.push(Operation__multiplication__s.s__split_fields) ((0 : int))) )) )) ) )))) );
+     raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__multiplication__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_240)) - (1 : int))) in (
+    ()))
+    in () end  )))
+   )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "division" defined at operation.ads:17, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Operation__division__subprogram_def
+ use        "_gnatprove_standard".Main
+ use        "int".Int
+ use        "int".Int
+ use        "_gnatprove_standard".Main as Main
+ use        "_gnatprove_standard".Int_Division as Int_Division
+ use        "_gnatprove_standard".Boolean as Boolean
+ use        Standard__integer as Standard__integer
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Stack__stack_type as Stack__stack_type
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+ use        Stack__get_size as Stack__get_size
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Operation__division__s as Operation__division__s
+ use        Operation__i as Operation__i
+ use        Operation__j as Operation__j
+ use        Operation__result as Operation__result
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Standard__natural___axiom as Standard__natural___axiom
+ use        Standard__integer___axiom as Standard__integer___axiom
+ use        Operation__i___axiom as Operation__i___axiom
+ use        Operation__j___axiom as Operation__j___axiom
+ use        Operation__result___axiom as Operation__result___axiom
+ use        Operation__division__s___axiom as Operation__division__s___axiom
+ use        Stack__push___axiom as Stack__push___axiom
+ use        Stack__pop___axiom as Stack__pop___axiom
+ use        Stack__get_size___axiom as Stack__get_size___axiom
+ use        Stack__get_element___axiom as Stack__get_element___axiom
+ use        Stack__stack_data___axiom as Stack__stack_data___axiom
+ use        Stack__stack_type___axiom as Stack__stack_type___axiom
+
+ let def [#"operation.ads" 17 0 0][@GP_Subp:operation.ads:17] 
+   (__void_param : unit)
+  requires { [#"operation.ads" 17 0 0] true }
+  ensures { [#"operation.ads" 17 0 0] ([#"operation.ads" 19 0 0] ( [@GP_Reason:VC_POSTCONDITION] [@GP_Shape:pragargs__cmp] [@comment:     Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));              ^ operation.ads:19:14:VC_POSTCONDITION] [@GP_Id:35] [@model_vc_post] [@GP_Sloc:operation.ads:19:14] ( [@GP_Pretty_Ada:79783] [@GP_Sloc:operation.ads:19:14] ((epsilon temp___result_251 : int.
+   ( (temp___result_251 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_251 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) = ((epsilon temp___result_252 : int.
+   ( (temp___result_252 = (Stack__get_size.get_size (old { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } ))) /\ (Stack__get_size.get_size__function_guard temp___result_252 (old { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } )) )) - (1 : int))) ) )) }
+   = [@vc:divergent]
+  ( () (* Assume dynamic invariants of inputs of the subprogram operation.ads:17 *)
+  ;
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__i.i.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__j.j.int__content False False True True) };
+   assume {  (Standard__integer___axiom.dynamic_invariant Operation__result.result__.int__content True False True True) };
+   assume {  (Stack__stack_type___axiom.dynamic_invariant { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } True False True True) };
+  () (* Declarations introduced by the compiler at the beginning of the subprogram operation.ads:17 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram operation.ads:17 *)
+  ;
+   begin ensures {true} let _ = (let _ = (Boolean.andb(((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) >= (2 : int))) (((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) <= (512 : int)))) in (
+   ()))
+   in () end ;
+  () (* Assume Pre of the subprogram operation.ads:17 *)
+  ;
+   assume {  ( ( [@GP_Pretty_Ada:2905] ((epsilon temp___result_249 : int.
+   ( (temp___result_249 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_249 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) >= (2 : int)) ) /\ ( [@GP_Pretty_Ada:2913] ((epsilon temp___result_250 : int.
+   ( (temp___result_250 = (Stack__get_size.get_size { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) /\ (Stack__get_size.get_size__function_guard temp___result_250 { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content }) )) <= (512 : int)) ) ) };
+   begin ensures {true} let _ = (let _ = { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content } in (
+   ()))
+   in () end ;
+  (let temp___old_247 [@mlw:proxy_symbol] [@introduced] =  (val _f : Stack__stack_type.stack_type
+  ensures { (result = { Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })} 
+  in _f) in (
+   (  try
+    ( ();
+    ( [@GP_Sloc:operation.adb:60:19] ([#"operation.adb" 60 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:60:12] ([#"operation.adb" 60 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:60:12] ([#"operation.adb" 60 0 0] ( ([#"operation.adb" 60 0 0] ( [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@GP_Sloc:operation.adb:60:12] [@GP_Id:28] [@comment:      Stack.Pop(S,I);            ^ operation.adb:60:12:VC_PRECONDITION] (Stack__pop___axiom.pop(Operation__division__s.s__split_fields) (Operation__i.i)) )) )) );
+    ( [@GP_Sloc:operation.adb:61:19] ([#"operation.adb" 61 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:61:12] ([#"operation.adb" 61 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:61:12] ([#"operation.adb" 61 0 0] ( ([#"operation.adb" 61 0 0] ( [@GP_Sloc:operation.adb:61:12] [@GP_Reason:VC_PRECONDITION] [@GP_Shape:call_pop] [@vc:annotation] [@comment:      Stack.Pop(S,J);            ^ operation.adb:61:12:VC_PRECONDITION] [@GP_Id:29] (Stack__pop___axiom.pop(Operation__division__s.s__split_fields) (Operation__j.j)) )) )) );
+    ( [@GP_Sloc:operation.adb:65:10] ([#"operation.adb" 65 0 0] ()) );
+    ( [@GP_Sloc:operation.adb:65:7] ([#"operation.adb" 65 0 0] (if (( ([#"operation.adb" 65 0 0] [#"operation.adb" 65 0 0] (([@branch_id=2631] Main.spark__branch).bool__content <- ( (Operation__j.j.int__content <> (0 : int)) )));
+    ( [@branch_id=2631] Main.spark__branch ).bool__content )) then (
+     ( ();
+     ( [@GP_Sloc:operation.adb:68:14] ([#"operation.adb" 68 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:68:27] ([#"operation.adb" 68 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:68:38] ([#"operation.adb" 68 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:68:10] ([#"operation.adb" 68 0 0] (if (( ([#"operation.adb" 68 0 0] [#"operation.adb" 68 0 0] (([@branch_id=2635] Main.spark__branch).bool__content <- ( (Boolean.orb((Operation__j.j.int__content <> (( -1) : int))) ((Boolean.andb((Operation__j.j.int__content = (( -1) : int))) ((Operation__i.i.int__content <> (( -2147483648) : int)))))) )));
+     ( [@branch_id=2635] Main.spark__branch ).bool__content )) then (
+      ( ();
+      ( [@GP_Sloc:operation.adb:69:13] ([#"operation.adb" 69 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:69:23] ([#"operation.adb" 69 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:69:27] ([#"operation.adb" 69 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:69:20] ([#"operation.adb" 69 0 0] [#"operation.adb" 69 0 0] (Operation__result.result__.int__content <- ( ([#"operation.adb" 69 0 0] ( [@GP_Sloc:operation.adb:69:25] [@vc:annotation] [@GP_Reason:VC_OVERFLOW_CHECK] [@GP_Id:31] [@comment:            Result := I / J;                         ^ operation.adb:69:25:VC_OVERFLOW_CHECK] [@GP_Shape:if__if__result_assign__div] (Standard__integer.range_check_(([#"operation.adb" 69 0 0] ( [@GP_Sloc:operation.adb:69:25] [@vc:annotation] [@GP_Reason:VC_DIVISION_CHECK] [@GP_Id:30] [@comment:            Result := I / J;                         ^ operation.adb:69:25:VC_DIVISION_CHECK] [@GP_Shape:if__if__result_assign__div] (Int_Division.div_(Operation__i.i.int__content) (Operation__j.j.int__content)) )))) )) ))) );
+      ( [@GP_Sloc:operation.adb:70:26] ([#"operation.adb" 70 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:70:18] ([#"operation.adb" 70 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:70:18] ([#"operation.adb" 70 0 0] ( ([#"operation.adb" 70 0 0] ( [@comment:            Stack.push(S,Result);                    ^ operation.adb:70:18:VC_PRECONDITION] [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:if__if__call_push] [@GP_Id:32] [@GP_Sloc:operation.adb:70:18] (Stack__push___axiom.push(Operation__division__s.s__split_fields) (Operation__result.result__.int__content)) )) )) ) )) else (
+      ( ();
+      ( [@GP_Sloc:operation.adb:72:18] ([#"operation.adb" 72 0 0] ()) );
+      ( [@GP_Sloc:operation.adb:72:18] ([#"operation.adb" 72 0 0] ( ([#"operation.adb" 72 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Shape:if__if__call_push] [@GP_Id:33] [@comment:            Stack.Push(S, 0);                  ^ operation.adb:72:18:VC_PRECONDITION] [@GP_Sloc:operation.adb:72:18] (Stack__push___axiom.push(Operation__division__s.s__split_fields) ((0 : int))) )) )) ) )))) ) )) else (
+     ( ();
+     ( [@GP_Sloc:operation.adb:75:15] ([#"operation.adb" 75 0 0] ()) );
+     ( [@GP_Sloc:operation.adb:75:15] ([#"operation.adb" 75 0 0] ( ([#"operation.adb" 75 0 0] ( [@GP_Reason:VC_PRECONDITION] [@vc:annotation] [@GP_Id:34] [@GP_Shape:if__call_push] [@comment:         Stack.Push(S, 0);               ^ operation.adb:75:15:VC_PRECONDITION] [@GP_Sloc:operation.adb:75:15] (Stack__push___axiom.push(Operation__division__s.s__split_fields) ((0 : int))) )) )) ) )))) );
+     raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+    begin ensures {true} let _ = (let _ = ((Stack__get_size___axiom.get_size({ Stack__stack_type.__split_fields = Operation__division__s.s__split_fields.Stack__stack_type.__split_fields__content })) = ((Stack__get_size___axiom.get_size(temp___old_247)) - (1 : int))) in (
+    ()))
+    in () end  )))
+   )
+end

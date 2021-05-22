@@ -1,0 +1,26 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/Users/wendy/Ada/team/assignment3/default.gpr
+20210521015343
+[BOUND OBJECT FILES]
+/Users/wendy/Ada/team/assignment3/obj/mycommandline.o
+/Users/wendy/Ada/team/assignment3/obj/mystring.o
+/Users/wendy/Ada/team/assignment3/obj/mystringtokeniser.o
+/Users/wendy/Ada/team/assignment3/obj/pin.o
+/Users/wendy/Ada/team/assignment3/obj/passwordmanager.o
+/Users/wendy/Ada/team/assignment3/obj/stringtointeger.o
+/Users/wendy/Ada/team/assignment3/obj/variablestore.o
+/Users/wendy/Ada/team/assignment3/obj/stack.o
+/Users/wendy/Ada/team/assignment3/obj/operation.o
+/Users/wendy/Ada/team/assignment3/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/Users/wendy/Ada/team/assignment3/obj/
+-L/Users/wendy/Ada/team/assignment3/obj/
+-L/users/wendy/opt/gnat/2019/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/
+-static
+/users/wendy/opt/gnat/2019/lib/gcc/x86_64-apple-darwin17.7.0/8.3.1/adalib/libgnat.a
