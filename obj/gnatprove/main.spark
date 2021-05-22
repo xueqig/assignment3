@@ -354,7 +354,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 280,
-              "time": 0
+              "time": 4.30000000000000E-01
             }
           },
           "transformations": {
@@ -365,7 +365,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 280,
-              "time": 0
+              "time": 4.20000000000000E-01
             }
           },
           "transformations": {
@@ -376,7 +376,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 92,
-              "time": 0
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -391,7 +391,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 4.30000007152557E-01
         }
       }
     },
@@ -416,7 +416,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 101,
-              "time": 0
+              "time": 3.80000000000000E-01
             }
           },
           "transformations": {
@@ -427,7 +427,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 101,
-              "time": 0
+              "time": 3.80000000000000E-01
             }
           },
           "transformations": {
@@ -438,7 +438,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 49,
-              "time": 0
+              "time": 3.50000000000000E-01
             }
           },
           "transformations": {
@@ -453,7 +453,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.79999995231628E-01
         }
       }
     },
@@ -478,7 +478,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 102,
-              "time": 0
+              "time": 3.60000000000000E-01
             }
           },
           "transformations": {
@@ -493,7 +493,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.60000014305115E-01
         }
       }
     },
@@ -518,7 +518,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.00000000000000E-01
             }
           },
           "transformations": {
@@ -533,7 +533,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.00000011920929E-01
         }
       }
     },
@@ -558,7 +558,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -569,7 +569,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -580,7 +580,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.40000000000000E-01
             }
           },
           "transformations": {
@@ -591,7 +591,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -606,7 +606,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.10000002384186E-01
         }
       }
     },
@@ -631,7 +631,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -642,7 +642,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -657,7 +657,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.10000002384186E-01
         }
       }
     },
@@ -682,7 +682,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 0
+              "time": 3.60000000000000E-01
             }
           },
           "transformations": {
@@ -693,7 +693,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.20000000000000E-01
             }
           },
           "transformations": {
@@ -704,7 +704,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 0
+              "time": 3.80000000000000E-01
             }
           },
           "transformations": {
@@ -719,7 +719,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.79999995231628E-01
         }
       }
     },
@@ -744,7 +744,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.50000000000000E-01
             }
           },
           "transformations": {
@@ -755,7 +755,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -770,7 +770,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.59999990463257E-01
         }
       }
     },
@@ -795,7 +795,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -806,7 +806,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -821,7 +821,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -846,7 +846,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -857,7 +857,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -872,7 +872,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -897,7 +897,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -908,7 +908,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -923,7 +923,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.80000001192093E-01
         }
       }
     },
@@ -948,7 +948,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -959,7 +959,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -974,7 +974,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -999,7 +999,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -1010,7 +1010,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -1025,7 +1025,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -1050,7 +1050,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 328,
-              "time": 0
+              "time": 7.20000000000000E-01
             }
           },
           "transformations": {
@@ -1061,7 +1061,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 328,
-              "time": 0
+              "time": 7.20000000000000E-01
             }
           },
           "transformations": {
@@ -1072,7 +1072,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 0
+              "time": 5.80000000000000E-01
             }
           },
           "transformations": {
@@ -1087,7 +1087,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 7.20000028610229E-01
         }
       }
     },
@@ -1112,7 +1112,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -1123,7 +1123,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.00000000000000E-01
             }
           },
           "transformations": {
@@ -1138,7 +1138,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.00000011920929E-01
         }
       }
     },
@@ -1162,8 +1162,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 1205,
-              "time": 0
+              "steps": 995,
+              "time": 9.40000000000000E-01
             }
           },
           "transformations": {
@@ -1178,7 +1178,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 9.39999997615814E-01
         }
       }
     },
@@ -1203,7 +1203,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 53,
-              "time": 0
+              "time": 5.70000000000000E-01
             }
           },
           "transformations": {
@@ -1218,7 +1218,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.69999992847443E-01
         }
       }
     },
@@ -1243,7 +1243,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 313,
-              "time": 0
+              "time": 6.80000000000000E-01
             }
           },
           "transformations": {
@@ -1258,7 +1258,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.80000007152557E-01
         }
       }
     },
@@ -1283,7 +1283,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -1298,7 +1298,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -1323,7 +1323,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -1338,7 +1338,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -1363,7 +1363,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 272,
-              "time": 0
+              "time": 6.20000000000000E-01
             }
           },
           "transformations": {
@@ -1374,7 +1374,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 272,
-              "time": 0
+              "time": 6.20000000000000E-01
             }
           },
           "transformations": {
@@ -1385,7 +1385,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 0
+              "time": 5.20000000000000E-01
             }
           },
           "transformations": {
@@ -1400,7 +1400,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.20000004768372E-01
         }
       }
     },
@@ -1425,7 +1425,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.50000000000000E-01
             }
           },
           "transformations": {
@@ -1436,7 +1436,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.00000000000000E-01
             }
           },
           "transformations": {
@@ -1451,7 +1451,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.50000000000000E-01
         }
       }
     },
@@ -1475,8 +1475,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 868,
-              "time": 0
+              "steps": 753,
+              "time": 6.40000000000000E-01
             }
           },
           "transformations": {
@@ -1491,7 +1491,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.39999985694885E-01
         }
       }
     },
@@ -1516,7 +1516,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 780,
-              "time": 0
+              "time": 6.00000000000000E-01
             }
           },
           "transformations": {
@@ -1531,7 +1531,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.00000023841858E-01
         }
       }
     },
@@ -1555,8 +1555,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 669,
-              "time": 0
+              "steps": 770,
+              "time": 6.00000000000000E-01
             }
           },
           "transformations": {
@@ -1571,7 +1571,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.00000023841858E-01
         }
       }
     },
@@ -1595,8 +1595,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 834,
-              "time": 0
+              "steps": 838,
+              "time": 6.10000000000000E-01
             }
           },
           "transformations": {
@@ -1607,7 +1607,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 768,
-              "time": 0
+              "time": 6.00000000000000E-01
             }
           },
           "transformations": {
@@ -1622,7 +1622,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.10000014305115E-01
         }
       }
     },
@@ -1646,8 +1646,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 577,
-              "time": 0
+              "steps": 576,
+              "time": 5.00000000000000E-01
             }
           },
           "transformations": {
@@ -1662,7 +1662,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.00000000000000E-01
         }
       }
     },
@@ -1686,8 +1686,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 562,
-              "time": 0
+              "steps": 563,
+              "time": 4.80000000000000E-01
             }
           },
           "transformations": {
@@ -1702,7 +1702,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 4.79999989271164E-01
         }
       }
     },
@@ -1726,8 +1726,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 562,
-              "time": 0
+              "steps": 563,
+              "time": 5.10000000000000E-01
             }
           },
           "transformations": {
@@ -1738,7 +1738,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 560,
-              "time": 0
+              "time": 5.00000000000000E-01
             }
           },
           "transformations": {
@@ -1753,7 +1753,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.09999990463257E-01
         }
       }
     },
@@ -6988,14 +6988,14 @@
     }
   ],
   "timings": {
-    "marking": 4.17499989271164E-03,
-    "globals (basic)": 9.70800034701824E-03,
-    "globals/properties (advanced)": 2.31699999421835E-02,
-    "flow analysis": 1.39741003513336E-01,
-    "codepeer results": 7.99999997980194E-06,
-    "init_why_sections": 7.13000015821308E-04,
-    "translation of standard": 4.14199987426400E-03,
-    "translation of compilation unit": 2.11079001426697E-01,
-    "proof": 2.61391401290894E+00
+    "marking": 4.54699993133545E-03,
+    "globals (basic)": 3.30310016870499E-02,
+    "globals/properties (advanced)": 2.58319992572069E-02,
+    "flow analysis": 1.46736994385719E-01,
+    "codepeer results": 9.99999974737875E-06,
+    "init_why_sections": 8.20000015664846E-04,
+    "translation of standard": 4.21599997207522E-03,
+    "translation of compilation unit": 2.22360000014305E-01,
+    "proof": 1.06946411132813E+01
   }
 }

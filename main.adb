@@ -51,7 +51,7 @@ begin
             PIN2 := PIN.From_String(P);
             -- check if the PINs are equal
             if PIN."=" (PIN1, PIN2) then
-               isLocked := False;
+               isLocked := True;
             else 
             Put_Line ("Invalid Master Password!");
             return;

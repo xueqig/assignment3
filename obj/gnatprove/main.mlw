@@ -13051,7 +13051,7 @@ module Main__subprogram_def
      ( [@branch_id=2518] Main.spark__branch ).bool__content )) then (
       ( ();
       ( [@GP_Sloc:main.adb:54:16] ([#"main.adb" 54 0 0] ()) );
-      ( [@GP_Sloc:main.adb:54:25] ([#"main.adb" 54 0 0] [#"main.adb" 54 0 0] (Main__islocked.islocked.bool__content <- ( (Boolean.of_int((0 : int))) ))) ) )) else (
+      ( [@GP_Sloc:main.adb:54:25] ([#"main.adb" 54 0 0] [#"main.adb" 54 0 0] (Main__islocked.islocked.bool__content <- ( (Boolean.of_int((1 : int))) ))) ) )) else (
       ( ();
       ( [@GP_Sloc:main.adb:56:13] ([#"main.adb" 56 0 0] ()) );
       ( [@GP_Sloc:main.adb:56:13] ([#"main.adb" 56 0 0] ( (Ada__text_io__put_line__2___axiom.put_line__2((Standard__string.of_array((Temp___String_Literal_491.temp___String_Literal_491(()))) ((1 : int)) ((24 : int))))) )) );
