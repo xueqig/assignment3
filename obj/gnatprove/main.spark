@@ -354,7 +354,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 280,
-              "time": 0
+              "time": 4.40000000000000E-01
             }
           },
           "transformations": {
@@ -365,7 +365,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 280,
-              "time": 0
+              "time": 4.40000000000000E-01
             }
           },
           "transformations": {
@@ -376,7 +376,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 92,
-              "time": 0
+              "time": 3.30000000000000E-01
             }
           },
           "transformations": {
@@ -391,7 +391,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 4.39999997615814E-01
         }
       }
     },
@@ -416,7 +416,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 101,
-              "time": 0
+              "time": 3.80000000000000E-01
             }
           },
           "transformations": {
@@ -427,7 +427,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 101,
-              "time": 0
+              "time": 3.90000000000000E-01
             }
           },
           "transformations": {
@@ -438,7 +438,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 49,
-              "time": 0
+              "time": 3.60000000000000E-01
             }
           },
           "transformations": {
@@ -453,7 +453,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.89999985694885E-01
         }
       }
     },
@@ -478,7 +478,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 102,
-              "time": 0
+              "time": 3.60000000000000E-01
             }
           },
           "transformations": {
@@ -493,7 +493,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.60000014305115E-01
         }
       }
     },
@@ -518,7 +518,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.10000000000000E-01
             }
           },
           "transformations": {
@@ -533,7 +533,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.10000002384186E-01
         }
       }
     },
@@ -558,7 +558,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.20000000000000E-01
             }
           },
           "transformations": {
@@ -569,7 +569,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.20000000000000E-01
             }
           },
           "transformations": {
@@ -580,7 +580,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.40000000000000E-01
             }
           },
           "transformations": {
@@ -591,7 +591,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -606,7 +606,7 @@
         "CVC4": {
           "count": 4,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.19999992847443E-01
         }
       }
     },
@@ -631,7 +631,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.20000000000000E-01
             }
           },
           "transformations": {
@@ -642,7 +642,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.20000000000000E-01
             }
           },
           "transformations": {
@@ -657,7 +657,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.19999992847443E-01
         }
       }
     },
@@ -682,7 +682,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 0
+              "time": 3.60000000000000E-01
             }
           },
           "transformations": {
@@ -693,7 +693,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -704,7 +704,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 21,
-              "time": 0
+              "time": 3.70000000000000E-01
             }
           },
           "transformations": {
@@ -719,7 +719,7 @@
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.70000004768372E-01
         }
       }
     },
@@ -744,7 +744,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -755,7 +755,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -770,7 +770,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -795,7 +795,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -806,7 +806,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -821,7 +821,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.80000001192093E-01
         }
       }
     },
@@ -846,7 +846,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -857,7 +857,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -872,7 +872,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -897,7 +897,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -908,7 +908,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -923,7 +923,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.59999990463257E-01
         }
       }
     },
@@ -948,7 +948,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.70000000000000E-01
             }
           },
           "transformations": {
@@ -959,7 +959,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.60000000000000E-01
             }
           },
           "transformations": {
@@ -974,7 +974,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.70000010728836E-01
         }
       }
     },
@@ -999,7 +999,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -1010,7 +1010,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -1025,13 +1025,13 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.80000001192093E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 165,
+      "line": 168,
       "col": 42,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1050,7 +1050,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 328,
-              "time": 0
+              "time": 7.30000000000000E-01
             }
           },
           "transformations": {
@@ -1061,7 +1061,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 328,
-              "time": 0
+              "time": 7.20000000000000E-01
             }
           },
           "transformations": {
@@ -1072,7 +1072,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 0
+              "time": 5.80000000000000E-01
             }
           },
           "transformations": {
@@ -1080,20 +1080,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 165,
+      "check_line": 168,
       "check_col": 42,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 7.30000019073486E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 166,
+      "line": 169,
       "col": 46,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1112,7 +1112,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -1123,7 +1123,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 3.00000000000000E-01
             }
           },
           "transformations": {
@@ -1131,20 +1131,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 166,
+      "check_line": 169,
       "check_col": 46,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 3.00000011920929E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 164,
+      "line": 167,
       "col": 46,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1163,7 +1163,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 1205,
-              "time": 0
+              "time": 9.50000000000000E-01
             }
           },
           "transformations": {
@@ -1171,20 +1171,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 164,
+      "check_line": 167,
       "check_col": 46,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 9.49999988079071E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 156,
+      "line": 159,
       "col": 38,
       "rule": "VC_RANGE_CHECK",
       "severity": "info",
@@ -1203,7 +1203,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 53,
-              "time": 0
+              "time": 5.70000000000000E-01
             }
           },
           "transformations": {
@@ -1211,20 +1211,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 156,
+      "check_line": 159,
       "check_col": 38,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.69999992847443E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 157,
+      "line": 160,
       "col": 74,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1243,7 +1243,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 313,
-              "time": 0
+              "time": 6.90000000000000E-01
             }
           },
           "transformations": {
@@ -1251,20 +1251,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 157,
+      "check_line": 160,
       "check_col": 74,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.89999997615814E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 153,
+      "line": 156,
       "col": 36,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1283,7 +1283,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -1291,14 +1291,14 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 153,
+      "check_line": 156,
       "check_col": 36,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.80000001192093E-01
         }
       }
     },
@@ -1323,7 +1323,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 0
+              "time": 5.70000000000000E-01
             }
           },
           "transformations": {
@@ -1338,7 +1338,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.69999992847443E-01
         }
       }
     },
@@ -1363,7 +1363,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 53,
-              "time": 0
+              "time": 5.50000000000000E-01
             }
           },
           "transformations": {
@@ -1378,7 +1378,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.50000011920929E-01
         }
       }
     },
@@ -1403,7 +1403,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 297,
-              "time": 0
+              "time": 4.20000000000000E-01
             }
           },
           "transformations": {
@@ -1418,13 +1418,13 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 4.19999986886978E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 176,
+      "line": 179,
       "col": 39,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1443,7 +1443,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 272,
-              "time": 0
+              "time": 6.30000000000000E-01
             }
           },
           "transformations": {
@@ -1454,7 +1454,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 272,
-              "time": 0
+              "time": 6.30000000000000E-01
             }
           },
           "transformations": {
@@ -1465,7 +1465,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 14,
-              "time": 0
+              "time": 5.20000000000000E-01
             }
           },
           "transformations": {
@@ -1473,20 +1473,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 176,
+      "check_line": 179,
       "check_col": 39,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 3,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.29999995231628E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 177,
+      "line": 180,
       "col": 43,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1505,7 +1505,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.80000000000000E-01
             }
           },
           "transformations": {
@@ -1516,7 +1516,7 @@
             "CVC4": {
               "result": "Valid",
               "steps": 5,
-              "time": 0
+              "time": 2.30000000000000E-01
             }
           },
           "transformations": {
@@ -1524,20 +1524,20 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 177,
+      "check_line": 180,
       "check_col": 43,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 2.80000001192093E-01
         }
       }
     },
     {
       "file": "main.adb",
-      "line": 175,
+      "line": 178,
       "col": 65,
       "rule": "VC_PRECONDITION",
       "severity": "info",
@@ -1555,8 +1555,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 753,
-              "time": 0
+              "steps": 868,
+              "time": 6.20000000000000E-01
             }
           },
           "transformations": {
@@ -1564,14 +1564,14 @@
         }
       ],
       "check_file": "main.adb",
-      "check_line": 175,
+      "check_line": 178,
       "check_col": 65,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.20000004768372E-01
         }
       }
     },
@@ -1595,8 +1595,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 784,
-              "time": 0
+              "steps": 780,
+              "time": 4.80000000000000E-01
             }
           },
           "transformations": {
@@ -1611,7 +1611,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 4.79999989271164E-01
         }
       }
     },
@@ -1635,8 +1635,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 770,
-              "time": 0
+              "steps": 766,
+              "time": 6.00000000000000E-01
             }
           },
           "transformations": {
@@ -1651,7 +1651,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.00000023841858E-01
         }
       }
     },
@@ -1675,8 +1675,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 669,
-              "time": 0
+              "steps": 834,
+              "time": 6.10000000000000E-01
             }
           },
           "transformations": {
@@ -1686,8 +1686,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 768,
-              "time": 0
+              "steps": 763,
+              "time": 6.00000000000000E-01
             }
           },
           "transformations": {
@@ -1702,7 +1702,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 6.10000014305115E-01
         }
       }
     },
@@ -1726,8 +1726,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 577,
-              "time": 0
+              "steps": 576,
+              "time": 5.00000000000000E-01
             }
           },
           "transformations": {
@@ -1742,7 +1742,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.00000000000000E-01
         }
       }
     },
@@ -1766,8 +1766,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 563,
-              "time": 0
+              "steps": 562,
+              "time": 5.10000000000000E-01
             }
           },
           "transformations": {
@@ -1782,7 +1782,7 @@
         "CVC4": {
           "count": 1,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.09999990463257E-01
         }
       }
     },
@@ -1806,8 +1806,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 563,
-              "time": 0
+              "steps": 562,
+              "time": 5.20000000000000E-01
             }
           },
           "transformations": {
@@ -1817,8 +1817,8 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 561,
-              "time": 0
+              "steps": 560,
+              "time": 5.10000000000000E-01
             }
           },
           "transformations": {
@@ -1833,7 +1833,7 @@
         "CVC4": {
           "count": 2,
           "max_steps": 1,
-          "max_time": 0.00000000000000E+00
+          "max_time": 5.19999980926514E-01
         }
       }
     },
@@ -4555,6 +4555,362 @@
         {
           "predicate": "CLAIM_EFFECTS",
           "arg": {
+            "name": "Main.Lines.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Main.Lines.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "main.adb",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "main.adb",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Get",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 30
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.Lines.Equal",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 18
+            },
+            {
+              "file": "main.adb",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main.Lines.Get",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 30
+            },
+            {
+              "file": "main.adb",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main.Lines.Get",
+          "sloc": [
+            {
+              "file": "mystring.ads",
+              "line": 30
+            },
+            {
+              "file": "main.adb",
+              "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Main.Lines.Length",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 23
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
             "name": "Main.Lines.Length",
             "sloc": [
               {
@@ -4829,6 +5185,1442 @@
             {
               "file": "main.adb",
               "line": 30
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Integer_Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-tiinio.ads",
+                "line": 80
+              },
+              {
+                "file": "a-inteio.ads",
+                "line": 18
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 465
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines",
+            "sloc": [
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Get_Line",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 33
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Substring",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 26
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.To_String",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 8
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MyCommandLine.Argument",
+            "sloc": [
+              {
+                "file": "mycommandline.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MyCommandLine.Argument_Count",
+            "sloc": [
+              {
+                "file": "mycommandline.ads",
+                "line": 3
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MyStringTokeniser.Tokenise",
+            "sloc": [
+              {
+                "file": "mystringtokeniser.ads",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Addition",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Division",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Multiplication",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Subtraction",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "PIN.From_String",
+            "sloc": [
+              {
+                "file": "pin.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Element",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Init_Stack",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.List",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 34
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Load",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Remove",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 36
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Store",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "StringToInteger.From_String",
+            "sloc": [
+              {
+                "file": "stringtointeger.ads",
+                "line": 6
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.From_String",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Has_Variable",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 19
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Init",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "passwordmanager.IsPin",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "passwordmanager.Lock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "passwordmanager.Unlock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 18
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.adb",
+              "line": 22
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Integer_Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-tiinio.ads",
+                "line": 80
+              },
+              {
+                "file": "a-inteio.ads",
+                "line": 18
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 465
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Main.Lines.Substring",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 26
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Main.Lines.To_String",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 8
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "MyStringTokeniser.Tokenise",
+            "sloc": [
+              {
+                "file": "mystringtokeniser.ads",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "OPERATION.Addition",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "OPERATION.Division",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "OPERATION.Multiplication",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "OPERATION.Subtraction",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Init_Stack",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Load",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Remove",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 36
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "Stack.Store",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "passwordmanager.IsPin",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "passwordmanager.Lock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_POST",
+          "arg": {
+            "name": "passwordmanager.Unlock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 18
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Integer_Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-tiinio.ads",
+                "line": 80
+              },
+              {
+                "file": "a-inteio.ads",
+                "line": 18
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 465
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines",
+            "sloc": [
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Get_Line",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 33
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.Substring",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 26
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Main.Lines.To_String",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 8
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MyCommandLine.Argument",
+            "sloc": [
+              {
+                "file": "mycommandline.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MyCommandLine.Argument_Count",
+            "sloc": [
+              {
+                "file": "mycommandline.ads",
+                "line": 3
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "MyStringTokeniser.Tokenise",
+            "sloc": [
+              {
+                "file": "mystringtokeniser.ads",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Addition",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Division",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Multiplication",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "OPERATION.Subtraction",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "PIN.From_String",
+            "sloc": [
+              {
+                "file": "pin.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Element",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Init_Stack",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.List",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 34
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Load",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Remove",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 36
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Stack.Store",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "StringToInteger.From_String",
+            "sloc": [
+              {
+                "file": "stringtointeger.ads",
+                "line": 6
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.From_String",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Has_Variable",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 19
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "VariableStore.Init",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "passwordmanager.IsPin",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "passwordmanager.Lock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "passwordmanager.Unlock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 18
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Integer_Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-tiinio.ads",
+                "line": 80
+              },
+              {
+                "file": "a-inteio.ads",
+                "line": 18
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 465
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Ada.Text_IO.Put_Line",
+            "sloc": [
+              {
+                "file": "a-textio.ads",
+                "line": 508
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines",
+            "sloc": [
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Get_Line",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 33
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.Substring",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 26
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Main.Lines.To_String",
+            "sloc": [
+              {
+                "file": "mystring.ads",
+                "line": 8
+              },
+              {
+                "file": "main.adb",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MyCommandLine.Argument",
+            "sloc": [
+              {
+                "file": "mycommandline.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MyCommandLine.Argument_Count",
+            "sloc": [
+              {
+                "file": "mycommandline.ads",
+                "line": 3
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "MyStringTokeniser.Tokenise",
+            "sloc": [
+              {
+                "file": "mystringtokeniser.ads",
+                "line": 16
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "OPERATION.Addition",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "OPERATION.Division",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "OPERATION.Multiplication",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 13
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "OPERATION.Subtraction",
+            "sloc": [
+              {
+                "file": "operation.ads",
+                "line": 9
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "PIN.From_String",
+            "sloc": [
+              {
+                "file": "pin.ads",
+                "line": 5
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Element",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 41
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Get_Size",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 39
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Init_Stack",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 7
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.List",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 34
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Load",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 23
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Pop",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Push",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 11
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Remove",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 36
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "Stack.Store",
+            "sloc": [
+              {
+                "file": "stack.ads",
+                "line": 29
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "StringToInteger.From_String",
+            "sloc": [
+              {
+                "file": "stringtointeger.ads",
+                "line": 6
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.From_String",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 30
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Has_Variable",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 19
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "VariableStore.Init",
+            "sloc": [
+              {
+                "file": "variablestore.ads",
+                "line": 17
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "passwordmanager.IsPin",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 26
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "passwordmanager.Lock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 22
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_AORTE",
+          "arg": {
+            "name": "passwordmanager.Unlock",
+            "sloc": [
+              {
+                "file": "passwordmanager.ads",
+                "line": 18
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Main",
+          "sloc": [
+            {
+              "file": "main.adb",
+              "line": 22
             }
           ]
         }
@@ -4905,1442 +6697,6 @@
             {
               "file": "main.adb",
               "line": 30
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Integer_Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-tiinio.ads",
-                "line": 80
-              },
-              {
-                "file": "a-inteio.ads",
-                "line": 18
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 465
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Text_IO.Put_Line",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 508
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines",
-            "sloc": [
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Get_Line",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 33
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Substring",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 26
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.To_String",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 8
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "MyCommandLine.Argument",
-            "sloc": [
-              {
-                "file": "mycommandline.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "MyCommandLine.Argument_Count",
-            "sloc": [
-              {
-                "file": "mycommandline.ads",
-                "line": 3
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "MyStringTokeniser.Tokenise",
-            "sloc": [
-              {
-                "file": "mystringtokeniser.ads",
-                "line": 16
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Addition",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Division",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Multiplication",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 13
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Subtraction",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 9
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "PIN.From_String",
-            "sloc": [
-              {
-                "file": "pin.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Get_Element",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 41
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Get_Size",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 39
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Init_Stack",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.List",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 34
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Load",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 23
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Pop",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Push",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 11
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Remove",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 36
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Store",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 29
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "StringToInteger.From_String",
-            "sloc": [
-              {
-                "file": "stringtointeger.ads",
-                "line": 6
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.From_String",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.Has_Variable",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 19
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.Init",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "passwordmanager.IsPin",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 26
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "passwordmanager.Lock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 22
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "passwordmanager.Unlock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 18
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Main",
-          "sloc": [
-            {
-              "file": "main.adb",
-              "line": 22
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Ada.Integer_Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-tiinio.ads",
-                "line": 80
-              },
-              {
-                "file": "a-inteio.ads",
-                "line": 18
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Ada.Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 465
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Ada.Text_IO.Put_Line",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 508
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Main.Lines.Substring",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 26
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Main.Lines.To_String",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 8
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "MyStringTokeniser.Tokenise",
-            "sloc": [
-              {
-                "file": "mystringtokeniser.ads",
-                "line": 16
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "OPERATION.Addition",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "OPERATION.Division",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "OPERATION.Multiplication",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 13
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "OPERATION.Subtraction",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 9
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Stack.Init_Stack",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Stack.Load",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 23
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Stack.Pop",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Stack.Push",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 11
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Stack.Remove",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 36
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Stack.Store",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 29
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "passwordmanager.IsPin",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 26
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "passwordmanager.Lock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 22
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "passwordmanager.Unlock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 18
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Integer_Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-tiinio.ads",
-                "line": 80
-              },
-              {
-                "file": "a-inteio.ads",
-                "line": 18
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 465
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Text_IO.Put_Line",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 508
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines",
-            "sloc": [
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Get_Line",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 33
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Substring",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 26
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.To_String",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 8
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "MyCommandLine.Argument",
-            "sloc": [
-              {
-                "file": "mycommandline.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "MyCommandLine.Argument_Count",
-            "sloc": [
-              {
-                "file": "mycommandline.ads",
-                "line": 3
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "MyStringTokeniser.Tokenise",
-            "sloc": [
-              {
-                "file": "mystringtokeniser.ads",
-                "line": 16
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Addition",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Division",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Multiplication",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 13
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "OPERATION.Subtraction",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 9
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "PIN.From_String",
-            "sloc": [
-              {
-                "file": "pin.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Get_Element",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 41
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Get_Size",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 39
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Init_Stack",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.List",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 34
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Load",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 23
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Pop",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Push",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 11
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Remove",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 36
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Stack.Store",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 29
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "StringToInteger.From_String",
-            "sloc": [
-              {
-                "file": "stringtointeger.ads",
-                "line": 6
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.From_String",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.Has_Variable",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 19
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "VariableStore.Init",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "passwordmanager.IsPin",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 26
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "passwordmanager.Lock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 22
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "passwordmanager.Unlock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 18
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Ada.Integer_Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-tiinio.ads",
-                "line": 80
-              },
-              {
-                "file": "a-inteio.ads",
-                "line": 18
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Ada.Text_IO.Put",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 465
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Ada.Text_IO.Put_Line",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 508
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines",
-            "sloc": [
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Get_Line",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 33
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Substring",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 26
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.To_String",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 8
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "MyCommandLine.Argument",
-            "sloc": [
-              {
-                "file": "mycommandline.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "MyCommandLine.Argument_Count",
-            "sloc": [
-              {
-                "file": "mycommandline.ads",
-                "line": 3
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "MyStringTokeniser.Tokenise",
-            "sloc": [
-              {
-                "file": "mystringtokeniser.ads",
-                "line": 16
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "OPERATION.Addition",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "OPERATION.Division",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "OPERATION.Multiplication",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 13
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "OPERATION.Subtraction",
-            "sloc": [
-              {
-                "file": "operation.ads",
-                "line": 9
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "PIN.From_String",
-            "sloc": [
-              {
-                "file": "pin.ads",
-                "line": 5
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Get_Element",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 41
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Get_Size",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 39
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Init_Stack",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 7
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.List",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 34
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Load",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 23
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Pop",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Push",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 11
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Remove",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 36
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Stack.Store",
-            "sloc": [
-              {
-                "file": "stack.ads",
-                "line": 29
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "StringToInteger.From_String",
-            "sloc": [
-              {
-                "file": "stringtointeger.ads",
-                "line": 6
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "VariableStore.From_String",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "VariableStore.Has_Variable",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 19
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "VariableStore.Init",
-            "sloc": [
-              {
-                "file": "variablestore.ads",
-                "line": 17
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "passwordmanager.IsPin",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 26
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "passwordmanager.Lock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 22
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "passwordmanager.Unlock",
-            "sloc": [
-              {
-                "file": "passwordmanager.ads",
-                "line": 18
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Main",
-          "sloc": [
-            {
-              "file": "main.adb",
-              "line": 22
             }
           ]
         }
@@ -6709,373 +7065,17 @@
           ]
         }
       }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Get",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 30
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Get",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 30
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_POST",
-        "arg": {
-          "name": "Main.Lines.Equal",
-          "sloc": [
-            {
-              "file": "mystring.ads",
-              "line": 18
-            },
-            {
-              "file": "main.adb",
-              "line": 30
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Get",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 30
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Main.Lines.Equal",
-          "sloc": [
-            {
-              "file": "mystring.ads",
-              "line": 18
-            },
-            {
-              "file": "main.adb",
-              "line": 30
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Get",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 30
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Get",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 30
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Main.Lines.Equal",
-          "sloc": [
-            {
-              "file": "mystring.ads",
-              "line": 18
-            },
-            {
-              "file": "main.adb",
-              "line": 30
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "Main.Lines.Get",
-          "sloc": [
-            {
-              "file": "mystring.ads",
-              "line": 30
-            },
-            {
-              "file": "main.adb",
-              "line": 30
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-        {
-          "predicate": "CLAIM_POST",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        },
-        {
-          "predicate": "CLAIM_AORTE",
-          "arg": {
-            "name": "Main.Lines.Length",
-            "sloc": [
-              {
-                "file": "mystring.ads",
-                "line": 23
-              },
-              {
-                "file": "main.adb",
-                "line": 30
-              }
-            ]
-          }
-        }
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
-        "arg": {
-          "name": "Main.Lines.Get",
-          "sloc": [
-            {
-              "file": "mystring.ads",
-              "line": 30
-            },
-            {
-              "file": "main.adb",
-              "line": 30
-            }
-          ]
-        }
-      }
     }
   ],
   "timings": {
-    "marking": 4.37099998816848E-03,
-    "globals (basic)": 1.00450003519654E-02,
-    "globals/properties (advanced)": 3.20880003273487E-02,
-    "flow analysis": 1.45402997732162E-01,
-    "codepeer results": 9.00000031833770E-06,
-    "init_why_sections": 7.14000023435801E-04,
-    "translation of standard": 3.83600010536611E-03,
-    "translation of compilation unit": 2.07717999815941E-01,
-    "proof": 1.94546401500702E+00
+    "marking": 4.39700018614531E-03,
+    "globals (basic)": 1.03200003504753E-02,
+    "globals/properties (advanced)": 2.36729998141527E-02,
+    "flow analysis": 1.50356993079185E-01,
+    "codepeer results": 7.99999997980194E-06,
+    "init_why_sections": 7.11000000592321E-04,
+    "translation of standard": 3.94200021401048E-03,
+    "translation of compilation unit": 2.13452994823456E-01,
+    "proof": 1.07370414733887E+01
   }
 }

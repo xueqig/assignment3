@@ -147,6 +147,9 @@ begin
                              TokStr2'Length < VariableStore.Max_Variable_Length and then 
                              VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
                               Stack.Load(calStack, TokStr2, DB);
+                           else
+                              Put_Line("Variable does not exit!");
+                              exit;
                            end if;
                         elsif TokStr = "store" then
                            if Stack.Get_Size(calStack) > 0 then
