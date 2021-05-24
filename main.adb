@@ -5,7 +5,7 @@
 --  value to show the input PIN is valid or invalid.
 
 --  The precondition of IsPin:
---  pre => (if input'Length > 0 then input'First <= input'Last),
+--  pre => (if input'length > 0 then (input'First <= input'Last)),
 
 --  It holds the basic relationship for the index of a incoming string
 
