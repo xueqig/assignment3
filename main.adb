@@ -41,36 +41,36 @@ begin
    VariableStore.Init(DB);
    Stack.Init_Stack(calStack);
    
-   -- Checking if a master password is provided
+   -- Check if a master password is provided
    if MyCommandLine.Argument_Count = 1 then
-      -- checking if the master password has length of 4
+      -- Check if the master password has length of 4
       if MyCommandLine.Argument(1)'Length = 4 then
          declare
             P: String(1..4) := MyCommandLine.Argument(1);
          begin
-            -- check if the argument string is digital PIN
+            -- Check if the argument string is digital PIN
             if passwordmanager.IsPin(P) then
                PIN2 := PIN.From_String(P);
-               -- check if the PINs are equal
+               -- Check if the PINs are equal
                if not PIN."=" (PIN1, PIN2) then
-                  Put_Line ("Master Password Not Match!");
+                  Put_Line ("Master pin does not match!");
                   return;
                end if;
             else
-               Put_Line ("Invalid Master Password Format! the password should be digital pin in range of 0000..9999");
+               Put_Line ("Invalid master pin format! The pin should be digital pin in range of 0000..9999.");
                return;
             end if;
          end;
       else
-         Put_Line ("Invalid Master Password Format! The length of password should be 4");
+         Put_Line ("Invalid master pin format! The length of pin should be 4.");
          return;
       end if; 
    else
-      Put_Line ("Master Password Not Provided Or The Number Of Arguements Is Greater Than 1");
+      Put_Line ("Master pin is not provided or the number of arguements is greater than 1.");
       return;
    end if;
 
-   --Calculator Starts
+   -- Calculator Starts
    loop
       if isLocked = True then
          Put("locked> ");
@@ -94,7 +94,7 @@ begin
                            Stack.Pop(calStack,I);
                            Put(I); Put_Line ("");
                         else
-                           Put_Line ("Stack is Empty! Nothing to Pop!");
+                           Put_Line ("Stack is empty! Nothing to pop!");
                            exit;
                         end if;
                      elsif TokStr = "list" then
@@ -103,21 +103,21 @@ begin
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Addition(calStack);
                         else
-                           Put_Line("Not Enough Operands on Stack! '+' requires 2 numbers");
+                           Put_Line("Not enough operands on stack! '+' requires 2 numbers");
                            exit;
                         end if;
                      elsif TokStr = "-" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Subtraction(calStack);
                         else
-                           Put_Line("Not Enough Operands on Stack! '-' requires 2 numbers");
+                           Put_Line("Not enough operands on stack! '-' requires 2 numbers");
                            exit;
                         end if;
                      elsif TokStr = "*" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Multiplication(calStack);
                         else
-                           Put_Line("Not Enough Operands on Stack ! '*' requires 2 numbers");
+                           Put_Line("Not enough operands on stack ! '*' requires 2 numbers");
                            exit;
                         end if;
                      elsif TokStr = "/" then
@@ -129,15 +129,15 @@ begin
                               exit;
                            end if;
                         else
-                           Put_Line("Not Enough Operands on Stack! '/' requires 2 numbers");
+                           Put_Line("Not enough operands on stack! '/' requires 2 numbers");
                            exit;
                         end if;
                      else
-                        Put_Line("Invalid Command!");
+                        Put_Line("Invalid command!");
                         exit;
                      end if;
                   else
-                     Put_Line ("Please unlock the Calculator to perform operations.");
+                     Put_Line ("Please unlock the calculator to perform operations.");
                      exit;
                   end if;
                elsif NumTokens = 2 then
@@ -156,7 +156,6 @@ begin
                               Stack.Load(calStack, TokStr2, DB);
                            else
                               Put_Line("Variable does not exit!");
-                              exit;
                            end if;
                         elsif TokStr = "store" then
                            if Stack.Get_Size(calStack) > 0 then
@@ -168,7 +167,6 @@ begin
                               Stack.Remove(TokStr2, DB);
                            else
                               Put_Line("Variable does not exit!");
-                              exit;
                            end if;
                         elsif TokStr = "lock" then
                            if passwordmanager.IsPin(TokStr2) then
@@ -178,7 +176,7 @@ begin
                         elsif TokStr = "unlock" then
                            Put_Line ("Already unlocked!");
                         else
-                           Put_Line ("Invalid Command");
+                           Put_Line ("Invalid command!");
                            exit;
                         end if; 
                      else 
@@ -186,20 +184,20 @@ begin
                            PIN2 := PIN.From_String(TokStr2);
                            PasswordManager.Unlock(PIN1,PIN2,isLocked);
                         elsif TokStr = "lock" then
-                           Put_Line ("Already Locked!");
+                           Put_Line ("Already locked!");
                         else
-                           Put_Line("Please unlock the Calculator to perform operations.");
+                           Put_Line("Please unlock the calculator to perform operations!");
                            exit;
                         end if;
                      end if;
                   end;
                else
-                  Put_Line ("Invalid Command");
+                  Put_Line ("Invalid command!");
                   exit;
                end if;
             end;
          else 
-            Put_Line ("Invalid Command! Try 'push 5' " );
+            Put_Line ("Invalid command! Try 'push 5' " );
             exit;
          end if;
       end;
