@@ -2,9 +2,6 @@ with PIN; use PIN;
 with MyStringTokeniser;
 with MyString;
 
-
-
-
 package passwordmanager with SPARK_Mode is
    
    procedure Unlock (P1: in PIN.PIN; P2 : in PIN.PIN; isLocked : in out Boolean) with
@@ -16,7 +13,7 @@ package passwordmanager with SPARK_Mode is
      Post => isLocked = True;
    
    function IsPin (input : in String) return Boolean with
-     pre => (input'First <= input'Last),
+     pre => (if input'length > 0 then (input'First <= input'Last)),
      post =>  (if IsPin'Result = True then
                  (for all I in Input'First..Input'Last =>
                       (Input'First <= Input'Last
