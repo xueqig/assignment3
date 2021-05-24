@@ -1,7 +1,7 @@
 --  Task 4:
 --  part 2: Additional Security Properties:
 --  1. The PIN should be a 4-digits string in range of 0000..9999 
---  The function IsPin is implemented in the password manager by returning a boolean
+--  The function IsPin is implemented in the PIN manager by returning a boolean
 --  value to show the input PIN is valid or invalid.
 
 --  The precondition of IsPin:
