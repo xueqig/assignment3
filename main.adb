@@ -1,3 +1,27 @@
+--  Task 4:
+--  part 2: Additional Security Properties:
+--  1. The PIN should be a 4-digits string in range of 0000..9999 
+--  The function IsPin is implemented in the password manager by returning a boolean
+--  value to show the input PIN is valid or invalid.
+
+--  The precondition of IsPin:
+--  pre => (if input'Length > 0 then input'First <= input'Last),
+
+--  It holds the basic relationship for the index of a incoming string
+
+--  The postcondition of IsPin:
+--  post =>  (if IsPin'Result = True then
+--                   (for all I in Input'First..Input'Last =>
+--                        (Input'First <= Input'Last
+--                         and input(I) >='0'
+--                         and Input(I) <= '9'))) and 
+--         (if IsPin'Result = True then input'Length = 4);
+
+--  It make sure that if the incoming string is acceptable as a PIN, it will assert that 
+--  every character within that PIN will only contains number instead of other character, 
+--  as well as the length of the PIN should be 4 in the end
+
+
 pragma SPARK_Mode (On);
 
 with StringToInteger;
