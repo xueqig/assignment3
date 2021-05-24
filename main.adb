@@ -9,12 +9,6 @@ with PIN;
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
-with Ada.Long_Long_Integer_Text_IO;
-
-with Ada.Integer_Text_IO ;
-with Ada.Text_IO;
-with Ada.Strings;
-
 with passwordmanager;
 with OPERATION;
 with Stack;
@@ -148,6 +142,8 @@ begin
                         if TokStr = "push" then
                            if Stack.Get_Size(calStack) >= 0 and Stack.Get_Size(calStack) < Stack.Max_Size then
                               Stack.Push(calStack, StringToInteger.From_String(TokStr2));
+                           else 
+                              Put_Line("Stack has reached the maximum size!");
                            end if;
                         elsif TokStr = "load" then
                            if Stack.Get_Size(calStack) < Stack.Max_Size and then 
@@ -160,6 +156,8 @@ begin
                         elsif TokStr = "store" then
                            if Stack.Get_Size(calStack) > 0 then
                               Stack.Store(calStack, TokStr2, DB);
+                           else
+                              Put_Line("Stack is empty! Nothing to store.");
                            end if;
                         elsif TokStr = "remove" then
                            if TokStr2'Length < VariableStore.Max_Variable_Length and then 
@@ -197,7 +195,7 @@ begin
                end if;
             end;
          else 
-            Put_Line ("Invalid command! Try 'push 5' " );
+            Put_Line ("Invalid command!" );
             exit;
          end if;
       end;
