@@ -30,6 +30,7 @@ procedure Main is
    isLocked : Boolean := True;
    
    I : Integer;
+   pragma Unreferenced(I);
    
 begin
    VariableStore.Init(DB);
