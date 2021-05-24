@@ -89,7 +89,6 @@ begin
                            Put(I); Put_Line ("");
                         else
                            Put_Line ("Stack is empty! Nothing to pop!");
-                           exit;
                         end if;
                      elsif TokStr = "list" then
                         Stack.List (DB);
@@ -98,21 +97,18 @@ begin
                            OPERATION.Addition(calStack);
                         else
                            Put_Line("Not enough operands on stack! '+' requires 2 numbers");
-                           exit;
                         end if;
                      elsif TokStr = "-" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Subtraction(calStack);
                         else
                            Put_Line("Not enough operands on stack! '-' requires 2 numbers");
-                           exit;
                         end if;
                      elsif TokStr = "*" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            OPERATION.Multiplication(calStack);
                         else
                            Put_Line("Not enough operands on stack ! '*' requires 2 numbers");
-                           exit;
                         end if;
                      elsif TokStr = "/" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
@@ -124,7 +120,6 @@ begin
                            end if;
                         else
                            Put_Line("Not enough operands on stack! '/' requires 2 numbers");
-                           exit;
                         end if;
                      else
                         Put_Line("Invalid command!");
@@ -157,7 +152,7 @@ begin
                            if Stack.Get_Size(calStack) > 0 then
                               Stack.Store(calStack, TokStr2, DB);
                            else
-                              Put_Line("Stack is empty! Nothing to store.");
+                              Put_Line("Stack is empty! Nothing to store!");
                            end if;
                         elsif TokStr = "remove" then
                            if TokStr2'Length < VariableStore.Max_Variable_Length and then 
