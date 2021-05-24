@@ -23,14 +23,14 @@ package body MyStringTokeniser with SPARK_Mode is
          pragma Loop_Invariant (OutIndex = Tokens'First + Count);
 
          -- Task 1:
-         -- The above loop invariant specifies the relationship always holds among OutIndex,
-         -- Token'First and Count after each loop iteration. It's necessary because:
-         -- Avoiding the possibility of integer overflow in the for loop mentioned in the above loop invariant.
+         -- The above loop invariant specifies the relationship always holds
+         -- among 'OutIndex','Token'First' and 'Count' after each loop iteration. And there are some reasons to make it necessary
+         -- 1. It avoided the possibility of integer overflow in the for each loop iteration mentioned in the above loop invariant.
          -- For example, without this invariant, when OutIndex equals to Integer'First, OutIndex-1 will lead to overflow.
-         -- Keeping the index check in line "Tokens(OutIndex) := Extent" always true.
+         -- 2. Keeping the index check in line "Tokens(OutIndex) := Extent" always true.
          -- For instance, if without this, when OutIndex equals to 0 and Token'First equals to 1, the array index check will fail.
-         -- Impose the postcondition of procedure Tokenise, especailly to Tokens(Index).Length > 0,
-         -- there can be a counter example like when the Index equals to (Positive'Last-1), Start => 1 and Length => 0, which cannot
+         -- 3. Impose the postcondition of procedure Tokenise, especailly to Tokens(Index).Length > 0,
+         -- a counter example will be like when the Index equals to (Positive'Last-1), Start => 1 and Length => 0, which cannot
          -- satisfy the required postcondition.
 
 
