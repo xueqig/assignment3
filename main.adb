@@ -88,7 +88,6 @@ begin
                      if TokStr = "pop" then
                         if Stack.Get_Size(calStack) > 0 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            Stack.Pop(calStack,I);
-                           Put(I); Put_Line ("");
                         else
                            Put_Line ("Stack is empty! Nothing to pop!");
                         end if;
