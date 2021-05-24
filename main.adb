@@ -65,7 +65,9 @@ begin
    end if;
 
    -- Calculator Starts
-   loop
+   while True loop
+      pragma Loop_Invariant (Stack.Get_Size(calStack) >= 0);
+      
       if isLocked = True then
          Put("locked> ");
       else
