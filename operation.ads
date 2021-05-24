@@ -1,6 +1,6 @@
 with Stack;
 
-package OPERATION with SPARK_Mode is
+package Operation with SPARK_Mode is
 
    procedure Addition(S: in out Stack.Stack_Type) with
      Pre => Stack.Get_Size(S) >= 2 and Stack.Get_Size(S) <= Stack.Max_Size,
@@ -18,4 +18,4 @@ package OPERATION with SPARK_Mode is
      Pre => (Stack.Get_Size(S) >= 2) and Stack.Get_Size(S) <= Stack.Max_Size,
      Post => (Stack.Get_Size(S) = (Stack.Get_Size(S'Old) - 1));
 
-end OPERATION;
+end Operation;

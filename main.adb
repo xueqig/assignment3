@@ -9,8 +9,8 @@ with PIN;
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
-with passwordmanager;
-with OPERATION;
+with PinManager;
+with Operation;
 with Stack;
 
 procedure Main is
@@ -35,15 +35,15 @@ begin
    VariableStore.Init(DB);
    Stack.Init_Stack(calStack);
    
-   -- Check if a master password is provided
+   -- Check if a master pin is provided
    if MyCommandLine.Argument_Count = 1 then
-      -- Check if the master password has length of 4
+      -- Check if the master pin has length of 4
       if MyCommandLine.Argument(1)'Length = 4 then
          declare
             P: String(1..4) := MyCommandLine.Argument(1);
          begin
             -- Check if the argument string is digital PIN
-            if passwordmanager.IsPin(P) then
+            if PinManager.IsPin(P) then
                PIN2 := PIN.From_String(P);
                -- Check if the PINs are equal
                if not PIN."=" (PIN1, PIN2) then
@@ -162,9 +162,9 @@ begin
                               Put_Line("Variable does not exit!");
                            end if;
                         elsif TokStr = "lock" then
-                           if passwordmanager.IsPin(TokStr2) then
+                           if PinManager.IsPin(TokStr2) then
                               PIN1 := PIN.From_String(TokStr2);
-                              PasswordManager.lock(isLocked);
+                              PinManager.lock(isLocked);
                            end if;
                         elsif TokStr = "unlock" then
                            Put_Line ("Already unlocked!");
@@ -173,9 +173,9 @@ begin
                            exit;
                         end if; 
                      else 
-                        if TokStr = "unlock" and passwordmanager.IsPin(TokStr2) then
+                        if TokStr = "unlock" and PinManager.IsPin(TokStr2) then
                            PIN2 := PIN.From_String(TokStr2);
-                           PasswordManager.Unlock(PIN1,PIN2,isLocked);
+                           PinManager.Unlock(PIN1,PIN2,isLocked);
                         elsif TokStr = "lock" then
                            Put_Line ("Already locked!");
                         else

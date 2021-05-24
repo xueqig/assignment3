@@ -1,6 +1,6 @@
 with Stack;
 
-package body OPERATION with SPARK_Mode is
+package body Operation with SPARK_Mode is
    I : Integer := 0;
    J : Integer := 0;
    Result : Integer := 0;
@@ -76,4 +76,4 @@ package body OPERATION with SPARK_Mode is
       end if;
    end Division;
 
-end OPERATION;
+end Operation;

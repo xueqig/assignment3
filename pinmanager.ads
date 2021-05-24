@@ -2,7 +2,7 @@ with PIN; use PIN;
 with MyStringTokeniser;
 with MyString;
 
-package passwordmanager with SPARK_Mode is
+package PinManager with SPARK_Mode is
    
    procedure Unlock (P1: in PIN.PIN; P2 : in PIN.PIN; isLocked : in out Boolean) with
      Pre => isLocked = True,
@@ -22,4 +22,4 @@ package passwordmanager with SPARK_Mode is
        (if IsPin'Result = True then input'Length = 4);
 
    
-end passwordmanager;
+end PinManager;
