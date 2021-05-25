@@ -2,7 +2,7 @@ with Ada.Text_IO;
 with Ada.Characters.Handling;
 with Ada.Characters.Latin_1;
 
-package body passwordmanager with SPARK_Mode is
+package body PinManager with SPARK_Mode is
    
    procedure Unlock (P1: in PIN.PIN; P2: in PIN.PIN; isLocked: in out Boolean) is
    begin
@@ -38,4 +38,4 @@ package body passwordmanager with SPARK_Mode is
       return True;
    end IsPin;
 
-end passwordmanager;
+end PinManager;
