@@ -11,9 +11,9 @@ package body PinManager with SPARK_Mode is
       end if;
    end Unlock;
    
-   procedure lock (isLocked: in out Boolean) is
+   procedure lock (isLocked: in out Boolean; validPin : in Boolean) is
    begin
-      if (isLocked = False) then
+      if (isLocked = False) and validPin then
          isLocked := True;
       end if;
    end lock;

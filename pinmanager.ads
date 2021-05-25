@@ -8,9 +8,9 @@ package PinManager with SPARK_Mode is
      Pre => isLocked = True,
      Post => (if P1 = P2 then (isLocked = False));
 
-   procedure Lock (isLocked: in out Boolean) with
+   procedure Lock (isLocked: in out Boolean; validPin : in Boolean) with
      Pre => isLocked = False,
-     Post => isLocked = True;
+     Post => (if validPin then (isLocked = True));
    
    function IsPin (input : in String) return Boolean with
      pre => (if input'length > 0 then (input'First <= input'Last)),

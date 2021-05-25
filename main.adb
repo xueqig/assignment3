@@ -18,9 +18,20 @@
 --  In pinmanager.ads, the precondition of unlock function is: 'isLocked = True',
 --  which ensure that unlock can only be performed when the calculator is locked.
 
---  3. The Lock operation, when it is performed, should update the master PIN 
---  with the new PIN that is supplied.
+--  The postcondition of unlock function is: 'Post => (if P1 = P2 then (isLocked = False));',
+--  which ensure that after the function runs, it will change the state of the calculater to
+--  unlocked, if and only if the master pin is provided correctly
 
+
+--  3. Similar with above function, The Lock operation, can only be performed when 
+--  the calculator is in the unlock state, and a valid pin is provided
+
+--  In pinmanager.ads, the precondition of lock function is: 'isLocked = False',
+--  which ensure that lock can only be performed when the calculator is unlocked.
+
+--  The postcondition of lock function is: 'Post => (if validPin then (isLocked = True));',
+--  Which will ensure that after the function runs, it will change the state of the calculater to
+--  locked, if and only if a valid pin is provided to the function.
 
 --  Part 2: Additional Security Properties:
 --  1. The PIN should be a 4-digits string in range of 0000..9999 
@@ -40,7 +51,7 @@
 --                         and Input(I) <= '9'))) and 
 --         (if IsPin'Result = True then input'Length = 4);
 
---  It make sure that if the incoming string is acceptable as a PIN, it will assert that 
+--  It make sure that if the incoming string is acceptable as a PIN, it will ensure that 
 --  every character within that PIN will only contains number instead of other character, 
 --  as well as the length of the PIN should be 4 in the end
 
@@ -75,6 +86,8 @@ procedure Main is
    calStack : Stack.Stack_Type;
    -- Lock Booleans
    isLocked : Boolean := True;
+   -- New Pin Booleans
+   validPin : Boolean;
    
    I : Integer;
    pragma Unreferenced(I);
@@ -213,8 +226,9 @@ begin
                            Put_Line ("Already unlocked!");
                         elsif TokStr = "lock" then
                            if PinManager.IsPin(TokStr2) then
+                              validPin := True;
                               PIN1 := PIN.From_String(TokStr2);
-                              PinManager.lock(isLocked);
+                              PinManager.lock(isLocked, ValidPin);
                            end if;
                         else
                            Put_Line ("Invalid command!");
