@@ -55,6 +55,9 @@
 --  every character within that PIN will only contains number instead of other character, 
 --  as well as the length of the PIN should be 4 in the end
 
+--  2. Pragma Unreferenced(I) is used to fix the security flaw of unreferenced 
+--  variable "I" after using the pop function.
+
 
 pragma SPARK_Mode (On);
 
