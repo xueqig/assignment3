@@ -15,22 +15,22 @@
 --  2. The Unlock operation can only ever be performed when the calculator is 
 --  in the locked state.
 
---  In pinmanager.ads, the precondition of unlock function is: 'isLocked = True',
+--  In pinmanager.ads, the precondition of unlock function is: 'Pre => isLocked = True',
 --  which ensure that unlock can only be performed when the calculator is locked.
 
 --  The postcondition of unlock function is: 'Post => (if P1 = P2 then (isLocked = False));',
---  which ensure that after the function runs, it will change the state of the calculater to
---  unlocked, if and only if the master pin is provided correctly
+--  which ensure that after the function runs, it will change the state of the calculator to
+--  unlocked, if and only if the correct master pin is provided
 
 
 --  3. Similar with above function, The Lock operation, can only be performed when 
 --  the calculator is in the unlock state, and a valid pin is provided
 
---  In pinmanager.ads, the precondition of lock function is: 'isLocked = False',
+--  In pinmanager.ads, the precondition of lock function is: 'Pre => isLocked = False',
 --  which ensure that lock can only be performed when the calculator is unlocked.
 
 --  The postcondition of lock function is: 'Post => (if validPin then (isLocked = True));',
---  Which will ensure that after the function runs, it will change the state of the calculater to
+--  which will ensure that after the function runs, it will change the state of the calculator to
 --  locked, if and only if a valid pin is provided to the function.
 
 --  Part 2: Additional Security Properties:
