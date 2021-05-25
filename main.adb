@@ -175,8 +175,7 @@ begin
                         exit;
                      end if;
                   else
-                     Put_Line ("Please unlock the calculator to perform operations.");
-                     exit;
+                     Put_Line ("Calculator is locked.");
                   end if;
                elsif NumTokens = 2 then
                   declare
@@ -210,13 +209,13 @@ begin
                            else
                               Put_Line("Variable does not exit!");
                            end if;
+                        elsif TokStr = "unlock" then
+                           Put_Line ("Already unlocked!");
                         elsif TokStr = "lock" then
                            if PinManager.IsPin(TokStr2) then
                               PIN1 := PIN.From_String(TokStr2);
                               PinManager.lock(isLocked);
                            end if;
-                        elsif TokStr = "unlock" then
-                           Put_Line ("Already unlocked!");
                         else
                            Put_Line ("Invalid command!");
                            exit;
@@ -228,8 +227,7 @@ begin
                         elsif TokStr = "lock" then
                            Put_Line ("Already locked!");
                         else
-                           Put_Line("Please unlock the calculator to perform operations!");
-                           exit;
+                           Put_Line("Calculator is locked!");
                         end if;
                      end if;
                   end;
