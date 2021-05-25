@@ -1,25 +1,43 @@
---  Task 4:
---  part 2: Additional Security Properties:
---  1. The PIN should be a 4-digits string in range of 0000..9999 
---  The function IsPin is implemented in the password manager by returning a boolean
---  value to show the input PIN is valid or invalid.
+-- Task 4:
+-- Part 1: Security Properties:
+-- 1. The arithmetic operations, load, store, remove, and lock operations can 
+-- only be performed when the calculator is in unlocked state.
 
---  The precondition of IsPin:
---  pre => (if input'Length > 0 then input'First <= input'Last),
+-- In main.adb, we define a variable 'isLocked' to show the state of calculator.
+-- We only allow user to perform arithmetic operations, load, store, remove, and 
+-- lock operations when isLocked is True.
 
---  It holds the basic relationship for the index of a incoming string
+-- 2. The Unlock operation can only ever be performed when the calculator is 
+-- in the locked state.
 
---  The postcondition of IsPin:
---  post =>  (if IsPin'Result = True then
+-- In pinmanager.ads, the precondition of unlock function is: 'isLocked = True',
+-- which ensure that unlock can only be performed when the calculator is locked.
+
+-- 3. The Lock operation, when it is performed, should update the master PIN 
+-- with the new PIN that is supplied.
+
+
+-- Part 2: Additional Security Properties:
+-- 1. The PIN should be a 4-digits string in range of 0000..9999 
+-- The function IsPin is implemented in the password manager by returning a boolean
+-- value to show the input PIN is valid or invalid.
+
+-- The precondition of IsPin:
+-- pre => (if input'Length > 0 then input'First <= input'Last),
+
+-- It holds the basic relationship for the index of a incoming string
+
+-- The postcondition of IsPin:
+-- post =>  (if IsPin'Result = True then
 --                   (for all I in Input'First..Input'Last =>
 --                        (Input'First <= Input'Last
 --                         and input(I) >='0'
 --                         and Input(I) <= '9'))) and 
 --         (if IsPin'Result = True then input'Length = 4);
 
---  It make sure that if the incoming string is acceptable as a PIN, it will assert that 
---  every character within that PIN will only contains number instead of other character, 
---  as well as the length of the PIN should be 4 in the end
+-- It make sure that if the incoming string is acceptable as a PIN, it will assert that 
+-- every character within that PIN will only contains number instead of other character, 
+-- as well as the length of the PIN should be 4 in the end
 
 
 pragma SPARK_Mode (On);
@@ -221,5 +239,3 @@ begin
          end if;
       end;
    end loop;
-      
-end Main;
