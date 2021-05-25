@@ -3,9 +3,14 @@
 --  1. The arithmetic operations, load, store, remove, and lock operations can 
 --  only be performed when the calculator is in unlocked state.
 
---  In main.adb, we define a variable 'isLocked' to show the state of calculator.
---  We only allow user to perform arithmetic operations, load, store, remove, and 
---  lock operations when isLocked is True.
+--  In main.adb, we define a variable 'isLocked' to show the state of the calculator.
+--  In stack.ads, the precondition of Push, Pop, Load, Store, Remove and List 
+--  functions includes 'isLocked = False'.
+--  In operation.ads, the precondition of Addition, Subtraction, Multiplication 
+--  and Devision functions includes 'isLocked = False'.
+
+--  All these will ensure that the +, -, *, /, load, store, remove and lock 
+--  operations can only be performed when the calculator is in unlocked state.
 
 --  2. The Unlock operation can only ever be performed when the calculator is 
 --  in the locked state.
@@ -130,34 +135,34 @@ begin
                   if not isLocked then 
                      if TokStr = "pop" then
                         if Stack.Get_Size(calStack) > 0 and Stack.Get_Size(calStack) <= Stack.Max_Size then
-                           Stack.Pop(calStack,I);
+                           Stack.Pop(calStack, I, isLocked);
                         else
                            Put_Line ("Stack is empty! Nothing to pop!");
                         end if;
                      elsif TokStr = "list" then
-                        Stack.List (DB);
+                        Stack.List(DB, isLocked);
                      elsif TokStr = "+" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
-                           OPERATION.Addition(calStack);
+                           Operation.Addition(calStack, isLocked);
                         else
                            Put_Line("Not enough operands on stack! '+' requires 2 numbers");
                         end if;
                      elsif TokStr = "-" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
-                           OPERATION.Subtraction(calStack);
+                           Operation.Subtraction(calStack, isLocked);
                         else
                            Put_Line("Not enough operands on stack! '-' requires 2 numbers");
                         end if;
                      elsif TokStr = "*" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
-                           OPERATION.Multiplication(calStack);
+                           Operation.Multiplication(calStack, isLocked);
                         else
                            Put_Line("Not enough operands on stack ! '*' requires 2 numbers");
                         end if;
                      elsif TokStr = "/" then
                         if Stack.Get_Size(calStack) >= 2 and Stack.Get_Size(calStack) <= Stack.Max_Size then
                            if Stack.Get_Element(calStack, Stack.Get_Size(calStack) - 1) /= 0 then
-                              OPERATION.Division(calStack);
+                              Operation.Division(calStack, isLocked);
                            else
                               Put_Line("Invalid operation! Division by zero!");
                               exit;
@@ -180,7 +185,7 @@ begin
                      if isLocked = False then
                         if TokStr = "push" then
                            if Stack.Get_Size(calStack) >= 0 and Stack.Get_Size(calStack) < Stack.Max_Size then
-                              Stack.Push(calStack, StringToInteger.From_String(TokStr2));
+                              Stack.Push(calStack, StringToInteger.From_String(TokStr2), isLocked);
                            else 
                               Put_Line("Stack has reached the maximum size!");
                            end if;
@@ -188,20 +193,20 @@ begin
                            if Stack.Get_Size(calStack) < Stack.Max_Size and then 
                              TokStr2'Length < VariableStore.Max_Variable_Length and then 
                              VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
-                              Stack.Load(calStack, TokStr2, DB);
+                              Stack.Load(calStack, TokStr2, DB, isLocked);
                            else
                               Put_Line("Variable does not exit!");
                            end if;
                         elsif TokStr = "store" then
                            if Stack.Get_Size(calStack) > 0 then
-                              Stack.Store(calStack, TokStr2, DB);
+                              Stack.Store(calStack, TokStr2, DB, isLocked);
                            else
                               Put_Line("Stack is empty! Nothing to store!");
                            end if;
                         elsif TokStr = "remove" then
                            if TokStr2'Length < VariableStore.Max_Variable_Length and then 
                              VariableStore.Has_Variable(DB, VariableStore.From_String(TokStr2)) then
-                              Stack.Remove(TokStr2, DB);
+                              Stack.Remove(TokStr2, DB, isLocked);
                            else
                               Put_Line("Variable does not exit!");
                            end if;
